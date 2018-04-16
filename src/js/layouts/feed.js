@@ -67,6 +67,7 @@ export class Feed extends Component {
 
     if (this.state.results) {
       posts = this.state.results;
+      console.log(posts);
       items = posts.map((item) => (
         <Item details={item} key={item.id} />
       ));
@@ -89,13 +90,8 @@ const Item = ({details}) => {
   let facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink;
   let twitterLink = 'https://twitter.com/home?status=Check%20out%20this%20awesome%20blog%20post%20at%20' + articleLink;
 
-  let pubDate;
-  if(details.data.custom_publish_date) {
-    pubDate = details.data.custom_publish_date;
-  }
-  else {
-    pubDate = details.first_publication_date
-  };
+  let pubDate = details.first_publication_date;
+  
   let d = Date(pubDate);
   let date = d.getDate() + ' ' + d.toLocaleString("en", { month: "long"  }) + ' ' + d.getFullYear();
 

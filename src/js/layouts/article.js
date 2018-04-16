@@ -76,13 +76,8 @@ class Content extends Component {
       let facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink;
       let twitterLink = 'https://twitter.com/home?status=Check%20out%20this%20awesome%20blog%20post%20at%20' + articleLink;
 
-      let pubDate;
-      if(item.data.custom_publish_date) {
-        pubDate = item.data.custom_publish_date;
-      }
-      else {
-        pubDate = item.first_publication_date
-      };
+      let pubDate = item.first_publication_date;
+
       let d = Date(pubDate);
       date = d.getDate() + ' ' + d.toLocaleString("en", { month: "long"  }) + ' ' + d.getFullYear();
 
