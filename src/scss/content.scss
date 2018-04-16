@@ -84,24 +84,9 @@ figure {
     display: grid;
         grid-auto-flow: dense;
         grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         justify-items: center;
         align-items: center;
-
-    &.left, &.right {
-        margin: 10px;
-        max-width: 55%;
-    }
-
-    &.right {
-        float: right;
-        margin-right: -20px;
-    }
-
-    &.left {
-        float: left;
-        margin-left: -20px;
-    }
 
     .image-container {
         grid-column: span 2;
@@ -120,7 +105,7 @@ figure {
         font: $font_headings;
         font-size: 0.8em;
         font-weight: normal;
-        padding: 15px;
+        padding: 10px 0 10px 10px;
     }
 }
 
@@ -140,9 +125,8 @@ pre {
 }
 
 .content {
-    padding: 20px 10px;
     margin: 0 auto;
-    width: 100%;
+    width: 90vw;
         max-width: 1200px;
 }
 
@@ -191,4 +175,40 @@ pre {
 
 .twitter-tweet {
     margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+    figure {
+        &.left, &.right {
+            margin: 10px;
+            max-width: 55%;
+        }
+    
+        &.right {
+            float: right;
+            margin-right: -4vw;
+        }
+    
+        &.left {
+            float: left;
+            margin: 10px;
+            margin-left: -4vw;
+        }
+
+        figcaption {
+            padding: 15px 0 15px 15px;
+        }
+    }
+}
+
+@media (min-width: 1350px) {
+    figure {   
+        &.right {
+            margin-right: -5vw;
+        }
+    
+        &.left {
+            margin-left: -5vw;
+        }
+    }
 }
