@@ -6,32 +6,54 @@ import {Link, RichText, Date} from 'prismic-reactjs';
 
 //Resources
 import '../../scss/layouts/feed.scss';
-import SiteImage from '../../img/favicon.png';
 import {Facebook, Twitter} from 'react-feather';
+import HeaderImage from '../../img/rottnest-lighthouse-2500.jpg';
+import AmyKate from '../../img/amykate.jpg';
+import AimHigher from '../../img/aimhigher.png';
+import Freelance from '../../img/freelancers.png';
 
-let siteUrl = 'http://localhost:3500/';
+const profiles = {
+  'amykate': {
+    'title': 'Amy Goes to Perth',
+    'id': 'amykate',
+    'image': AmyKate,
+    'url': ''
+  },
+  'AimHigher': {
+    'title': 'AimHigher Web Design',
+    'id': 'aimhigher',
+    'image': AimHigher,
+    'url': 'https://aimhigherwebdesign.com.au'
+  },
+  'Freelance': {
+    'title': "Freelancer's Guide",
+    'id': 'freelance',
+    'image': Freelance,
+    'url': ''
+  },
+};
 
 class Meta extends Component {
   render() {
-      let name = 'My Blog';
-      let description ='This is my blog, check it out!';
+      let name = 'Amy Goes to Perth';
+      let description ="24 year old web developer who lives in Perth and has a border collie. Just a few musings";
       let slug = '/';
-      let image = SiteImage;
+      let image = HeaderImage;
       return (
           <Helmet>
               <title>{name}</title>
               <meta name="description" content={description} />
-              <link rel="canonical" href={siteUrl + slug} />
+              <link rel="canonical" href={'https://amygoestoperth.com.au/' + slug} />
 
               {/* Facebook */}
-              <meta property="og:url" content={siteUrl + slug} />
+              <meta property="og:url" content={'https://amygoestoperth.com.au/' + slug} />
               
               <meta property="og:title" content={name} />
               <meta property="og:image" content={image} />
               <meta property="og:description" content={description} />
 
               {/* Twitter */}
-              <meta name="twitter:url" content={siteUrl + slug} />
+              <meta name="twitter:url" content={'https://amygoestoperth.com.au/' + slug} />
               <meta name="twitter:title" content={name} />
               <meta name="twitter:description" content={description} />
               <meta name="twitter:image" content={image} />
@@ -49,7 +71,7 @@ export class Feed extends Component {
   };
 
   componentWillMount() {
-    const apiEndpoint = 'https://prismic-react-blog.prismic.io/api/v2';
+    const apiEndpoint = 'https://amygoestoperth.prismic.io/api/v2';
   
     Prismic.api(apiEndpoint).then(api => {
       api.query(Prismic.Predicates.at('document.type', 'blog_post'), 
@@ -67,7 +89,6 @@ export class Feed extends Component {
 
     if (this.state.results) {
       posts = this.state.results;
-      console.log(posts);
       items = posts.map((item) => (
         <Item details={item} key={item.id} />
       ));
@@ -86,17 +107,36 @@ export class Feed extends Component {
 };
 
 const Item = ({details}) => {
-  let articleLink = siteUrl + details.uid;
+  let articleLink = 'https://www.amygoestoperth.com.au/' + details.uid;
   let facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink;
-  let twitterLink = 'https://twitter.com/home?status=Check%20out%20this%20awesome%20blog%20post%20at%20' + articleLink;
+  let twitterLink = 'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' + articleLink;
 
-  let pubDate = details.first_publication_date;
-  
+  let pubDate;
+  if(details.data.custom_publish_date) {
+    pubDate = details.data.custom_publish_date;
+  }
+  else {
+    pubDate = details.first_publication_date
+  };
   let d = Date(pubDate);
   let date = d.getDate() + ' ' + d.toLocaleString("en", { month: "long"  }) + ' ' + d.getFullYear();
 
   let featureImage = details.data.featured_image.url;
-  let excerpt;
+  let profileImage, excerpt, profileUrl;
+  let tags = details.tags;
+
+  if (tags.indexOf(profiles.AimHigher.id) > -1) {
+    profileImage = profiles.AimHigher.image;
+    profileUrl = profiles.AimHigher.url;
+  }
+  else if (tags.indexOf(profiles.Freelance.id) > -1) {
+    profileImage = profiles.Freelance.image;
+    profileUrl = profiles.Freelance.url;
+  }
+  else {
+    profileImage = profiles.amykate.image;
+    profileUrl = profiles.amykate.url;
+  };
 
   if(details.data.body.length > 0 && details.data.body[0].primary) {
     let s = details.data.body[0].primary.text[0].text;
@@ -110,6 +150,17 @@ const Item = ({details}) => {
           <img alt="Article Featured Image" src={featureImage} />
         </div>
       }
+      <div className="author">
+        <div className="image-profile">
+          { profileUrl !== '' ?
+            <a href={profileUrl} target="_blank" rel="nofollow">
+              <img alt="Profile Image" src={profileImage} />
+            </a>
+          :
+            <img alt="Profile Image" src={profileImage} />
+          }
+        </div>
+      </div>
       <header>
         <h2 className="article-title">
           <BlogLink id={details.uid} to={`/${details.uid}`}>
