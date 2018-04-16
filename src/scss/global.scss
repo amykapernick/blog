@@ -1,0 +1,25 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900');
+@import 'variables.scss';
+
+* {
+    box-sizing: border-box;
+    font: $font-regular;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba($blue, 0.2);
+
+  &:hover {
+    background-color: $blue;
+  }
+}
