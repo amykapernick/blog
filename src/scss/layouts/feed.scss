@@ -8,7 +8,7 @@
 }
 
 .feed-article {
-    background: rgba($neutral_light, 0.3);
+    background: rgba($grey, 0.3);
     border-radius: 10px;
     display: block;
     padding: 20px 20px 40px;
@@ -19,8 +19,8 @@
     }
 
     &:active, &:hover, &:focus {
-        background: $primary_light;
-        background: rgba($primary_light, 0.3);
+        background: $blue_light;
+        background: rgba($blue_light, 0.3);
 
         .image-feature {
             opacity: 1;
@@ -35,16 +35,33 @@
     height: 15vh * 2;
         max-height: 300px;
     margin-bottom: 10px;
+    object-fit: cover;
     overflow: hidden;
     opacity: 0.4;
     text-align: center;
 
     img {
         height: 100%;
-            max-height: 100%;
+            min-height: 100%;
         width: auto;
             max-width: unset;
+            min-width: 100%;
     }
+}
+
+.image-profile {
+    height: 45px;
+    opacity: 0.4;
+    width: 45px;
+
+    &:active, &:hover, &:focus {
+        opacity: 1;
+    }
+}
+
+.author {
+    float: right;
+    text-align: right;
 }
 
 .article-title {
@@ -74,5 +91,9 @@ h6.date {
 
     .share-link {
         padding: 5px;
+
+        &.medium {
+            font-size: 26px;
+        }
     }
 }
