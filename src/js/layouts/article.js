@@ -5,6 +5,7 @@ import {Link, LinkResolver, RichText, Date} from 'prismic-reactjs';
 import {Tweet} from 'react-twitter-widgets';
 import Codepen from 'react-codepen-embed';
 
+import '../../scss/layouts/article.scss';
 import {Facebook, Twitter} from 'react-feather';
 
 let siteUrl = 'http://localhost:3500';
