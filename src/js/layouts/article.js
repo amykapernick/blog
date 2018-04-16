@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Prismic from 'prismic-javascript';
 import {Link, LinkResolver, RichText, Date} from 'prismic-reactjs';
@@ -11,7 +11,7 @@ let siteUrl = 'http://localhost:3500';
 
 class Meta extends Component {
   render() {
-      let name = this.props.name + '| My Blog';
+      let name = this.props.name + ' | My Blog';
       let description = this.props.description;
       let slug = this.props.slug;
       let image = this.props.featureImage;
@@ -104,24 +104,7 @@ class Content extends Component {
           )
         }
         else if (section.slice_type == 'image') {
-          if (section.primary.same_caption == "Yes") {
-            let imageLot = section.items;
-            let images = imageLot.map((image) => (
-              <div className="content-image" key={image.image.url}>
-                <img src={image.image.url} alt={image.image.alt} className="content-image" />
-              </div>
-            ));
-
-            return (
-              <figure>
-                <div className="image-collection">
-                  {images}
-                </div>
-                <figcaption>{imageLot[0].caption[0].text}</figcaption>
-              </figure>
-            );
-          }
-          else if (section.primary.image_gallery == "Yes") {
+          if (section.primary.image_gallery == "Yes") {
             let imageLot = section.items;
             let images = imageLot.map((image) => {
               let panorama = '';
@@ -129,29 +112,49 @@ class Content extends Component {
                 panorama = 'panorama';
               }
               return (
-                <img src={image.image.url} alt={image.image.alt} className={'gallery-image ' + panorama} />
+                <div className={'image-container' + panorama} key={image.image.url}>
+                  <img src={image.image.url} alt={image.image.alt} />
+                </div>
               );
             });
 
             return (
-              <div className="image-gallery">
+              <figure>
                 {images}
-              </div>
+              </figure>
             )
           }
-          else {
+          else if (section.primary.same_caption == "Yes") {
             let imageLot = section.items;
             let images = imageLot.map((image) => (
-              <figure key={image.image.url} className="content-image">
-                <div className="image-container">
-                  <img src={image.image.url} alt={image.image.alt} />
-                </div>
-                {image.caption[0] && <figcaption>{image.caption[0].text}</figcaption>}
-              </figure>
+              <div className="image-container" key={image.image.url}>
+                <img src={image.image.url} alt={image.image.alt} />
+              </div>
             ));
 
             return (
-              <div>{images}</div>
+              <figure>
+                {images}
+                <figcaption>{imageLot[0].caption[0].text}</figcaption>
+              </figure>
+            );
+          }
+          else {
+            let imageLot = section.items;
+            let images = imageLot.map((image) => {
+              let justify = image.justify.toLowerCase();
+              return (
+                <figure key={image.image.url} className={justify}>
+                  <div className="image-container" >
+                    <img src={image.image.url} alt={image.image.alt} />
+                  </div>
+                  {image.caption[0] && <figcaption>{image.caption[0].text}</figcaption>}
+                </figure>
+              );
+            });
+
+            return (
+              <Fragment>{images}</Fragment>
             );
           }
         }
