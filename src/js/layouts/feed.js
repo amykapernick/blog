@@ -33,6 +33,8 @@ const profiles = {
   },
 };
 
+const siteUrl = 'https://amygoestoperth.com.au/';
+
 class Meta extends Component {
   render() {
       let name = 'Amy Goes to Perth';
@@ -43,17 +45,17 @@ class Meta extends Component {
           <Helmet>
               <title>{name}</title>
               <meta name="description" content={description} />
-              <link rel="canonical" href={'https://amygoestoperth.com.au/' + slug} />
+              <link rel="canonical" href={siteUrl + slug} />
 
               {/* Facebook */}
-              <meta property="og:url" content={'https://amygoestoperth.com.au/' + slug} />
+              <meta property="og:url" content={siteUrl + slug} />
               
               <meta property="og:title" content={name} />
               <meta property="og:image" content={image} />
               <meta property="og:description" content={description} />
 
               {/* Twitter */}
-              <meta name="twitter:url" content={'https://amygoestoperth.com.au/' + slug} />
+              <meta name="twitter:url" content={siteUrl + slug} />
               <meta name="twitter:title" content={name} />
               <meta name="twitter:description" content={description} />
               <meta name="twitter:image" content={image} />
@@ -107,7 +109,7 @@ export class Feed extends Component {
 };
 
 const Item = ({details}) => {
-  let articleLink = 'https://www.amygoestoperth.com.au/' + details.uid;
+  let articleLink = siteUrl + details.uid;
   let facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink;
   let twitterLink = 'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' + articleLink;
 

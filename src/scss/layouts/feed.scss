@@ -35,17 +35,15 @@
     height: 15vh * 2;
         max-height: 300px;
     margin-bottom: 10px;
-    object-fit: cover;
     overflow: hidden;
     opacity: 0.4;
     text-align: center;
 
     img {
         height: 100%;
-            min-height: 100%;
+            max-height: 100%;
         width: auto;
             max-width: unset;
-            min-width: 100%;
     }
 }
 
@@ -91,9 +89,5 @@ h6.date {
 
     .share-link {
         padding: 5px;
-
-        &.medium {
-            font-size: 26px;
-        }
     }
 }

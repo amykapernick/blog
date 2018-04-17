@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Prismic from 'prismic-javascript';
 import {Link, LinkResolver, RichText, Date} from 'prismic-reactjs';
 import {Tweet} from 'react-twitter-widgets';
 import Codepen from 'react-codepen-embed';
 
+import '../../scss/layouts/article.scss';
 import {Facebook, Twitter} from 'react-feather';
 import AmyKate from '../../img/amykate.jpg';
 import AimHigher from '../../img/aimhigher.png';
@@ -31,9 +32,11 @@ const profiles = {
   },
 };
 
+const siteUrl = 'https://amygoestoperth.com.au/';
+
 class Meta extends Component {
   render() {
-      let name = this.props.name + '| Amy Goes to Perth';
+      let name = this.props.name + ' | Amy Goes to Perth';
       let description = this.props.description;
       let slug = this.props.slug;
       let image = this.props.featureImage;
@@ -94,9 +97,9 @@ class Content extends Component {
       item = this.state.article;
       title = item.data.title[0].text;
 
-      let articleLink = 'https://www.amygoestoperth.com.au/' + item.slugs[0];
+      let articleLink = siteUrl + item.slugs[0];
       let facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink;
-      let twitterLink = 'https://twitter.com/home?status=Check%20out%20this%20article%20by%20%40amykate_94%20' + articleLink;
+      let twitterLink = 'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' + articleLink;
 
       let pubDate;
       if(item.data.custom_publish_date) {
@@ -150,24 +153,7 @@ class Content extends Component {
           )
         }
         else if (section.slice_type == 'image') {
-          if (section.primary.same_caption == "Yes") {
-            let imageLot = section.items;
-            let images = imageLot.map((image) => (
-              <div className="content-image" key={image.image.url}>
-                <img src={image.image.url} alt={image.image.alt} className="content-image" />
-              </div>
-            ));
-
-            return (
-              <figure>
-                <div className="image-collection">
-                  {images}
-                </div>
-                <figcaption>{imageLot[0].caption[0].text}</figcaption>
-              </figure>
-            );
-          }
-          else if (section.primary.image_gallery == "Yes") {
+          if (section.primary.image_gallery == "Yes") {
             let imageLot = section.items;
             let images = imageLot.map((image) => {
               let panorama = '';
@@ -175,29 +161,49 @@ class Content extends Component {
                 panorama = 'panorama';
               }
               return (
-                <img src={image.image.url} alt={image.image.alt} className={'gallery-image ' + panorama} />
+                <div className={'image-container' + panorama} key={image.image.url}>
+                  <img src={image.image.url} alt={image.image.alt} />
+                </div>
               );
             });
 
             return (
-              <div className="image-gallery">
+              <figure>
                 {images}
-              </div>
+              </figure>
             )
           }
-          else {
+          else if (section.primary.same_caption == "Yes") {
             let imageLot = section.items;
             let images = imageLot.map((image) => (
-              <figure key={image.image.url} className="content-image">
-                <div className="image-container">
-                  <img src={image.image.url} alt={image.image.alt} />
-                </div>
-                {image.caption[0] && <figcaption>{image.caption[0].text}</figcaption>}
-              </figure>
+              <div className="image-container" key={image.image.url}>
+                <img src={image.image.url} alt={image.image.alt} />
+              </div>
             ));
 
             return (
-              <div>{images}</div>
+              <figure>
+                {images}
+                <figcaption>{imageLot[0].caption[0].text}</figcaption>
+              </figure>
+            );
+          }
+          else {
+            let imageLot = section.items;
+            let images = imageLot.map((image) => {
+              let justify = image.justify.toLowerCase();
+              return (
+                <figure key={image.image.url} className={justify}>
+                  <div className="image-container" >
+                    <img src={image.image.url} alt={image.image.alt} />
+                  </div>
+                  {image.caption[0] && <figcaption>{image.caption[0].text}</figcaption>}
+                </figure>
+              );
+            });
+
+            return (
+              <Fragment>{images}</Fragment>
             );
           }
         }

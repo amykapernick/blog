@@ -1,5 +1,47 @@
+//Fonts
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/AnonymousPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/AnonymousPro-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/AnonymousPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/AnonymousPro-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
 // Imports
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900');
 @import 'variables.scss';
 
 * {
