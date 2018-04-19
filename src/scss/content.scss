@@ -36,6 +36,10 @@ p {
     font-size: 1.2em;
     line-height: 1.2;
 }
+
+strong {
+    font: $font_bold;
+}
   
 a {
     color: $blue;
