@@ -28,7 +28,7 @@ const profiles = {
     'title': "Freelancer's Guide",
     'id': 'freelance',
     'image': Freelance,
-    'url': ''
+    'url': 'https://thefreelance.guide/'
   },
 };
 
