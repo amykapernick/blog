@@ -7,12 +7,36 @@ import Codepen from 'react-codepen-embed';
 
 import '../../scss/layouts/article.scss';
 import {Facebook, Twitter} from 'react-feather';
+import AmyKate from '../../img/amykate.jpg';
+import AimHigher from '../../img/aimhigher.png';
+import Freelance from '../../img/freelancers.png';
 
-let siteUrl = 'http://localhost:3500';
+const profiles = {
+  'amykate': {
+    'title': 'Amy Goes to Perth',
+    'id': 'amykate',
+    'image': AmyKate,
+    'url': ''
+  },
+  'AimHigher': {
+    'title': 'AimHigher Web Design',
+    'id': 'aimhigher',
+    'image': AimHigher,
+    'url': 'https://aimhigherwebdesign.com.au'
+  },
+  'Freelance': {
+    'title': "Freelancer's Guide",
+    'id': 'freelance',
+    'image': Freelance,
+    'url': 'https://thefreelance.guide/'
+  },
+};
+
+const siteUrl = 'https://amygoestoperth.com.au/';
 
 class Meta extends Component {
   render() {
-      let name = this.props.name + ' | My Blog';
+      let name = this.props.name + ' | Amy Goes to Perth';
       let description = this.props.description;
       let slug = this.props.slug;
       let image = this.props.featureImage;
@@ -55,7 +79,7 @@ class Content extends Component {
   };
 
   componentWillMount() {
-    const apiEndpoint = 'https://prismic-react-blog.prismic.io/api/v2';
+    const apiEndpoint = 'https://amygoestoperth.prismic.io/api/v2';
     Prismic.api(apiEndpoint).then(api => {
       api.query(
         Prismic.Predicates.at('my.blog_post.uid', this.props.id)
@@ -75,20 +99,49 @@ class Content extends Component {
 
       let articleLink = siteUrl + item.slugs[0];
       let facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink;
-      let twitterLink = 'https://twitter.com/home?status=Check%20out%20this%20awesome%20blog%20post%20at%20' + articleLink;
+      let twitterLink = 'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' + articleLink;
 
-      let pubDate = item.first_publication_date;
-
+      let pubDate;
+      if(item.data.custom_publish_date) {
+        pubDate = item.data.custom_publish_date;
+      }
+      else {
+        pubDate = item.first_publication_date
+      };
       let d = Date(pubDate);
       date = d.getDate() + ' ' + d.toLocaleString("en", { month: "long"  }) + ' ' + d.getFullYear();
 
       let featureImage = item.data.featured_image.url;
+      let profileImage, profileUrl;
+      let tags = item.tags;
+
+      if (tags.indexOf(profiles.AimHigher.id) > -1) {
+        profileImage = profiles.AimHigher.image;
+        profileUrl = profiles.AimHigher.url;
+      }
+      else if (tags.indexOf(profiles.Freelance.id) > -1) {
+        profileImage = profiles.Freelance.image;
+        profileUrl = profiles.Freelance.url;
+      }
+      else {
+        profileImage = profiles.amykate.image;
+        profileUrl = profiles.amykate.url;
+      };
 
       intro = (
         <div className="share-icons">
           <Meta name={title} description={item.data.description[0].text} slug={articleLink} featureImage={featureImage} />
           <a href={facebookLink} target="_blank" className="facebook share-link">{<Facebook />}</a>
           <a href={twitterLink} target="_blank" className="twitter share-link">{<Twitter />}</a>
+          <div className="author">
+            { profileUrl !== '' ?
+              <a href={profileUrl} target="_blank" rel="nofollow">
+                <img alt="Profile Image" className="image-profile" src={profileImage} />
+              </a>
+            :
+              <img alt="Profile Image" className="image-profile" src={profileImage} />
+            }
+          </div>
         </div>
       );
 

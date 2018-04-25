@@ -21,7 +21,7 @@ footer {
         margin-top: 20px;
 
         .social-link {
-            color: rgba($primary, 0.5);
+            color: rgba($blue, 0.5);
 
             svg {
                 height: 30px;
@@ -30,11 +30,11 @@ footer {
             }
 
             &:active, &:hover, &:focus {
-                color: $primary;
+                color: $blue;
             }
 
             &.share:active, &.share:hover, &.share:focus {
-                color: rgba($primary, 0.5);
+                color: rgba($blue, 0.5);
             }
         }
     }
@@ -55,5 +55,7 @@ footer {
                 }
             }
         }
+
+
     }
 }

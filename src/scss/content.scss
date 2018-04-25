@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 body {
-    color: $neutral;
+    color: $grey_dark;
     font: $font_regular;
       font-size: 1.2em;
       line-height: 1.4;
@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: $primary;
+    color: $blue;
     font: $font_headings;
 }
   
@@ -46,11 +46,11 @@ em {
 }
   
 a {
-    color: $primary;
+    color: $blue;
     font: inherit;
 
     &:active, &:hover, &:focus {
-        color: $secondary;
+        color: $aqua;
     }
 }
   
@@ -63,10 +63,10 @@ ul {
 }
   
 i {
-    color: $neutral_light;
+    color: $grey;
 
     &:hover, &:focus, &:active {
-        color: $primary;
+        color: $blue;
     }
 }
 
@@ -81,7 +81,7 @@ hr {
 }
 
 blockquote {
-    border-left: 5px solid $primary;
+    border-left: 5px solid $blue;
     font: $font_headings;
         font-size: 1.2em;
         font-weight: normal;
@@ -90,7 +90,7 @@ blockquote {
 
 figure {
     figcaption {
-        border-left: 5px solid $primary;
+        border-left: 5px solid $blue;
         font: $font_headings;
         font-size: 0.8em;
         font-weight: normal;
@@ -105,7 +105,7 @@ figure {
 }
 
 pre {
-    background: rgba($primary, 0.2);
+    background: rgba($blue, 0.2);
     border-radius: 20px;
     line-height: 1.3em;
     overflow: hidden;
@@ -114,6 +114,7 @@ pre {
 }
 
 .content {
+    padding: 20px 10px;
     margin: 0 auto;
     width: 90vw;
         max-width: 1200px;

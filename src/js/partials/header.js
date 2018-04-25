@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 //Resources
 import '../../scss/partials/header.scss';
 
+import HeaderImage from '../../img/rottnest-lighthouse-2500.jpg';
 import Favicon from '../../img/favicon.png';
 
 class Meta extends React.Component {
@@ -19,7 +20,7 @@ class Meta extends React.Component {
             </Helmet>
         );
     }
-};
+  };
   
 
 export class Header extends React.Component {
@@ -38,7 +39,8 @@ class SiteTitle extends React.Component {
         return(
             <div id="site-header" className="site-header">
                 <a href="/">
-                    <h1 className="site-title">My Blog</h1>
+                    <img alt="Panarama image of Rottnest Island Lighthouse and the beach" src={HeaderImage} className="header-image" />
+                    <h1 className="site-title">Amy Goes to Perth</h1>
                 </a>       
             </div>
         );
