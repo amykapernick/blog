@@ -38,7 +38,11 @@ p {
 }
 
 strong {
-    font: $font_bold;
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
 }
   
 a {
