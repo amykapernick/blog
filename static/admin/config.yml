@@ -11,9 +11,14 @@ collections:
     label: Blog
     folder: src/pages/blog
     create: true
-    preview: false
+    editor:
+      preview: false
     fields:
       - { name: path, label: Path }
-      - { name: publish_date, label: Date, widget: date }
+      - { name: publishDate, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - name: body
+        label: Body
+        widget: list
+        fields:
+          - {name: Content, name: content, widget: markdown}
