@@ -15,10 +15,10 @@ export default function Template({data}) {
 }
 
 export const pageQuery = graphql`
-    query($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
+    query($slug: String!) {
+        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
             frontmatter {
-                publishDate(formatString: "MMMM DD, YYYY")
+                publishDate(formatString: "DD MMM YYYY")
                 title
             }
         }
