@@ -21,4 +21,4 @@ collections:
         label: Body
         widget: list
         fields:
-          - {name: Content, name: content, widget: markdown}
+          - {name: content, label: content, widget: markdown}
