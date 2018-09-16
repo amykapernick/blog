@@ -3,13 +3,14 @@ backend:
   repo: amykapernick/amygoestoperth
 
 media_folder: static/img
-public_folder: img
+public_folder: /img
 
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/pages/blog
     create: true
+    preview: false
     fields:
       - { name: path, label: Path }
       - { name: publish_date, label: Date, widget: date }
