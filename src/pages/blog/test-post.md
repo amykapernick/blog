@@ -1,6 +1,5 @@
 ---
-path:
-  '[object Object]': null
+path: /test-post
 publishDate: 2018-09-16T09:27:40.356Z
 title: Test Post
 bodyContent:
