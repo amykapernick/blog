@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: amykapernick/amygoestoperth
+  branch: netlify-gatsby
 
 media_folder: static/img
 public_folder: /img
