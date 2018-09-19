@@ -14,8 +14,6 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - { name: path, label: Path, widget: string}
       - { name: title, label: Title }
       - { name: publishDate, label: "Publish Date", widget: date }
       - { name: updateDate, label: "Update Date", widget: date }
