@@ -14,13 +14,10 @@ collections:
     editor:
       preview: false
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - { name: path, label: Path, widget: string}
-      - { name: publishDate, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: publishDate, label: "Publish Date", widget: date }
+      - { name: updateDate, label: "Update Date", widget: date }
+      - { name: description, label: "Meta Description", widget: text }
       - { name: body, label: Body, widget: markdown}
-      - name: bodyContent
-        label: "Body Content"
-        widget: list
-        fields: 
-          - { name: content, label: Content, widget: markdown }
-          - { name: embed, label: "Embed Content", widget: string }

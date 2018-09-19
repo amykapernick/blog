@@ -1,26 +1,75 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { kebabCase } from 'lodash'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
 
-export default function Template({data}) {
-    const { markdownRemark } = data // data.markdownRemark holds our post data
-    const { frontmatter } = markdownRemark
-    return (
-        <div className="blog-post-container">
-            <div className="blog-post">
-                <h1>{frontmatter.title}</h1>
-                <h2>{frontmatter.publishDate}</h2>
-            </div>
-        </div>
-    )
+export const BlogPostTemplate = ({
+  content,
+  contentComponent,
+  description,
+  tags,
+  title,
+  helmet,
+}) => {
+  const PostContent = contentComponent || Content
+
+  return (
+    <section className="section">
+      {helmet || ''}
+            <h1>{title}</h1>
+            <p>{description}</p>
+            <div>{content}</div>
+    </section>
+  )
 }
 
+BlogPostTemplate.propTypes = {
+  content: PropTypes.node.isRequired,
+  contentComponent: PropTypes.func,
+  description: PropTypes.string,
+  title: PropTypes.string,
+  helmet: PropTypes.instanceOf(Helmet),
+}
+
+const BlogPost = ({ data }) => {
+  const { markdownRemark: post } = data
+
+  return (
+    <Layout>
+      <BlogPostTemplate
+        content={post.html}
+        contentComponent={HTMLContent}
+        description={post.frontmatter.description}
+        helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+        tags={post.frontmatter.tags}
+        title={post.frontmatter.title}
+      />
+    </Layout>
+  )
+}
+
+BlogPost.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
+}
+
+export default BlogPost
+
 export const pageQuery = graphql`
-    query($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
-            frontmatter {
-                publishDate(formatString: "DD MMM YYYY")
-                title
-            }
-        }
+  query BlogPostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        publishDate(formatString: "DD MMMM YYYY")
+        updateDate(formatString: "DD MMMM YYYY")
+        title
+        description
+      }
     }
+  }
 `
