@@ -12,9 +12,9 @@ import HeaderImage from '../img/rottnest-lighthouse-2500.jpg'
 const Layout = ({children, meta}) => (
     <Fragment>
         <Meta {...meta} />
-        <header>{<Header />}</header>
-        <main>{children}</main>
-        <footer>{<Footer />}</footer>
+        <header className="main">{<Header />}</header>
+        <main className="main">{children}</main>
+        <footer className="main">{<Footer />}</footer>
     </Fragment>
 )
 

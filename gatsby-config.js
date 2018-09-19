@@ -23,6 +23,7 @@ module.exports = {
                 name: "markdown-pages",
             },
         },
+        `gatsby-plugin-twitter`,
         'gatsby-transformer-remark',
         'gatsby-plugin-netlify-cms'
     ],

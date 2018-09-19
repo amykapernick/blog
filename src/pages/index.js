@@ -5,7 +5,8 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 
-import '../scss/layouts/feed.scss'
+import '../scss/layouts/feed.scss';
+import '../scss/layouts/home.scss';
 import {Facebook, Twitter} from 'react-feather';
 import AmyKate from '../img/amykate.jpg';
 import AimHigher from '../img/aimhigher.png';
