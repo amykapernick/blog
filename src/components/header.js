@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Resources
-// import '../../scss/partials/header.scss';
+import '../scss/partials/header.scss';
 
 import HeaderImage from '../img/rottnest-lighthouse-2500.jpg';
 

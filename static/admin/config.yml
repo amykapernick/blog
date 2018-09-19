@@ -20,4 +20,5 @@ collections:
       - { name: publishDate, label: "Publish Date", widget: date }
       - { name: updateDate, label: "Update Date", widget: date }
       - { name: description, label: "Meta Description", widget: text }
+      - { name: tags, label: Tags, widget: list }
       - { name: body, label: Body, widget: markdown}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import '../../scss/partials/footer.scss';
+import '../scss/partials/footer.scss';
 
 //Resources
 import {Codepen, Github, Facebook, Twitter, Instagram, Globe} from 'react-feather';
