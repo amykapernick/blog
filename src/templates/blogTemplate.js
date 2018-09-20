@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+
 import Layout from '../components/layout'
+import {Tweet} from 'react-twitter-widgets';
 
 import '../scss/layouts/article.scss';
 import {Facebook, Twitter} from 'react-feather';
