@@ -11,7 +11,9 @@
 		"start": "npm run develop",
 		"develop": "gatsby develop",
 		"build": "gatsby build",
-		"serve": "gatsby serve"
+		"serve": "gatsby serve",
+		"testing": "npm run a11y",
+		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt"
 	},
 	"author": "AimHigher Web Design",
 	"license": "ISC",
@@ -37,5 +39,7 @@
 		"react-helmet": "^5.2.0",
 		"react-twitter-widgets": "^1.7.1"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"pre-commit": "^1.2.2"
+	}
 }
