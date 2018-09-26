@@ -14,12 +14,14 @@ ANd writing here
 
 
 ## Instagram
-https://www.instagram.com/p/Bn5f7RcFW1A/?utm_source=ig_web_copy_link
+
+https://www.instagram.com/p/BlhQaFtlvTq
+
+https://www.youtube.com/watch?v=b2H7fWhQcdE
 
 ## Codepen
 
 To keep track of what was going on throughout the day, they also set up a tweet wall near the registration desk. This gave everyone the chance to see what others were tweeting about and provide a little health competition to get on the leaderboard. Unsurprisingly Michelle was well out in front for the whole day (and even scheduled tweets during her talk so she didn't lose her place), but I managed to keep my place in second throughout the entire day. Even DDD Perth didn't manage to overtake us, but they did finish in third place (although with only half as many tweets as Michelle). It was a group effort but we even managed to get #dddperth trending in Perth by the end of the opening keynote and in Australia by the end of the day!
 
-<Tweet tweetId={1025558951172001793} options={{conversation: "hidden"}} />
 
 # [Towards a welcoming Web](https://t.co/BhWuXFzUC0) - [Karolina Szczur](https://thefox.is/)

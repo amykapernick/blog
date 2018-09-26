@@ -12,9 +12,11 @@
 		"develop": "gatsby develop",
 		"build": "gatsby build",
 		"serve": "gatsby serve",
-		"testing": "npm run a11y",
+		"tests": "npm run a11y",
 		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt"
 	},
+	"pre-commit": [
+	],
 	"author": "AimHigher Web Design",
 	"license": "ISC",
 	"bugs": {

@@ -24,7 +24,14 @@ module.exports = {
             },
         },
         `gatsby-plugin-twitter`,
-        'gatsby-transformer-remark',
+        {
+            resolve: 'gatsby-transformer-remark',
+            plugins: [
+                {
+                    resolve: `gatsby-remark-oembed`
+                }
+            ]
+        },
         'gatsby-plugin-netlify-cms'
     ],
 }
