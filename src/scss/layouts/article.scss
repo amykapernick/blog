@@ -41,8 +41,15 @@
     }
 }
 
-.twitter-tweet {
+.twitter-tweet, iframe {
+    display: block;
     margin: 0 auto;
+    max-width: 800px;
+
+    &.instagram-media {
+        position: relative;
+            left: calc(50vw - 50%);
+    }    
 }
 
 figure {
