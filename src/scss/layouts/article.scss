@@ -6,7 +6,7 @@
     }
 
     img {
-        max-height: calc(100vh - $height_header);
+        max-height: calc(100vh - #{$height_header});
     }
 }
 
