@@ -10,7 +10,7 @@
 	"scripts": {
 		"start": "npm run develop",
 		"develop": "gatsby develop",
-		"build": "git submodule sync && gatsby build",
+		"build": "gatsby build",
 		"serve": "gatsby serve",
 		"tests": "npm run a11y",
 		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt",
