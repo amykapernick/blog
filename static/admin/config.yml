@@ -15,8 +15,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title }
-      - { name: publishDate, label: "Publish Date", widget: date }
-      - { name: updateDate, label: "Update Date", widget: date }
+      - { name: publishDate, label: "Publish Date", widget: date, format: "DD/MM/YYYY" }
+      - { name: updateDate, label: "Update Date", widget: date, format: "DD/MM/YYYY" }
       - { name: description, label: "Meta Description", widget: text }
       - { name: tags, label: Tags, widget: list }
       - { name: featuredImage, label: Featured Image, widget: image }
