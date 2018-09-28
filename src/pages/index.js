@@ -65,11 +65,9 @@ export default class IndexPage extends React.Component {
 
                         return (
                             <article id={post.id} key={post.id} className="feed-article">
-                                {/* {featureImage !== '' &&
-                                    <div className="image-feature">
-                                        <img alt="Article Featured Image" src={featureImage} />
-                                    </div>
-                                } */}
+                                <div className="image-feature">
+                                    {post.featuredImage}
+                                </div>
                                 <div className="author">
                                     <div className="image-profile">
                                         { author.url !== '' ?
@@ -133,7 +131,8 @@ export const pageQuery = graphql`
                     frontmatter {
                         title
                         publishDate(formatString: "DD MMM YYYY")
-                        tags
+                        tags,
+                        featuredImage
                     }
                 }
             }

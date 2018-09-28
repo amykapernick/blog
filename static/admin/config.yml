@@ -4,7 +4,7 @@ backend:
   branch: netlify-gatsby
 
 media_folder: static/img
-public_folder: /img
+public_folder: public/img
 
 collections:
   - name: blog
