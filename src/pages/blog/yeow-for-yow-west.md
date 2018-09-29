@@ -1,7 +1,7 @@
 ---
 title: YEOW! for YOW West
-publishDate: 09/05/2017
-updateDate: 09/05/2017
+publishDate: 2017-05-09
+updateDate: 2017-05-09
 description: >-
   Recap of my experiences at the YOW! West Conference in Perth in 2017 and some
   of the speakers I heard.

@@ -1,7 +1,7 @@
 ---
 title: Online Dating and Rental Houses
-publishDate: 25/02/2017
-updateDate: 25/02/2017
+publishDate: 2017-02-25
+updateDate: 2017-02-25
 description: >-
   Both online dating and rental houses are fraught with frustration and
   disappointment, and it's even worse when you're going through both at the same

@@ -63,10 +63,12 @@ export default class IndexPage extends React.Component {
                             author = profiles['amykate']
                         }
 
+                        console.log(post.frontmatter.featuredImage);
+
                         return (
                             <article id={post.id} key={post.id} className="feed-article">
                                 <div className="image-feature">
-                                    {post.featuredImage}
+                                    <img src={post.frontmatter.featuredImage} />
                                 </div>
                                 <div className="author">
                                     <div className="image-profile">
@@ -85,7 +87,7 @@ export default class IndexPage extends React.Component {
                                             {post.frontmatter.title}
                                         </Link>
                                     </h2>
-                                    <h6 className="date"><time dateTime={post.frontmatter.publishDate}>{post.frontmatter.publishDate}</time></h6>
+                                    <h6 className="date">{post.frontmatter.publishDate}</h6>
                                 </header>
                                 <div className="excerpt">{post.excerpt}</div>
                                 <div className="share-icons">

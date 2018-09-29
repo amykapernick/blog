@@ -1,7 +1,7 @@
 ---
 title: 'Developers, Developers, Developers'
-publishDate: 19/09/2017
-updateDate: 19/09/2017
+publishDate: 2017-09-19
+updateDate: 2017-09-19
 description: Recap of the 2017 DDD Perth Conference and the speakers I saw
 tags:
   - The Freelance Guide

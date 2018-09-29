@@ -1,7 +1,7 @@
 ---
 title: All the Balls in the Air
-publishDate: 2017-04-02T16:00:00.000Z
-updateDate: 2017-04-02T16:00:00.000Z
+publishDate: 2017-04-02
+updateDate: 2017-04-02
 description: >-
   Discussion of the tools that I use to keep track of everything, both task
   management and calendars

@@ -1,7 +1,7 @@
 ---
 title: 2017 - A Retrospective
-publishDate: 06/01/2018
-updateDate: 06/01/2018
+publishDate: 2018-01-06
+updateDate: 2018-01-06
 description: >-
   What a year it's been! I look back on what's happened to me in the last 12
   months, what I've done, what changes I've experienced and how I feel coming

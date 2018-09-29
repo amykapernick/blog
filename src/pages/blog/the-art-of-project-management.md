@@ -1,7 +1,7 @@
 ---
 title: The Art of Project Management
-publishDate: 29/10/2017
-updateDate: 29/10/2017
+publishDate: 2017-10-29
+updateDate: 2017-10-29
 description: 'Analysis of various project management tools, and their pros and cons'
 tags:
   - Amy Goes to Perth

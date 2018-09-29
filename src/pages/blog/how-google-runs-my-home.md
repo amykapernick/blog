@@ -1,7 +1,7 @@
 ---
 title: How Google runs my Home
-publishDate: 26/07/2018
-updateDate: 26/07/2018
+publishDate: 2018-07-26
+updateDate: 2018-07-26
 description: >-
   I have an insanely busy life, and my Google Home(s) help to take care of the
   things that I shouldn't really have to worry about (or really don't want to

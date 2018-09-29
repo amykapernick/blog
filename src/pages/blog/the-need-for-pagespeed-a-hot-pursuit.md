@@ -1,7 +1,7 @@
 ---
 title: 'The Need for PageSpeed: A Hot Pursuit'
-publishDate: 01/11/2017
-updateDate: 01/11/2017
+publishDate: 2017-11-01
+updateDate: 2017-11-01
 description: >-
   What does Google Pagespeed actually mean? And what do you need to do about
   your score? Is it all just a scam? Probably

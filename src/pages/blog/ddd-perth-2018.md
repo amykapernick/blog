@@ -1,7 +1,7 @@
 ---
 title: DDD Perth 2018
-publishDate: 05/09/2018
-updateDate: 05/09/2018
+publishDate: 2018-09-05
+updateDate: 2018-09-05
 description: A recap of DDD Perth 2018 and the talks that I saw there
 tags:
   - Amy Goes to Perth
@@ -9,7 +9,7 @@ tags:
   - Conference
   - DDD Perth
   - DDD
-featuredImage: /public/img/6a7d302a7bc8c7dcd97ce01d3b774135fe2c4f5d_mvimg_20180804_174958.jpg
+featuredImage: /6a7d302a7bc8c7dcd97ce01d3b774135fe2c4f5d_mvimg_20180804_174958.jpg
 ---
 This weekend I got the chance to go to my second DDD conference in Perth, and experience a little of the behind-the-scenes action working on one of the sponsor booths. Having [been to my first DDD last year](https://amygoestoperth.com.au/developers-developers-developers), they'd set the bar pretty high and still managed to not only do better, but smash it out of the park. The team outdid themselves again with more than 50% more attendees than last year (where they'd doubled the year before) and put together an even bigger line-up of talent after receiving over 200 proposal submissions (pretty sure that's an international record 🎉).
 

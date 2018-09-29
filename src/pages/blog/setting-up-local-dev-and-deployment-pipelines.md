@@ -1,7 +1,7 @@
 ---
 title: Setting up Local Dev and Deployment Pipelines
-publishDate: 04/09/2017
-updateDate: 04/09/2017
+publishDate: 2017-09-04
+updateDate: 2017-09-04
 description: >-
   How-to article on setting up a local development environment and continuous
   deployment pipeline for a Wordpress website (using free tools of course)

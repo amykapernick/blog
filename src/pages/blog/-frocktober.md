@@ -1,12 +1,12 @@
 ---
 title: '#Frocktober'
-publishDate: 25/10/2017
-updateDate: 25/10/2017
+publishDate: 2017-10-25
+updateDate: 2017-10-25
 description: Summary of my experience participating in Frocktober in 2017
 tags:
   - Amy Goes to Perth
 featuredImage: >-
-  /public/img/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.png
+  /img/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.png
 ---
 So for anyone who knows me, or who follows me on Instagram, I’ve been wearing a lot of dresses lately (and oversharing about it).
 

@@ -1,7 +1,7 @@
 ---
 title: The Comedy of Errors
-publishDate: 19/04/2018
-updateDate: 19/04/2018
+publishDate: 2018-04-19
+updateDate: 2018-04-19
 description: >-
   My experience dealing with Microsoft support, as a Shakespearean comedy
   (because not everyone died)

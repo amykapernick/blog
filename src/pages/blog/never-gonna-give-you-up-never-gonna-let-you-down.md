@@ -1,7 +1,7 @@
 ---
 title: 'Never gonna give you up, never gonna let you down'
-publishDate: 2017-07-18T16:00:00.000Z
-updateDate: 2017-07-18T16:00:00.000Z
+publishDate: 2017-07-18
+updateDate: 2017-07-18
 description: >-
   Sometimes life gets really tough, and sometimes it feels like everything is
   happening to you all at once, so what happens when you don't like to let

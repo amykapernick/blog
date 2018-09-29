@@ -1,7 +1,7 @@
 ---
 title: Farewell to CSSConf Au
-publishDate: 16/04/2018
-updateDate: 16/04/2018
+publishDate: 2018-04-16
+updateDate: 2018-04-16
 description: Recap of my time at the final CSSConf Au in Melbourne in 2018
 tags:
   - Amy Goes to Perth

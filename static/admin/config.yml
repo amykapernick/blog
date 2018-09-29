@@ -3,8 +3,8 @@ backend:
   repo: amykapernick/amygoestoperth
   branch: netlify-gatsby
 
-media_folder: static/img
-public_folder: public/img
+media_folder: img
+public_folder: img
 
 collections:
   - name: blog

@@ -1,7 +1,7 @@
 ---
 title: A Cultural Agenda
-publishDate: 28/08/2017
-updateDate: 28/08/2017
+publishDate: 2017-08-28
+updateDate: 2017-08-28
 description: >-
   Recap of all the shows I saw in 2017 when I decided to go for it and buy a
   heap of tickets to shows rather than saying I was going to and not getting

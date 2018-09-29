@@ -1,7 +1,7 @@
 ---
 title: This is your first post
-publishDate: 22/02/2017
-updateDate: 22/02/2017
+publishDate: 2017-02-22
+updateDate: 2017-02-22
 description: 'This is my first blog post, talking about starting blogging again'
 tags:
   - Amy Goes to Perth
