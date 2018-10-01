@@ -30,7 +30,15 @@ module.exports = {
               plugins: [
                 {
                   resolve: `gatsby-remark-oembed`
-                }
+                },
+                {
+                    resolve: `gatsby-remark-images`,
+                    options: {
+                        showCaptions: true,
+                        maxWidth: 1000,
+                        widthWebp: true,
+                    },
+                },
               ]
             }
         },

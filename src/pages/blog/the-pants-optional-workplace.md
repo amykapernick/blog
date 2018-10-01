@@ -14,7 +14,7 @@ tags:
   - WFH
   - ''
 featuredImage: >-
-  /public/img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg
+  /img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg
 ---
 That’s the dream isn’t it? To be able to work from home, with no pants on.
 
@@ -22,7 +22,7 @@ But is it really all it’s cracked up to be? The last couple of weeks, I’ve s
 
 A couple of weeks ago, I switched to being a full-time freelancer, working from home. And while I’m not sitting at home all day without pants on (my seat is itchy 😂), there are a lot of things to adjust to.
 
-![null](/public/img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg)
+![null](/img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg)
 
 ## People
 

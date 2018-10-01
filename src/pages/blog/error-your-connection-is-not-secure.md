@@ -13,11 +13,11 @@ tags:
   - SSL
   - HTTPS
 featuredImage: >-
-  /public/img/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg
+  /img/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg
 ---
 These days, there are more and places offering their website through encrypted protocols, or HTTPS. But what does this actually mean for you? Is this something you should be worried about? And should you be concerned if a site isn’t encrypted?
 
-![null](/public/img/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg)
+![null](/img/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg)
 
 As the interwebs ventures further and further into every aspect of our lives, there is more and more of our information available out there. Would you trust a bank that had questionable security measures? Probably not. And the same goes for the information we share/save online, we want to know that whoever we give the information to has been verified and is taking steps to look after it (and isn’t just a Nigerian price come to give us a long-lost inheritance).
 
@@ -29,7 +29,7 @@ For most of the time we spend on the internet, it doesn’t matter too much whet
 
 These errors will appear in your browser for many different reasons. It may be that the site is trying to send you to a HTTPS version, but it doesn’t have an SSL certificate; it may be that the site is actually dodgy and trying to steal your information, or it may be that the SSL certificate it’s using doesn’t match the website (hint: only two of these are causes for concern).
 
-![null](/public/img/cc0ab9008e70377eb12141bf4932d94143549e25_1_xzl9uroyybht4vugxawztq.png)
+![null](/img/cc0ab9008e70377eb12141bf4932d94143549e25_1_xzl9uroyybht4vugxawztq.png)
 
 SSL certificates are something that needs to be renewed on a regular basis, similar to your car registration. And how often have you been a little late in renewing your rego? If you’ve used a site before that’s HTTPS and all of a sudden you’re seeing a Privacy Error, chances are the owner of the site has forgotten to renew the certificate. I’d definitely be cautious about giving the site information while it’s showing this error (as the SSL certificate isn’t active, the information isn’t being encrypted), but if you can, contact the site owner and let them know that they have an error.
 
@@ -45,7 +45,7 @@ As I said previously, HTTPS sites having only traditionally been seen when reque
 
 For the last few years, Google has started taking security into account as part of their SEO algorithm. This means that it will place a higher preference on sites that have been verified and are secure. But unless something looks dodgy or someone has tried to cheat the system, they leave normal HTTP sites alone.
 
-![null](/public/img/e9c8f30fc39e0f059f07870f1fbd7667e176ffff_1_xqzegzysdog4pe4c1c5osw.png)
+![null](/img/e9c8f30fc39e0f059f07870f1fbd7667e176ffff_1_xqzegzysdog4pe4c1c5osw.png)
 
 If your site is secure, you’ll see the familiar green lock in the address bar confirming that everything is ok; for regular HTTP sites there will be nothing at all (or possibly just an information symbol) and for insecure sites, a bright red warning. If the site doesn’t have HTTPS, it will also show a non-obtrusive warning if you’re entering information (such as through a contact form, newsletter sign-up or search box). Coming later this year (with Chrome version 62), it will now regard all non-HTTPS sites as ‘not secure’, even if there is no information being collected. This will still be the non-obtrusive warning (rather than the bright red warning) but will start to affect those sites that haven’t moved over to HTTPS.
 
