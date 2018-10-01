@@ -113,7 +113,7 @@ class Content extends Component {
 
       let featureImage = item.data.featured_image.url;
       let profileImage, profileUrl;
-      let tags = item.tags;
+      let tags = item.tags || [];
 
       if (tags.indexOf(profiles.AimHigher.id) > -1) {
         profileImage = profiles.AimHigher.image;

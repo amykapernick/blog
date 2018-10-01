@@ -41,7 +41,7 @@ export const BlogPostTemplate = ({content, title, slug, tags, publishDate, updat
         author;
 
     Object.entries(profiles).forEach(([key, value]) => {
-        if(tags.indexOf(profiles[`${key}`]['id']) > -1) {
+        if((tags || []).indexOf(profiles[`${key}`]['id']) > -1) {
             author = profiles[`${key}`];
         }
     });

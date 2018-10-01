@@ -54,7 +54,8 @@ export default class IndexPage extends React.Component {
                             author;
 
                         Object.entries(profiles).forEach(([key, value]) => {
-                            if(post.frontmatter.tags.indexOf(profiles[`${key}`]['id']) > -1) {
+                            const tags = post.frontmatter.tags || [];
+                            if(tags.indexOf(profiles[`${key}`]['id']) > -1) {
                                 author = profiles[`${key}`];
                             }
                         });

@@ -28,9 +28,6 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
               plugins: [
-                {
-                  resolve: `gatsby-remark-oembed`
-                }
               ]
             }
         },
