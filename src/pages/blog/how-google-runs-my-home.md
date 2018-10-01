@@ -18,7 +18,7 @@ In the past year, it's no longer unusual to see a virtual assistant in someone's
 
 In my house I have a Google Home in my office and 3 Google Home Minis in the living room, kitchen and bedroom. To complete the set I also have a Chromecast connected to my TV and a Chromecast Audio connected to a set of speakers in the living room and kitchen.
 
-!['Basic handrawn floormap of my house and which rooms the various Google devices are in'](/img/b7645c680859f1f83d1a4100ad0ee859683e0465_untitled.png 'My Google Home')
+!['Basic handrawn floormap of my house and which rooms the various Google devices are in'](/img/b7645c680859f1f83d1a4100ad0ee859683e0465_untitled.jpg 'My Google Home')
 
 ## Lounge
 

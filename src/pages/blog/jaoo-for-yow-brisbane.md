@@ -192,7 +192,7 @@ These days everything is happening so fast and changing so quickly, most of us d
 
 When we get comfortable in our job and our team, we often don’t extend ourselves and rely too much on the people around us. It’s in situations like this that we end up with lots of “people knowledge”, and although it’s great to know that you’re the expert in a particular area, that also means that the team is dependent on you being there. I’ve been in this situation before and had a co-worker point out that although I can’t get fired, I also can’t get promoted.
 
-![null](/img/a95c26058c6fcfbcbb747b0bffe58f14670c203c_1_uz7a6xya5ampyvlowblzka.jpeg)
+![null](/img/a95c26058c6fcfbcbb747b0bffe58f14670c203c_1_uz7a6xya5ampyvlowblzka.jpg)
 
 I’ve changed teams (and companies) quite a bit in the past few years, and have found that it’s a great way to learn new and different things in the industry. It’s because of this ever changing environment that I’ve learnt so many new things and expanded my skillset (and continue to do so). If I ever find myself working in a team again, I’m definitely going to suggest some of Heidi’s strategies.
 

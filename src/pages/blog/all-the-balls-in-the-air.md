@@ -24,11 +24,11 @@ If you don’t already have a calendar, there is probably one available with you
 
 While Outlook has excellent calendar functionality if your calendar is hosted with Microsoft, it doesn’t tend to play nice with Google so if that’s where your calendar is hosted that probably isn’t the best option for you to use. Those of you who are running Windows 10, I’ve found that the preinstalled Calendar app actually does a pretty good job of both Microsoft and Google calendars (yet Outlook won’t play nice, go figure) so that’s my go to when I’m on my computer. For those of you who use a Mac, the preinstalled app also works pretty well so I’d recommend giving that a go (that’s what I use at work).
 
-![](/img/b31376923a7a6b43a1b455fbb6375c8a2ea4dfd1_0_rd_sr3ymk1grnwk7.png)
+![](/img/b31376923a7a6b43a1b455fbb6375c8a2ea4dfd1_0_rd_sr3ymk1grnwk7.jpg)
 
 While managing my calendar on the computer is useful (plus it’s useful to have the bigger screen) I like being able to access it on my phone as well, as that means I pretty much always have it with me. For this I’ve tried a bunch of different apps (and depending on your requirements most of them would probably work for you) but eventually I settled on [Business Calendar](http://www.businesscalendar.de/). I found that it worked well with both my Microsoft and Google calendars, and also had a pretty useful widget which allowed me to view my calendar on the home screen of my phone rather than having to open the app. I’ve always preferred week view (it’s easy to read and provides a pretty good snapshot of what you’ve got coming up) but most programs will usually include a fair few options (week, day, agenda, month, etc).
 
-![](/img/bdde9e43c71f4426fc7c995461a51dfbc3790889_0_beypqutcoja30qxz.png)
+![](/img/bdde9e43c71f4426fc7c995461a51dfbc3790889_0_beypqutcoja30qxz.jpg)
 
 ![](/img/35ae836c02cec6ea5f6b4efe854b5d83f4646bc0_0_ydgsuhfjmwewti7l.png)
 
@@ -53,7 +53,7 @@ I used to keep my list in physical form, written in a notebook (it matched my di
 
 I tried a few different products, including [Wunderlist ](https://www.wunderlist.com/)but ended up settling on [ToDoist](https://todoist.com/). While there are a lot of different products out there, these are two of the big ones and have apps for pretty much every device out there (including Windows phones). Again, the right app for you depends on what functionality you’re after (plus I really liked the way ToDoist looked, it was nice and clean).
 
-![](/img/37e0b6a84fde4f59cdcae3b07f0f1d766c1ee439_0_szhkyuvq_ssg9f_c.png)
+![](/img/37e0b6a84fde4f59cdcae3b07f0f1d766c1ee439_0_szhkyuvq_ssg9f_c.jpg)
 
 So apart from the basics of a to-do list app, you can create separate projects (and sub-projects) which allow you to split up the different areas of your life just like you can with your calendars. And you can keep using the colours you’ve assigned to your calendars for your colour coordinating.
 
