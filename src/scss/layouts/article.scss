@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .article-content {
     text-align: center;
 
@@ -6,7 +8,7 @@
     }
 
     img {
-        max-height: calc(100vh - $height_header);
+        max-height: calc(100vh - #{$height_header});
     }
 }
 
@@ -41,8 +43,15 @@
     }
 }
 
-.twitter-tweet {
+.twitter-tweet, iframe {
+    display: block;
     margin: 0 auto;
+    max-width: 800px;
+
+    &.instagram-media {
+        position: relative;
+            left: calc(50vw - 50%);
+    }    
 }
 
 figure {
