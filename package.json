@@ -14,7 +14,8 @@
 		"serve": "gatsby serve",
 		"tests": "npm run a11y",
 		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt",
-		"clean": "rm -rf .cache/ public/"
+		"clean": "rm -rf .cache/ public/",
+		"manual": "npm run build && netlify deploy --dir public --prod"
 	},
 	"pre-commit": [],
 	"author": "AimHigher Web Design",
