@@ -11,7 +11,7 @@ tags:
   - DDD
   - ''
 featuredImage: >-
-  /public/img/886f8d3d3c4374c7dd879c37534da0f8dda98fb1_1_tiqjw5xkdnuloupmgjtroa.jpg
+  /img/886f8d3d3c4374c7dd879c37534da0f8dda98fb1_1_tiqjw5xkdnuloupmgjtroa.jpg
 ---
 Over the weekend I got to attend the [DDD conference](http://dddperth.com/) in Perth for the first time. Despite the small price tag and the fact that I had to get up early on a Saturday, not only did it not disappoint but I was blown away by the number of supporters, the calibre of the speakers and the overall experience. I’ve never really lost my excitement for the web (and even when it gets hard there are still cat gifs 😁), but conferences seem to reignite the spark I have for web and give me another rush of excitement for the industry I work in.
 
@@ -42,7 +42,7 @@ Breaking any rules on swearing very early on, Patima strutted across the stage a
 ## The Campsite Rule: Leaving the Tech Industry better than we found it — [Kris Howard](http://www.krishoward.org/)
 I’ve seen Kris speak before and she never fails to disappoint. Teasing us with pictures of her recent holiday, she talked about the state of the web today, whether it be bad code, bad people, hacks or the politics (don’t worry, I’m not getting into that now). Sometimes it’s hard to keep going when you see everything going on in the world at the moment and for us it’s even harder because we can’t really take time away from the internet (it’s how we make a living). When all you see across the internet is hatred, discrimination, fear and just plain stupidity it’s hard not to just go and live in the bush somewhere remote or at the very least turn off the modem, curl up into the foetal position and cry. Taking advantage of her place at the end of the day, Kris tied all the talks together with a resounding point in the words of Robert Baden Powell, let’s leave this all a little bit better than how we found it.
 
-![](/public/img/886f8d3d3c4374c7dd879c37534da0f8dda98fb1_1_tiqjw5xkdnuloupmgjtroa.jpg)
+![](/img/886f8d3d3c4374c7dd879c37534da0f8dda98fb1_1_tiqjw5xkdnuloupmgjtroa.jpg)
 
 A slide from the locknote by Kris Howard with the quote "Leave this world a little better than your found it." from Robert Baden-Powell
 While we all loved the picturesque photos from some of the amazing national parks in the US, the main point being made was that of Mentorship. Whether that means being a mentor or simply having one of your own, this is a very important part of the community and industry and something we need to keep doing.

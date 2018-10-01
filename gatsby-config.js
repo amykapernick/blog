@@ -28,6 +28,14 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
               plugins: [
+                {
+                    resolve: `gatsby-remark-images`,
+                    options: {
+                        showCaptions: true,
+                        maxWidth: 1000,
+                        widthWebp: true,
+                    },
+                },
               ]
             }
         },

@@ -10,7 +10,7 @@ tags:
   - Continuous Deployment
   - Process
 featuredImage: >-
-  /public/img/2e2caf5740aabb6fe6334d2aef4cab7acd28b408_rawpixel-com-579231-unsplash.jpg
+  /img/2e2caf5740aabb6fe6334d2aef4cab7acd28b408_rawpixel-com-579231-unsplash.jpg
 ---
 Since I discovered git, everything I do gets recorded on GitHub (it’s one of the most amazing things I’ve learnt in web). I’ve also started using XAMPP so that I can develop on my local machine. But while copying files from my local development onto my server I thought surely there must be an easier way to do this. Unfortunately there didn’t seem to be a lot of information about simply setting this up with FTP so I’m documenting it to make it easier for the next person.
 
