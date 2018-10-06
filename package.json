@@ -15,7 +15,8 @@
 		"tests": "npm run a11y",
 		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt",
 		"clean": "rm -rf .cache/ public/",
-		"manual": "npm run build && netlify deploy --dir public --prod"
+		"manual": "npm run build && netlify deploy --dir public --prod",
+		"dev": "npm run build && netlify deploy --dir public"
 	},
 	"pre-commit": [],
 	"author": "AimHigher Web Design",
@@ -27,7 +28,7 @@
 	"dependencies": {
 		"axios": "^0.18.0",
 		"bluebird": "^3.5.2",
-		"gatsby": "^2.0.14",
+		"gatsby": "2.0.17",
 		"gatsby-image": "^2.0.12",
 		"gatsby-plugin-netlify-cms": "next",
 		"gatsby-plugin-react-helmet": "^3.0.0-rc.1",
