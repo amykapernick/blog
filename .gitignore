@@ -12,6 +12,7 @@
 .netlify
 /public
 /src/resources/*.css
+/static/img/*
 
 # misc
 .DS_Store
