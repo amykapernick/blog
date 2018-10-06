@@ -8,7 +8,7 @@
 		"url": "git+https://github.com/amykapernick/amygoestoperth.git"
 	},
 	"scripts": {
-		"start": "npm run develop",
+		"start": "cp src/blog/img/* static/img/ && npm run develop",
 		"develop": "gatsby develop",
 		"build": "npm run updatePosts && npm run blogImages && gatsby build",
 		"serve": "gatsby serve",
@@ -16,7 +16,7 @@
 		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt",
 		"clean": "rm -rf .cache/ public/",
 		"blogImages": "ls && mv src/blog/img static/",
-		"updatePosts": "git submodule update"
+		"updatePosts": "cd src/blog && git pull"
 	},
 	"pre-commit": [],
 	"author": "AimHigher Web Design",
