@@ -8,7 +8,7 @@ public_folder: img
 collections:
   - name: blog
     label: Blog
-    folder: src/blog/posts
+    folder: posts
     create: true
     editor:
       preview: false
