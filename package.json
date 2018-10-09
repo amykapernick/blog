@@ -10,13 +10,13 @@
 	"scripts": {
 		"start": "cp src/blog/img/* static/img/ && npm run develop",
 		"develop": "gatsby develop",
-		"build": "npm run blogImages && gatsby build",
+		"build": "npm run updatePosts && npm run blogImages && gatsby build",
 		"serve": "gatsby serve",
 		"tests": "npm run a11y",
 		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt",
 		"clean": "rm -rf .cache/ public/",
 		"blogImages": "ls && mv src/blog/img static/",
-		"updatePosts": "cd src/blog && git pull"
+		"updatePosts": "git submodule update --remote"
 	},
 	"pre-commit": [],
 	"author": "AimHigher Web Design",
