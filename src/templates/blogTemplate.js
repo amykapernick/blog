@@ -67,7 +67,7 @@ export const BlogPostTemplate = ({content, title, slug, tags, publishDate, updat
     );
 
     return (
-        <article className="article content">
+        <article className="article-content article content">
             <header>
                 <h1>{title}</h1>
                 <div className="article-intro">
