@@ -25,6 +25,13 @@ module.exports = {
         },
         `gatsby-plugin-twitter`,
         {
+            resolve: `gatsby-plugin-google-tagmanager`,
+            options: {
+              id: "GTM-MDKC4WR",
+              includeInDevelopment: true,
+            },
+        },
+        {
             resolve: `gatsby-transformer-remark`,
             options: {
               plugins: [
