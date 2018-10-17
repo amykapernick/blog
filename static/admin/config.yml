@@ -17,6 +17,7 @@ collections:
       - { name: publishDate, label: "Publish Date", widget: date, format: "YYYY-MM-DD" }
       - { name: updateDate, label: "Update Date", widget: date, format: "YYYY-MM-DD" }
       - { name: description, label: "Meta Description", widget: text }
+      - { name: mainBlog, label: "Main Blog", widget: select, default: "Amy Goes To Perth", options: ["Amy Goes To Perth", "AimHigher", "The Freelance Guide"] }
       - { name: tags, label: Tags, widget: list }
       - { name: featuredImage, label: Featured Image, widget: image }
       - { name: body, label: Body, widget: markdown}
