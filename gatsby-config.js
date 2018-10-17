@@ -10,7 +10,7 @@ module.exports = {
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-              path: `${__dirname}/src/img`,
+              path: `${__dirname}/src`,
               name: 'images',
             },
         },
@@ -32,20 +32,26 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-remark-images`,
+            options: {
+                showCaptions: true,
+                maxWidth: 1000,
+                widthWebp: true,
+            },
+        },
+        {
             resolve: `gatsby-transformer-remark`,
             options: {
               plugins: [
                 {
-                  resolve: `gatsby-remark-oembed`
+                  resolve: `gatsby-remark-oembed`,
                 },
                 {
-                    resolve: `gatsby-remark-images`,
+                    resolve: 'gatsby-remark-copy-linked-files',
                     options: {
-                        showCaptions: true,
-                        maxWidth: 1000,
-                        widthWebp: true,
-                    },
-                },
+                      destinationDir: 'blog',
+                    }
+                }
               ]
             }
         },

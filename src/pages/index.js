@@ -13,11 +13,11 @@ import AimHigher from '../img/aimhigher.png';
 import Freelance from '../img/freelancers.png';
 
 const profiles = {
-    'amykate': {
+    'Amy Goes To Perth': {
       'title': 'Amy Goes to Perth',
       'id': 'amykate',
       'image': AmyKate,
-      'url': ''
+      'url': 'https://amygoestoperth.com.au/'
     },
     'AimHigher': {
       'title': 'AimHigher Web Design',
@@ -25,7 +25,7 @@ const profiles = {
       'image': AimHigher,
       'url': 'https://aimhigherwebdesign.com.au/'
     },
-    'Freelance': {
+    'The Freelance Guide': {
       'title': "Freelancer's Guide",
       'id': 'freelance',
       'image': Freelance,
@@ -48,27 +48,15 @@ export default class IndexPage extends React.Component {
             <Layout meta={meta}>
                 <div className="article-feed">
                     {posts.map(({node: post}) => {
-                        let articleLink = meta.slug + post.fields.slug,
+                        let author = profiles[post.frontmatter.mainBlog],
+                            articleLink = author.url + post.fields.slug,
                             facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink,
-                            twitterLink = 'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' + articleLink,
-                            author;
-
-                        Object.entries(profiles).forEach(([key, value]) => {
-                            if(post.frontmatter.tags.indexOf(profiles[`${key}`]['id']) > -1) {
-                                author = profiles[`${key}`];
-                            }
-                        });
-
-                        if(!author) {
-                            author = profiles['amykate']
-                        }
-
-                        console.log(post.frontmatter.featuredImage);
+                            twitterLink = 'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' + articleLink;
 
                         return (
                             <article id={post.id} key={post.id} className="feed-article">
                                 <div className="image-feature">
-                                    <img src={post.frontmatter.featuredImage} />
+                                    {/* <img src={post.frontmatter.featuredImage} /> */}
                                 </div>
                                 <div className="author">
                                     <div className="image-profile">
@@ -132,9 +120,17 @@ export const pageQuery = graphql`
                     }
                     frontmatter {
                         title
-                        publishDate(formatString: "DD MMM YYYY")
-                        tags,
-                        featuredImage
+                        publishDate(formatString: "DD MMM YYYY"),
+                        mainBlog
+                        tags
+                        featuredImage {
+                            publicURL
+                            childImageSharp {
+                                sizes(maxWidth: 300) {
+                                    srcSet
+                                }
+                            }
+                        }
                     }
                 }
             }
