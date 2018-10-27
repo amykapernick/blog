@@ -3,59 +3,64 @@ import React from 'react';
 import '../scss/partials/footer.scss';
 
 //Resources
-import {Codepen, Github, Facebook, Twitter, Instagram, Globe} from 'react-feather';
-
+import { Codepen, GitHub, Facebook, Twitter, Instagram, Globe } from 'react-feather';
 
 const menuItems = [
     {
         'name': 'codepen',
-        'icon': <Codepen />,
+        'icon': () => <Codepen />,
         'url': 'https://codepen.io/aimhigherwebdesign-amy/',
     },
     {
         'name': 'github',
-        'icon': <Github />,
+        'icon': () => <GitHub />,
         'url': 'https://github.com/amykapernick/amygoestoperth',
     },
     {
         'name': 'facebook',
-        'icon': <Facebook />,
+        'icon': () => <Facebook />,
         'url': 'https://www.facebook.com/aimhigherwebdesign',
     },
     {
         'name': 'twitter',
-        'icon': <Twitter />,
+        'icon': () => <Twitter />,
         'url': 'https://twitter.com/amys_kapers',
     },
     {
         'name': 'instagram',
-        'icon': <Instagram />,
+        'icon': () => <Instagram />,
         'url': 'https://www.instagram.com/amys_kapers/',
     },
     {
         'name': 'website',
-        'icon': <Globe />,
+        'icon': () => <Globe />,
         'url': 'https://aimhigherwebdesign.com.au',
     },
 ];
 
-const Footer = () => (
-    <FooterMenu />
-)
-
-const FooterMenu = () => {
-    let navItems = menuItems.map((navItem) => {
-        return(
-            <a href={navItem.url} key={navItem.name} target="_blank" className={'social-link ' + navItem.name}>
-                {navItem.icon}
-            </a>
-        );
-    });
+const Footer = () => {
+    const renderNavItems = () => (
+        <>
+            {menuItems.map((navItem) => (
+                <a
+                    key={navItem.name}
+                    href={navItem.url}
+                    className={`social-link ${navItem.name}`}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    {navItem.icon()}
+                </a>
+            ))}
+        </>
+    );
 
     return (
-        <nav className="social">
-            {navItems}
-        </nav>
+        <footer className="main">
+            <nav className="social">
+                {renderNavItems()}
+            </nav>
+        </footer>
     )
 }
 
