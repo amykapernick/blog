@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import Helmet from 'react-helmet'
 
 import Header from './header'
@@ -9,22 +9,18 @@ import '../scss/global.scss'
 
 import HeaderImage from '../img/rottnest-lighthouse-2500.jpg'
 
-const Layout = ({children, meta}) => (
-    <Fragment>
+const Layout = ({ children, meta }) => (
+    <>
         <Meta {...meta} />
-        <header className="main">{<Header />}</header>
+        <Header />
         <main className="main">{children}</main>
-        <footer className="main">{<Footer />}</footer>
-    </Fragment>
+        <Footer />
+    </>
 )
 
-const Meta = ({name, description, slug, image}) => {
+const Meta = ({ name, description, slug, image = HeaderImage }) => {
     let siteUrl = 'https://amygoestoperth.com.au';
 
-    if (!image) {
-        image = HeaderImage;
-    }
- 
     return (
         <Helmet>
             <title>{name}</title>
@@ -33,7 +29,7 @@ const Meta = ({name, description, slug, image}) => {
 
             {/* Facebook */}
             <meta property="og:url" content={siteUrl + slug} />
-            
+
             <meta property="og:title" content={name} />
             <meta property="og:image" content={image} />
             <meta property="og:description" content={description} />
