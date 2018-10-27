@@ -5,32 +5,32 @@ import { Codepen, GitHub, Facebook, Twitter, Instagram, Globe } from 'react-feat
 const menuItems = [
     {
         'name': 'codepen',
-        'icon': <Codepen />,
+        'icon': () => <Codepen />,
         'url': 'https://codepen.io/aimhigherwebdesign-amy/',
     },
     {
         'name': 'github',
-        'icon': <GitHub />,
+        'icon': () => <GitHub />,
         'url': 'https://github.com/amykapernick/amygoestoperth',
     },
     {
         'name': 'facebook',
-        'icon': <Facebook />,
+        'icon': () => <Facebook />,
         'url': 'https://www.facebook.com/aimhigherwebdesign',
     },
     {
         'name': 'twitter',
-        'icon': <Twitter />,
+        'icon': () => <Twitter />,
         'url': 'https://twitter.com/amys_kapers',
     },
     {
         'name': 'instagram',
-        'icon': <Instagram />,
+        'icon': () => <Instagram />,
         'url': 'https://www.instagram.com/amys_kapers/',
     },
     {
         'name': 'website',
-        'icon': <Globe />,
+        'icon': () => <Globe />,
         'url': 'https://aimhigherwebdesign.com.au',
     },
 ];
@@ -48,7 +48,7 @@ const Footer = () => {
                             key={navItem.name}
                             target="_blank"
                             rel="noopener noreferrer">
-                            {navItem.icon}
+                            {navItem.icon()}
                         </LinkComponent>
                     );
                 })}

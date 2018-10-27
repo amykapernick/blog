@@ -1,14 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import {Tweet} from 'react-twitter-widgets';
 
 import '../scss/layouts/article.scss';
-import {Facebook, Twitter} from 'react-feather';
+import { Facebook, Twitter } from 'react-feather';
 import AmyKate from '../img/amykate.jpg';
 import AimHigher from '../img/aimhigher.png';
 import Freelance from '../img/freelancers.png';
@@ -34,33 +31,54 @@ const profiles = {
     },
 };
 
-export const BlogPostTemplate = ({content, title, slug, tags, publishDate, updateDate, siteUrl}) => {
+export const BlogPostTemplate = ({ content, title, slug, tags, publishDate, updateDate, siteUrl }) => {
     let articleLink = siteUrl + slug,
         facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink,
         twitterLink = 'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' + articleLink,
         author;
 
     Object.entries(profiles).forEach(([key, value]) => {
-        if(tags.indexOf(profiles[`${key}`]['id']) > -1) {
+        if (tags.indexOf(profiles[`${key}`]['id']) > -1) {
             author = profiles[`${key}`];
         }
     });
 
-    if(!author) {
+    if (!author) {
         author = profiles['amykate']
     }
 
     const intro = (
         <div className="share-icons">
-            <a href={facebookLink} target="_blank" className="facebook share-link">{<Facebook />}</a>
-            <a href={twitterLink} target="_blank" className="twitter share-link">{<Twitter />}</a>
+            <a
+                href={facebookLink}
+                className="facebook share-link"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                {<Facebook />}
+            </a>
+            <a
+                href={twitterLink}
+                className="twitter share-link"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                {<Twitter />}
+            </a>
             <div className="author">
-                { author.url !== '' ?
-                    <a href={author.url + slug} target="_blank" rel="nofollow" title={"Link to host blog, " + author.title}>
-                        <img alt="Profile Image" src={author.image} />
-                    </a>
-                :
-                    <img alt="Profile Image" src={author.image} />
+                {author.url !== '' ?
+                    (
+                        <a
+                            href={author.url + slug}
+                            target="_blank"
+                            rel="nofollow noreferrer noopener"
+                            title={"Link to host blog, " + author.title}
+                        >
+                            <img alt="" src={author.image} />
+                        </a>
+                    )
+                    :
+                    <img alt="" src={author.image} />
                 }
             </div>
         </div>
@@ -75,7 +93,7 @@ export const BlogPostTemplate = ({content, title, slug, tags, publishDate, updat
                     <h6 className="date"><time dateTime={updateDate}>{updateDate}</time></h6>
                 </div>
             </header>
-            <main dangerouslySetInnerHTML={{__html: content}}></main>
+            <main dangerouslySetInnerHTML={{ __html: content }}></main>
             <Link to="/" className="back end">Back to Article Feed</Link>
         </article>
     )
@@ -114,9 +132,9 @@ const BlogPost = ({ data }) => {
 }
 
 BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+    data: PropTypes.shape({
+        markdownRemark: PropTypes.object,
+    }),
 }
 
 export default BlogPost
