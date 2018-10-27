@@ -6,12 +6,15 @@ module.exports = {
     },
     plugins: [
         'gatsby-plugin-react-helmet',
+        {
+            resolve: `gatsby-plugin-emotion`,
+        },
         'gatsby-plugin-sass',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-              path: `${__dirname}/src/img`,
-              name: 'images',
+                path: `${__dirname}/src/img`,
+                name: 'images',
             },
         },
         'gatsby-plugin-sharp',
@@ -27,26 +30,26 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-tagmanager`,
             options: {
-              id: "GTM-MDKC4WR",
-              includeInDevelopment: true,
+                id: "GTM-MDKC4WR",
+                includeInDevelopment: true,
             },
         },
         {
             resolve: `gatsby-transformer-remark`,
             options: {
-              plugins: [
-                {
-                  resolve: `gatsby-remark-oembed`
-                },
-                {
-                    resolve: `gatsby-remark-images`,
-                    options: {
-                        showCaptions: true,
-                        maxWidth: 1000,
-                        widthWebp: true,
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-oembed`
                     },
-                },
-              ]
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            showCaptions: true,
+                            maxWidth: 1000,
+                            widthWebp: true,
+                        },
+                    },
+                ]
             }
         },
         'gatsby-plugin-netlify-cms'
