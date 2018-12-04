@@ -13,6 +13,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { name: templateKey, label: Template Key, widget: hidden, default: blog-post }
       - { name: title, label: Title }
       - { name: publishDate, label: "Publish Date", widget: date, format: "YYYY-MM-DD" }
       - { name: updateDate, label: "Update Date", widget: date, format: "YYYY-MM-DD" }
