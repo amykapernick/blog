@@ -56,7 +56,7 @@ export default class IndexPage extends React.Component {
                         return (
                             <article id={post.id} key={post.id} className="feed-article">
                                 <div className="image-feature">
-                                    {/* <img src={post.frontmatter.featuredImage} /> */}
+                                    <img src={post.frontmatter.featuredImage} />
                                 </div>
                                 <div className="author">
                                     <div className="image-profile">
