@@ -71,7 +71,7 @@ export default class IndexPage extends React.Component {
                                 </div>
                                 <header>
                                     <h2 className="article-title">
-                                        <Link id={post.id} to={`/${post.fields.slug}`}>
+                                        <Link id={post.id} to={`/${post.fields.slug.replace('/blog/posts', '')}`}>
                                             {post.frontmatter.title}
                                         </Link>
                                     </h2>
