@@ -32,14 +32,6 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-remark-images`,
-            options: {
-                showCaptions: true,
-                maxWidth: 1000,
-                widthWebp: true,
-            },
-        },
-        {
             resolve: `gatsby-transformer-remark`,
             options: {
               plugins: [
@@ -47,11 +39,16 @@ module.exports = {
                   resolve: `@raae/gatsby-remark-oembed`,
                 },
                 {
-                    resolve: 'gatsby-remark-copy-linked-files',
+                  resolve: `gatsby-remark-relative-images`,
+                },
+                {
+                    resolve: `gatsby-remark-images`,
                     options: {
-                      destinationDir: 'blog',
-                    }
-                }
+                        showCaptions: true,
+                        maxWidth: 1000,
+                        widthWebp: true,
+                    },
+                },
               ]
             }
         },

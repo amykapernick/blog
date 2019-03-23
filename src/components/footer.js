@@ -3,7 +3,7 @@ import React from 'react';
 import '../scss/partials/footer.scss';
 
 //Resources
-import {Codepen, Github, Facebook, Twitter, Instagram, Globe} from 'react-feather';
+import {Codepen, GitHub, Facebook, Twitter, Instagram, Globe} from 'react-feather';
 
 
 const menuItems = [
@@ -14,7 +14,7 @@ const menuItems = [
     },
     {
         'name': 'github',
-        'icon': <Github />,
+        'icon': <GitHub />,
         'url': 'https://github.com/amykapernick/amygoestoperth',
     },
     {

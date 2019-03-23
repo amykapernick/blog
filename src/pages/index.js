@@ -123,18 +123,18 @@ export const pageQuery = graphql`
                         publishDate(formatString: "DD MMM YYYY"),
                         mainBlog
                         tags
-                        featuredImage {
-                            publicURL
-                            childImageSharp {
-                                sizes(maxWidth: 300) {
-                                    srcSet
-                                }
-                            }
-                        }
+                        featuredImage
                     }
                 }
             }
         }
     }
   `
-  
+//   {
+//     publicURL
+//     childImageSharp {
+//         sizes(maxWidth: 300) {
+//             srcSet
+//         }
+//     }
+// }
