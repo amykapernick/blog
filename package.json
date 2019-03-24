@@ -1,60 +1,60 @@
 {
-	"name": "amy-goes-to-perth",
-	"version": "2.0.0",
-	"description": "Amy Goes to Perth blog",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/amykapernick/amygoestoperth.git"
-	},
-	"scripts": {
-		"start": "npm run blogs && npm run develop",
-		"develop": "gatsby develop",
-		"build": "npm run blogs && gatsby build",
-		"serve": "gatsby serve",
-		"tests": "npm run a11y",
-		"a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt",
-		"clean": "rm -rf .cache/ public/",
-		"blogImages": "cp src/blog/img/* static/img/blog/",
-		"updatePosts": "git submodule update --remote",
-		"blogs": "npm run updatePosts && npm run blogImages"
-	},
-	"pre-commit": [],
-	"author": "AimHigher Web Design",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/amykapernick/amygoestoperth/issues"
-	},
-	"homepage": "https://github.com/amykapernick/amygoestoperth#readme",
-	"dependencies": {
-		"@raae/gatsby-remark-oembed": "^0.0.5",
-		"axios": "^0.18.0",
-		"bluebird": "^3.5.2",
-		"gatsby": "^2.2.9",
-		"gatsby-image": "^2.0.15",
-		"gatsby-plugin-google-tagmanager": "^2.0.5",
-		"gatsby-plugin-netlify-cms": "^3.0.16",
-		"gatsby-plugin-react-helmet": "^3.0.0-rc.1",
-		"gatsby-plugin-sass": "^2.0.1",
-		"gatsby-plugin-sharp": "^2.0.30",
-		"gatsby-plugin-twitter": "^2.0.5",
-		"gatsby-remark-copy-linked-files": "^2.0.5",
-		"gatsby-remark-images": "^2.0.3",
-		"gatsby-remark-relative-images": "^0.2.2",
-		"gatsby-source-filesystem": "^1.5.39",
-		"gatsby-transformer-remark": "^1.7.44",
-		"gatsby-transformer-sharp": "^2.1.17",
-		"netlify-cms": "^2.1.1",
-		"node-sass": "^4.9.3",
-		"react": "^16.4.2",
-		"react-dom": "^16.4.2",
-		"react-feather": "^1.1.3",
-		"react-helmet": "^5.2.0",
-		"react-twitter-widgets": "^1.7.1",
-		"unist-util-select": "^1.5.0"
-	},
-	"devDependencies": {
-		"jest": "^23.6.0",
-		"pre-commit": "^1.2.2"
-	}
+  "name": "amy-goes-to-perth",
+  "version": "2.0.0",
+  "description": "Amy Goes to Perth blog",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amykapernick/amygoestoperth.git"
+  },
+  "scripts": {
+    "start": "npm run blogs && npm run develop",
+    "develop": "gatsby develop",
+    "build": "npm run blogs && gatsby build",
+    "serve": "gatsby serve",
+    "tests": "npm run a11y",
+    "a11y": "pa11y --reporter cli http://localhost:8000 > a11yreport.txt",
+    "clean": "rm -rf .cache/ public/",
+    "blogImages": "cp src/blog/img/* static/img/blog/",
+    "updatePosts": "git submodule update --remote",
+    "blogs": "npm run updatePosts && npm run blogImages"
+  },
+  "pre-commit": [],
+  "author": "AimHigher Web Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amykapernick/amygoestoperth/issues"
+  },
+  "homepage": "https://github.com/amykapernick/amygoestoperth#readme",
+  "dependencies": {
+    "@raae/gatsby-remark-oembed": "^0.0.5",
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.2",
+    "gatsby": "^2.2.9",
+    "gatsby-image": "^2.0.15",
+    "gatsby-plugin-google-tagmanager": "^2.0.5",
+    "gatsby-plugin-netlify-cms": "^3.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.0-rc.1",
+    "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-sharp": "^2.0.30",
+    "gatsby-plugin-twitter": "^2.0.5",
+    "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-images": "^2.0.3",
+    "gatsby-remark-relative-images": "^0.2.2",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "netlify-cms": "^2.1.1",
+    "node-sass": "^4.9.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-feather": "^1.1.3",
+    "react-helmet": "^5.2.0",
+    "react-twitter-widgets": "^1.7.1",
+    "unist-util-select": "^1.5.0"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "pre-commit": "^1.2.2"
+  }
 }
