@@ -8,9 +8,16 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/src/blog/img`,
+            name: 'uploads'
+          }
+        },
+        {
             resolve: 'gatsby-source-filesystem',
             options: {
-              path: `${__dirname}/src`,
+              path: `${__dirname}/src/img`,
               name: 'images',
             },
         },
@@ -31,27 +38,26 @@ module.exports = {
               includeInDevelopment: true,
             },
         },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-              plugins: [
-                {
-                  resolve: `@raae/gatsby-remark-oembed`,
+        
+      {
+          resolve: `gatsby-transformer-remark`,
+          options: {
+            plugins: [
+              {
+                resolve: `@raae/gatsby-remark-oembed`,
+              },
+              `gatsby-remark-relative-images`,
+              {
+                resolve: `gatsby-remark-images`,
+                options: {
+                    showCaptions: true,
+                    maxWidth: 1000,
+                    widthWebp: true,
                 },
-                {
-                  resolve: `gatsby-remark-relative-images`,
-                },
-                {
-                    resolve: `gatsby-remark-images`,
-                    options: {
-                        showCaptions: true,
-                        maxWidth: 1000,
-                        widthWebp: true,
-                    },
-                },
-              ]
-            }
-        },
+            },
+            ]
+          }
+},
         'gatsby-plugin-netlify-cms'
     ],
 }
