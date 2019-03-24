@@ -1,13 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
-import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import Img from "gatsby-image";
 
 import "../scss/layouts/feed.scss";
-import "../scss/layouts/home.scss";
 import { Facebook, Twitter } from "react-feather";
 import AmyKate from "../img/amykate.jpg";
 import AimHigher from "../img/aimhigher.png";
@@ -150,7 +147,7 @@ export const pageQuery = graphql`
             tags
             featuredImage {
               childImageSharp {
-                fixed(width: 250) {
+                fixed(width: 500) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }
