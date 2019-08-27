@@ -24,6 +24,16 @@
     }
   }
 
+  &[data-language="text"] {
+    background: $white;
+    color: $black;
+
+    pre,
+    code {
+      color: inherit;
+    }
+  }
+
   &[data-language="html"] {
     &:before {
       content: "HTML";
@@ -53,7 +63,7 @@ pre,
 code {
   color: $aqua;
   font-size: 1em;
-  font-family: "Space Mono", "Anonymous Pro", monospace;
+  font-family: "Source Code Pro", "Anonymous Pro", monospace;
   text-align: left;
   line-height: 1.5;
   tab-size: 4;
