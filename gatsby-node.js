@@ -3,6 +3,10 @@ const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
@@ -32,7 +36,12 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id;
-      if (!edge.node.frontmatter.draft) {
+      if (
+        edge.node.frontmatter.draft &&
+        process.env.NODE_ENV !== "development"
+      ) {
+        return;
+      } else {
         createPage({
           path: edge.node.fields.slug.replace("/blog/posts", ""),
           component: path.resolve(`src/templates/blogTemplate.js`),

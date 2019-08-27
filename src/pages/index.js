@@ -132,6 +132,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___updateDate] }
+      filter: { frontmatter: { draft: { ne: true } } }
     ) {
       edges {
         node {
