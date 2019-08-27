@@ -19,7 +19,6 @@
     "updatePosts": "git submodule update --remote",
     "blogs": "npm run updatePosts && npm run blogImages"
   },
-  "pre-commit": [],
   "author": "AimHigher Web Design",
   "license": "ISC",
   "bugs": {
