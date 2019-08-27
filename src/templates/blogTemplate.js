@@ -5,6 +5,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 
 import "../scss/layouts/article.scss";
+import "../scss/partials/prismjs_dark.scss";
 import { Facebook, Twitter } from "react-feather";
 import AmyKate from "../img/amykate.jpg";
 import AimHigher from "../img/aimhigher.png";
