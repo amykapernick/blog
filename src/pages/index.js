@@ -46,6 +46,9 @@ export default class IndexPage extends React.Component {
       <Layout meta={meta}>
         <div className="article-feed">
           {posts.map(({ node: post }) => {
+            if (new Date(post.frontmatter.publishDate) > new Date()) {
+              return;
+            }
             let author = profiles[post.frontmatter.mainBlog],
               articleLink = author.url + post.fields.slug,
               facebookLink =
@@ -132,7 +135,6 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___updateDate] }
-      filter: { frontmatter: { draft: { ne: true } } }
     ) {
       edges {
         node {
@@ -159,3 +161,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+// filter: { frontmatter: { draft: { ne: true } } }

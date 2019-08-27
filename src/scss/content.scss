@@ -58,11 +58,17 @@ a {
   }
 }
 
-ul {
+ul,
+ol {
   li {
     font-size: 1.2em;
     padding: 5px 0;
     text-align: left;
+
+    &.task-list-item {
+      list-style: none;
+      margin-left: -40px;
+    }
   }
 }
 
