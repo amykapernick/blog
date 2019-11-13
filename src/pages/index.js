@@ -57,14 +57,12 @@ export default class IndexPage extends React.Component {
                 "https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20" +
                 articleLink;
 
-            console.log(post.frontmatter.featuredImage.childImageSharp.fixed);
-
             return (
               <article id={post.id} key={post.id} className="feed-article">
-                {/* <Img
+                <Img
                   className="image-feature"
                   fixed={post.frontmatter.featuredImage.childImageSharp.fixed}
-                /> */}
+                />
                 <div className="author">
                   <div className="image-profile">
                     {author.url !== "" ? (
