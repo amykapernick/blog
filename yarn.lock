@@ -5800,6 +5800,11 @@ gatsby-page-utils@^0.0.29:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
+gatsby-plugin-colorblind-filters@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-colorblind-filters/-/gatsby-plugin-colorblind-filters-0.2.3.tgz#cbd5d7f16e34cff965c1e220281a1c6fa21005f5"
+  integrity sha512-WVNo2ve2xj0Q98Nn7453/N6f7Kwrkm7r8s61k/R6yMEewkEKB4ssq1f2ENeSisHxkghjNcE3Ag4iLKtEoS4ImA==
+
 gatsby-plugin-google-tagmanager@^2.0.5:
   version "2.1.16"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.1.16.tgz#f0e5281ecd3533faf0085903aae90c5310d2eac9"

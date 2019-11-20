@@ -39,6 +39,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "gatsby": "^2.14.0",
     "gatsby-image": "^2.2.14",
+    "gatsby-plugin-colorblind-filters": "^0.2.3",
     "gatsby-plugin-google-tagmanager": "^2.0.5",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-netlify-cms": "^4.1.27",

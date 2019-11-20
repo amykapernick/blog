@@ -13,6 +13,7 @@ module.exports = {
 				lang: 'en',
 			},
 		},
+		// react-axe default setup
 		{
 			resolve: 'gatsby-plugin-react-axe',
 			options: {
@@ -24,6 +25,14 @@ module.exports = {
 				axeOptions: {
 					reporter: 'v2',
 				},
+			},
+		},
+		// Gatsby Colourblind filters
+		{
+			resolve: 'gatsby-plugin-colorblind-filters',
+			options: {
+				toggleKey: 'p',
+				zIndex: 999,
 			},
 		},
 		{
