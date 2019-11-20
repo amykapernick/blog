@@ -54,7 +54,7 @@ export default class IndexPage extends React.Component {
 							twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
 
 						return (
-							<article key={post.id} className="feed-article">
+							<article key={post.id} className={`feed-article ${post.frontmatter.draft ? 'draft' : ''}`}>
 								<Img className="image-feature" fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
 								<div className="author">
 									<div className="image-profile">
@@ -102,7 +102,7 @@ export const pageQuery = graphql`
 				siteUrl
 			}
 		}
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }, filter: { frontmatter: { draft: { ne: true } } }) {
+		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }) {
 			edges {
 				node {
 					id
@@ -112,6 +112,7 @@ export const pageQuery = graphql`
 					}
 					frontmatter {
 						title
+						draft
 						publishDate(formatString: "DD MMM YYYY")
 						mainBlog
 						tags
