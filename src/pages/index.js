@@ -42,6 +42,7 @@ export default class IndexPage extends React.Component {
 
 		return (
 			<Layout meta={meta}>
+				<h1 className="hidden">Amy Goes to Perth</h1>
 				<div className="article-feed">
 					{posts.map(({ node: post }) => {
 						if (new Date(post.frontmatter.publishDate) > new Date()) {
@@ -49,13 +50,11 @@ export default class IndexPage extends React.Component {
 						}
 						const author = profiles[post.frontmatter.mainBlog],
 							articleLink = author.url + post.fields.slug,
-							facebookLink = 'https://www.facebook.com/sharer/sharer.php?u=' + articleLink,
-							twitterLink =
-								'https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20' +
-								articleLink
+							facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
+							twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
 
 						return (
-							<article id={post.id} key={post.id} className="feed-article">
+							<article key={post.id} className="feed-article">
 								<Img className="image-feature" fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
 								<div className="author">
 									<div className="image-profile">
@@ -70,19 +69,19 @@ export default class IndexPage extends React.Component {
 								</div>
 								<header>
 									<h2 className="article-title">
-										<Link id={post.id} to={`${post.fields.slug.replace('/blog/posts', '')}`}>
-											{post.frontmatter.title}
-										</Link>
+										<Link to={`${post.fields.slug.replace('/blog/posts', '')}`}>{post.frontmatter.title}</Link>
 									</h2>
-									<h6 className="date">{post.frontmatter.publishDate}</h6>
+									<time className="date">{post.frontmatter.publishDate}</time>
 								</header>
 								<div className="excerpt">{post.excerpt}</div>
 								<div className="share-icons">
 									<a href={facebookLink} target="_blank" className="facebook share-link">
 										{<Facebook />}
+										<span>Share article to Facebook (opens in new tab)</span>
 									</a>
 									<a href={twitterLink} target="_blank" className="twitter share-link">
 										{<Twitter />}
+										<span>Share article to Twitter (opens in new tab)</span>
 									</a>
 								</div>
 							</article>

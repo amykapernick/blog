@@ -8,6 +8,12 @@ module.exports = {
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-sass',
 		{
+			resolve: 'gatsby-plugin-html-attributes',
+			options: {
+				lang: 'en',
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-react-axe',
 			options: {
 				// Integrate react-axe in production. This defaults to false.

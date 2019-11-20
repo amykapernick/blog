@@ -1,61 +1,68 @@
 @import '../variables.scss';
 
 footer {
-    background: #fff;
-    background: rgba(#fff, 0.5);
-    font-size: 15px;
-    height: auto;
-        min-height: $height_footer;
-    padding: 10px;
-    position: relative;
-        bottom: 0;
-    text-align: right;
-    width: 100vw;
-    z-index: 5;
+	background: #fff;
+	background: rgba(#fff, 0.5);
+	font-size: 15px;
+	height: auto;
+	min-height: $height_footer;
+	padding: 10px;
+	position: relative;
+	bottom: 0;
+	text-align: right;
+	width: 100vw;
+	z-index: 5;
 
-    nav.social {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 20px;
+	nav.social {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 20px;
 
-        .social-link {
-            color: rgba($blue, 0.5);
+		.social-link {
+			color: rgba($blue, 0.5);
 
-            svg {
-                height: 30px;
-                max-height: 40px;
-                width: auto;
-            }
+			svg {
+				height: 30px;
+				max-height: 40px;
+				width: auto;
+			}
 
-            &:active, &:hover, &:focus {
-                color: $blue;
-            }
+			&:active,
+			&:hover,
+			&:focus {
+				color: $blue;
+			}
 
-            &.share:active, &.share:hover, &.share:focus {
-                color: rgba($blue, 0.5);
-            }
-        }
-    }
+			&.share:active,
+			&.share:hover,
+			&.share:focus {
+				color: rgba($blue, 0.5);
+			}
+
+			span {
+				position: absolute;
+				left: -200vw;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
-    footer {
-            font-size: 1em;
-            padding: 5vh 0;
-        
-        nav.social {
-            margin: 0 0 0 auto;
-            width: 50%;
+	footer {
+		font-size: 1em;
+		padding: 5vh 0;
 
-            .social-link {
-                svg {
-                    height: 5vh;
-                }
-            }
-        }
+		nav.social {
+			margin: 0 0 0 auto;
+			width: 50%;
 
-
-    }
+			.social-link {
+				svg {
+					height: 5vh;
+				}
+			}
+		}
+	}
 }
