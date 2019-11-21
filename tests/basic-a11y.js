@@ -9,7 +9,7 @@ async function runTest() {
 			pa11y('http://localhost:8000', {
 				standard: 'WCAG2AA',
 				actions: [],
-				screenCapture: `screen capture ${__dirname}/results/basic-a11y_home_mobile.png`,
+				screenCapture: `${__dirname}/results/basic-a11y_home_mobile.png`,
 				viewport: {
 					width: 320,
 					height: 480,
@@ -20,7 +20,7 @@ async function runTest() {
 			pa11y('http://localhost:8000', {
 				standard: 'WCAG2AA',
 				actions: [],
-				screenCapture: `screen capture ${__dirname}/results/basic-a11y_home_desktop.png`,
+				screenCapture: `${__dirname}/results/basic-a11y_home_desktop.png`,
 				viewport: {
 					width: 1280,
 					height: 1024,
@@ -31,7 +31,7 @@ async function runTest() {
 			pa11y('http://localhost:8000/setting-up-a-windows-computer-for-dev', {
 				standard: 'WCAG2AA',
 				actions: [],
-				screenCapture: `screen capture ${__dirname}/results/basic-a11y_post_mobile.png`,
+				screenCapture: `${__dirname}/results/basic-a11y_post_mobile.png`,
 				viewport: {
 					width: 320,
 					height: 480,
@@ -42,7 +42,7 @@ async function runTest() {
 			pa11y('http://localhost:8000/setting-up-a-windows-computer-for-dev', {
 				standard: 'WCAG2AA',
 				actions: [],
-				screenCapture: `screen capture ${__dirname}/results/basic-a11y_post_desktop.png`,
+				screenCapture: `${__dirname}/results/basic-a11y_post_desktop.png`,
 				viewport: {
 					width: 1280,
 					height: 1024,
