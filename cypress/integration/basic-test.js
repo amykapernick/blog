@@ -28,6 +28,9 @@ describe('Blog Post Template', () => {
 	it('has share icons', () => {
 		cy.get('.share-icons a').should('be.visible')
 	})
+	it('has working share icons', () => {
+		cy.get('.share-icons a').click({ multiple: true })
+	})
 	it('has a visible author profile image', () => {
 		cy.get('.author img').should('be.visible')
 	})

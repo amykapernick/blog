@@ -16,7 +16,6 @@
     "test:a11y": "node tests/basic-a11y",
     "test:cypress": "cypress open",
     "test:backstop": "backstop test",
-    "test:lighthouse": "npx lighthouse http://localhost:8000 --output-path=./tests/results/lighthouse.html --save-assets --view",
     "clean": "rm -rf .cache/ public/",
     "blogImages": "cp src/blog/img/* static/img/blog/",
     "updatePosts": "git submodule update --remote",
