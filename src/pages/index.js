@@ -104,7 +104,7 @@ export const pageQuery = graphql`
 				siteUrl
 			}
 		}
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }) {
+		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }, filter: { frontmatter: { draft: { ne: true } } }) {
 			edges {
 				node {
 					id
