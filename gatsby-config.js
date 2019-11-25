@@ -8,6 +8,12 @@ module.exports = {
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-sass',
 		{
+			resolve: '@danbruegge/gatsby-plugin-stylelint',
+			options: {
+				files: ['src/scss/**/*.scss'],
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-html-attributes',
 			options: {
 				lang: 'en',

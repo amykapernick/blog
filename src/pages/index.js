@@ -55,7 +55,13 @@ export default class IndexPage extends React.Component {
 
 						return (
 							<article key={post.id} className={`feed-article ${post.frontmatter.draft ? 'draft' : ''}`}>
-								<Img className="image-feature" fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
+								<div className="image-feature">
+									<img
+										src={post.frontmatter.featuredImage
+											.replace('../img/blog', '/img/blog')
+											.replace(/\/img\/([^(blog)])/, '/img/blog/$1')}
+									/>
+								</div>
 								<div className="author">
 									<div className="image-profile">
 										{author.url !== '' ? (
@@ -116,16 +122,17 @@ export const pageQuery = graphql`
 						publishDate(formatString: "DD MMM YYYY")
 						mainBlog
 						tags
-						featuredImage {
-							childImageSharp {
-								fixed(width: 500) {
-									...GatsbyImageSharpFixed_withWebp
-								}
-							}
-						}
+						featuredImage
 					}
 				}
 			}
 		}
 	}
 `
+// featuredImage {
+// 	childImageSharp {
+// 		fixed(width: 500) {
+// 			...GatsbyImageSharpFixed_withWebp
+// 		}
+// 	}
+// }
