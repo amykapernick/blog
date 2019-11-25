@@ -56,11 +56,7 @@ export default class IndexPage extends React.Component {
 						return (
 							<article key={post.id} className={`feed-article ${post.frontmatter.draft ? 'draft' : ''}`}>
 								<div className="image-feature">
-									<img
-										src={post.frontmatter.featuredImage
-											.replace('../img/blog', '/img/blog')
-											.replace(/\/img\/([^(blog)])/, '/img/blog/$1')}
-									/>
+									<img src={post.frontmatter.featuredImage.replace('../img/', '/img/').replace(/\/img\/(?!blog)/, '/img/blog/')} />
 								</div>
 								<div className="author">
 									<div className="image-profile">
