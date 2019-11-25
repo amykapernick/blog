@@ -45,54 +45,60 @@ export default class IndexPage extends React.Component {
 				<h1 className="hidden">Amy Goes to Perth</h1>
 				<div className="article-feed">
 					{posts.map(({ node: post }) => {
-						if (new Date(post.frontmatter.publishDate) > new Date()) {
-							return
+						if (!post.frontmatter.draft || process.env.NODE_ENV == 'development') {
+							return <Article {...post} />
 						}
-						const author = profiles[post.frontmatter.mainBlog],
-							articleLink = author.url + post.fields.slug,
-							facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
-							twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
-
-						return (
-							<article key={post.id} className={`feed-article ${post.frontmatter.draft ? 'draft' : ''}`}>
-								<div className="image-feature">
-									<img src={post.frontmatter.featuredImage.replace('../img/', '/img/').replace(/\/img\/(?!blog)/, '/img/blog/')} />
-								</div>
-								<div className="author">
-									<div className="image-profile">
-										{author.url !== '' ? (
-											<a href={author.url} target="_blank" rel="nofollow" title={'Link to host blog, ' + author.title}>
-												<img alt="Profile Image" src={author.image} />
-											</a>
-										) : (
-											<img alt="Profile Image" src={author.image} />
-										)}
-									</div>
-								</div>
-								<header>
-									<h2 className="article-title">
-										<Link to={`${post.fields.slug.replace('/blog/posts', '')}`}>{post.frontmatter.title}</Link>
-									</h2>
-									<time className="date">{post.frontmatter.publishDate}</time>
-								</header>
-								<div className="excerpt">{post.excerpt}</div>
-								<div className="share-icons">
-									<a href={facebookLink} target="_blank" className="facebook share-link">
-										{<Facebook />}
-										<span>Share article to Facebook (opens in new tab)</span>
-									</a>
-									<a href={twitterLink} target="_blank" className="twitter share-link">
-										{<Twitter />}
-										<span>Share article to Twitter (opens in new tab)</span>
-									</a>
-								</div>
-							</article>
-						)
 					})}
 				</div>
 			</Layout>
 		)
 	}
+}
+
+const Article = ({ frontmatter, id, fields, excerpt }) => {
+	if (new Date(frontmatter.publishDate) > new Date()) {
+		return
+	}
+	const author = profiles[frontmatter.mainBlog],
+		articleLink = author.url + fields.slug,
+		facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
+		twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
+
+	return (
+		<article key={id} className={`feed-article`}>
+			<div className="image-feature">
+				<img src={frontmatter.featuredImage.replace('../img/', '/img/').replace(/\/img\/(?!blog)/, '/img/blog/')} />
+			</div>
+			<div className="author">
+				<div className="image-profile">
+					{author.url !== '' ? (
+						<a href={author.url} target="_blank" rel="nofollow" title={'Link to host blog, ' + author.title}>
+							<img alt="Profile Image" src={author.image} />
+						</a>
+					) : (
+						<img alt="Profile Image" src={author.image} />
+					)}
+				</div>
+			</div>
+			<header>
+				<h2 className="article-title">
+					<Link to={`${fields.slug.replace('/blog/posts', '')}`}>{frontmatter.title}</Link>
+				</h2>
+				<time className="date">{frontmatter.publishDate}</time>
+			</header>
+			<div className="excerpt">{excerpt}</div>
+			<div className="share-icons">
+				<a href={facebookLink} target="_blank" className="facebook share-link">
+					{<Facebook />}
+					<span>Share article to Facebook (opens in new tab)</span>
+				</a>
+				<a href={twitterLink} target="_blank" className="twitter share-link">
+					{<Twitter />}
+					<span>Share article to Twitter (opens in new tab)</span>
+				</a>
+			</div>
+		</article>
+	)
 }
 
 export const pageQuery = graphql`
@@ -104,7 +110,7 @@ export const pageQuery = graphql`
 				siteUrl
 			}
 		}
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }, filter: { frontmatter: { draft: { ne: true } } }) {
+		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }) {
 			edges {
 				node {
 					id
