@@ -24,15 +24,21 @@ const Layout = ({ children, meta }) => (
 )
 
 const ColourModes = () => {
-	const [mode, setMode] = useState('light'),
+	const [mode, setMode] = useState(window.localStorage.getItem('mode')),
 		toggleModes = currentMode => {
 			setMode(currentMode)
 			document.querySelector('body').className = ''
 			document.querySelector('body').classList.add(currentMode)
+			window.localStorage.setItem('mode', currentMode)
 		}
 
 	return (
 		<ul className="modes">
+			<Helmet
+				bodyAttributes={{
+					class: mode,
+				}}
+			/>
 			<li>
 				<button className="light" onClick={() => toggleModes('light')}>
 					🌞<span>Light Mode</span>
