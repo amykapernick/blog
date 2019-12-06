@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+body {
+	&.dark {
+		background: $black;
+		color: #fff;
+
+		.feed-article {
+			background: transparent;
+			border-color: $blue;
+
+			&:active,
+			&:hover,
+			&:focus {
+				background: $grey_dark;
+			}
+		}
+
+		h2,
+		a {
+			color: $blue_light;
+		}
+
+		.share-link {
+			&:active,
+			&:hover,
+			&:focus {
+				border-color: $blue_light;
+			}
+		}
+
+		.gatsby-highlight {
+			border-color: $blue;
+		}
+
+		:not(pre) {
+			& > code {
+				background: $grey_dark;
+				color: $white;
+			}
+		}
+
+		footer {
+			background: transparent;
+
+			nav {
+				&.social {
+					.social-link {
+						color: $blue_light;
+
+						&:active,
+						&:hover,
+						&:focus {
+							border-color: $blue_light;
+						}
+					}
+				}
+			}
+		}
+	}
+}
