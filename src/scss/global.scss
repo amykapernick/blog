@@ -5,6 +5,18 @@
 }
 
 @font-face {
+	font-family: 'Crimson Pro';
+	font-style: normal;
+	src: url('../fonts/CrimsonPro-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Crimson Pro';
+	font-style: italic;
+	src: url('../fonts/CrimsonPro-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 400;
@@ -37,6 +49,27 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url('../fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Antiqua';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/InknutAntiqua-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Antiqua';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/InknutAntiqua-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Antiqua';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/InknutAntiqua-Black.ttf') format('truetype');
 }
 
 // Imports

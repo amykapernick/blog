@@ -8,25 +8,26 @@ import { Facebook, Twitter } from 'react-feather'
 import AmyKate from '../img/amykate.jpg'
 import AimHigher from '../img/aimhigher.png'
 import Freelance from '../img/freelancers.png'
+import Owl from '../img/owl.svg'
 
 const profiles = {
 	'Amy Goes To Perth': {
 		title: 'Amy Goes to Perth',
 		id: 'amykate',
 		image: AmyKate,
-		url: 'https://amygoestoperth.com.au/',
+		url: 'https://amygoestoperth.com.au',
 	},
 	AimHigher: {
 		title: 'AimHigher Web Design',
 		id: 'aimhigher',
 		image: AimHigher,
-		url: 'https://aimhigherwebdesign.com.au/',
+		url: 'https://aimhigherwebdesign.com.au',
 	},
 	'The Freelance Guide': {
 		title: "Freelancer's Guide",
 		id: 'freelance',
 		image: Freelance,
-		url: 'https://thefreelance.guide/',
+		url: 'https://thefreelance.guide',
 	},
 }
 
@@ -60,7 +61,7 @@ const Article = ({ frontmatter, id, fields, excerpt }) => {
 		return
 	}
 	const author = profiles[frontmatter.mainBlog],
-		articleLink = author.url + fields.slug,
+		articleLink = `${author.url}${fields.slug}`,
 		facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
 		twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
 
@@ -93,7 +94,7 @@ const Article = ({ frontmatter, id, fields, excerpt }) => {
 					<span>Share article to Facebook (opens in new tab)</span>
 				</a>
 				<a href={twitterLink} target="_blank" className="twitter share-link">
-					{<Twitter />}
+					{window.localStorage.getItem('mode') !== 'wizard' ? <Twitter /> : <Owl />}
 					<span>Share article to Twitter (opens in new tab)</span>
 				</a>
 			</div>
