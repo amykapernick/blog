@@ -94,7 +94,12 @@ const Article = ({ frontmatter, id, fields, excerpt }) => {
 					<span>Share article to Facebook (opens in new tab)</span>
 				</a>
 				<a href={twitterLink} target="_blank" className="twitter share-link">
-					{window.localStorage.getItem('mode') !== 'wizard' ? <Twitter /> : <Owl />}
+					<span className="twitter">
+						<Twitter />
+					</span>
+					<span className="owl">
+						<Owl />
+					</span>
 					<span>Share article to Twitter (opens in new tab)</span>
 				</a>
 			</div>

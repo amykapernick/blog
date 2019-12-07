@@ -117,6 +117,7 @@ body {
 			time {
 				display: flex;
 				align-items: center;
+				font-size: 1em;
 
 				&:before,
 				&:after {
@@ -173,10 +174,20 @@ body {
 				width: 30px;
 			}
 
-			.twitter {
+			.owl {
 				svg {
 					height: 40px;
 					width: 40px;
+				}
+			}
+
+			span {
+				&.twitter {
+					display: none;
+				}
+
+				&.owl {
+					display: block;
 				}
 			}
 		}

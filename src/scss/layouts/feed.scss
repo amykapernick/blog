@@ -115,5 +115,14 @@ time.date {
 	span {
 		position: absolute;
 		right: -200vw;
+
+		&.owl {
+			display: none;
+			position: static;
+		}
+
+		&.twitter {
+			position: static;
+		}
 	}
 }
