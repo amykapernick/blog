@@ -35,6 +35,7 @@ export default class IndexPage extends React.Component {
 	render() {
 		const { data } = this.props,
 			{ edges: posts } = data.allMarkdownRemark,
+			{ edges: featured } = data.featuredPost,
 			meta = {
 				name: data.site.siteMetadata.title,
 				description: data.site.siteMetadata.description,
@@ -45,6 +46,7 @@ export default class IndexPage extends React.Component {
 			<Layout meta={meta}>
 				<h1 className="hidden">Amy Goes to Perth</h1>
 				<div className="article-feed">
+					<Article {...featured[0].node} key="featured" />
 					{posts.map(({ node: post }) => {
 						if (!post.frontmatter.draft || process.env.NODE_ENV == 'development') {
 							return <Article {...post} key={post.id} />
@@ -63,13 +65,14 @@ const Article = ({ frontmatter, id, fields, excerpt }) => {
 	const author = profiles[frontmatter.mainBlog],
 		articleLink = `${author.url}${fields.slug}`,
 		facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
-		twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
+		twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`,
+		image = frontmatter.featuredImage || frontmatter.featuredGif
+
+	console.log(image)
 
 	return (
 		<article key={id} className={`feed-article`}>
-			<div className="image-feature">
-				<Img fixed={frontmatter.featuredImage.childImageSharp.fixed} />
-			</div>
+			<div className="image-feature">{image.childImageSharp ? <Img fixed={image.childImageSharp.fixed} /> : <img src={image.publicURL} />}</div>
 			<div className="author">
 				<div className="image-profile">
 					{author.url !== '' ? (
@@ -138,6 +141,28 @@ export const pageQuery = graphql`
 							}
 						}
 					}
+				}
+			}
+		}
+		featuredPost: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }, limit: 1) {
+			edges {
+				node {
+					id
+					excerpt(pruneLength: 400)
+					fields {
+						slug
+					}
+					frontmatter {
+						title
+						draft
+						publishDate(formatString: "DD MMM YYYY")
+						mainBlog
+						tags
+						featuredGif {
+							publicURL
+						}
+					}
+					html
 				}
 			}
 		}
