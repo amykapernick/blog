@@ -24,10 +24,10 @@ const Layout = ({ children, meta }) => (
 )
 
 const ColourModes = () => {
-	const [mode, setMode] = useState(typeof window !== undefined ? window.localStorage.getItem('mode') : 'light'),
+	const [mode, setMode] = useState(typeof window !== `undefined` ? window.localStorage.getItem('mode') : 'light'),
 		toggleModes = currentMode => {
 			setMode(currentMode)
-			if (typeof window !== undefined) {
+			if (typeof window !== `undefined`) {
 				document.querySelector('body').className = ''
 				document.querySelector('body').classList.add(currentMode)
 				window.localStorage.setItem('mode', currentMode)
