@@ -11,6 +11,71 @@ header.main {
 	z-index: 5;
 }
 
+.modes {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	z-index: 100;
+
+	li {
+		list-style: none;
+
+		span {
+			position: absolute;
+			right: -300vw;
+		}
+	}
+
+	button {
+		border: 2px solid transparent;
+		background: #fff;
+		cursor: pointer;
+		padding: 5px 10px;
+	}
+}
+
+body {
+	.modes {
+		button {
+			&.light {
+				border-color: $blue;
+				background: $aqua_light;
+			}
+		}
+	}
+
+	&.dark {
+		.modes {
+			button {
+				border-color: transparent;
+				background: #fff;
+
+				&.dark {
+					border-color: $blue;
+					background: $aqua_light;
+				}
+			}
+		}
+	}
+
+	&.wizard {
+		.modes {
+			button {
+				border-color: transparent;
+				background: #fff;
+
+				&.wizard {
+					border-color: $blue;
+					background: $aqua_light;
+				}
+			}
+		}
+	}
+}
+
 .site-header {
 	a {
 		display: block;
@@ -30,7 +95,7 @@ header.main {
 	font-size: 25px;
 	height: 100%;
 	margin: 0;
-	padding: 20px;
+	padding: 55px 20px 20px;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -54,7 +119,18 @@ header.main {
 		position: relative;
 	}
 
+	.modes {
+		top: -10px;
+	}
+
 	.site-title {
+		padding-top: 20px;
 		font-size: 3em;
+	}
+}
+
+@media (min-width: 50rem) {
+	.modes {
+		top: 10px;
 	}
 }

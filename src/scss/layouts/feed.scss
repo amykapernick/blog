@@ -16,6 +16,7 @@ h1 {
 
 .feed-article {
 	background: rgba($grey, 0.3);
+	border: 2px solid transparent;
 	border-radius: 10px;
 	display: block;
 	padding: 20px 20px 40px;
@@ -36,6 +37,10 @@ h1 {
 		.image-feature {
 			opacity: 1;
 		}
+	}
+
+	&.featured {
+		display: none;
 	}
 }
 
@@ -81,6 +86,12 @@ h1 {
 
 	a {
 		text-decoration: none;
+
+		&:active,
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -101,11 +112,21 @@ time.date {
 	right: 20px;
 
 	.share-link {
+		border: 2px solid transparent;
 		padding: 5px;
 	}
 
 	span {
 		position: absolute;
 		right: -200vw;
+
+		&.owl {
+			display: none;
+			position: static;
+		}
+
+		&.twitter {
+			position: static;
+		}
 	}
 }
