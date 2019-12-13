@@ -42,11 +42,13 @@ export default class IndexPage extends React.Component {
 				slug: data.site.siteMetadata.siteUrl,
 			}
 
+		featured[0].node.featured = true
+
 		return (
 			<Layout meta={meta}>
 				<h1 className="hidden">Amy Goes to Perth</h1>
 				<div className="article-feed">
-					<Article {...featured[0].node} key="featured" />
+					{true && <Article {...featured[0].node} key="featured" />}
 					{posts.map(({ node: post }) => {
 						if (!post.frontmatter.draft || process.env.NODE_ENV == 'development') {
 							return <Article {...post} key={post.id} />
@@ -58,7 +60,7 @@ export default class IndexPage extends React.Component {
 	}
 }
 
-const Article = ({ frontmatter, id, fields, excerpt }) => {
+const Article = ({ frontmatter, id, fields, excerpt, featured }) => {
 	if (new Date(frontmatter.publishDate) > new Date()) {
 		return
 	}
@@ -68,10 +70,8 @@ const Article = ({ frontmatter, id, fields, excerpt }) => {
 		twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`,
 		image = frontmatter.featuredImage || frontmatter.featuredGif
 
-	console.log(image)
-
 	return (
-		<article key={id} className={`feed-article`}>
+		<article key={id} className={`feed-article ${featured && 'featured'}`}>
 			<div className="image-feature">{image.childImageSharp ? <Img fixed={image.childImageSharp.fixed} /> : <img src={image.publicURL} />}</div>
 			<div className="author">
 				<div className="image-profile">
@@ -88,6 +88,7 @@ const Article = ({ frontmatter, id, fields, excerpt }) => {
 				<h2 className="article-title">
 					<Link to={`${fields.slug.replace('/blog/posts', '')}`}>{frontmatter.title}</Link>
 				</h2>
+
 				<time className="date">{frontmatter.publishDate}</time>
 			</header>
 			<div className="excerpt">{excerpt}</div>

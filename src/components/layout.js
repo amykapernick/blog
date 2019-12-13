@@ -55,11 +55,11 @@ const ColourModes = () => {
 					🌛<span>Dark Mode</span>
 				</button>
 			</li>
-			<li>
+			{/* <li>
 				<button className="wizard" onClick={() => toggleModes('wizard')}>
 					🧙‍♂️<span>Harry Potter Mode</span>
 				</button>
-			</li>
+			</li> */}
 		</ul>
 	)
 }

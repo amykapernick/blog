@@ -38,6 +38,10 @@ h1 {
 			opacity: 1;
 		}
 	}
+
+	&.featured {
+		display: none;
+	}
 }
 
 .image-feature {

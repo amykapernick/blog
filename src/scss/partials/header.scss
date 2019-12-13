@@ -95,7 +95,7 @@ body {
 	font-size: 25px;
 	height: 100%;
 	margin: 0;
-	padding: 20px;
+	padding: 55px 20px 20px;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -119,7 +119,18 @@ body {
 		position: relative;
 	}
 
+	.modes {
+		top: -10px;
+	}
+
 	.site-title {
+		padding-top: 20px;
 		font-size: 3em;
+	}
+}
+
+@media (min-width: 50rem) {
+	.modes {
+		top: 10px;
 	}
 }
