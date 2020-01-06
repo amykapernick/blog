@@ -32,7 +32,6 @@ const profiles = {
 }
 
 const BlogPost = ({ data }) => {
-	console.log(data)
 	const { contentfulBlogPost: post } = data,
 		blogPost = {
 			content: post.body.childMarkdownRemark.html,
