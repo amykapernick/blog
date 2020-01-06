@@ -128,7 +128,7 @@ export const pageQuery = graphql`
 				siteUrl
 			}
 		}
-		allContentfulBlogPost {
+		allContentfulBlogPost(sort: { order: DESC, fields: updatedAt }) {
 			edges {
 				node {
 					title
@@ -160,49 +160,3 @@ export const pageQuery = graphql`
 		}
 	}
 `
-
-// allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }) {
-// 	edges {
-// 		node {
-// 			id
-// 			excerpt(pruneLength: 400)
-// 			fields {
-// 				slug
-// 			}
-// 			frontmatter {
-// 				title
-// 				draft
-// 				publishDate(formatString: "DD MMM YYYY")
-// 				mainBlog
-// 				tags
-// 				featuredImage {
-// 					childImageSharp {
-// 						fixed(width: 500) {
-// 							...GatsbyImageSharpFixed_withWebp
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-// featuredPost: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }, limit: 1) {
-// 	edges {
-// 		node {
-// 			id
-// 			excerpt(pruneLength: 400)
-// 			fields {
-// 				slug
-// 			}
-// 			frontmatter {
-// 				title
-// 				draft
-// 				publishDate(formatString: "DD MMM YYYY")
-// 				mainBlog
-// 				tags
-// 				featuredGif
-// 			}
-// 			html
-// 		}
-// 	}
-// }

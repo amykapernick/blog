@@ -3,52 +3,48 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-require('dotenv').config()
+require('dotenv').config({
+	path: `.env.${process.env.NODE_ENV}`,
+})
+exports.createPages = ({ actions, graphql }) => {
+	const { createPage } = actions
 
-// exports.createPages = ({ actions, graphql }) => {
-// 	const { createPage } = actions
+	return graphql(`
+		{
+			allContentfulBlogPost {
+				edges {
+					node {
+						slug
+						id
+					}
+				}
+			}
+		}
+	`).then(result => {
+		if (result.errors) {
+			result.errors.forEach(e => console.error(e.toString()))
+			return Promise.reject(result.errors)
+		}
 
-// 	return graphql(`
-// 		{
-// 			allMarkdownRemark(limit: 1000) {
-// 				edges {
-// 					node {
-// 						id
-// 						fields {
-// 							slug
-// 						}
-// 						frontmatter {
-// 							draft
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	`).then(result => {
-// 		if (result.errors) {
-// 			result.errors.forEach(e => console.error(e.toString()))
-// 			return Promise.reject(result.errors)
-// 		}
+		const posts = result.data.allContentfulBlogPost.edges
 
-// 		const posts = result.data.allMarkdownRemark.edges
-
-// 		posts.forEach(edge => {
-// 			const id = edge.node.id
-// 			if (edge.node.frontmatter.draft && process.env.NODE_ENV !== 'development') {
-// 				return
-// 			} else {
-// 				createPage({
-// 					path: edge.node.fields.slug.replace('/blog/posts', ''),
-// 					component: path.resolve(`src/templates/blogTemplate.js`),
-// 					// additional data can be passed via context
-// 					context: {
-// 						id,
-// 					},
-// 				})
-// 			}
-// 		})
-// 	})
-// }
+		posts.forEach(edge => {
+			const id = edge.node.id
+			// if (edge.node.frontmatter.draft && process.env.NODE_ENV !== 'development') {
+			// 	return
+			// } else {
+			createPage({
+				path: edge.node.slug,
+				component: path.resolve(`src/templates/blogTemplate.js`),
+				// additional data can be passed via context
+				context: {
+					id,
+				},
+			})
+			// }
+		})
+	})
+}
 
 // exports.onCreateNode = ({ node, actions, getNode }) => {
 // 	const { createNodeField } = actions

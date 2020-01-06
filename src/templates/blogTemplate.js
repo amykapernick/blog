@@ -31,48 +31,73 @@ const profiles = {
 	},
 }
 
+const BlogPost = ({ data }) => {
+	console.log(data)
+	const { contentfulBlogPost: post } = data,
+		blogPost = {
+			content: post.body.childMarkdownRemark.html,
+			title: post.title,
+			slug: post.slug,
+			publishDate: post.publishDate,
+			updateDate: post.updateDate,
+			tags: post.tags,
+			siteUrl: data.site.siteMetadata.siteUrl,
+		},
+		meta = {
+			name: post.title + ' | ' + data.site.siteMetadata.title,
+			description: post.description.description,
+			slug: data.site.siteMetadata.siteUrl + post.slug,
+		}
+
+	return (
+		<Layout>
+			<BlogPostTemplate {...blogPost} />
+		</Layout>
+	)
+}
+
 export const BlogPostTemplate = ({ content, title, slug, tags, publishDate, updateDate, siteUrl }) => {
-	// const articleLink = `${siteUrl}${slug}`,
-	// 	facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
-	// 	twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
+	const articleLink = `${siteUrl}${slug}`,
+		facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
+		twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`
 
-	// let author
+	let author
 
-	// Object.entries(profiles).forEach(([key, value]) => {
-	// 	if (tags.indexOf(profiles[`${key}`].id) > -1) {
-	// 		author = profiles[`${key}`]
-	// 	}
-	// })
+	Object.entries(profiles).forEach(([key, value]) => {
+		if (tags.indexOf(profiles[`${key}`].id) > -1) {
+			author = profiles[`${key}`]
+		}
+	})
 
-	// if (!author) {
-	// 	author = profiles.amykate
-	// }
+	if (!author) {
+		author = profiles.amykate
+	}
 
-	// const intro = (
-	// 	<div className="share-icons">
-	// 		<a href={facebookLink} target="_blank" className="facebook share-link">
-	// 			{<Facebook />}
-	// 			<span>Share article to Facebook (opens in new tab)</span>
-	// 		</a>
-	// 		<a href={twitterLink} target="_blank" className="twitter share-link">
-	// 			{<Twitter />}
-	// 			<span>Share article to Twitter (opens in new tab)</span>
-	// 		</a>
-	// 		<div className="author">
-	// 			{author.url !== '' ? (
-	// 				<a href={author.url + slug} target="_blank" rel="nofollow" title={'Link to host blog, ' + author.title}>
-	// 					<img alt="Profile Image" src={author.image} />
-	// 				</a>
-	// 			) : (
-	// 				<img alt="Profile Image" src={author.image} />
-	// 			)}
-	// 		</div>
-	// 	</div>
-	// )
+	const intro = (
+		<div className="share-icons">
+			<a href={facebookLink} target="_blank" className="facebook share-link">
+				{<Facebook />}
+				<span>Share article to Facebook (opens in new tab)</span>
+			</a>
+			<a href={twitterLink} target="_blank" className="twitter share-link">
+				{<Twitter />}
+				<span>Share article to Twitter (opens in new tab)</span>
+			</a>
+			<div className="author">
+				{author.url !== '' ? (
+					<a href={author.url + slug} target="_blank" rel="nofollow" title={'Link to host blog, ' + author.title}>
+						<img alt="Profile Image" src={author.image} />
+					</a>
+				) : (
+					<img alt="Profile Image" src={author.image} />
+				)}
+			</div>
+		</div>
+	)
 
 	return (
 		<article className="article-content article content">
-			{/* <header>
+			<header>
 				<h1>{title}</h1>
 				<div className="article-intro">
 					{intro}
@@ -81,7 +106,7 @@ export const BlogPostTemplate = ({ content, title, slug, tags, publishDate, upda
 					</time>
 				</div>
 			</header>
-			<div dangerouslySetInnerHTML={{ __html: content }} /> */}
+			<div dangerouslySetInnerHTML={{ __html: content }} />
 			<Link to="/" className="back end">
 				Back to Article Feed
 			</Link>
@@ -89,54 +114,31 @@ export const BlogPostTemplate = ({ content, title, slug, tags, publishDate, upda
 	)
 }
 
-const BlogPost = ({ data }) => {
-	const { markdownRemark: post } = data,
-		blogPost = {
-			content: post.html,
-			title: post.frontmatter.title,
-			slug: post.fields.slug,
-			publishDate: post.frontmatter.publishDate,
-			updateDate: post.frontmatter.updateDate,
-			tags: post.frontmatter.tags,
-			siteUrl: data.site.siteMetadata.siteUrl,
-		},
-		meta = {
-			name: post.frontmatter.title + ' | ' + data.site.siteMetadata.title,
-			description: post.frontmatter.description,
-			slug: data.site.siteMetadata.siteUrl + post.fields.slug,
-		}
-
-	return (
-		<Layout meta={meta}>
-			<BlogPostTemplate {...blogPost} />
-		</Layout>
-	)
-}
-
 export default BlogPost
 
 export const pageQuery = graphql`
-	query BlogPostByID {
+	query BlogPostByID($id: String!) {
 		site {
 			siteMetadata {
 				title
 				siteUrl
 			}
 		}
+		contentfulBlogPost(id: { eq: $id }) {
+			title
+			tags
+			publishDate(formatString: "DD MMM YYYY")
+			slug
+			description {
+				description
+			}
+			body {
+				childMarkdownRemark {
+					html
+				}
+			}
+			updatedAt(formatString: "DD MMM YYYY")
+			updatedDate(formatString: "DD MMM YYYY")
+		}
 	}
 `
-// ($id: String!)
-// markdownRemark(id: { eq: $id }) {
-// 	id
-// 	fields {
-// 		slug
-// 	}
-// 	html
-// 	frontmatter {
-// 		publishDate(formatString: "DD MMM YYYY")
-// 		updateDate(formatString: "DD MMM YYYY")
-// 		title
-// 		description
-// 		tags
-// 	}
-// }
