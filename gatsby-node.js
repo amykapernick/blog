@@ -9,6 +9,8 @@ require('dotenv').config({
 exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions
 
+	console.log(process.env.NODE_ENV)
+
 	return graphql(`
 		{
 			allContentfulBlogPost {
