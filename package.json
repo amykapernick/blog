@@ -8,18 +8,13 @@
     "url": "git+https://github.com/amykapernick/amygoestoperth.git"
   },
   "scripts": {
-    "start": "npm run blogs && npm run develop -- --port $PORT",
+    "start": "npm run develop -- --port $PORT",
     "develop": "gatsby develop",
-    "build": "npm run blogs && gatsby build",
-    "serve": "gatsby serve",
+    "build": "gatsby build",
     "test": "npm run test:a11y && npm run test:cypress && npm run test:backstop && npm run test:lighthouse",
     "test:a11y": "node tests/basic-a11y",
     "test:cypress": "cypress open",
-    "test:backstop": "backstop test",
-    "clean": "rm -rf .cache/ public/",
-    "blogImages": "cp src/blog/img/* static/img/blog/",
-    "updatePosts": "git submodule update --remote",
-    "blogs": "npm run updatePosts && npm run blogImages"
+    "test:backstop": "backstop test"
   },
   "author": "AimHigher Web Design",
   "license": "ISC",

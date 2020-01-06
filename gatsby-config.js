@@ -1,3 +1,7 @@
+require('dotenv').config({
+	path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
 	siteMetadata: {
 		title: 'Amy Goes to Perth',
@@ -41,13 +45,6 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/blog/img`,
-				name: 'uploads',
-			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
 				path: `${__dirname}/src/img`,
 				name: 'images',
 			},
@@ -62,13 +59,6 @@ module.exports = {
 		},
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				path: `${__dirname}/src/blog/posts`,
-				name: 'markdown-pages',
-			},
-		},
 		{
 			resolve: 'gatsby-plugin-google-tagmanager',
 			options: {
@@ -95,15 +85,15 @@ module.exports = {
 							enableCustomId: true,
 						},
 					},
-					'gatsby-remark-relative-images',
-					{
-						resolve: 'gatsby-remark-images',
-						options: {
-							showCaptions: true,
-							maxWidth: 1000,
-							widthWebp: true,
-						},
-					},
+					// 'gatsby-remark-relative-images',
+					// {
+					// 	resolve: 'gatsby-remark-images',
+					// 	options: {
+					// 		showCaptions: true,
+					// 		maxWidth: 1000,
+					// 		widthWebp: true,
+					// 	},
+					// },
 					{
 						resolve: 'gatsby-remark-prismjs',
 						options: {

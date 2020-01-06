@@ -11,7 +11,7 @@ import Freelance from '../img/freelancers.png'
 import Owl from '../img/owl.svg'
 
 const profiles = {
-	'Amy Goes To Perth': {
+	'Amy Goes to Perth': {
 		title: 'Amy Goes to Perth',
 		id: 'amykate',
 		image: AmyKate,
@@ -23,7 +23,7 @@ const profiles = {
 		image: AimHigher,
 		url: 'https://aimhigherwebdesign.com.au',
 	},
-	'The Freelance Guide': {
+	'Freelance Guide': {
 		title: "Freelancer's Guide",
 		id: 'freelance',
 		image: Freelance,
@@ -34,25 +34,21 @@ const profiles = {
 export default class IndexPage extends React.Component {
 	render() {
 		const { data } = this.props,
-			{ edges: posts } = data.allMarkdownRemark,
-			{ edges: featured } = data.featuredPost,
+			{ edges: posts } = data.allContentfulBlogPost,
 			meta = {
 				name: data.site.siteMetadata.title,
 				description: data.site.siteMetadata.description,
 				slug: data.site.siteMetadata.siteUrl,
 			}
 
-		featured[0].node.featured = true
-
 		return (
 			<Layout meta={meta}>
-				<h1 className="hidden">Amy Goes to Perth</h1>
+				<h1 className="hidden">{data.site.siteMetadata.title}</h1>
 				<div className="article-feed">
-					{/* {true && <Article {...featured[0].node} key="featured" />} */}
 					{posts.map(({ node: post }) => {
-						if (!post.frontmatter.draft || process.env.NODE_ENV == 'development') {
-							return <Article {...post} key={post.id} />
-						}
+						// if (!post.frontmatter.draft || process.env.NODE_ENV == 'development') {
+						return <Article {...post} key={post.contentful_id} />
+						// }
 					})}
 				</div>
 			</Layout>
@@ -60,19 +56,31 @@ export default class IndexPage extends React.Component {
 	}
 }
 
-const Article = ({ frontmatter, id, fields, excerpt, featured }) => {
-	if (new Date(frontmatter.publishDate) > new Date()) {
-		return
+const Article = ({ title, tags, publishDate, slug, blog, updatedAt, body, contentful_id, featuredImage, featured }) => {
+	// if (new Date(frontmatter.publishDate) > new Date()) {
+	// 	return
+	// }
+
+	let author = profiles['Amy Goes to Perth']
+
+	if (blog) {
+		if (blog.includes('The Freelance Guide')) {
+			author = profiles['Freelance Guide']
+		} else if (blog.includes('AimHigher')) {
+			author = profiles['AimHigher']
+		}
 	}
-	const author = profiles[frontmatter.mainBlog],
-		articleLink = `${author.url}${fields.slug}`,
+
+	const articleLink = `${author.url}${slug}`,
 		facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${articleLink}`,
 		twitterLink = `https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20${articleLink}`,
-		image = frontmatter.featuredImage || frontmatter.featuredGif
+		image = featuredImage.localFile
 
 	return (
-		<article key={id} className={`feed-article ${featured && 'featured'}`}>
-			<div className="image-feature">{image.childImageSharp ? <Img fixed={image.childImageSharp.fixed} /> : <img src={image.publicURL} />}</div>
+		<article key={contentful_id} className={`feed-article ${featured && 'featured'}`}>
+			<div className="image-feature">
+				<Img fixed={image.childImageSharp.fixed} />
+			</div>
 			<div className="author">
 				<div className="image-profile">
 					{author.url !== '' ? (
@@ -86,12 +94,12 @@ const Article = ({ frontmatter, id, fields, excerpt, featured }) => {
 			</div>
 			<header>
 				<h2 className="article-title">
-					<Link to={`${fields.slug.replace('/blog/posts', '')}`}>{frontmatter.title}</Link>
+					<Link to={`${slug.replace('/blog/posts', '')}`}>{title}</Link>
 				</h2>
 
-				<time className="date">{frontmatter.publishDate}</time>
+				<time className="date">{publishDate}</time>
 			</header>
-			<div className="excerpt">{excerpt}</div>
+			<div className="excerpt">{body.childMarkdownRemark.excerpt}</div>
 			<div className="share-icons">
 				<a href={facebookLink} target="_blank" className="facebook share-link">
 					{<Facebook />}
@@ -120,21 +128,26 @@ export const pageQuery = graphql`
 				siteUrl
 			}
 		}
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }) {
+		allContentfulBlogPost {
 			edges {
 				node {
-					id
-					excerpt(pruneLength: 400)
-					fields {
-						slug
+					title
+					tags
+					publishDate(formatString: "DD MMM YYYY")
+					contentful_id
+					slug
+					blog
+					updatedAt(formatString: "DD MMM YYYY")
+					description {
+						description
 					}
-					frontmatter {
-						title
-						draft
-						publishDate(formatString: "DD MMM YYYY")
-						mainBlog
-						tags
-						featuredImage {
+					body {
+						childMarkdownRemark {
+							excerpt(format: PLAIN, pruneLength: 400)
+						}
+					}
+					featuredImage {
+						localFile {
 							childImageSharp {
 								fixed(width: 500) {
 									...GatsbyImageSharpFixed_withWebp
@@ -145,25 +158,51 @@ export const pageQuery = graphql`
 				}
 			}
 		}
-		featuredPost: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }, limit: 1) {
-			edges {
-				node {
-					id
-					excerpt(pruneLength: 400)
-					fields {
-						slug
-					}
-					frontmatter {
-						title
-						draft
-						publishDate(formatString: "DD MMM YYYY")
-						mainBlog
-						tags
-						featuredGif
-					}
-					html
-				}
-			}
-		}
 	}
 `
+
+// allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }) {
+// 	edges {
+// 		node {
+// 			id
+// 			excerpt(pruneLength: 400)
+// 			fields {
+// 				slug
+// 			}
+// 			frontmatter {
+// 				title
+// 				draft
+// 				publishDate(formatString: "DD MMM YYYY")
+// 				mainBlog
+// 				tags
+// 				featuredImage {
+// 					childImageSharp {
+// 						fixed(width: 500) {
+// 							...GatsbyImageSharpFixed_withWebp
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// featuredPost: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___updateDate] }, limit: 1) {
+// 	edges {
+// 		node {
+// 			id
+// 			excerpt(pruneLength: 400)
+// 			fields {
+// 				slug
+// 			}
+// 			frontmatter {
+// 				title
+// 				draft
+// 				publishDate(formatString: "DD MMM YYYY")
+// 				mainBlog
+// 				tags
+// 				featuredGif
+// 			}
+// 			html
+// 		}
+// 	}
+// }
