@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
 	siteMetadata: {
 		title: 'Amy Goes to Perth',
@@ -41,26 +43,20 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/blog/img`,
-				name: 'uploads',
-			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
 				path: `${__dirname}/src/img`,
 				name: 'images',
 			},
 		},
-		'gatsby-plugin-sharp',
-		'gatsby-transformer-sharp',
 		{
-			resolve: 'gatsby-source-filesystem',
+			resolve: `gatsby-source-contentful`,
 			options: {
-				path: `${__dirname}/src/blog/posts`,
-				name: 'markdown-pages',
+				spaceId: process.env.GATSBY_SPACE_ID,
+				accessToken: process.env.GATSBY_API_KEY,
+				downloadLocal: true,
 			},
 		},
+		'gatsby-plugin-sharp',
+		'gatsby-transformer-sharp',
 		{
 			resolve: 'gatsby-plugin-google-tagmanager',
 			options: {
@@ -87,15 +83,15 @@ module.exports = {
 							enableCustomId: true,
 						},
 					},
-					'gatsby-remark-relative-images',
-					{
-						resolve: 'gatsby-remark-images',
-						options: {
-							showCaptions: true,
-							maxWidth: 1000,
-							widthWebp: true,
-						},
-					},
+					// 'gatsby-remark-relative-images',
+					// {
+					// 	resolve: 'gatsby-remark-images',
+					// 	options: {
+					// 		showCaptions: true,
+					// 		maxWidth: 1000,
+					// 		widthWebp: true,
+					// 	},
+					// },
 					{
 						resolve: 'gatsby-remark-prismjs',
 						options: {
@@ -117,6 +113,5 @@ module.exports = {
 				],
 			},
 		},
-		'gatsby-plugin-netlify-cms',
 	],
 }

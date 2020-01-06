@@ -1,70 +1,61 @@
-const _ = require("lodash");
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
-const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+const _ = require('lodash')
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
+const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
-
+require('dotenv').config()
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+	const { createPage } = actions
 
-  return graphql(`
-    {
-      allMarkdownRemark(limit: 1000) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              draft
-            }
-          }
-        }
-      }
-    }
-  `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()));
-      return Promise.reject(result.errors);
-    }
+	console.log(process.env.NODE_ENV)
 
-    const posts = result.data.allMarkdownRemark.edges;
+	return graphql(`
+		{
+			allContentfulBlogPost {
+				edges {
+					node {
+						slug
+						id
+					}
+				}
+			}
+		}
+	`).then(result => {
+		if (result.errors) {
+			result.errors.forEach(e => console.error(e.toString()))
+			return Promise.reject(result.errors)
+		}
 
-    posts.forEach(edge => {
-      const id = edge.node.id;
-      if (
-        edge.node.frontmatter.draft &&
-        process.env.NODE_ENV !== "development"
-      ) {
-        return;
-      } else {
-        createPage({
-          path: edge.node.fields.slug.replace("/blog/posts", ""),
-          component: path.resolve(`src/templates/blogTemplate.js`),
-          // additional data can be passed via context
-          context: {
-            id
-          }
-        });
-      }
-    });
-  });
-};
+		const posts = result.data.allContentfulBlogPost.edges
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-  fmImagesToRelative(node);
+		posts.forEach(edge => {
+			const id = edge.node.id
+			// if (edge.node.frontmatter.draft && process.env.NODE_ENV !== 'development') {
+			// 	return
+			// } else {
+			createPage({
+				path: edge.node.slug,
+				component: path.resolve(`src/templates/blogTemplate.js`),
+				// additional data can be passed via context
+				context: {
+					id,
+				},
+			})
+			// }
+		})
+	})
+}
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value
-    });
-  }
-};
+// exports.onCreateNode = ({ node, actions, getNode }) => {
+// 	const { createNodeField } = actions
+// 	fmImagesToRelative(node)
+
+// 	if (node.internal.type === `MarkdownRemark`) {
+// 		const value = createFilePath({ node, getNode })
+// 		createNodeField({
+// 			name: `slug`,
+// 			node,
+// 			value,
+// 		})
+// 	}
+// }
