@@ -48,7 +48,7 @@ export default class IndexPage extends React.Component {
 			<Layout meta={meta}>
 				<h1 className="hidden">Amy Goes to Perth</h1>
 				<div className="article-feed">
-					{true && <Article {...featured[0].node} key="featured" />}
+					{/* {true && <Article {...featured[0].node} key="featured" />} */}
 					{posts.map(({ node: post }) => {
 						if (!post.frontmatter.draft || process.env.NODE_ENV == 'development') {
 							return <Article {...post} key={post.id} />
@@ -159,9 +159,7 @@ export const pageQuery = graphql`
 						publishDate(formatString: "DD MMM YYYY")
 						mainBlog
 						tags
-						featuredGif {
-							publicURL
-						}
+						featuredGif
 					}
 					html
 				}

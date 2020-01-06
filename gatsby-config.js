@@ -52,6 +52,14 @@ module.exports = {
 				name: 'images',
 			},
 		},
+		{
+			resolve: `gatsby-source-contentful`,
+			options: {
+				spaceId: process.env.GATSBY_SPACE_ID,
+				accessToken: process.env.GATSBY_API_KEY,
+				downloadLocal: true,
+			},
+		},
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		{
