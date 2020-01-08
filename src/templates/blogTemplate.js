@@ -46,10 +46,11 @@ const BlogPost = ({ data }) => {
 			name: post.title + ' | ' + data.site.siteMetadata.title,
 			description: post.description.description,
 			slug: data.site.siteMetadata.siteUrl + post.slug,
+			image: post.featuredImage.file.url,
 		}
 
 	return (
-		<Layout>
+		<Layout meta={meta}>
 			<BlogPostTemplate {...blogPost} />
 		</Layout>
 	)
@@ -137,6 +138,11 @@ export const pageQuery = graphql`
 			}
 			updatedAt(formatString: "DD MMM YYYY")
 			updatedDate(formatString: "DD MMM YYYY")
+			featuredImage {
+				file {
+					url
+				}
+			}
 		}
 	}
 `
