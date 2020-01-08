@@ -55,6 +55,17 @@
 		}
 	}
 
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		img {
+			height: 250px;
+			margin: 10px;
+		}
+	}
+
 	.gatsby-highlight {
 		font-size: 0.8em;
 	}
