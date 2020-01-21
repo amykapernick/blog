@@ -37,8 +37,8 @@ const BlogPost = ({ data }) => {
 			content: post.body.childMarkdownRemark.html,
 			title: post.title,
 			slug: post.slug,
-			publishDate: post.publishDate,
-			updateDate: post.updateDate,
+			publishDate: post.publishDate || post.createdAt,
+			updateDate: post.updatedDate || post.publishDate || post.updatedAt,
 			tags: post.tags,
 			siteUrl: data.site.siteMetadata.siteUrl,
 		},
@@ -126,6 +126,9 @@ export const pageQuery = graphql`
 			title
 			tags
 			publishDate(formatString: "DD MMM YYYY")
+			updatedAt(formatString: "DD MMM YYYY")
+			updatedDate(formatString: "DD MMM YYYY")
+			createdAt(formatString: "DD MMM YYYY")
 			slug
 			blog
 			description {
@@ -136,8 +139,6 @@ export const pageQuery = graphql`
 					html
 				}
 			}
-			updatedAt(formatString: "DD MMM YYYY")
-			updatedDate(formatString: "DD MMM YYYY")
 			featuredImage {
 				file {
 					url

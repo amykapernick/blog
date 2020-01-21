@@ -56,12 +56,9 @@ export default class IndexPage extends React.Component {
 	}
 }
 
-const Article = ({ title, tags, publishDate, slug, blog, updatedAt, body, contentful_id, featuredImage, featured }) => {
-	// if (new Date(frontmatter.publishDate) > new Date()) {
-	// 	return
-	// }
-
-	let author = profiles['Amy Goes to Perth']
+const Article = ({ title, tags, publishDate, updatedAt, updatedDate, createdAt, slug, blog, body, contentful_id, featuredImage, featured }) => {
+	let author = profiles['Amy Goes to Perth'],
+		updated = updatedDate || publishDate || updatedAt
 
 	if (blog) {
 		if (blog.includes('The Freelance Guide')) {
@@ -83,13 +80,9 @@ const Article = ({ title, tags, publishDate, slug, blog, updatedAt, body, conten
 			</div>
 			<div className="author">
 				<div className="image-profile">
-					{author.url !== '' ? (
-						<a href={author.url} target="_blank" rel="nofollow" title={'Link to host blog, ' + author.title}>
-							<img alt="Profile Image" src={author.image} />
-						</a>
-					) : (
+					<a href={author.url} target="_blank" rel="nofollow" title={`Link to host blog, ${author.title}`}>
 						<img alt="Profile Image" src={author.image} />
-					)}
+					</a>
 				</div>
 			</div>
 			<header>
@@ -97,7 +90,9 @@ const Article = ({ title, tags, publishDate, slug, blog, updatedAt, body, conten
 					<Link to={`${slug.replace('/blog/posts', '')}`}>{title}</Link>
 				</h2>
 
-				<time className="date">{publishDate}</time>
+				<time className="date" datetime={updated}>
+					{updated}
+				</time>
 			</header>
 			<div className="excerpt">{body.childMarkdownRemark.excerpt}</div>
 			<div className="share-icons">
@@ -134,10 +129,12 @@ export const pageQuery = graphql`
 					title
 					tags
 					publishDate(formatString: "DD MMM YYYY")
+					updatedAt(formatString: "DD MMM YYYY")
+					updatedDate(formatString: "DD MMM YYYY")
+					createdAt(formatString: "DD MMM YYYY")
 					contentful_id
 					slug
 					blog
-					updatedAt(formatString: "DD MMM YYYY")
 					description {
 						description
 					}
