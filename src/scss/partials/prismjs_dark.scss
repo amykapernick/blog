@@ -25,15 +25,15 @@
 		}
 	}
 
-	&[data-language='text'] {
-		background: $white;
-		color: $black;
+	// &[data-language='text'] {
+	// 	background: $white;
+	// 	color: $black;
 
-		pre,
-		code {
-			color: inherit;
-		}
-	}
+	// 	pre,
+	// 	code {
+	// 		color: inherit;
+	// 	}
+	// }
 
 	&[data-language='html'] {
 		&:before {
