@@ -1,0 +1,38 @@
+<main class="main">
+	<h1 class="hidden">Amy Goes to Perth</h1>
+	<div class="article-feed">
+		{% for post in collections.posts | reverse %}
+			{% if (post.data.draft !== true) 
+				or(env.env) %}
+				<article class="feed-article">
+					<img src="{{post.data.featuredimage}}"/>
+					<div class="author">
+						<div class="image-profile">
+							<a href="https://amyskapers.dev" target="_blank" rel="nofollow"></a>
+						</div>
+					</div>
+					<header>
+						<h2 class="article-title">
+							<a href="{{post.url | url}}">{{post.data.title}}</a>
+						</h2>
+						<time class="date" datetime="{{post.date}}">{{post.date | shortDate}}</time>
+					</header>
+					<div class="excerpt">
+						{% excerpt post %}
+					</div>
+					<div class="share-icons">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.amyskapers.dev{{post.url | url}}"
+							target="_blank" class="facebook share-link">
+							<span>Share article to Facebook (opens in new tab)</span>
+						</a>
+						<a href="https://twitter.com/home?status=so%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20https://blog.amyskapers.dev{{post.url | url}}"
+							target="_blank" class="twitter share-link">
+							<span>Share article to Twitter (opens in new tab)</span>
+						</a>
+					</div>
+				</article>
+			{% endif %}
+		{% endfor %}
+
+	</div>
+</main>

@@ -1,0 +1,136 @@
+@import '../variables.scss';
+
+header.main {
+	height: $height_header;
+	max-height: 150px;
+	min-height: 100px;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+
+.modes {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	z-index: 100;
+
+	li {
+		list-style: none;
+
+		span {
+			position: absolute;
+			right: -300vw;
+		}
+	}
+
+	button {
+		border: 2px solid transparent;
+		background: #fff;
+		cursor: pointer;
+		padding: 5px 10px;
+	}
+}
+
+body {
+	.modes {
+		button {
+			&.light {
+				border-color: $blue;
+				background: $aqua_light;
+			}
+		}
+	}
+
+	&.dark {
+		.modes {
+			button {
+				border-color: transparent;
+				background: #fff;
+
+				&.dark {
+					border-color: $blue;
+					background: $aqua_light;
+				}
+			}
+		}
+	}
+
+	&.wizard {
+		.modes {
+			button {
+				border-color: transparent;
+				background: #fff;
+
+				&.wizard {
+					border-color: $blue;
+					background: $aqua_light;
+				}
+			}
+		}
+	}
+}
+
+.site-header {
+	a {
+		display: block;
+		height: 100%;
+		max-height: 100%;
+	}
+}
+
+.inner {
+	height: 100%;
+}
+
+.site-title {
+	background: rgba(#fff, 0.5);
+	color: #000;
+	display: block;
+	font-size: 25px;
+	height: 100%;
+	margin: 0;
+	padding: 55px 20px 20px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.header-image {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	width: auto;
+	max-width: unset;
+	min-width: 100vw;
+	z-index: -1;
+}
+
+@media screen and (min-width: 40rem) {
+	.header-image {
+		height: $height_header;
+		max-height: 150px;
+		min-height: 100px;
+		position: relative;
+	}
+
+	.modes {
+		top: -10px;
+	}
+
+	.site-title {
+		padding-top: 20px;
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 50rem) {
+	.modes {
+		top: 10px;
+	}
+}
