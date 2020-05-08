@@ -5,6 +5,7 @@ description: Talking about how I use Notion to run my life
 categories: [Productivity, Tools]
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/notion-11-.png
 ---
 
@@ -14,13 +15,13 @@ Notion combines so many of the tools that I used, but they were just a little to
 
 ## Side Projects
 
-![](notion-1-.png)
+![](/img/notion-1-.png)
 
 I originally found Notion when trying to track my side projects, and it gave me what I was looking for. I can track my projects as a simple Kanban board, with as many custom fields as I need. I also get access to whatever types of content I need to keep track of and jot down details, content, lists, to do lists, images, or embedding content.
 
 ## Blog Posts and Conference Talks
 
-![](notion-2-.png)
+![](/img/notion-2-.png)
 
 As I'm trying to increase my blogging (and at the very least keep track of all the articles I'd like to write), once again Notion was useful to plan, draft and write my blog posts. Not just tracking via kanban, I'm also able to use calendar views to see them by date fields, eg. the planned publish dates.
 
@@ -30,35 +31,35 @@ I also started planning and drafting my conference talks and keep track of confe
 
 ## Relational Databases
 
-![](notion-3-.png)
+![](/img/notion-3-.png)
 
 Technically most of my information is part of one big database, with different views being used on different pages. My side projects, blog posts, internal tasks and client tasks are all part of [one database, with various views](https://www.notion.so/amyskapers/Dashboard-4916055af7044e89b895dca800488721) so that I just see the blog posts, just see tasks for a particular client or just see tasks that are due this week.
 
 ## Social Media Planning
 
-![](notion-4-.png)
+![](/img/notion-4-.png)
 
 Although I'm not doing well at actually following it, I've been planning the social media for my business here as well. The calendar view means I can make sure we've got enough coverage, I can again plan out all the information I need so scheduling posts are just a copy and paste and I can link through to any related items (for example a blog post I'm sharing).
 
 ## Miscellaneous Notes
 
-![](notion-5-.png)
+![](/img/notion-5-.png)
 
 The flexibility of content in Notion has also meant that it's perfect for my random notes and musings. Last year I even used it to keep track of my Christmas cooking (trust me, it's a massive undertaking involving 2 days solid of baking and prep).
 
-![](notion-6-.png)
+![](/img/notion-6-.png)
 
 This year, I even used Notion to write my reviews for Fringe World Festival. The no-nonsense writing editor is easy for me to use and write with. 
 
 ## Drafts and Templates
 
-![](notion-8-.png)
+![](/img/notion-8-.png)
 
 Doing away with scattered documents on my computer, Notion has also become the a place that I can draft and keep templates for proposals and contracts. The plain markdown content makes it easy to copy and paste elsewhere and tracked changes and comments (like Google Docs) mean that my editor can read over and correct the content exactly where it is.
 
 ## Documentation
 
-![](notion-9-.png)
+![](/img/notion-9-.png)
 
 Even my documentation lives in Notion, both internal and for my clients. I started writing documentation with the intention that one day I might be able to expand and hire someone else, but I also found it was useful 6 months later when Future Amy forgot how to do something that Past Amy spent days tinkering with and working out.
 
@@ -66,7 +67,7 @@ I found that it was also useful to create client documentation, with the ability
 
 ## Client Information
 
-![](notion-10-.png)
+![](/img/notion-10-.png)
 
 Although I tried using CRMs, what I really wanted was somewhere to keep track of my clients, their websites, the type of website and any additional services they had. Not only that, but each client was then it's own page where I could include more information, notes about custom functionality or hacks as well as client specific documentation.
 

@@ -2327,6 +2327,21 @@ markdown-it-anchor@^5.2.7:
   resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-5.2.7.tgz#ec740f6bd03258a582cd0c65b9644b9f9852e5a3"
   integrity sha512-REFmIaSS6szaD1bye80DMbp7ePwsPNvLTR5HunsUcZ0SG0rWJQ+Pz24R4UlTKtjKBPhxo0v0tOBDYjZQQknW8Q==
 
+markdown-it-figure-caption@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-figure-caption/-/markdown-it-figure-caption-0.1.0.tgz#6e1b732de356c8069fd1048460f6d0a90375e531"
+  integrity sha1-bhtzLeNWyAaf0QSEYPbQqQN15TE=
+
+markdown-it-implicit-figures@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-implicit-figures/-/markdown-it-implicit-figures-0.10.0.tgz#0e75e80b846da1e3117a3fc6d6b013d0cc3f2a8c"
+  integrity sha512-1TWr6+apyoJvRa4Z7eIolZdeajZCRBcc1ckVXon7XwdL8MfydIWsHnZOS5zRrpUNX5b0/O9giWcmuItSkleK5A==
+
+markdown-it-regexp@0.4.*:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-regexp/-/markdown-it-regexp-0.4.0.tgz#d64d713eecec55ce4cfdeb321750ecc099e2c2dc"
+  integrity sha1-1k1xPuzsVc5M/esyF1DswJniwtw=
+
 markdown-it@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-10.0.0.tgz#abfc64f141b1722d663402044e43927f1f50a8dc"
@@ -2358,6 +2373,13 @@ maximatch@^0.1.0:
     array-union "^1.0.1"
     arrify "^1.0.0"
     minimatch "^3.0.0"
+
+mdfigcaption@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/mdfigcaption/-/mdfigcaption-0.1.1.tgz#d666527e79a4759581606624b038e1aa8481e1db"
+  integrity sha1-1mZSfnmkdZWBYGYksDjhqoSB4ds=
+  dependencies:
+    markdown-it-regexp "0.4.*"
 
 mdurl@^1.0.1:
   version "1.0.1"

@@ -5,6 +5,7 @@ description: How-to article on setting up a local development environment and co
 categories: [WordPress, Automation, Process, 'Continuous Deployment']
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/2e2caf5740aabb6fe6334d2aef4cab7acd28b408_rawpixel-com-579231-unsplash.jpg
 ---
 

@@ -5,6 +5,7 @@ description: I have an insanely busy life, and my Google Home(s) help to take ca
 categories: ['Google Home', 'Smart Home', Connected, Technology, IoT]
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/254737f214e0437938aacea7cb79a44ab978a41f_kevin-bhagat-461951-unsplash.jpg
 ---
 

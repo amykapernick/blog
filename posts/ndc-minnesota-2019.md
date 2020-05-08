@@ -5,6 +5,7 @@ description: A few of the amazing talks I saw during my time at NDC Minnesota in
 categories: [Conference, NDC]
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/d6etpv9x4auc2ys.jpg-large.jpg
 ---
 

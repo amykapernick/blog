@@ -5,6 +5,7 @@ description: What's it really like to work from home rather than going into an o
 categories: ['Remote Working', Freelance, 'Working from Home']
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg
 ---
 
@@ -14,7 +15,7 @@ But is it really all it’s cracked up to be? The last couple of weeks, I’ve s
 
 A couple of weeks ago, I switched to being a full-time freelancer, working from home. And while I’m not sitting at home all day without pants on (my seat is itchy 😂), there are a lot of things to adjust to.
 
-![](2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg)
+![](/img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg)
 ## People
 
 Coming from a very active, friendly office it was a huge shock to not be around people for the most part of the day. I think my dog’s already sick of me (he keeps going and hiding outside) and I’m taking advantage of being able to talk out-loud to (and argue with) my Google Home (I swear I’m not crazy). I don’t have any housemates either so have been making a conscious and ongoing effort to still spend time around people.

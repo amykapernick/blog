@@ -5,6 +5,7 @@ description: A recap of DDD Perth 2018 and the talks that I saw there
 categories: [DDD, Conference, 'DDD Perth']
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/6a7d302a7bc8c7dcd97ce01d3b774135fe2c4f5d_mvimg_20180804_174958.jpg
 ---
 

@@ -5,6 +5,7 @@ description: In the past, Windows has developed a reputation for being a difficu
 categories: [Windows, Dev]
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/patrick-amoy-0vc8ujenzm0-unsplash.jpg
 ---
 
@@ -47,7 +48,7 @@ Pro tip: make note of the password you set, you will need to use that in future
   ```
 * It will print out steps for you to take, make sure you follow all of them for it to work.
 
-![](Untitled.png)
+![](/img/Untitled.png)
 
 
 ## NVM

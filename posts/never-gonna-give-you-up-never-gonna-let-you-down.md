@@ -5,6 +5,7 @@ description: Sometimes life gets really tough, and sometimes it feels like every
 categories: ['Mental Health']
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/aa0866f4266d409a70bc450e2ff2119b208f698d_1_ql5l9mqz4da8wdevacw9pq.jpg
 ---
 

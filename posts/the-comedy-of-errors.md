@@ -5,6 +5,7 @@ description: My experience dealing with Microsoft support, as a Shakespearean co
 categories: undefined
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg
 ---
 

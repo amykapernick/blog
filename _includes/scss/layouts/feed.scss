@@ -63,7 +63,10 @@ h1 {
 	}
 }
 
-.image-profile {
+.author {
+	float: right;
+	text-align: right;
+
 	height: 45px;
 	opacity: 0.4;
 	width: 45px;
@@ -73,11 +76,6 @@ h1 {
 	&:focus {
 		opacity: 1;
 	}
-}
-
-.author {
-	float: right;
-	text-align: right;
 }
 
 .article-title {

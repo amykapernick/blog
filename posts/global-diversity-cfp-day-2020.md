@@ -5,6 +5,7 @@ description: For the past three years, I've been involved with Global Diversity 
 categories: [Conferences, Workshop, CFP]
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/MVIMG_20200118_133304.jpg
 ---
 

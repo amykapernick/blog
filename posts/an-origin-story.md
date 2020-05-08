@@ -5,6 +5,7 @@ description: Celebrating 5 years since I started AimHigher Web Design, I reflect
 categories: undefined
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/homepage.png
 ---
 

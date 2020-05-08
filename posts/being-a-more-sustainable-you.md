@@ -5,6 +5,7 @@ description: During the past couple of years, I started focusing more on myself 
 categories: ['Mental Health', 'Productivity']
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/img_20180722_135436.jpg
 ---
 

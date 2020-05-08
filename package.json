@@ -32,6 +32,9 @@
     "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.7",
+    "markdown-it-figure-caption": "^0.1.0",
+    "markdown-it-implicit-figures": "^0.10.0",
+    "mdfigcaption": "^0.1.1",
     "node-sass": "^4.12.0",
     "path": "^0.12.7",
     "prismjs": "^1.17.1"

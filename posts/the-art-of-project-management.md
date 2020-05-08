@@ -5,12 +5,13 @@ description: Analysis of various project management tools, and their pros and co
 categories: [Tools, 'Project Management']
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/f2e40a703a9837108153384d6d110db422563e98_1_1-6utdisoqjeefidwfabzg.jpg
 ---
 
 There’s an app for that. I’m not kidding, there’s even an app to find out if there’s an app for that. While we’re a little spoilt for choice, that can often make things harder so I’ve ventured into the world of Project Management software to hopefully make the choice easier for you.
 
-![](f2e40a703a9837108153384d6d110db422563e98_1_1-6utdisoqjeefidwfabzg.jpg)
+![](/img/f2e40a703a9837108153384d6d110db422563e98_1_1-6utdisoqjeefidwfabzg.jpg)
 
 My method when looking for a new app or program, is do a quick Google search and click on everything I can find. This will often include a bunch of hire ranking options as well as a few blog posts that have also reviewed and listed options. From there it’s a process of elimination, first looking to see if they’ve updated their website in the last decade (that gets rid of a lot), then at the price (that gets rid of a lot more, $100/month no thanks!) then go through features and integrations then start trialling them.
 
@@ -18,7 +19,7 @@ After doing this for a while, I’ve managed to narrow it down to 3 options that
 
 ## Wrike
 
-![](8b6dc9007b631f3c5aef186a79e86dfa745216bc_1_ckoeqmbh5gwis71phqzfiw.png)
+![](/img/8b6dc9007b631f3c5aef186a79e86dfa745216bc_1_ckoeqmbh5gwis71phqzfiw.png)
 
 The most important thing, Wrike includes a free version (for this kind of software I’m looking for something free for now but upgradable later). The free version is pretty decent (although the lack of subtasks makes me a little sad), and includes the mobile apps and integrations with other services. If you’re looking at the paid version as well, you can also give it a free trial just to check.
 
@@ -46,7 +47,7 @@ They also have an API available so if you’re feeling confident (or just want t
 
 ## Workstack
 
-![](cf34016cd45341f2af28c4d7d070385bfc33ea11_1_2ogytydlolhhplnzys9pea.png)
+![](/img/cf34016cd45341f2af28c4d7d070385bfc33ea11_1_2ogytydlolhhplnzys9pea.png)
 
 Workstack has a really good free option, so far it seems as though you’re just paying for users. Even the free option includes unlimited projects for up to 2 users. They also have a free trial for 14 days if you’re considering paying but want to give it a go first.
 
@@ -55,11 +56,11 @@ So far I’m really liking Workstack. It also helps you to manage the difference
 It also has good time management options, allowing you to specify time off (or team holidays when no one will be working), working days, working hours and time zones. You can also add your own Custom CSS so I’m interested to see what I can do with that.
 
 
-![](a54ae01a7e5a0e4d83db0aae4ca0048138f48dc7_1_abwfp1nss2qyfjm8tm38mq.png)
+![](/img/a54ae01a7e5a0e4d83db0aae4ca0048138f48dc7_1_abwfp1nss2qyfjm8tm38mq.png)
 
 There is a pretty decent project dashboard, giving an overview of time remaining, if you’re going over budget, tasks and an activity feed.
 
-![](8faa0ac913296a54c9f66b6b3eaeab8f389d94cd_1_sm8pqwzp-o0rdktdpimya.png)
+![](/img/8faa0ac913296a54c9f66b6b3eaeab8f389d94cd_1_sm8pqwzp-o0rdktdpimya.png)
 
 The task card also has some useful options, allowing you to include task name, project, assignee, estimate, start and due times as well as mark it as On Hold or Completed. Workstack also allows you to use subtasks (yay!) and will throw a warning (or at least go red) if your subtasks add up to more time than the task.
 
@@ -69,7 +70,7 @@ You can also integrate to a few other applications, like Google Calendar (great 
 
 ## TimeHero
 
-![](68422f391da2e0f7c9b8a0ea1ab5482cbe9a514b_1_571mbc8czknu2x30r-xxoa.png)
+![](/img/68422f391da2e0f7c9b8a0ea1ab5482cbe9a514b_1_571mbc8czknu2x30r-xxoa.png)
 
 [Timehero](https://app.timehero.com/) is the most limiting with their free version, as you can only have 3 team projects and 1 private project (unlimited users and all features though).
 

@@ -5,6 +5,7 @@ description: After Global Diversity CFP Day, sharing some of the thoughts that I
 categories: [Conferences, CFPs]
 tags: 'posts'
 layout: layouts/post.njk
+
 featuredimage: ./img/49021351368_62d563412f_o.jpg
 ---
 
@@ -43,13 +44,13 @@ One important note on submitting to conferences - it doesn't hurt to try. I've t
 
 - Try and keep it simple, don't give the audience too much to read, give them a short snippet to remember, highlighting anything import (my slides are often something I think is "tweetable")
 
-![](Untitled.png)
+![](/img/Untitled.png)
 
 - Know what your timing is, and have points in the presentation where you mark what time you should be at (eg. at slide 50, have a note that you should be 10min in to the talk), practicing adding or taking out parts of your talk, without skipping through a bunch of slides. Have a longer explanation or a story you can tell to fill the time, or that can be omitted to make it up
 - Make sure everything can be read from the back of the room, and keep accessibility in mind when choosing the colours; red, deep blue, cyan and yellow are distinguishable from each other 99.9999% of the time. This is also important if the projector in the room isn't great, colour shouldn't be the only thing being used to demonstrate something
 - Code is often more readable on a dark background and if you're using [highlight.js](https://highlightjs.org/) for your syntax highlighting, they have an accessible theme: [a11y-dark](https://github.com/highlightjs/highlight.js/blob/master/src/styles/a11y-dark.css) (there's also a light version)
 
-![](Screenshot_2020-01-21_CSS_Grid_-_What_is_this_Magic_by_Amy_Kapernick.png)
+![](/img/Screenshot_2020-01-21_CSS_Grid_-_What_is_this_Magic_by_Amy_Kapernick.png)
 
 ## Before the Conference
 
