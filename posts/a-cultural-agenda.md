@@ -5,7 +5,7 @@ description: Recap of all the shows I saw in 2017 when I decided to go for it an
 categories: [Culture]
 tags: 'posts'
 layout: layouts/post.njk
-featuredimage: ./img/e1e259304d27c0ad5f3d6f90ef47760e3f308f21_1_zcfar4z_2fimm03atbx9hw.jpg
+featured: ./img/e1e259304d27c0ad5f3d6f90ef47760e3f308f21_1_zcfar4z_2fimm03atbx9hw.jpg
 ---
 
 We all do it, see an event coming up, use the phrase "_I’m going to go to that, I’ll see who wants to come with me" _and inevitably find that we don’t go at all. This year I decided that was going to change, so sat down and purchased 2 tickets to a bunch of shows I’d like to see. With a fairly wide range including comedy, Shakespeare, classical and contemporary music and of course the ballet, I’ve already had the chance to see a few different and entertaining things and haven’t had any issues finding a date.

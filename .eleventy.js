@@ -10,7 +10,8 @@ embedTwitch = require('eleventy-plugin-embed-twitch'),
 embedVimeo = require('eleventy-plugin-vimeo-embed'),
 embedYoutube = require('eleventy-plugin-youtube-embed'),
 embedCanIUse = require('@alexcarpenter/eleventy-plugin-caniuse'),
-excerpt = require('eleventy-plugin-excerpt')
+excerpt = require('eleventy-plugin-excerpt'),
+svgContents = require("eleventy-plugin-svg-contents")
 // markdownFigures = require('markdown-it-implicit-figures')
 
 module.exports = function(eleventyConfig) {
@@ -55,6 +56,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(embedYoutube)
 	eleventyConfig.addPlugin(embedCanIUse)
 	eleventyConfig.addPlugin(excerpt);
+	eleventyConfig.addPlugin(svgContents);
+
 
 	eleventyConfig.addPassthroughCopy('img')
 	eleventyConfig.addPassthroughCopy('fonts')

@@ -6,7 +6,7 @@ categories: ['Google Home', 'Smart Home', Connected, Technology, IoT]
 tags: 'posts'
 layout: layouts/post.njk
 
-featuredimage: ./img/254737f214e0437938aacea7cb79a44ab978a41f_kevin-bhagat-461951-unsplash.jpg
+featured: ./img/254737f214e0437938aacea7cb79a44ab978a41f_kevin-bhagat-461951-unsplash.jpg
 ---
 
 In the past year, it's no longer unusual to see a virtual assistant in someone's house, whether it be a Google Home, Amazon Alexa or Apple Homepod, but when someone hears that I have 4 I'm always met with shock and surprise. "But what do you actually do with them?". I have an insanely busy life, and my Google Home(s) help to take care of the things that I shouldn't really have to worry about (or really don't want to). Whether it be while cooking in the kitchen, running around getting ready, working or just chilling on the couch, Google is usually able to take care of something for me (even if it can't do my washing for me yet 😔).

@@ -5,7 +5,7 @@ description: Looking back on the last 12 months and what I got up to in 2019.
 categories: ['New Year', Retrospective]
 tags: 'posts'
 layout: layouts/post.njk
-featuredimage: ./img/MVIMG_20191215_185417.jpg
+featured: ./img/MVIMG_20191215_185417.jpg
 ---
 
 It's now been a couple of years since I first started doing these (and I still have a half written one for 2018). But last time I took the time to sit down and reflect on the past 12 months, it was really interesting to remind myself of all the things I've forgotten, and the past 12 months have felt like a lifetime for me.

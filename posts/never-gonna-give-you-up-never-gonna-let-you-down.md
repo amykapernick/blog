@@ -6,7 +6,7 @@ categories: ['Mental Health']
 tags: 'posts'
 layout: layouts/post.njk
 
-featuredimage: ./img/aa0866f4266d409a70bc450e2ff2119b208f698d_1_ql5l9mqz4da8wdevacw9pq.jpg
+featured: ./img/aa0866f4266d409a70bc450e2ff2119b208f698d_1_ql5l9mqz4da8wdevacw9pq.jpg
 ---
 
 Never gonna run around and desert you…

@@ -6,7 +6,7 @@ categories: [HTML, CSS]
 tags: 'posts'
 layout: layouts/post.njk
 
-featuredimage: ./img/screenshot_2019-07-22-html-and-css-only-testimonial-carousel.png
+featured: ./img/screenshot_2019-07-22-html-and-css-only-testimonial-carousel.png
 ---
 
 So recently I shared a HTML and CSS only testimonial carousel, and was accused of witchcraft 🤣

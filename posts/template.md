@@ -5,8 +5,6 @@ description: Draft Template for blog posts
 categories: undefined
 tags: 'posts'
 layout: layouts/post.njk
-
-featuredimage: ./img/2e2caf5740aabb6fe6334d2aef4cab7acd28b408_rawpixel-com-579231-unsplash.jpg
 draft: true
 ---
 

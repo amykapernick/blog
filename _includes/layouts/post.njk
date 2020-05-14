@@ -4,6 +4,12 @@ permalink: "{{ title | replace('#', '') | slug }}/"
 
 {% extends 'partials/layout.njk' %}
 
+{% block head %}
+	{% if external %}
+		<meta rel="canonical" href="{{external}}"/>
+	{% endif %}
+{% endblock %}
+
 {% block content %}
 
 	<main class="main">
@@ -11,21 +17,7 @@ permalink: "{{ title | replace('#', '') | slug }}/"
 			<header>
 				<h1>{{title}}</h1>
 				<div class="article-intro">
-					<div class="share-icons">
-						<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.amyskapers.dev{{post.url | url}}"
-							target="_blank" class="facebook share-link">
-							<span>Share article to Facebook (opens in new tab)</span>
-						</a>
-						<a href="https://twitter.com/home?status=so%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20https://blog.amyskapers.dev{{url | url}}"
-							target="_blank" class="twitter share-link">
-							<span>Share article to Twitter (opens in new tab)</span>
-						</a>
-					</div>
-					<div class="author">
-						<div class="image-profile">
-							<a href="https://amyskapers.dev" target="_blank" rel="nofollow"></a>
-						</div>
-					</div>
+					<div class="author"></div>
 					<time class="date" datetime="{{date}}">{{date | shortDate}}</time>
 				</div>
 			</header>

@@ -100,6 +100,14 @@ time.date {
 
 .excerpt {
 	font-size: 0.8em;
+	
+	p {
+		-webkit-line-clamp: 5;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
 }
 
 .share-icons {
@@ -109,6 +117,19 @@ time.date {
 	bottom: 10px;
 	right: 20px;
 
+	a {
+		text-decoration: none;
+	}
+
+	svg {
+		height: 30px;
+		width: 30px;
+
+		path {
+			fill: $blue;
+		}
+	}
+
 	.share-link {
 		border: 2px solid transparent;
 		padding: 5px;
@@ -117,14 +138,5 @@ time.date {
 	span {
 		position: absolute;
 		right: -200vw;
-
-		&.owl {
-			display: none;
-			position: static;
-		}
-
-		&.twitter {
-			position: static;
-		}
 	}
 }

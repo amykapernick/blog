@@ -7,6 +7,6 @@ author: ./img/24-ways.png
 categories: [Dev, Testing, Tools, 'Front End', Christmas]
 tags: 'posts'
 layout: layouts/post.njk
-featuredimage: ./img/twelve-days-of-front-end-testing.png
+featured: ./img/twelve-days-of-front-end-testing.png
 empty: true
 ---

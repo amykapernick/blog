@@ -6,7 +6,7 @@ categories: [DDD, Conference, 'DDD Perth']
 tags: 'posts'
 layout: layouts/post.njk
 
-featuredimage: ./img/886f8d3d3c4374c7dd879c37534da0f8dda98fb1_1_tiqjw5xkdnuloupmgjtroa.jpg
+featured: ./img/886f8d3d3c4374c7dd879c37534da0f8dda98fb1_1_tiqjw5xkdnuloupmgjtroa.jpg
 ---
 
 Over the weekend I got to attend the [DDD conference](http://dddperth.com/) in Perth for the first time. Despite the small price tag and the fact that I had to get up early on a Saturday, not only did it not disappoint but I was blown away by the number of supporters, the calibre of the speakers and the overall experience. I’ve never really lost my excitement for the web (and even when it gets hard there are still cat gifs 😁), but conferences seem to reignite the spark I have for web and give me another rush of excitement for the industry I work in.

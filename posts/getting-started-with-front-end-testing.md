@@ -7,8 +7,7 @@ author: ./img/javascript-january.png
 categories: [Dev, Testing, Tools, 'Front End']
 tags: 'posts'
 layout: layouts/post.njk
-
-featuredImage: ./img/igor-miske-JVSgcV8_vb4-unsplash+(2).jpg
+featured: ./img/igor-miske-JVSgcV8_vb4-unsplash+(2).jpg
 ---
 
 We all know that testing is important, your project can't be run unless all your unit and integration tests are written (and pass), but we often forget about testing the front end. There are so many different tests we need to be running on the front end - accessibility testing, performance testing, user testing, HTML validation, visual regression testing - it's hard to work out what you need to test for and where to start.

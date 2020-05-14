@@ -6,7 +6,7 @@ categories: [DDD, Conference, 'DDD Perth']
 tags: 'posts'
 layout: layouts/post.njk
 
-featuredimage: ./img/6a7d302a7bc8c7dcd97ce01d3b774135fe2c4f5d_mvimg_20180804_174958.jpg
+featured: ./img/6a7d302a7bc8c7dcd97ce01d3b774135fe2c4f5d_mvimg_20180804_174958.jpg
 ---
 
 This weekend I got the chance to go to my second DDD conference in Perth, and experience a little of the behind-the-scenes action working on one of the sponsor booths. Having [been to my first DDD last year](https://amygoestoperth.com.au/developers-developers-developers), they'd set the bar pretty high and still managed to not only do better, but smash it out of the park. The team outdid themselves again with more than 50% more attendees than last year (where they'd doubled the year before) and put together an even bigger line-up of talent after receiving over 200 proposal submissions (pretty sure that's an international record 🎉).
