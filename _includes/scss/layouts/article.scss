@@ -12,6 +12,33 @@
 	}
 }
 
+h1, h2, h3, h4, h5 {
+	position: relative;
+
+	&:hover, &:focus, &:focus-within {
+		.header-anchor {
+			display: block;
+		}
+	}
+}
+
+.header-anchor {
+	display: none;
+	padding-right: 0.5em;
+	position: absolute;
+	left: -1em;
+
+	&:hover, &:focus, &:focus-within {
+		display: block;
+	}
+
+	svg {
+		fill: currentColor;
+		height: 0.8em;
+		width: 0.8em;
+	}
+}
+
 .back {
 	&.end {
 		display: block;
@@ -84,26 +111,13 @@ iframe {
 }
 
 figure {
-	display: grid;
-	grid-auto-flow: dense;
-	grid-gap: 20px;
-	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-	justify-items: center;
-	align-items: center;
-
-	.image-container {
-		grid-column: span 2;
-		max-height: 600px;
-		overflow: hidden;
-		max-width: 800px;
-
-		&.panorama {
-			grid-column: 1 / -1;
-		}
-	}
+	background: rgba($primary, 0.2);
+	padding: 15px;
 
 	figcaption {
-		align-self: start;
+		border: none;
+		font-weight: bold;
+		text-align: right;	
 	}
 }
 
@@ -124,10 +138,6 @@ figure {
 			float: left;
 			margin: 10px;
 			margin-left: -4vw;
-		}
-
-		figcaption {
-			padding: 15px 0 15px 15px;
 		}
 	}
 }
