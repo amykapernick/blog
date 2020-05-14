@@ -6,7 +6,7 @@ categories: undefined
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/medium_3d90feb3-abb5-474b-8512-e8b1d62f1295_1_4l9lo2y6kmyauubxw78osw.jpg
+featured: /img/medium_3d90feb3-abb5-474b-8512-e8b1d62f1295_1_4l9lo2y6kmyauubxw78osw.jpg
 ---
 
 I remember back when everyone had a blog. And then no one really blogged for a while (it wasn’t a thing). But all of a sudden everyone I know has their own blog (or multiple blogs) and is busy sharing their stories and what they’re up to.

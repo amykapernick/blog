@@ -6,7 +6,7 @@ categories: [Conference, 'YOW!']
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
+featured: /img/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
 ---
 
 So this year I was lucky enough to get the chance to attend YOW Conference in Brisbane. As my first full two-day and first inter-state conference, as well as knowing the standard of speakers they have attending, my expectations were high but they’ve been unbelievably blown away.

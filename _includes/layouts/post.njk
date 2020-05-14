@@ -2,12 +2,16 @@
 permalink: "{{ title | replace('#', '') | slug }}/"
 ---
 {% set pagetitle = title %}
+{% set description = description %}
+{% set slug = title | replace('#', '') | slug %}
 {% extends 'partials/layout.njk' %}
 
 {% block head %}
 	{% if external %}
 		<meta rel="canonical" href="{{external}}"/>
 	{% endif %}
+
+	<meta property="date" content="{{date}}"/>
 {% endblock %}
 
 {% block content %}

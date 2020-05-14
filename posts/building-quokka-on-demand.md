@@ -6,7 +6,7 @@ categories: [Quokkas, Dev, Twilio]
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/Image_from_iOS.jpg
+featured: /img/Image_from_iOS.jpg
 ---
 
 Last year I got the chance to give a live demo at the Superclass at [Twilio Engage](https://twilioengage.com/sydney2019) in Sydney. It was just a quick demo so I didn't have the chance to do much, but I thought it would be a good opportunity to show how easy the APIs are to use, and maybe I could put a little Perth in it. Then I came up with the idea of Quokkabot 🎉.

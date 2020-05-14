@@ -6,7 +6,7 @@ categories: [Productivity, Tools]
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/notion-11-.png
+featured: /img/notion-11-.png
 ---
 
 During the past year, I've started using [Notion](https://www.notion.so/?r=b06033c2cb2d4fe2b29bc7c5ca4a1756) to organise both my personal and professional life. I discovered it accidentally while looking for a tool to manage my side projects and now I use it as my wiki, social media calendar, to draft documents, store random bits of information and manage both my blog posts (even this post is written in Notion first) and [conference talk submissions.](https://www.linkedin.com/pulse/how-i-use-notion-organise-my-speaking-amy-kapernick)

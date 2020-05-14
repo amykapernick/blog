@@ -6,7 +6,7 @@ categories: [Security, SSL, HTTPS]
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg
+featured: /img/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg
 ---
 
 These days, there are more and places offering their website through encrypted protocols, or HTTPS. But what does this actually mean for you? Is this something you should be worried about? And should you be concerned if a site isn’t encrypted?

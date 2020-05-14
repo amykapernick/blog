@@ -6,7 +6,7 @@ categories: ['New Year', Retrospective]
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/67b2178ebf482d7a7a6ebd6ddb112770d485c015_1_x100sidmdupzggkx66t8aw.jpg
+featured: /img/67b2178ebf482d7a7a6ebd6ddb112770d485c015_1_x100sidmdupzggkx66t8aw.jpg
 ---
 
 So the last month or so I’ve been reflecting a little on how this past year has gone and I’ve come to one conclusion. 2017 sucked. This past year I’ve been through some of the hardest things I’ve ever had to face. But I’ve also had some of the most amazing times this year, discovered the most amazing people and have had the best year of my life.

@@ -6,7 +6,7 @@ categories: [Conferences, CFPs]
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/49021351368_62d563412f_o.jpg
+featured: /img/49021351368_62d563412f_o.jpg
 ---
 
 Well [Global Diversity CFP Day](https://www.globaldiversitycfpday.com/) has wrapped up again for another year, and my head is still spinning with things I wish I'd remembered to share. So while it's all still fresh (and while I can continue to postpone my other work 😂), I thought I'd take the chance to write them down.

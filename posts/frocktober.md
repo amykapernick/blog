@@ -6,7 +6,7 @@ categories: undefined
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.jpg
+featured: /img/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.jpg
 ---
 
 So for anyone who knows me, or who follows me on Instagram, I’ve been wearing a lot of dresses lately (and oversharing about it).

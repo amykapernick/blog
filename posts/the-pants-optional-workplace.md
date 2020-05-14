@@ -6,7 +6,7 @@ categories: ['Remote Working', Freelance, 'Working from Home']
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg
+featured: /img/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg
 ---
 
 That’s the dream isn’t it? To be able to work from home, with no pants on.

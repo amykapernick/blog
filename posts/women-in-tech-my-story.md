@@ -6,7 +6,7 @@ categories: ['Women in Tech', Diversity]
 tags: 'posts'
 layout: layouts/post.njk
 
-featured: ./img/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
+featured: /img/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
 ---
 
 The other week I went to my first [WiTWA TECHXchange](http://www.witwa.org.au/) and got to listen to four amazing women and their experiences of working as women in tech, as well as stories from people in the audience. It was great to hear such amazing stories (especially as I knew two of the women), and it really got me thinking about how I got into tech and the journey I’ve had along the way.

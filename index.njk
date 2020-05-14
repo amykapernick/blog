@@ -2,6 +2,12 @@
 {% set home = true %}
 {% extends 'partials/layout.njk' %}
 
+{% set firstpost = collections.posts | reverse | first %}
+
+{% block head %}
+	<meta property="date" content="{{firstpost.date}}"/>
+{% endblock %}
+
 {% block content %}
 	<main class="main">
 		<h1 class="hidden">{{pagetitle}} | 
