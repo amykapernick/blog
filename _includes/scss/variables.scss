@@ -1,19 +1,14 @@
 //Fonts
-$font_regular: 400 1em 'Lato', sans-serif;
-$font_bold: 700 1em 'Lato', sans-serif;
-$font_headings: 700 1.5em 'Quicksand', sans-serif;
+$font_regular: 'Lato', sans-serif;
+$font_headings: 'Quicksand', sans-serif;
 
 //Colours
-$black: #191919;
+$neutral: #191919;
 $grey: #d1d1d1;
 $grey_dark: #36454f;
 $white: #edf3f7;
-$blue: #007cbb;
-$blue_light: #80bedd;
-$aqua: #00acbb;
-$aqua_light: #80d6dd;
+$primary: #007cbb;
+$primary_light: #80bedd;
+$secondary: #00acbb;
+$secondary_light: #80d6dd;
 $parchment: #ebd5b3;
-
-// Variables
-$height_header: 14vh;
-$height_footer: 15vh;

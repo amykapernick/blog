@@ -31,8 +31,8 @@ h1 {
 	&:active,
 	&:hover,
 	&:focus {
-		background: $blue_light;
-		background: rgba($blue_light, 0.3);
+		background: $primary_light;
+		background: rgba($primary_light, 0.3);
 
 		.image-feature {
 			opacity: 1;
@@ -126,7 +126,7 @@ time.date {
 		width: 30px;
 
 		path {
-			fill: $blue;
+			fill: $primary;
 		}
 	}
 
