@@ -22,7 +22,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@alexcarpenter/eleventy-plugin-caniuse": "^0.1.0",
     "dotenv": "^8.2.0",
-    "eleventy-plugin-embed-instagram": "^1.1.2",
     "eleventy-plugin-embed-spotify": "^1.1.0",
     "eleventy-plugin-embed-twitch": "^1.0.0",
     "eleventy-plugin-excerpt": "^1.1.2",

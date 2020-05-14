@@ -31,7 +31,7 @@ https://twitter.com/Amys_Kapers/status/1260845733109850116
 
 ### Instagram
 
-https://www.instagram.com/p/B_lyBmxp_tG/
+{% insta "https://www.instagram.com/p/B_lyBmxp_tG/" %}
 
 ### Spotify
 

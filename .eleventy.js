@@ -5,7 +5,6 @@ const fetch = require('node-fetch'),
 { DateTime } = require('luxon'),
 markdownIt = require('markdown-it'),
  markdownItAnchor = require('markdown-it-anchor')
-embedInstagram = require("eleventy-plugin-embed-instagram"),
 embedSpotify = require('eleventy-plugin-embed-spotify'),
 embedTwitch = require('eleventy-plugin-embed-twitch'),
 embedVimeo = require('eleventy-plugin-vimeo-embed'),
@@ -50,16 +49,14 @@ module.exports = function(eleventyConfig) {
 	})
 
 	eleventyConfig.addShortcode('tweet', (tweet) => {
-		console.log(tweet)
-
 		return fetch(`https://publish.twitter.com/oembed?url=${tweet}`).then(res => res.json()).then(data => data.html)
-		// .then(res => console.log(res))
+	})
 
-		return `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Been working on my blog lately, moving it over to <a href="https://twitter.com/eleven_ty?ref_src=twsrc%5Etfw">@eleven_ty</a> and managed to sort out the social previews 🎉<a href="https://t.co/RB7e9tszDy">https://t.co/RB7e9tszDy</a></p>&mdash; Amy #StayTheFuckHome 🏡🐺 (@Amys_Kapers) <a href="https://twitter.com/Amys_Kapers/status/1260845733109850116?ref_src=twsrc%5Etfw">May 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> `
+	eleventyConfig.addShortcode('insta', (insta) => {
+		return fetch(`https://api.instagram.com/oembed?url=${insta}`).then(res => res.json()).then(data => data.html.replace(/max-width:\d+px/, ''))
 	})
 
 	eleventyConfig.addPlugin(syntaxHighlight)
-	eleventyConfig.addPlugin(embedInstagram)
 	eleventyConfig.addPlugin(embedSpotify)
 	eleventyConfig.addPlugin(embedTwitch)
 	eleventyConfig.addPlugin(embedVimeo)
