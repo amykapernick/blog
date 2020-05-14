@@ -1,5 +1,5 @@
 ---
-title: #Frocktober
+title: "#Frocktober"
 date: 2017-10-25
 description: Summary of my experience participating in Frocktober in 2017
 categories: undefined
