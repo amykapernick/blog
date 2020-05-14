@@ -1,7 +1,7 @@
 ---
 permalink: "{{ title | replace('#', '') | slug }}/"
 ---
-
+{% set pagetitle = title %}
 {% extends 'partials/layout.njk' %}
 
 {% block head %}

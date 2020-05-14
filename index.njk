@@ -1,8 +1,11 @@
+{% set pagetitle = "Blog" %}
+{% set home = true %}
 {% extends 'partials/layout.njk' %}
 
 {% block content %}
 	<main class="main">
-		<h1 class="hidden">Amy Goes to Perth</h1>
+		<h1 class="hidden">{{pagetitle}} | 
+			{{env.site}}</h1>
 		<div class="article-feed">
 			{% for post in collections.posts | reverse %}
 				{% if (post.data.draft !== true) 
@@ -29,11 +32,11 @@
 						</div>
 						{% if post.data.empty !== true %}
 							<div class="share-icons">
-								<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.amyskapers.dev{{post.url | url}}" target="_blank" class="facebook share-link">
+								<a href="https://www.facebook.com/sharer/sharer.php?u={{env.url}}{{post.url | url}}" target="_blank" class="facebook share-link">
 									{{'/img/facebook.svg' | svgContents | safe}}
 									<span>Share article to Facebook (opens in new tab)</span>
 								</a>
-								<a href="https://twitter.com/home?status=so%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20https://blog.amyskapers.dev{{post.url | url}}" target="_blank" class="twitter share-link">
+								<a href="https://twitter.com/home?status=so%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20{{env.url}}{{post.url | url}}" target="_blank" class="twitter share-link">
 									{{'/img/twitter.svg' | svgContents | safe}}
 									<span>Share article to Twitter (opens in new tab)</span>
 								</a>
