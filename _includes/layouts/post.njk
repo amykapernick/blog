@@ -1,0 +1,31 @@
+---
+permalink: "{{ title | replace('#', '') | slug }}/"
+---
+
+{% extends 'partials/layout.njk' %}
+
+{% block head %}
+	{% if external %}
+		<meta rel="canonical" href="{{external}}"/>
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+
+	<main class="main">
+		<article class="article-content article content">
+			<header>
+				<h1>{{title}}</h1>
+				<div class="article-intro">
+					<div class="author"></div>
+					<time class="date" datetime="{{date}}">{{date | shortDate}}</time>
+				</div>
+			</header>
+			<div>
+				{{content | safe}}
+			</div>
+			<a class="back end" href="/">Back to Article Feed</a>
+		</article>
+	</main>
+
+{% endblock %}

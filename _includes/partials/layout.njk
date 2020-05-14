@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<title data-react-helmet="true">Amy Goes to Perth</title>
+		<link data-react-helmet="true" rel="canonical" href="https://blog.amyskapers.dev"/>
+
+		<meta data-react-helmet="true" name="description"
+		content="freelance web developer who lives in perth with her border collie. just a few musings and ramblings..."/>
+		<meta data-react-helmet="true" name="theme-color" content="#1c75bc"/>
+
+		<link rel="stylesheet" href="/css/main.css"/>
+
+		{% block head %}{% endblock %}
+	</head>
+
+	<body>
+		{% include 'partials/header.html' %}
+
+		{% block content %}{% endblock %}
+
+		{% include 'partials/footer.html' %}
+	</body>
+
+</html>

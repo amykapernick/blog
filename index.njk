@@ -1,0 +1,48 @@
+{% extends 'partials/layout.njk' %}
+
+{% block content %}
+	<main class="main">
+		<h1 class="hidden">Amy Goes to Perth</h1>
+		<div class="article-feed">
+			{% for post in collections.posts | reverse %}
+				{% if (post.data.draft !== true) 
+					or(env.env) %}
+					<article class="feed-article">
+						<div class="image-feature">
+							<img src="{{post.data.featured if post.data.featured else './img/placeholder.png'}}"/>
+						</div>
+						<div class="author">
+							{{post.data | author | safe}}
+						</div>
+						<header>
+							<h2 class="article-title">
+								{% if post.data.empty %}
+									<a href="{{post.data.external | url}}" target="__blank">{{post.data.title}}</a>
+								{% else %}
+									<a href="{{post.url | url}}">{{post.data.title}}</a>
+								{% endif %}
+							</h2>
+							<time class="date" datetime="{{post.date}}">{{post.date | shortDate}}</time>
+						</header>
+						<div class="excerpt">
+							{% excerpt post %}
+						</div>
+						{% if post.data.empty !== true %}
+							<div class="share-icons">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.amyskapers.dev{{post.url | url}}" target="_blank" class="facebook share-link">
+									{{'/img/facebook.svg' | svgContents | safe}}
+									<span>Share article to Facebook (opens in new tab)</span>
+								</a>
+								<a href="https://twitter.com/home?status=so%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20https://blog.amyskapers.dev{{post.url | url}}" target="_blank" class="twitter share-link">
+									{{'/img/twitter.svg' | svgContents | safe}}
+									<span>Share article to Twitter (opens in new tab)</span>
+								</a>
+							</div>
+						{% endif %}
+					</article>
+				{% endif %}
+			{% endfor %}
+
+		</div>
+	</main>
+{% endblock %}
