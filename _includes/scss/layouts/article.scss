@@ -37,6 +37,11 @@ h1, h2, h3, h4, h5 {
 		height: 0.8em;
 		width: 0.8em;
 	}
+
+	span {
+		position: absolute;
+		right: -200vw;
+	}
 }
 
 .back {
@@ -116,6 +121,7 @@ iframe {
 
 figure {
 	background: rgba($primary, 0.2);
+	display: inline-block;
 	padding: 15px;
 
 	figcaption {

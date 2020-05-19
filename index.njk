@@ -18,7 +18,7 @@
 					or(env.env) %}
 					<article class="feed-article">
 						<div class="image-feature">
-							<img src="{{post.data.featured if post.data.featured else './img/placeholder.png'}}"/>
+							<img src="{{post.data.featured if post.data.featured else './img/placeholder.png'}}" alt=""/>
 						</div>
 						<div class="author">
 							{{post.data | author | safe}}

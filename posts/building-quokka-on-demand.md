@@ -5,7 +5,6 @@ description: Last year I got the chance to give a live demo at the Superclass at
 categories: [Quokkas, Dev, Twilio]
 tags: 'posts'
 layout: layouts/post.njk
-
 featured: /img/Image_from_iOS.jpg
 ---
 
@@ -13,7 +12,7 @@ Last year I got the chance to give a live demo at the Superclass at [Twilio Enga
 
 Using the [Twilio WhatsApp API](https://www.twilio.com/whatsapp), it allows people to send a message in and ask for a picture of a Quokka. For those who haven't heard of them before, Quokkas are Australian marsupials (related to kangaroos and wallabies), only found on a small island called Rottnest Island, off the coast of Perth. They're herbivores (although will eat most food you leave lying around) and have no natural predators and aren't afraid of humans. But what's made them famous the most is they look like they're smiling, and are excellent at posing for selfies. So I built a bot which allowed people to ask for (and get a photo of a quokka) to brighten their day.
 
-![](/img/Untitled.png)
+![Quokkas are smiling, friendly creatures that live off the coast of Perth, Australia](/img/quokka-map.png)
 
 I would have preferred to use MMS, but currently only US numbers are supported with the Twilio MMS API (something, something, telcos 😠), so I used the WhatsApp API instead. It's currently still in beta so you have to [join a testing sandbox](https://www.twilio.com/docs/sms/whatsapp/api#twilio-sandbox-for-whatsapp), but after that it works fine. For ease of use, I also used [Twilio Functions](https://www.twilio.com/docs/runtime/functions) so that I didn't have to worry about setting up a serverless function. There's a great [quickstart guide for Twilio API for WhatsApp](https://www.twilio.com/docs/sms/whatsapp/quickstart/node), or your can follow along below.
 
@@ -150,3 +149,7 @@ Now it randomly sends one of the photos of quokkas in each message, shaking it u
 ---
 
 Feel free to play around with it, you can also fork the [repo on GitHub](https://github.com/amykapernick/quokka-on-demand).
+
+---
+
+**Update**: Part 2 in this series is now available - [*Building Quokkabot*](/building-quokkabot-part-2)
