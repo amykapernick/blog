@@ -14,6 +14,8 @@ excerpt = require('eleventy-plugin-excerpt'),
 svgContents = require("eleventy-plugin-svg-contents"),
 markdownFigures = require('markdown-it-implicit-figures')
 
+const slugs = (string) => (string.toLowerCase().replace(/(#|:|!|\?)/g, '').replace(/\s/g, '-').replace(/--/g, '-'))
+
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('readableDate', dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat('dd LLL yyyy')
@@ -49,13 +51,13 @@ module.exports = function(eleventyConfig) {
 	})
 
 	eleventyConfig.addShortcode('slug', (title) => {
-		return title.toLowerCase().replace(/(#|:|!)/g, '').replace(/\s/g, '-').replace(/--/g, '-')
+		return slugs(title)
 	})
 
 	eleventyConfig.addShortcode('posturl', (site, title) => {
 		title = title || ''
 
-		return `${site}/${title.toLowerCase().replace(/(#|:|!)/g, '').replace(/\s/g, '-').replace(/--/g, '-')}`
+		return `${site}/${slugs(title)}`
 	})
 
 	eleventyConfig.addShortcode('tweet', (tweet) => {

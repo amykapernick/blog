@@ -10,6 +10,10 @@ permalink: "{% slug title %}/"
 		<meta rel="canonical" href="{{external}}"/>
 	{% endif %}
 
+	{% if draft %}
+		<meta name="robots" content="noindex">
+	{% endif %}
+
 	<meta property="date" content="{{date}}"/>
 {% endblock %}
 
