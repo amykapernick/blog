@@ -48,6 +48,16 @@ module.exports = function(eleventyConfig) {
 		return 'Check Console'
 	})
 
+	eleventyConfig.addShortcode('slug', (title) => {
+		return title.toLowerCase().replace(/(#|:|!)/g, '').replace(/\s/g, '-').replace(/--/g, '-')
+	})
+
+	eleventyConfig.addShortcode('posturl', (site, title) => {
+		title = title || ''
+
+		return `${site}/${title.toLowerCase().replace(/(#|:|!)/g, '').replace(/\s/g, '-').replace(/--/g, '-')}`
+	})
+
 	eleventyConfig.addShortcode('tweet', (tweet) => {
 		return fetch(`https://publish.twitter.com/oembed?url=${tweet}`).then(res => res.json()).then(data => data.html)
 	})

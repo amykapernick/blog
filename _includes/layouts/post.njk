@@ -1,9 +1,8 @@
 ---
-permalink: "{{ title | replace('#', '') | slug }}/"
+permalink: "{% slug title %}/"
 ---
 {% set pagetitle = title %}
 {% set description = description %}
-{% set slug = title | replace('#', '') | slug %}
 {% extends 'partials/layout.njk' %}
 
 {% block head %}
