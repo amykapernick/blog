@@ -23,10 +23,12 @@ permalink: "{% slug title %}/"
 		<article class="article-content article content">
 			<header>
 				<h1>{{title}}</h1>
-				<div class="article-intro">
-					<div class="author"></div>
-					<time class="date" datetime="{{date}}">{{date | shortDate}}</time>
-				</div>
+				<p class="article-intro">
+					{% if publish %}
+						Published <time class="date" datetime="{{publish}}">{{publish | readableDate}}</time>, Updated
+					{% endif %}
+					<time class="date" datetime="{{page.date}}">{{page.date | readableDate}}</time>
+				</p>
 			</header>
 			<div>
 				{{content | safe}}

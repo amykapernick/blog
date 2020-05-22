@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
 	})
 
 	eleventyConfig.addFilter('shortDate', dateObj => {
+		console.log(dateObj)
 		return DateTime.fromJSDate(dateObj).toFormat('dd LLL')
 	})
 

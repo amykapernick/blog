@@ -8,7 +8,7 @@
     "url": "git+https://github.com/amykapernick/amygoestoperth.git"
   },
   "scripts": {
-    "start": "eleventy --serve --quiet --port=$PORT",
+    "start": "eleventy --serve --port=$PORT",
     "build": "eleventy"
   },
   "author": "AimHigher Web Design",
