@@ -1,6 +1,7 @@
 ---
 title: Setting up a Windows Computer for Dev
 publish: 2019-11-05
+date: 2020-05-22
 description: In the past, Windows has developed a reputation for being a difficult OS to use as a developer. Things were difficult to install and run, involved complex workarounds and you could forget doing anything involving Ruby. Thankfully in recent years that's improved, even more so with the Windows Subsystem for Linux (WSL) so it's now possible to do pretty much everything you can on a Unix system.
 categories: [Windows, Dev]
 tags: 'posts'
@@ -14,13 +15,15 @@ This is easiest when setting up a computer from scratch, but if it's an existing
 
 You may not need to use all these programs, I use the following tools on a daily basis for various types of development:
 
-* [WSL](#wsl)
-* [Homebrew](#homebrew)
-* [Ruby](#ruby)
-* [NVM (Node Version Manager)](#nvm)
-* [Yarn](#yarn)
-* [Hotel](#hotel)
-* [Windows Terminal](#windows)
+- [WSL](#wsl)
+- [HomeBrew](#homebrew)
+- [Ruby](#ruby)
+- [NVM](#nvm)
+- [Yarn](#yarn)
+  - [Installing with Homebrew](#installing-with-homebrew)
+  - [Installing with `apt-get`](#installing-with-apt-get)
+- [Hotel](#hotel)
+- [Windows Terminal](#windows-terminal)
 
 ## WSL
 
