@@ -1,5 +1,5 @@
 ---
-title: 'Building Quokkabot Part 3 - Moving to Azure Static Web Apps'
+title: 'Building Quokkabot Part 3: Moving to Azure Static Web Apps'
 date: 2020-05-27
 description: Last week I got the chance to speak at Microsoft Build, and do a first-look demo on their newly announced featured - Azure Static Web Apps. And as I didn't get access to Static Web Apps until they same time everyone else did (the day before my demo), I got to showcase how easy it was the first time you used it (ok, so maybe it was the second time that I'd used it).
 categories:
