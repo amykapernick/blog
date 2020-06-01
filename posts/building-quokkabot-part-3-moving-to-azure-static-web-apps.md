@@ -1,6 +1,7 @@
 ---
 title: 'Building Quokkabot Part 3: Moving to Azure Static Web Apps'
-date: 2020-05-27
+date: 2020-06-01
+publish: 2020-05-27
 description: Last week I got the chance to speak at Microsoft Build, and do a first-look demo on their newly announced featured - Azure Static Web Apps. And as I didn't get access to Static Web Apps until they same time everyone else did (the day before my demo), I got to showcase how easy it was the first time you used it (ok, so maybe it was the second time that I'd used it).
 categories:
   - Quokkas
@@ -65,7 +66,11 @@ During the build process, Azure uses it's own node_modules folder to install thi
 
 ### Azure Functions
 
+**Fixed**
+
 While Static Web Apps does use Azure Functions for the API back ends, there's a layer that sits between the two, which currently stops the API sending custom headers with the response (such as `Content-Type`). This has been lodged as an issue though and should be fixed shortly.
+
+**Update 1-June-2020**: This issue has now been fixed, and Azure functions are now passing through custom headers.
 
 ---
 
