@@ -230,8 +230,11 @@ BackstopJS is a good tool for running this, because it gives you starter config 
   "debugWindow": false
 }
 ```
+<blockquote class="callout" data-tag="Note">
 
-Note: Again, if you're using WSL, add the executable path the to config options in `backstop.json`
+Again, if you're using WSL, add the executable path the to config options in `backstop.json`
+
+</blockquote>
 
 ```json
 "engine": "puppeteer",

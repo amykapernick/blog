@@ -1,12 +1,13 @@
 ---
 title: Setting up a Windows Computer for Dev
 publish: 2019-11-05
-date: 2020-05-22
+date: 2020-08-20
 description: In the past, Windows has developed a reputation for being a difficult OS to use as a developer. Things were difficult to install and run, involved complex workarounds and you could forget doing anything involving Ruby. Thankfully in recent years that's improved, even more so with the Windows Subsystem for Linux (WSL) so it's now possible to do pretty much everything you can on a Unix system.
 categories: [Windows, Dev]
 tags: 'posts'
 layout: layouts/post.njk
 featured: /img/patrick-amoy-0vc8ujenzm0-unsplash.jpg
+tableContents: true
 ---
 
 In the past, Windows has developed a reputation for being a difficult OS to use as a developer. Things were difficult to install and run, involved complex workarounds and you could forget doing anything involving Ruby. Thankfully in recent years that's improved, even more so with the Windows Subsystem for Linux (WSL) so it's now possible to do pretty much everything you can on a unix system.
@@ -14,16 +15,6 @@ In the past, Windows has developed a reputation for being a difficult OS to use 
 This is easiest when setting up a computer from scratch, but if it's an existing computer most of this should work (I've had issues with installing Ruby on an existing install though).
 
 You may not need to use all these programs, I use the following tools on a daily basis for various types of development:
-
-- [WSL](#wsl)
-- [HomeBrew](#homebrew)
-- [Ruby](#ruby)
-- [NVM](#nvm)
-- [Yarn](#yarn)
-  - [Installing with Homebrew](#installing-with-homebrew)
-  - [Installing with `apt-get`](#installing-with-apt-get)
-- [Hotel](#hotel)
-- [Windows Terminal](#windows-terminal)
 
 ## WSL
 
@@ -37,7 +28,15 @@ The Windows Subsystem for Linux (WSL) gives the ability to run Linux bash on a W
 * Install Ubuntu from the [Microsoft Store](https://www.microsoft.com/en-au/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab). There are a few different versions so install what you like, but the unversioned one (`Ubuntu`) will install the latest version
 * Open up the Ubuntu app and follow the instructions to set up your new user
 
-Pro tip: make note of the password you set, you will need to use that in future
+<blockquote class="callout" data-tag="Pro tip">
+
+Make note of the password you set, you will need to use that in future (this is a mistake that I've only made once)
+
+</blockquote>
+
+### WSL2 
+
+In June 2020, Microsoft released WSL2, which you can use instead of or alongside WSL, for information on upgrading to WSL2, [check out the Microsoft docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#update-to-wsl-2).
 
 ## HomeBrew
 
@@ -68,23 +67,29 @@ sudo apt-get update
 sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
 ```
 
-## NVM
+## fnm
 
-* Install NVM with Homebrew
+Similar to NVM (Node Version Manager), [fnm](https://github.com/Schniz/fnm) is a node version manager that I had recommended to me as a better alternative
+
+* Install fnm from the github repo
   ```bash
-    brew install nvm
+    curl https://raw.githubusercontent.com/Schniz/fnm/master/.ci/install.sh | bash
   ```
-* Run the following commands to setup your terminal to use NVM
+* Add the following to your `.bashrc` (or similar) file to allow using fnm
   ```bash
-    mkdir ~/.nvm
-    cp $(brew --prefix nvm)/nvm-exec ~/.nvm/
-    export NVM_DIR=~/.nvm
-    source $(brew --prefix nvm)/nvm.sh
+    ## fnm
+    export PATH=/home/{your_username}/.fnm:$PATH
+    eval "`fnm env --multi`"
   ```
 * Install the version of node that you want and tell nvm to use that, eg:
   ```bash
-    nvm install 12.6.0
-    nvm use 12.6.0
+    ## Install the latest node version
+    fnm install latest
+    fnm use latest
+
+    ## Or install a specific version
+    fnm install 12
+    fnm use 12
   ```
 
 ## Yarn
@@ -109,32 +114,11 @@ You can install yarn either with Homebrew or via `apt-get`, it's a little easier
   ```
 * Keep an eye on the install and make sure it's not installing `cmdtest`
 
+<blockquote class="callout" data-tag="Pro Tip">
+
 If you receive an error when running `yarn install` about no install directory, it's using `cmdtest`, uninstall that and run the yarn install scripts again
 
-## Hotel
-
-[Hotel](https://github.com/typicode/hotel) is a tool I use when running local servers, to proxy localhost urls to mor user friendly (and static) domains.
-
-For example, when I run a Gatsby site locally, it could be `localhost:8000` or `localhost:8001` depending on what else I have running, and while one site could be `:8000` on Monday, on Tuesday it might be `:8001` depending on which site I start first. 
-
-With Hotel, it uses randomly generated numbers (to not conflict with other ports in use), and proxies them to a local domain set for that project, eg. `my-website.local` or `my-blog.local`.
-
-It's a nice easy one to install:
-```bash
-npm install -g hotel
-```
-
-You can start the program by running `hotel start`, and end it by running `hotel stop`.
-
-In each project, set your starting script, eg:
-```bash
-hotel add "npm start"
-```
-
-This start script may need tweaking, Hotel will set the port to `$PORT` by default, so this may need to be passed onto the local site, eg.
-```bash
-hotel add "npm start --port=$PORT"
-```
+</blockquote>
 
 ## Windows Terminal
 
@@ -151,52 +135,53 @@ You can edit the settings to customise the terminals available, the default term
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     "requestedTheme": "dark",
-    "profiles": [
-        {
-            "guid": "{00000000-0000-0000-ba54-000000000002}",
-            "commandline": "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l",
-            "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
-            "name": "Git Bash",
-            "startingDirectory": "%USERPROFILE%",
-            "backgroundImage": "C:\\Users\\amyka\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\git_bash.png",
-            "backgroundImageStretchMode": "uniform",
-            "backgroundImageOpacity": 0.1
+    "profiles": {
+        "defaults": {
+            "fontFace": "Cascadia Code PL",
+            "fontSize": 14,
         },
-        {
-            "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-            "hidden": false,
-            "name": "Ubuntu 20.04 LTS",
-            "source": "Windows.Terminal.Wsl",
-            "colorScheme": "Themer Dark",
-            "fontSize": 12,
-            "backgroundImage": "C:\\Users\\amyka\\ubuntu.png",
-            "backgroundImageStretchMode": "uniform",
-            "backgroundImageOpacity": 0.1
-        },
-    ],
-    "schemes": [
-        {
-            "name": "Theme Dark",
-            "background": "#222323",
-            "foreground": "#c2c2c2",
-            "cursorColor": "#a550a7",
-            "selectionBackground": "#007aff",
-            "black": "#575858",
-            "brightBlack": "#727373",
-            "red": "#ff5257",
-            "brightRed": "#F86E72",
-            "green": "#62ba46",
-            "brightGreen": "#7BC164",
-            "yellow": "#fbb927",
-            "brightYellow": "#F5C04B",
-            "blue": "#007aff",
-            "brightBlue": "#2C8EF8",
-            "purple": "#a550a7",
-            "brightPurple": "#B06CB2",
-            "cyan": "#00c7a3",
-            "brightCyan": "#2CCBAF",
-            "white": "#c2c2c2",
-            "brightWhite": "#dddddd"
-        },
+        "list": [
+            {
+                "guid": "{00000000-0000-0000-ba54-000000000002}",
+                "commandline": "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l",
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%",
+                "backgroundImage": "C:\\Users\\amyka\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\git_bash.png",
+                "backgroundImageStretchMode": "uniform",
+                "backgroundImageOpacity": 0.1
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu 20.04 LTS",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "//wsl$/Ubuntu/home/amy",
+                "backgroundImage": "C:\\Users\\amyka\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\ubuntu.png",
+                "backgroundImageStretchMode": "uniform",
+                "backgroundImageOpacity": 0.1
+            }
+        ]
+    }
+
 }
 ```
+
+## Tunnelto
+
+[Tunnelto](https://tunnelto.dev/) is a tool similar to [ngrok](https://ngrok.com/) that allows you to expose local servers to the internet. I had this pop on Twitter a while back and liked that the had the same functionality, but much more affordable to have custom subdomains and multiple servers running.
+
+* Run the following commands to download and install Tunnelto (you may want to get the [most recent version](https://github.com/agrinman/tunnelto/releases/) from their repository though) and make it accessible from the command line
+  ```bash
+    sudo wget https://github.com/agrinman/tunnelto/releases/download/0.1.9/tunnelto-linux.tar.gz
+    tar xvzf tunnelto-linux-tar.gz
+    mv tunnelto /usr/local/bin/tunnelto
+  ```
+* Run the below command to set your auth token
+  ```bash
+    tunnelto set-auth --key {insertyourkey}
+  ```
+* You can now start a tunnel specifying the localhost port and a subdomain (if you don't have one, it'll auto generate one for you)
+  ```bash
+    tunnelto --subdomain amyskapers --port 8080
+  ```

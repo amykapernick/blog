@@ -30,6 +30,9 @@ permalink: "{% slug title %}/"
 					<time class="date" datetime="{{page.date}}">{{page.date | readableDate}}</time>
 				</p>
 			</header>
+			{% if tableContents %}
+				{{content | toc | safe}}
+			{% endif %}
 			<div>
 				{{content | safe}}
 			</div>

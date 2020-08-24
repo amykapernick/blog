@@ -736,7 +736,7 @@ character-parser@^2.1.1:
   dependencies:
     is-regex "^1.0.3"
 
-cheerio@^1.0.0-rc.3:
+cheerio@^1.0.0-rc.2, cheerio@^1.0.0-rc.3:
   version "1.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.3.tgz#094636d425b2e9c0f4eb91a46c05630c9a1a8bf6"
   integrity sha512-0td5ijfUPuubwLUu0OBoe98gZj8C/AA+RW3v67GPlGOrvxWjZmBXiBCRU+I8VEiNyJzjth40POfHiz2RB3gImA==
@@ -1251,6 +1251,13 @@ eleventy-plugin-svg-contents@^0.6.0:
   integrity sha512-2ILjBBN+gjr0twPhCHeXpb6nuBWieu+6UCfmkM9pGwDQGA40Q6cTD6PhxCb7UdjVmRKRCqDMXxIfUs5irT2rOA==
   dependencies:
     cheerio "^1.0.0-rc.3"
+
+eleventy-plugin-toc@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-toc/-/eleventy-plugin-toc-1.1.0.tgz#7308d0332ac020c29a77c125ff27cef65fe020af"
+  integrity sha512-5wOls2nvGrmi2Gq6pxp522ig9B/bwN2mMu9pakN6GUemQXZrHNLyfIsfdNkbCeel+AZ+doV1N2slSMRQ4EziiQ==
+  dependencies:
+    cheerio "^1.0.0-rc.2"
 
 eleventy-plugin-vimeo-embed@^1.1.1:
   version "1.1.1"
