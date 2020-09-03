@@ -36,7 +36,7 @@ Make note of the password you set, you will need to use that in future (this is 
 
 ### WSL2 
 
-In June 2020, Microsoft released WSL2, which you can use instead of or alongside WSL, for information on upgrading to WSL2, [check out the Microsoft docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#update-to-wsl-2).
+In June 2020, Microsoft released WSL2, which you can use instead of or alongside WSL, for information on upgrading to WSL2, [check out the Microsoft docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#update-to-wsl-2?WT.mc_id=DOP-MVP-5003595).
 
 ## HomeBrew
 
