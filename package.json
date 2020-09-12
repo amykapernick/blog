@@ -35,7 +35,7 @@
     "markdown-it-code-embed": "^0.0.8",
     "markdown-it-implicit-figures": "^0.10.0",
     "mdfigcaption": "^0.1.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "prismjs": "^1.20.0"
