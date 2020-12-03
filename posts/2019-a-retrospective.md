@@ -5,7 +5,7 @@ description: Looking back on the last 12 months and what I got up to in 2019.
 categories: ['New Year', Retrospective]
 tags: 'posts'
 layout: layouts/post.njk
-featured: /img/MVIMG_20191215_185417.jpg
+featured: /img/2019/MVIMG_20191215_185417.jpg
 ---
 
 It's now been a couple of years since I first started doing these (and I still have a half written one for 2018). But last time I took the time to sit down and reflect on the past 12 months, it was really interesting to remind myself of all the things I've forgotten, and the past 12 months have felt like a lifetime for me.
@@ -14,13 +14,13 @@ It's now been a couple of years since I first started doing these (and I still h
 
 When I started trying to get into speaking at events, my goal for 2019 was to submit to a bunch of conferences and hopefully get to speak at one of the smaller ones. But as the 1 Jan 2019 rolled in, I'd already given my first conference talk (as the closing keynote at Google Devfest Melbourne) and was already prepping to speak at my first international conference at the end of January (NDC London).   And by the end of 2019, I'd spoken at 10 conferences in 4 different countries 😱 as well as speaking at meetups in Perth.
 
-<img src="sfa.png" alt="Screenshot of the presentations I've given this year">
+<img src="/img/2019/sfa.png" alt="Screenshot of the presentations I've given this year">
 
 The past 12 months have been a little surreal for me, I'm not sure it's actually sunk in properly yet. It's been incredible to get the chance to share some of the things that I know, and meet some amazing people from all around the world. This hasn't all been sunshine and rainbows though, the conferences I've spoken at have given me a chance while I'm still relatively unknown and so I've been determined to prove myself, which has led to a lot of stress and some sleepless nights (most of which were my fault). It's well and truly paid off though, as not only did my speaking skills improve but most of the conferences I spoke at were giving the same talk, which I got to iterate over and improve throughout the year.
 
 I've also had the chance to speak at several [PubConfs](https://pubconf.io/speakers/amy_kapernick/) (and then win one). This was a whole different kind of terrifying experience as I had to give a talk, entertain the audience and couldn't control my slides or use notes. Despite how terrifying it is though, I somehow keep agreeing to come back and do it all over again, I guess I'll never learn.
 
-<img src="Speaking_Pictures.jpg" alt="Collage of pictures of me speaking at various events this year">
+<img src="/img/2019/Speaking_Pictures.jpg" alt="Collage of pictures of me speaking at various events this year">
 
 This year I've had the chance to tick several items off my speaking bucketlist, including giving another keynote, speaking at an international conference, give a live demo (which wasn't a complete failure) and be invited to speak at a conference. As I gave the same talk throughout most of the year, I have wondered whether I was just a "one hit wonder" though, whether this is something I can continue to do or if this year is all I've got. Thankfully as I head into 2020, I've been able to banish those doubts as I've already got 2 conferences lined up, returning to NDC London again this year then joining Ignite the Tour in Sydney in February.
 
@@ -43,12 +43,12 @@ But it's all been so work it, and I've loved every minute of it (although the re
 
 While travel has sometimes peaked my interest, I love Australia and the idea of spending weeks or months away from home has never appealed to me. Thankfully this year I've had a chance to travel in short blocks, having a couple of days here and there around the various conferences I've attended. This has given me the chance to visit countries and places I never would have considered, and not have to spend too long away from home.
 
-<div class="gallery"><img src="nse-4350571241641513084-tripit_stats.png.png" alt="Screenshot of the Tripit travel stats for this year">
-<img src="Untitled.png" alt="Map of the flights I've taken this year"></div>
+<div class="gallery"><img src="/img/2019/nse-4350571241641513084-tripit_stats.png.png" alt="Screenshot of the Tripit travel stats for this year">
+<img src="/img/2019/Untitled.png" alt="Map of the flights I've taken this year"></div>
 
 Several times throughout the year I've had people ask me if I travel a lot, and my response would always be "Not really", but around the middle of the year I realised that I couldn't really say that anymore 😂. This year I've been travelling for 115 days, which comes to about 31.5% of the year, which is almost 4 whole months 😱. I've had the chance to visit 3 countries I'd never been to, see 5 cities I'd never been to and explore places I wouldn't normally have considered going to.
   
-<div class="gallery"><img src="MVIMG_20191124_112840_1.jpg" alt="MVIMG 20191124 112840 1"> <img src="IMG_20190618_220939_082.jpg" alt="IMG 20190618 220939 082"> <img src="IMG_20190129_155438_061.jpg" alt="IMG 20190129 155438 061"> <img src="MVIMG_20191107_220826.jpg" alt="MVIMG 20191107 220826"> <img src="MVIMG_20190505_124447.jpg" alt="MVIMG 20190505 124447"> <img src="IMG_20191016_231707_699.jpg" alt="IMG 20191016 231707 699"> <img src="MVIMG_20190510_170250.jpg" alt="MVIMG 20190510 170250"></div>
+<div class="gallery"><img src="/img/2019/MVIMG_20191124_112840_1.jpg" alt="MVIMG 20191124 112840 1"> <img src="/img/2019/IMG_20190618_220939_082.jpg" alt="IMG 20190618 220939 082"> <img src="/img/2019/IMG_20190129_155438_061.jpg" alt="IMG 20190129 155438 061"> <img src="/img/2019/MVIMG_20191107_220826.jpg" alt="MVIMG 20191107 220826"> <img src="/img/2019/MVIMG_20190505_124447.jpg" alt="MVIMG 20190505 124447"> <img src="/img/2019/IMG_20191016_231707_699.jpg" alt="IMG 20191016 231707 699"> <img src="/img/2019/MVIMG_20190510_170250.jpg" alt="MVIMG 20190510 170250"></div>
 
 
   
@@ -64,14 +64,14 @@ https://twitter.com/Amys_Kapers/status/1201255698786476032
 
 This year I've also continued to feed my conference addiction, with most of the time being there as a speaker, organiser or manning a booth (sometimes all of the above). While I've had the chance to see some interesting talks at these events, I've also had the chance to meet lots of amazing people (while getting stuck in the hallway track), and build on my network.
 
-<img src="MVIMG_20200107_095616.jpg" alt="Collection of my conference lanyards from 2019 events">
+<img src="/img/2019/MVIMG_20200107_095616.jpg" alt="Collection of my conference lanyards from 2019 events">
 
 ## People
 
 During the past 12 months, I've had the chance to meet so many amazing people, and my life is definitely better for it. Throughout the year I've met people at various events (or on the internet) and have grown my circle of friends so that it now spans all across the world. These people have been the highlight of my year, I definitely couldn't have made it without you. Here's to another year of exploding kittens and silly antics!
 
 <div class="gallery">
-<img src="https:MVIMG_20191209_202352.jpg" /> <img src="https:MVIMG_20191024_171521.jpg" /><img src="https:IMG_20190921_091543_1.jpg" /> <img src="https:IMG_20191003_181036.jpg" /> <img src="https:IMG_20191011_172204.jpg" /> <img src="https:IMG_20191016_084335.jpg" /> <img src="https:MVIMG_20191031_140319.jpg" /> <img src="https:MVIMG_20191122_230757.jpg" /> <img src="https:MVIMG_20191130_190219.jpg" /> <img src="https:MVIMG_20191115_105654.jpg" /> <img src="https:MVIMG_20190403_180230.jpg" /> <img src="https:MVIMG_20190131_130914.jpg" /> <img src="https:MVIMG_20190522_195039.jpg" /> <img src="https:IMG_20190628_125548.jpg" /> <img src="https:MVIMG_20190830_150824_1.jpg" /> <img src="https:MVIMG_20190621_000215.jpg" /> <img src="https:MVIMG_20190619_161820.jpg" /> <img src="https:MVIMG_20190621_101546_1.jpg" /><img src="https:MVIMG_20190507_191335.jpg" /> <img src="https:IMG_20190808_185902_230.jpg" /> <img src="https:IMG_20190924_111452_628.jpg" /> <img src="https:MVIMG_20191209_095959.jpg" /> <img src="https:IMG_20190805_165610_391.jpg" /> <img src="https:74153851_10157597523393468_9054970097210228736_n.jpg" />
+<img src="/img/2019/MVIMG_20191209_202352.jpg" /> <img src="/img/2019/MVIMG_20191024_171521.jpg" /><img src="/img/2019/IMG_20190921_091543_1.jpg" /> <img src="/img/2019/IMG_20191003_181036.jpg" /> <img src="/img/2019/IMG_20191011_172204.jpg" /> <img src="/img/2019/IMG_20191016_084335.jpg" /> <img src="/img/2019/MVIMG_20191031_140319.jpg" /> <img src="/img/2019/MVIMG_20191122_230757.jpg" /> <img src="/img/2019/MVIMG_20191130_190219.jpg" /> <img src="/img/2019/MVIMG_20191115_105654.jpg" /> <img src="/img/2019/MVIMG_20190403_180230.jpg" /> <img src="/img/2019/MVIMG_20190131_130914.jpg" /> <img src="/img/2019/MVIMG_20190522_195039.jpg" /> <img src="/img/2019/IMG_20190628_125548.jpg" /> <img src="/img/2019/MVIMG_20190830_150824_1.jpg" /> <img src="/img/2019/MVIMG_20190621_000215.jpg" /> <img src="/img/2019/MVIMG_20190619_161820.jpg" /> <img src="/img/2019/MVIMG_20190621_101546_1.jpg" /><img src="/img/2019/MVIMG_20190507_191335.jpg" /> <img src="/img/2019/IMG_20190808_185902_230.jpg" /> <img src="/img/2019/IMG_20190924_111452_628.jpg" /> <img src="/img/2019/MVIMG_20191209_095959.jpg" /> <img src="/img/2019/IMG_20190805_165610_391.jpg" /> <img src="/img/2019/74153851_10157597523393468_9054970097210228736_n.jpg" />
 </div>
 
   

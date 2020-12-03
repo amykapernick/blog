@@ -4,14 +4,12 @@ date: 2019-07-22
 description: Here are a few tricks I use for HTML and CSS only UI elements
 categories: [HTML, CSS]
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/screenshot_2019-07-22-html-and-css-only-testimonial-carousel.png
+featured: /img/dev/html-css-tricks/screenshot_2019-07-22-html-and-css-only-testimonial-carousel.png
 ---
 
 So recently I shared a HTML and CSS only testimonial carousel, and was accused of witchcraft 🤣
 
-![](/img/https://media.giphy.com/media/enzPQyHVWMfx6/giphy.gif)
+![](/img/dev/html-css-tricks/https://media.giphy.com/media/enzPQyHVWMfx6/giphy.gif)
 
 Despite the fact that this absolutely made my day (and resulted in me having to go home that night and re-watch _The Holy Grail_), I decided to compile a few of my little JS-free tricks.
 

@@ -4,9 +4,7 @@ date: 2018-10-29
 description: When I first started working for myself fulltime, I was excited for the freedom and flexibility I could have. No rules, no restrictions and no routines, I could do whatever I wanted! But it didn't take me long before I found I was a little lost, and not really getting anything done. Maybe routines aren't necessarily a bad thing...
 categories: [Productivity]
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/rawpixel-603656-unsplash.jpg
+featured: /img/feature/rawpixel-603656-unsplash.jpg
 ---
 
 When I started working for myself fulltime, I was so excited for the freedom and flexibility I could have. No rules, no restrictions, no routines. I could do whatever I wanted, when I wanted and no one could tell me otherwise. But it didn't take me long before I realised I was a little lost and not getting anything done. I'd spend several days vegging out on the couch and then have to stay up until 3am to meet a deadline. Then I'd sleep until midday the next day and the whole cycle would start all over again. So I decided to implement a routine. It took me a couple of goes and over 6 months but I eventually made progress with this, and I found that instead of feeling restricted because of it, I felt better than when I'd just been doing whatever I felt like.
@@ -53,9 +51,9 @@ While I've tried to put this in place several times during the last 12 months, i
 
 Once I had the schedule worked out, I was able to transition it into my scheduling app (different from my calendar). I use [TimeTune](https://timetune.center/) (available for [Android](https://play.google.com/store/apps/details?id=com.gmail.jmartindev.timetune)) but there a bunch of different apps out there that do similar things. This allowed me to put in my time blocks for each day, and allows you to program which routines are active when (for example, when I'm on holidays or at a conference the whole thing goes out the window). I have a reminder go off at the start of each new time block, and it gives me a reminder 15 minutes before I should be heading to bed. It even connects with my calendar, so I can see a timeline of where certain meetings and events are falling in my schedule. Having it in this format is also really useful when it comes to seeing how much time I'm spending on various tasks, as they will give you stats for each routine on how much time you're spending on each block classification (they use tags). This means it's really easy to see you're spending 60 hours each week on blocks tagged with _work_ but only 5 hours tagged with _me time_, and helps you spot the parts that need changing.
 
-![](/img/screenshot_20181029-174322.png)
+![](/img/tools/routine/screenshot_20181029-174322.png)
 
-![](/img/screenshot_20181029-175049.png)
+![](/img/tools/routine/screenshot_20181029-175049.png)
 ## Changing my Routine
 
 As I said at the start, the great thing about a good routine is it's not set in stone, it flexes and flows as needed. When I'm away at a conference, the whole thing basically goes out the window between flights, the conference schedule and any exploring or catching up I'm doing while I'm away. It also changes depending on what meetings and events I have on each week. Most of my meetups are in the evening, but some start a little earlier so I need to leave home a bit earlier, and some are in the morning (those ones were really hard in winter) which cuts into my morning work time. Part of my planning each Sunday involves going through the week ahead and seeing what I have on. Maybe I have a morning meetup, so I'm missing my big productive time. This may be ok, but it may mean I take my optional work block on a Saturday to make up for it. 

@@ -4,9 +4,7 @@ date: 2020-01-21
 description: After Global Diversity CFP Day, sharing some of the thoughts that I have spinning around my head from the past sessions and what I've learnt speaking at conferences
 categories: [Conferences, CFPs]
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/49021351368_62d563412f_o.jpg
+featured: /img/speaking/49021351368_62d563412f_o.jpg
 ---
 
 Well [Global Diversity CFP Day](https://www.globaldiversitycfpday.com/) has wrapped up again for another year, and my head is still spinning with things I wish I'd remembered to share. So while it's all still fresh (and while I can continue to postpone my other work 😂), I thought I'd take the chance to write them down.
@@ -44,13 +42,13 @@ One important note on submitting to conferences - it doesn't hurt to try. I've t
 
 - Try and keep it simple, don't give the audience too much to read, give them a short snippet to remember, highlighting anything import (my slides are often something I think is "tweetable")
 
-![](/img/css-grid-tweet-slide.png)
+![](/img/speaking/css-grid-tweet-slide.png)
 
 - Know what your timing is, and have points in the presentation where you mark what time you should be at (eg. at slide 50, have a note that you should be 10min in to the talk), practicing adding or taking out parts of your talk, without skipping through a bunch of slides. Have a longer explanation or a story you can tell to fill the time, or that can be omitted to make it up
 - Make sure everything can be read from the back of the room, and keep accessibility in mind when choosing the colours; red, deep blue, cyan and yellow are distinguishable from each other 99.9999% of the time. This is also important if the projector in the room isn't great, colour shouldn't be the only thing being used to demonstrate something
 - Code is often more readable on a dark background and if you're using [highlight.js](https://highlightjs.org/) for your syntax highlighting, they have an accessible theme: [a11y-dark](https://github.com/highlightjs/highlight.js/blob/master/src/styles/a11y-dark.css) (there's also a light version)
 
-![](/img/Screenshot_2020-01-21_CSS_Grid_-_What_is_this_Magic_by_Amy_Kapernick.png)
+![](/img/speaking/Screenshot_2020-01-21_CSS_Grid_-_What_is_this_Magic_by_Amy_Kapernick.png)
 
 ## Before the Conference
 

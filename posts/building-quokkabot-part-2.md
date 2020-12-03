@@ -40,7 +40,7 @@ module.exports = async function (context) {
 
 The function is triggered when a WhatsApp message is sent, and returns the message in response.
 
-![When a WhatsApp message is sent, it triggers a response back](/img/quokkabot-1.png)
+![When a WhatsApp message is sent, it triggers a response back](/img/quokkabot/quokkabot-1.png)
 
 Next step is to fetch an image that's been included in the message, and the first thing to do with this is parse the request body, which was prevented a slight hiccup. Previously, I'd been using express and middleware to parse the request, but unfortunately the express middleware packages aren't compatible with Azure Functions. Thankfully I managed to find an alternative (`querystring`) without too many issues, and parsed the message body to find the image when included in a message.
 
@@ -67,7 +67,7 @@ module.exports = async function (context) {
 
 Now when an image is sent, it sends the URL of the image back to the user.
 
-![](/img/quokkabot-2.png)
+![](/img/quokkabot/quokkabot-2.png)
 
 Thankfully, Twilio provides a URL to the image that's sent, which makes it much easier to send the image through to Custom Vision. At this point I created a separate file, at focus on the Custom Vision side of things. Using the [Custom Vision Prediction SDK](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/cognitiveservices/cognitiveservices-customvision-prediction), I can pass in an image URL and get the prediction results back
 
@@ -205,7 +205,7 @@ module.exports = async function (context) {
 };
 ```
 
-![](/img/quokkabot-3.png)
+![](/img/quokkabot/quokkabot-3.png)
 
 Because this originally started with the ability to request pictures of Quokkas, I wanted to keep that original functionality as well. So creating a new file, I randomly chose an image and added an extra response to let people know how they can use Quokkabot.
 

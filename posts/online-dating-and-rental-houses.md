@@ -4,14 +4,12 @@ date: 2017-02-25
 description: Both online dating and rental houses are fraught with frustration and disappointment, and it's even worse when you're going through both at the same time.
 categories: undefined
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/medium_c04c15db-181b-481b-8079-dbae0d3ab185_1_4mavannp1nmvwqqfd2ugbg.jpg
+featured: /img/feature/medium_c04c15db-181b-481b-8079-dbae0d3ab185_1_4mavannp1nmvwqqfd2ugbg.jpg
 ---
 
 During the past couple of months I’ve had to endure 2 things that no one enjoys doing; online dating and finding a new rental house. This has led me to realise that there are many similarities between the two, besides the fact that I don’t really enjoy either of them.
 
-![](/img/medium_c04c15db-181b-481b-8079-dbae0d3ab185_1_4mavannp1nmvwqqfd2ugbg.jpg)
+![](/img/feature/medium_c04c15db-181b-481b-8079-dbae0d3ab185_1_4mavannp1nmvwqqfd2ugbg.jpg)
 
 One of the biggest similarities I find between online dating and finding a new rental, is the photography. So many houses I looked at had employed the use of “creative photography”. I have a dog so finding a place is already hard,and do you know how often I went somewhere that looked to have a decent sized yard in the photo but actually more closely resembled the square feet of land you can buy in Scotland? The same goes for online dating, I can’t count the number of times I’ve gone on a date with someone to find out that their pictures from their profile are actually about 10 years (and 10 pants sizes) ago.
 

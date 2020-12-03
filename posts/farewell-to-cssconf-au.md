@@ -4,14 +4,12 @@ date: 2018-04-16
 description: Recap of my time at the final CSSConf Au in Melbourne in 2018
 categories: [Conference, 'CSS Conf']
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/bc13f1f12f0d93dde12c8543cf8c7f15e4dbc8d5_img_20180320_100538.jpg
+featured: /img/conferences/css-conf-au-2018bc13f1f12f0d93dde12c8543cf8c7f15e4dbc8d5_img_20180320_100538.jpg
 ---
 
 Last month I got the awesome opportunity to go to the final CSSConf AU in Melbourne and see a range of amazing speakers from all over the world (including one of my good friends from Perth). This was the first time I'd been to a CSSConf and I'm so glad I was able to make it before they finished up. The entire experience from start to finish was amazing, inclusive, inspiring, encouraging and came close to being the best conference I've been to (Mixin still ranks as my favourite conference. Although I didn't make it to JSConf (I did get to Decompress though), my week was packed with inspiring talks, meeting amazing people and thoroughly enjoying the time I spent in Melbourne (probably about as much as I enjoyed collapsing into bed when I made it home 😂😴).
 
-![](/img/10abc9db15db44c44001e218ed88cecb499a6937_karaoke.jpg)
+![](/img/conferences/css-conf-au-201810abc9db15db44c44001e218ed88cecb499a6937_karaoke.jpg)
 
 CSSConf managed to get lucky in that they were earlier in the week before I'd started to get tired (and after I'd recovered from my jet lag the day before) and they got off to a great start. One of my pet peeves with conferences is that they have "plate food" (food that is eaten off a plate) but never have enough/any places to sit and eat. This means that there are often crowds of attendees standing around and awkwardly holding a plate while trying to eat off it.
 
@@ -57,15 +55,15 @@ Brenda also took the time to remind us that we're always learning something new,
 
 With such a huge emphasis on site performance, we're having to look at everything we can do to help reduce site size, page load time and network requests. This has meant we now combine and minify every file, load scripts and styles inline where possible, compress and optimise every image so it's not even a pixel bigger than it needs to be and put everything on a CDN with the dial turned up to the max. But Jeremy showed us that we've likely forgotten one asset included on every site that is slowing us down - fonts.
 
-![](/img/365771794682a666ff06b7bee200da129d82a0d8_mvimg_20180320_115207.jpg)
+![](/img/conferences/css-conf-au-2018365771794682a666ff06b7bee200da129d82a0d8_mvimg_20180320_115207.jpg)
 
-![](/img/54da28a446eaae85f06fa914d32b623f9fa4e9e3_img_20180320_115328.jpg)
+![](/img/conferences/css-conf-au-201854da28a446eaae85f06fa914d32b623f9fa4e9e3_img_20180320_115328.jpg)
 
 While most of the world has pretty decent internet (except Australia), sometimes you might be dealing with a site that is being delivered to a customer who has a low data quota or a very slow speed, and they don't care as much about the custom font you've hand picked and delivered to the site. Google (and a few other providers) are now allowing users to enable "data-saving-mode" which allows developers to select which assets they deliver depending on whether data-saving-mode is turned on. This can be as simple as checking for it, and adding a class to start loading additional assets (fancier fonts, bigger images, etc) if it isn't. The secret is, most of the time the customer won't notice or care about the different font and they may just appreciate the faster load time or the little bit of extra data they now have.
 
 There are also various other methods of looking after your users, whether that be by setting font-display: swap to display a locally installed font until your font loads, hosting fonts on your own server so the browser doesn't have to go and look for them somewhere else and reloading fonts where possible. Jeremy also finished off the talk with a very important reminder to remember the licensing agreements for fonts as a lot of work has gone into creating this resource for you to use.
 
-![](/img/2cbd77aa28588147db82dab7a7b0e39018558f47_img_20180320_120658.jpg)
+![](/img/conferences/css-conf-au-20182cbd77aa28588147db82dab7a7b0e39018558f47_img_20180320_120658.jpg)
 
 ## [Can you see that OK? CSS tips for low-vision accessibility](http://www.juliegrundy.id.au/links/low-vis/notes.html)
 
@@ -77,7 +75,7 @@ https://twitter.com/Amys_Kapers/status/975905801519812608
 
 Having spent a fair chunk of her career in accessibility, Julie went through some of the simple CSS tricks that we can use in our day-to-day development to not just make it better for people with vision impairments, but make it a better experience for everyone. More than 9% of Australians have some form of diminished vision and would benefit from (and appreciate) just a couple of small tweaks; and the rest of us would just appreciate it when trying to look at a site while outside in the sun or when there's a lot of glare.
 
-![](/img/e5a42053313eb1fe3bbb1ff11c5d232300c64177_mvimg_20180320_122421.jpg)
+![](/img/conferences/css-conf-au-2018e5a42053313eb1fe3bbb1ff11c5d232300c64177_mvimg_20180320_122421.jpg)
 
 It was reassuring to hear some of Julie's tips as techniques that I already use (like using em values rather than px for media queries to make it responsive), but there was something to take home for even the most experienced developer. Properties like text-decoration-skip-ink allow underlines to skip low hanging letters and not only add a little design flair, but make it easier for dyslexic susers to read the text (and making sure to keep the underline for links in case the user has enabled a high-contrast mode on their computer).
 
@@ -102,7 +100,7 @@ https://twitter.com/Amys_Kapers/status/975943750080872448
 
 And lets not forget that she reminded us it's ok because everyone is like this when working from home 😂.
 
-![](/img/ezgif-1-77d99effd9.gif)
+![](/img/conferences/css-conf-au-2018ezgif-1-77d99effd9.gif)
 
 When coming up with a new colour system for Github, there were so many differing factors to take into account, including whether people would still recognise different buttons/sections/features when a colour was changed, whether there were too many colours being used on the site, whether they were accessible and the most important - how would the user base react to the change?
 
@@ -134,9 +132,9 @@ https://twitter.com/Amys_Kapers/status/975975535456108544
 
 With the web changing so quickly and so many lines between languages and jobs being blurred, it's getting hard to define what role we perform each day. Am I a front-end developer, a CSS developer, a JS developer, Full-stack, UX/UI, designers, developer, engineer, the list goes on and on (this is why I've started listing my job title as "Front End Jedi" 😂)
 
-![](/img/fa6696b05282b465e16344f6abeb93b0b0a3b209_mvimg_20180320_170111.jpg)
+![](/img/conferences/css-conf-au-2018fa6696b05282b465e16344f6abeb93b0b0a3b209_mvimg_20180320_170111.jpg)
 
-![](/img/60ad6cfededdcae6f181df47ef388b9a51365621_img_20180320_170132.jpg)
+![](/img/conferences/css-conf-au-201860ad6cfededdcae6f181df47ef388b9a51365621_img_20180320_170132.jpg)
 
 We used to have a clear-cut line between CSS as presentation and development as the function and interaction of the elements, but now CSS is the presentation and the interaction, experience and access. The mind-set that CSS is "easy" and "not a real language" still exists in developers these days, but CSS is getting more and more complex every day.
 

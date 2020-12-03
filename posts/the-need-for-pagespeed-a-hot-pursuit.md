@@ -4,9 +4,7 @@ date: 2017-11-01
 description: What does Google Pagespeed actually mean? And what do you need to do about your score? Is it all just a scam? Probably
 categories: [Performance]
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w-00wj1r0de.jpg
+featured: /img/dev/performance/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w-00wj1r0de.jpg
 ---
 
 Lately there’s a big rise in people running [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) reports on their sites. But what does this number actually mean to developers, to clients and to site visitors? Like their search engine algorithm, Google is a little fuzzy about exactly how they classify sites using this tool but they insist that it’s important for SEO. Can you really expect to get the perfect 100/100 score, or should you take it with a grain of salt?
@@ -17,7 +15,7 @@ It’s not really a surprise that site load times have become important, we now 
 
 In 2010, Google announced that it would start taking page load times into account when ranking sites using their search engine. So when a page takes a long time to load, you’re already getting affected with visitors potentially not even getting to your site to start with. But how much does your PageSpeed score affect your SEO ranking?
 
-![](/img/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w-00wj1r0de.jpg)
+![](/img/dev/performance/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w-00wj1r0de.jpg)
 
 The secret is, not many sites are actually bad enough for their PageSpeed to start affecting their ranking with Google. Around 1% of search results have their ranking affected by their PageSpeed score, and with around 30 trillion pages being indexed and searched by Google (and this is going up, that number will probably be out of date by the time I publish this), the chances that your site is in that 1% (equates to around 30 billion pages) is pretty small.
 
@@ -44,11 +42,11 @@ While Google PageSpeed gives you a really good basic overview of your site, ther
 [WebPagetest](https://www.webpagetest.org/) is a little more intimidating, but provides a lot more information, breaking down scores into the different sections of your site (code, images, etc). It also measures the page load time, taking into account the initial load (the first time that a user visits your site) and subsequent load times (taking into account any browser caching that you’ve enabled to optimise the experience).
 
 
-![](/img/7a7b2c7cf9d459bc75951c6ee5d8524b733d508f_0_g1gl9ba4kblbjbu5.png)
+![](/img/dev/performance/7a7b2c7cf9d459bc75951c6ee5d8524b733d508f_0_g1gl9ba4kblbjbu5.png)
 
 Another great tool (also by Google), is Test My Site which is more centered around mobile performance and compares your site to others in your industry. This is a really great tool if you want to get an idea about how you’re ranking against your competitors. This is generated off WebPagetest but is a much more simplified version.
 
-![](/img/2d15a1a2b52ab8368031ea5255639aff4f3a9808_0_gb1jbifdua6qgabt.png)
+![](/img/dev/performance/2d15a1a2b52ab8368031ea5255639aff4f3a9808_0_gb1jbifdua6qgabt.png)
 
 The best way to determine whether your page load time is affecting your site’s traffic, though is using your Google Analytics. The bounce rate of your website measures how many people ‘bounce’ from your site before navigating to another page. The expected bounce rate depends a lot on the type of site, but in general:
 
@@ -58,7 +56,7 @@ The best way to determine whether your page load time is affecting your site’s
 * 30–50% is excellent
 
 
-![](/img/214d1c2a2b6153643d40d1c8860d670ff316b836_0_dmj1mpen0efjc2og.png)
+![](/img/dev/performance/214d1c2a2b6153643d40d1c8860d670ff316b836_0_dmj1mpen0efjc2og.png)
 
 While site performance is very important and you should definitely look at improving the page load time, you don’t necessarily need to be worried because you’ve received an average PageSpeed score. Try running reports on some of the other tools to see if they stack up and check the bounce rate to see if you’re losing site visitors. Optimising your site is always a good thing to do though, let’s see if we can make the web a little faster.
 

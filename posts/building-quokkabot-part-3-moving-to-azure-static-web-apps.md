@@ -20,21 +20,21 @@ Using an [existing static site](https://github.com/amykapernick/quokkas), with i
 
 From the Azure Portal, create a new resource for Static Web App (currently in preview)
 
-![](/img/static_web_app_resource.png)
+![](/img/quokkabot/static_web_app_resource.png)
 
 Select your Azure subscription and resource group (for now, Static Web Apps is free), you'll need to authorise your GitHub account and select the repository and branch you're deploying from.
 
-![](/img/swas_repo_connect.png)
+![](/img/quokkabot/swas_repo_connect.png)
 
 Specify the details for the site build, my static site sits in the root folder of the repository, and builds out to a folder called `_site`. While I don't have an API to include there yet, leaving the API location as is is fine (if they can't find the `api` folder, they'll ignore it.
 
-![](/img/swas_build.png)
+![](/img/quokkabot/swas_build.png)
 
 Next, click **Review + create** to create the new resource. 
 
 This will automatically create a workflow file in your repo, with a GitHub action to build the site and deploy it to Azure.
 
-![](/img/swas_github_action.png)
+![](/img/quokkabot/swas_github_action.png)
 
 That's it. You're done.
 
@@ -42,7 +42,7 @@ That's it. You're done.
 
 In the Azure portal, you can add a custom domain to your application. Click to **Add** a new domain, and setup the DNS records provided, then wait to verify the DNS changes.
 
-![](/img/aswa_custom_domain.png)
+![](/img/quokkabot/aswa_custom_domain.png)
 
 Again, you're done.
 
@@ -54,7 +54,7 @@ I created a new folder in the static site project called `api` and copied all th
 
 When the GitHub action detects the API folder, it will deploy that part of the project to Azure Functions. These functions then appear in the Azure portal with the static site.
 
-![](/img/aswa_functions.png)
+![](/img/quokkabot/aswa_functions.png)
 
 ## Gotchas
 

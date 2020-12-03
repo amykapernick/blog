@@ -6,7 +6,7 @@ description: In the past, Windows has developed a reputation for being a difficu
 categories: [Windows, Dev]
 tags: 'posts'
 layout: layouts/post.njk
-featured: /img/patrick-amoy-0vc8ujenzm0-unsplash.jpg
+featured: /img/feature/patrick-amoy-0vc8ujenzm0-unsplash.jpg
 tableContents: true
 ---
 
@@ -46,7 +46,7 @@ In June 2020, Microsoft released WSL2, which you can use instead of or alongside
   ```
 * It will print out steps for you to take, make sure you follow all of them for it to work.
 
-![](/img/homebrew-install.png)
+![](/img/dev/windows-terminal-setup/homebrew-install.png)
 
 ```bash
 sudo apt-get install build-essential
@@ -126,7 +126,7 @@ No matter whether you use WSL, Git Bash, Command Prompt or Powershell, [Windows 
 
 Install through the Windows [App Store](https://www.microsoft.com/en-au/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab).
 
-![](/img/windows_terminal.png)
+![](/img/dev/windows-terminal-setup/windows_terminal.png)
 
 You can edit the settings to customise the terminals available, the default terminal, or to change the theme and background colours. For example, I have a background image set (with a fair bit of opacity so it's not too bright), so at a glance I can see which terminal I'm in.
 

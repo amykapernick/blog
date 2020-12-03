@@ -6,7 +6,7 @@ categories: [CSS, 'CSS Grid']
 tags: 'posts'
 layout: layouts/post.njk
 draft: true
-featured: /img/css-grid/grid_cover.png
+featured: /img/dev/css-grid/grid_cover.png
 excerpt: <p>We've come a long way with our CSS layouts, from the table layouts that continue to haunt our nightmares, to floats and clearfixes, through flexbox and negative margins, all the way to CSS grid and our ability to fully control our layouts in both directions.</p>
 ---
 
@@ -14,7 +14,7 @@ excerpt: <p>We've come a long way with our CSS layouts, from the table layouts t
 
 In the beginning, there was darkness and emptiness and a man named Tim Berners-Lee said "Let there be internet".
 
-![http://info.cern.ch/hypertext/WWW/Technical.html](/img/css-grid/the_internet.png)
+![http://info.cern.ch/hypertext/WWW/Technical.html](/img/dev/css-grid/the_internet.png)
 
 The internet was a simpler in those days, with just HTML content arranged on the page as you would in a word document. But within the next couple of years people got sick of looking at Times New Roman and so then Tim said "let the fonts and colours and sizes and positions be changeable". And then there was CSS.
 

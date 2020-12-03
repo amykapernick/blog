@@ -7,7 +7,7 @@ categories:
   - Streaming
 tags: posts
 layout: layouts/post.njk
-featured: /img/hacktoberfest.png
+featured: /img/feature/hacktoberfest.png
 ---
 To say this year has been strange is an understatement, and it's terrifying to realise that October is already upon us! To me October is a couple of things, for example October means it's [Frocktober](https://www.frocktober.org.au/my-fundraising/742/amy-kapernick), and for the entire month I'll be only wearing dresses to raise money for ovarian cancer, but October also means it's time for [Hacktoberfest](https://hacktoberfest.digitalocean.com/)!
 
@@ -15,7 +15,7 @@ For those who aren't familiar with it, Hacktoberfest is a celebration of open so
 
 Each year I hear about this and I keep saying I'm going to do it, but as someone who hasn't contributed to open source, and typically works with the front end, this has always been super confronting and I never know where to start. Thankfully last year [Dominik Kundel](https://dkundel.com/) helped me to get at least one PR in, with the [Open Pixel Art](https://open-pixel-art.com/) project. This project allowed you to contribute 1 pixel to the grid, and even came along with a [special Twilio Quest mission](https://www.twilio.com/quest/learn/open-source) to take you through the contribution process if you haven't done it before. I still got distracted and didn't manage to get the 4 required PRs in, but it reminded me that there are still things I can contribute to!
 
-![](/img/open-pixel-art.png)
+![](/img/dev/hacktoberfest/open-pixel-art.png)
 
 ## Contributing to Hacktoberfest 2020
 
@@ -36,7 +36,7 @@ There's plenty of options, and you can also search for open GitHub issues that p
 
 - If you haven't submitted a PR before (or are completely new to GitHub), the Twilio Quest *[Flame of Open Source](https://www.twilio.com/quest/learn/open-source)* mission is a great place to start as it walks you through the entire process
 
-    ![](/img/twilio-quest-open-source.png)
+    ![](/img/dev/hacktoberfest/twilio-quest-open-source.png)
 
 - Michelle Sandford has put together a [repository of resources for people getting started with coding](https://github.com/msandfor/10-Easy-Steps/), and you can contribute to it as part of Hacktoberfest!
 - If you like coding CSS, [Style Stage](https://stylestage.dev/) is a great place to check out and you can flex your CSS muscles creating a different stylesheet version

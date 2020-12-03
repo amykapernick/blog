@@ -5,7 +5,7 @@ description: I remember a few years back when I first started using SSL certific
 categories: [SSL, Security]
 tags: 'posts'
 layout: layouts/post.njk
-featured: /img/undraw_safe_bnk7.png
+featured: /img/feature/undraw_safe_bnk7.png
 ---
 
 I remember a few years back when I first started using SSL certificates on my websites, I spent several hours trying to get stuff working on the command line, eventually finding an online generator and working out what they needed me to do to verify the site and generate the certificate. And once that was done, I still needed to install it on my hosting, the whole process was complicated and confusing, and even once I'd written it down it still took some concentration to get it done (and needed to be repeated every 90 days to renew the certificate).

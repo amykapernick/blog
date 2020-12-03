@@ -4,9 +4,7 @@ date: 2020-02-24
 description: Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than just ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.
 categories: [CSS Grid, Dev, Calendar, Eleventy]
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/css-grid-calendar.png
+featured: /img/dev/css-grid-calendar/css-grid-calendar.png
 ---
 
 Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than just ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.
@@ -153,7 +151,7 @@ Then we use flexbox to keep the date in the top right corner of the box, and use
 
 Add a custom font and a few colours, and that's looking pretty good.
 
-~[This is a caption](/img/year_blocks.png)
+~[This is a caption](/img/dev/css-grid-calendar/year_blocks.png)
 
 
 But we also want to be able to see what day and month each of these is, so we use the `data-` attributes to create pseudo elements. If the element has a `data-monthName` attribute (ie. is the first on the month), it creates a pseudo element and positions it just inside the left side of the month's blocks. Each block also gets a psuedo element of the day name, which are positioned at the top of the calendar, so the repeats overlay each other (and we just see one).
@@ -178,7 +176,7 @@ But we also want to be able to see what day and month each of these is, so we us
 ```
 
 
-![](/img/calendar.png)
+![](/img/dev/css-grid-calendar/calendar.png)
 
 Next we want to place the events on the calendar, so create another data file as `_data/events.js` to generate the event data. To keep it simple, I also have another file under `./resources/data/events.js` that the event array is saved in. This way you can easily switch it out for your own data. This pulls from the array and gives us another feed of data to consume in the main file. Again we're calculating the offset of the event (so that it starts at the right point), the length (how many days does it go for) and which row it should be on
 
@@ -256,7 +254,7 @@ Adding in some extra styles for the events, we can use the CSS variables to defi
 ```
 
 
-![](/img/css-grid-calendar.png)
+![](/img/dev/css-grid-calendar/css-grid-calendar.png)
 
 One issue with this though, is it gets confused when you have events span multiple months. This is a hack to fix it. If any of the events spans multiple months, it creates a duplicate item in the array and sets the dates so that the first instance goes to the end of the month and the second starts from the first of the second month.
 
@@ -308,5 +306,5 @@ Although this is built with lots of JavaScript, the advantage of Eleventy is thi
 
 I originally built this in Codepen (where it did need client-side JavaScript), you can [fork the pen here](https://codepen.io/amys_kapers/full/QWbWPxY), otherwise I've also put this together as a static [Eleventy](https://www.11ty.dev/) site that can be hosted on [Netlify](https://www.netlify.com/) for free - [https://cssgrid-calendar.amyskapers.dev](https://cssgrid-calendar.amyskapers.dev/). The [full repo is available on GitHub](https://github.com/amykapernick/css-grid-calendar), with a button to immediately fork and deploy to Netlify.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/amykapernick/css-grid-calendar)
+[![Deploy to Netlify](https://www.netlify.com/img/dev/css-grid-calendar/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/amykapernick/css-grid-calendar)
 

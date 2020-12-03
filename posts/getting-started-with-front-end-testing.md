@@ -14,7 +14,7 @@ We all know that testing is important, your project can't be run unless all your
 
 To help you get started, I'm going to showcase a few different tests for accessibility, visual regression and end-to-end testing as well as linting, all run on a blog using Express with Contentful as a headless CMS. Most of these tools are language agnostic so you can integrate them with whatever stack and workflows you use. If you're looking for more options, there's a list of more testing tools and resources in *[Twelve Days of Front End Testing](https://24ways.org/2019/twelve-days-of-front-end-testing/)* from *[24ways](https://24ways.org/about/)* last year.
 
-![](/img/fender-testing-1.png)
+![](/img/dev/front-end-testing/fender-testing-1.png)
 
 ## Linting
 
@@ -24,7 +24,7 @@ If you're using VS Code, install the [ESLint](https://marketplace.visualstudio.c
 
 Under the VS Code Settings you can then define when to automatically format a file.
 
-![Automatic formatting settings in VS Code](/img/fender-testing-2.png)
+![Automatic formatting settings in VS Code](/img/dev/front-end-testing/fender-testing-2.png)
 
 Linting is a fairly personal choice (although tabs are clearly the right option, they're actually [better for accessibility](https://dev.to/alexandersandberg/why-we-should-default-to-tabs-instead-of-spaces-for-an-accessible-first-environment-101f)), but you can find some starter files on [Github](https://github.com/amykapernick/starter-files).
 
@@ -117,7 +117,7 @@ The results pa11y gives you will include a code snippet to show where the error 
 
 For example, the error given in the report above is for the guideline 3.1.1, you can search on the page of the full list of guidelines for the guideline number given at the end, eg. `3_1.3_1_1.H75.2`
 
-![WCAG Guidelines Principle listing](/img/fender-testing-3.png)
+![WCAG Guidelines Principle listing](/img/dev/front-end-testing/fender-testing-3.png)
 
 By default pa11y tests against the WCAG (Web Content Accessibility Guidelines) 2.0 AA standard, you can change this by defining a `[standard` option](https://github.com/pa11y/pa11y#standard-string) in the pa11y function. You can also set a path on the `[screenCapture` option](https://github.com/pa11y/pa11y#screencapture-string) and pa11y with take a screenshot during the test and save it, this is useful when trying to work out why pa11y is giving a particular error. A full list of options is available in the [pa11y repository](https://github.com/pa11y/pa11y#configuration).
 
@@ -131,7 +131,7 @@ pa11y(`http://localhost:65519`, {
 
 Saving a screenshot can be useful to work out what pa11y was rendering when running the test, as the page may be displaying differently to how you'd expect.
 
-![Screenshot of blog page when run during the pa11y test](/img/fender-testing-4.png)
+![Screenshot of blog page when run during the pa11y test](/img/dev/front-end-testing/fender-testing-4.png)
 
 You can also check multiple pages and screen sizes and run multiple tests by adding to the promise array in your test function. You can define the viewport for each test (to test various screen sizes) different pages of your application.
 
@@ -248,7 +248,7 @@ Again, if you're using WSL, add the executable path the to config options in `ba
 
 Run the test using the `backstop test` command and it will save the results in the `backstop_data/bitmaps_test` folder under a separate folder for each test and launch a HTML report with the results. The first time you run the test it will fail as it doesn't have anything to compare it to, set the default screenshots by running `backstop approve` and run the test again.
 
-![](/img/fender-testing-5.png)
+![](/img/dev/front-end-testing/fender-testing-5.png)
 
 You can change the config to suit your requirements, more information about the options is available in the [Backstop documentation](https://github.com/garris/BackstopJS#using-backstopjs), for example you may want to change the `misMatchThreshold` so that it doesn't flag for slight pixel fluctuations.
 
@@ -258,7 +258,7 @@ If visual regression testing is a bit too touchy for you, end to end testing mig
 
 Cypress is easy to get started with, after installing it in your project (or globally), run `cypress open`, it will generate a folder and files for you, including sample tests. To write tests, create new files under `cypress/integration/` . When running the tests, `cypress open` launches the Cypress task runner, where you can run your tests and view the results in a browser window.
 
-![](/img/fender-testing-6.png)
+![](/img/dev/front-end-testing/fender-testing-6.png)
 
 Cypress uses the [Chai assertion library](https://docs.cypress.io/guides/references/assertions.html#Chai) for tests, it may be a little confusing if you haven't used anything similar, but will start making sense once you get started.
 
@@ -321,7 +321,7 @@ describe('Mobile Blog Post Template', () => {
 
 When running the tests, Cypress will load a new Chrome window and you can view it running through the tests. If one of the tests fails, you can hover over  each of the steps and see what is happening.
 
-![Cypress Testing Dashboard](/img/fender-testing-7.png)
+![Cypress Testing Dashboard](/img/dev/front-end-testing/fender-testing-7.png)
 
 ---
 

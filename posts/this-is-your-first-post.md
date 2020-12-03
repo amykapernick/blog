@@ -4,14 +4,12 @@ date: 2017-02-22
 description: This is my first blog post, talking about starting blogging again
 categories: undefined
 tags: 'posts'
-layout: layouts/post.njk
-
-featured: /img/medium_3d90feb3-abb5-474b-8512-e8b1d62f1295_1_4l9lo2y6kmyauubxw78osw.jpg
+featured: /img/feature/medium_3d90feb3-abb5-474b-8512-e8b1d62f1295_1_4l9lo2y6kmyauubxw78osw.jpg
 ---
 
 I remember back when everyone had a blog. And then no one really blogged for a while (it wasn’t a thing). But all of a sudden everyone I know has their own blog (or multiple blogs) and is busy sharing their stories and what they’re up to.
 
-![](/img/medium_3d90feb3-abb5-474b-8512-e8b1d62f1295_1_4l9lo2y6kmyauubxw78osw.jpg)
+![](/img/feature/medium_3d90feb3-abb5-474b-8512-e8b1d62f1295_1_4l9lo2y6kmyauubxw78osw.jpg)
 
 In the age of the internet, everyone seems to think that they have something interesting to say. There’s no point keeping a diary because instead you update your status, tweet about it or re-post a motivational quote on Instagram.
 
