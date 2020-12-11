@@ -4,7 +4,6 @@ date: 2020-05-07
 description: Draft Template for blog posts
 categories: undefined
 tags: 'posts'
-layout: layouts/post.njk
 draft: true
 ---
 
@@ -25,13 +24,13 @@ draft: true
 
 ### Twitter
 
-{% tweet "https://twitter.com/Amys_Kapers/status/1260845733109850116" %}
+https://twitter.com/Amys_Kapers/status/1260845733109850116
 
 https://twitter.com/Amys_Kapers/status/1260845733109850116
 
 ### Instagram
 
-{% insta "https://www.instagram.com/p/B_lyBmxp_tG/" %}
+https://www.instagram.com/p/B_lyBmxp_tG/
 
 ### Spotify
 
@@ -46,8 +45,6 @@ https://www.twitch.tv/amyskapers
 https://vimeo.com/413450595
 
 ### Can I Use
-
-{% caniuse 'css-grid' %}
 
 ### Codepen
 

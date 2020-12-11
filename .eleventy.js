@@ -1,8 +1,13 @@
 require('dotenv').config()
 
-module.exports = function(eleventyConfig) {
+const slug = require('./src/filters/slug')
+
+module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig({
 		notify: true,
 		watch: true,
 	})
+
+	// Filters
+	eleventyConfig.addFilter('slug', slug)
 }

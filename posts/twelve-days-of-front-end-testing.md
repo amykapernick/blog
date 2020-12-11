@@ -5,7 +5,6 @@ external: https://24ways.org/2019/twelve-days-of-front-end-testing/
 author: ./img/24-ways.png
 categories: [Dev, Testing, Tools, 'Front End', Christmas]
 tags: 'posts'
-layout: layouts/post.njk
 featured: /img/twelve-days-of-front-end-testing.png
 empty: true
 ---

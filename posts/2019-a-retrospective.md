@@ -4,7 +4,6 @@ date: 2020-01-07
 description: Looking back on the last 12 months and what I got up to in 2019.
 categories: ['New Year', Retrospective]
 tags: 'posts'
-layout: layouts/post.njk
 featured: /img/2019/MVIMG_20191215_185417.jpg
 ---
 

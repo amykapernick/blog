@@ -6,7 +6,6 @@ external: https://www.javascriptjanuary.com/blog/getting-started-with-front-end-
 author: ./img/javascript-january.png
 categories: [Dev, Testing, Tools, 'Front End']
 tags: 'posts'
-layout: layouts/post.njk
 featured: /img/igor-miske-JVSgcV8_vb4-unsplash+(2).jpg
 ---
 

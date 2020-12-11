@@ -4,7 +4,6 @@ date: 2017-10-25
 description: Summary of my experience participating in Frocktober in 2017
 categories: undefined
 tags: 'posts'
-layout: layouts/post.njk
 featured: /img/frocktober/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.jpg
 ---
 

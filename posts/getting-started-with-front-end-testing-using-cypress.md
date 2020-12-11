@@ -5,7 +5,6 @@ external: https://www.heartinternet.uk/blog/getting-started-with-front-end-testi
 author: ./img/amy-quokka.jpg
 categories: [Dev, Testing, Tools, 'Front End', Cypress]
 tags: 'posts'
-layout: layouts/post.njk
 featured: /img/front_end_testing_cypress.jpg
 empty: true
 ---

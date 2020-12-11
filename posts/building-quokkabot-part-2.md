@@ -9,7 +9,6 @@ categories:
   - Azure Functions
   - Cognitive Services
 tags: posts
-layout: layouts/post.njk
 featured: /img/quokkabot_feature.png
 ---
 

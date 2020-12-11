@@ -4,7 +4,6 @@ date: 2017-03-26
 description: Commentary of the experiment I performed by no longer carrying a wallet and using my phone for all payments (when possible).
 categories: [Technology]
 tags: 'posts'
-layout: layouts/post.njk
 featured: /img/feature044b615a492d6c0a0530c3fc343baa8ff9ca82cc_1_mem0ijvrqdy6v7qodrggva.jpg
 ---
 
