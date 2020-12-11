@@ -1,0 +1,36 @@
+---
+permalink: "feed.xml"
+eleventyExcludeFromCollections: true
+metadata:
+ title: "Amy's Kapers"
+ subtitle: "Amy's blog about tech, the web and life"
+ url: "https://blog.amyskapers.dev"
+ feedUrl: "https://blog.amyskapers.dev/feed.xml"
+ author:
+  name: "Amy Kapernick"
+  twitter: "@Amys_Kapers"
+  url: "https://amyskapers.dev"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/atom">
+	<title>{{ metadata.title }}</title>
+	<subtitle>{{ metadata.subtitle }}</subtitle>
+	<link href="{{ metadata.feedurl }}" rel="self"/>
+	<link href="{{ metadata.url }}"/>
+	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+	<id>{{ metadata.url }}</id>
+	<author>
+		<name>{{ metadata.author.name }}</name>
+		<link>{{ metadata.author.url }}</link>
+	</author>
+	{%- for post in collections.posts | reverse %}
+		{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+		<entry>
+			<title>{{ post.data.title }}</title>
+			<link href="{{ absoluteposturl }}"/>
+			<updated>{{ post.date | rssDate }}</updated>
+			<id>{{ absolutePostUrl }}</id>
+			<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+		</entry>
+	{%- endfor %}
+</feed>
