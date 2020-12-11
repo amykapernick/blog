@@ -3,7 +3,6 @@ title: NDC Minnesota 2019
 date: 2019-05-16
 description: A few of the amazing talks I saw during my time at NDC Minnesota in 2019.
 categories: [Conference, NDC]
-tags: 'posts'
 featured: /img/conferences/ndc-minnesota-2019/d6etpv9x4auc2ys.jpg-large.jpg
 ---
 

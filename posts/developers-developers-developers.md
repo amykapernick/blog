@@ -3,7 +3,6 @@ title: Developers, Developers, Developers
 date: 2017-09-19
 description: Recap of the 2017 DDD Perth Conference and the speakers I saw
 categories: [DDD, Conference, 'DDD Perth']
-tags: 'posts'
 featured: /img/conferences/ddd-perth-2017/886f8d3d3c4374c7dd879c37534da0f8dda98fb1_1_tiqjw5xkdnuloupmgjtroa.jpg
 ---
 

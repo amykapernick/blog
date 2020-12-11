@@ -3,7 +3,6 @@ title: CSS Grid - What is this Magic?!
 date: 2020-06-25
 description: 
 categories: [CSS, 'CSS Grid']
-tags: 'posts'
 draft: true
 featured: /img/dev/css-grid/grid_cover.png
 excerpt: <p>We've come a long way with our CSS layouts, from the table layouts that continue to haunt our nightmares, to floats and clearfixes, through flexbox and negative margins, all the way to CSS grid and our ability to fully control our layouts in both directions.</p>

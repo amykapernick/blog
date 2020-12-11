@@ -3,7 +3,6 @@ title: 'The Need for PageSpeed: A Hot Pursuit'
 date: 2017-11-01
 description: What does Google Pagespeed actually mean? And what do you need to do about your score? Is it all just a scam? Probably
 categories: [Performance]
-tags: 'posts'
 featured: /img/dev/performance/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w-00wj1r0de.jpg
 ---
 

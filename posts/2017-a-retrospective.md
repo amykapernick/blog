@@ -3,7 +3,6 @@ title: 2017 - A Retrospective
 date: 2018-01-06
 description: What a year it's been! I look back on what's happened to me in the last 12 months, what I've done, what changes I've experienced and how I feel coming out of it all
 categories: ['New Year', Retrospective]
-tags: 'posts'
 featured: /img/2017/67b2178ebf482d7a7a6ebd6ddb112770d485c015_1_x100sidmdupzggkx66t8aw.jpg
 ---
 

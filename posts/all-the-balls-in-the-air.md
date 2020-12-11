@@ -3,7 +3,6 @@ title: All the Balls in the Air
 date: 2017-04-02
 description: Discussion of the tools that I use to keep track of everything, both task management and calendars
 categories: [Productivity, Tools]
-tags: 'posts'
 featured: /img/feature/21dbeebf5dce6f22ad559ef5f72c1c40288f7984_1_jbh3upwpmskrznxgczihoa.jpg
 ---
 

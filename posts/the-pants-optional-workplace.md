@@ -3,7 +3,6 @@ title: The Pants-Optional Workplace
 date: 2017-11-15
 description: What's it really like to work from home rather than going into an office every day? And what do you need to make sure you do to stay sane day after day
 categories: ['Remote Working', Freelance, 'Working from Home']
-tags: 'posts'
 featured: /img/feature/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg
 ---
 

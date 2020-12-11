@@ -3,7 +3,6 @@ title: Happy Birthday to Me?
 date: 2017-02-27
 description: Birthdays growing up are often a source of excitement, but as you get on in your life it's a lot less exciting when the real world doesn't stop to let you have the day.
 categories: [Birthday]
-tags: 'posts'
 featured: /img/feature/c0f96613ddc04ca5cceb42f5a45b2080b409a299_1_ymviqc_madrdwzq3cujiqw.jpg
 ---
 

@@ -3,7 +3,6 @@ title: Farewell to CSSConf AU
 date: 2018-04-16
 description: Recap of my time at the final CSSConf Au in Melbourne in 2018
 categories: [Conference, 'CSS Conf']
-tags: 'posts'
 featured: /img/conferences/css-conf-au-2018bc13f1f12f0d93dde12c8543cf8c7f15e4dbc8d5_img_20180320_100538.jpg
 ---
 

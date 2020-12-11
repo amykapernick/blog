@@ -3,7 +3,6 @@ title: On Submitting to Conferences
 date: 2020-01-21
 description: After Global Diversity CFP Day, sharing some of the thoughts that I have spinning around my head from the past sessions and what I've learnt speaking at conferences
 categories: [Conferences, CFPs]
-tags: 'posts'
 featured: /img/speaking/49021351368_62d563412f_o.jpg
 ---
 

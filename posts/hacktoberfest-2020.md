@@ -5,7 +5,6 @@ categories:
   - Hacktoberfest
   - Open Source
   - Streaming
-tags: posts
 featured: /img/feature/hacktoberfest.png
 ---
 To say this year has been strange is an understatement, and it's terrifying to realise that October is already upon us! To me October is a couple of things, for example October means it's [Frocktober](https://www.frocktober.org.au/my-fundraising/742/amy-kapernick), and for the entire month I'll be only wearing dresses to raise money for ovarian cancer, but October also means it's time for [Hacktoberfest](https://hacktoberfest.digitalocean.com/)!

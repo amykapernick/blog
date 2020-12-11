@@ -3,7 +3,6 @@ title: HTML and CSS Tricks
 date: 2019-07-22
 description: Here are a few tricks I use for HTML and CSS only UI elements
 categories: [HTML, CSS]
-tags: 'posts'
 featured: /img/dev/html-css-tricks/screenshot_2019-07-22-html-and-css-only-testimonial-carousel.png
 ---
 

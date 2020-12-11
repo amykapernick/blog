@@ -3,7 +3,6 @@ title: How Notion runs my life
 date: 2019-03-23
 description: Talking about how I use Notion to run my life
 categories: [Productivity, Tools]
-tags: 'posts'
 featured: /img/tools/notion/notion-11-.png
 ---
 

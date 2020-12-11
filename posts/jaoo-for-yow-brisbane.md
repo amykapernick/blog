@@ -3,7 +3,6 @@ title: JAOO! for YOW! Brisbane!
 date: 2017-02-12
 description: Recap of my time at YOW! Brisbane Conference in 2017, the speakers I saw and the experiences I had
 categories: [Conference, 'YOW!']
-tags: 'posts'
 featured: /img/conferences/yow-brisbane-2017/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
 ---
 

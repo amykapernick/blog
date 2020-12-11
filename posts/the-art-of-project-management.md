@@ -3,7 +3,6 @@ title: The Art of Project Management
 date: 2017-10-29
 description: Analysis of various project management tools, and their pros and cons
 categories: [Tools, 'Project Management']
-tags: 'posts'
 featured: /img/feature/f2e40a703a9837108153384d6d110db422563e98_1_1-6utdisoqjeefidwfabzg.jpg
 ---
 

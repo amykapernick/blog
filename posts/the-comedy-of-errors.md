@@ -3,7 +3,6 @@ title: The Comedy of Errors
 date: 2018-04-19
 description: My experience dealing with Microsoft support, as a Shakespearean comedy (because not everyone died)
 categories: undefined
-tags: 'posts'
 featured: /img/feature/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg
 ---
 

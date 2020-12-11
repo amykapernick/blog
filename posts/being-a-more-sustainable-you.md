@@ -3,7 +3,6 @@ title: Being a More Sustainable You
 date: 2018-10-10
 description: During the past couple of years, I started focusing more on myself and when I burnt out last year I decided to put myself first. Since then I've taken on so many new responsibilities, adventures and stressors, but since making the decision to put myself first I've been in a much better place mentally and emotionally.
 categories: ['Mental Health', 'Productivity']
-tags: 'posts'
 featured: /img/feature/img_20180722_135436.jpg
 ---
 

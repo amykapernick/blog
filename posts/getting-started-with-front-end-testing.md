@@ -5,7 +5,6 @@ description: We all know that testing is important, your project can't be run un
 external: https://www.javascriptjanuary.com/blog/getting-started-with-front-end-testing
 author: ./img/javascript-january.png
 categories: [Dev, Testing, Tools, 'Front End']
-tags: 'posts'
 featured: /img/igor-miske-JVSgcV8_vb4-unsplash+(2).jpg
 ---
 

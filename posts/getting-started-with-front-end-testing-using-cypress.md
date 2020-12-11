@@ -4,7 +4,6 @@ date: 2020-05-21
 external: https://www.heartinternet.uk/blog/getting-started-with-front-end-testing-using-cypress/
 author: ./img/amy-quokka.jpg
 categories: [Dev, Testing, Tools, 'Front End', Cypress]
-tags: 'posts'
 featured: /img/front_end_testing_cypress.jpg
 empty: true
 ---

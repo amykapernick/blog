@@ -3,7 +3,6 @@ title: Women in Tech - My Story
 date: 2018-03-08
 description: I share my experiences being a woman in tech and how I got to where I am today
 categories: ['Women in Tech', Diversity]
-tags: 'posts'
 featured: /img/feature/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
 ---
 

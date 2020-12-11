@@ -3,7 +3,6 @@ title: A Cultural Agenda
 date: 2017-08-28
 description: Recap of all the shows I saw in 2017 when I decided to go for it and buy a heap of tickets to shows rather than saying I was going to and not getting around to it.
 categories: [Culture]
-tags: 'posts'
 featured: /img/feature/e1e259304d27c0ad5f3d6f90ef47760e3f308f21_1_zcfar4z_2fimm03atbx9hw.jpg
 ---
 

@@ -8,7 +8,6 @@ categories:
   - Twilio
   - Azure Functions
   - Cognitive Services
-tags: posts
 featured: /img/quokkabot_feature.png
 ---
 

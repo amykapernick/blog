@@ -3,7 +3,6 @@ title: An Origin Story
 date: 2019-01-07
 description: Celebrating 5 years since I started AimHigher Web Design, I reflect on what drove me to start the business
 categories: undefined
-tags: 'posts'
 featured: /img/feature/homepage.png
 ---
 
