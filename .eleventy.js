@@ -8,6 +8,8 @@ module.exports = (eleventyConfig) => {
 		notify: true,
 		watch: true,
 	})
+	eleventyConfig.addPassthroughCopy('admin')
+	eleventyConfig.addPassthroughCopy({'src/img': 'img'})
 
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss)
