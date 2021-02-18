@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "clean": "rm -rf _site"
   },
   "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "bugs": {
