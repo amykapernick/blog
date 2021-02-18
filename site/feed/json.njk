@@ -34,9 +34,27 @@
 				"url": "{{ absolutePostUrl }}",
 				"slug": "{{post.fileSlug}}",
 				"title": "{{ post.data.title }}",
-				"content_html": {% if post.templateContent %}{{ post.templateContent | dump | safe }}
-				{% else %}""{% endif %},
-				"date_published": "{{ post.date | rssDate }}"
+				"description": "{{ post.data.description }}",
+				"categories": 
+					{% if post.data.categories %}
+						{{ post.data.categories | dump | safe }}
+					{% else %}
+						[]
+					{% endif %},
+				"featured": "https://blog.amyskapers.dev{{ post.data.featured }}",
+				"content": 
+					{% if post.templateContent %}
+						{{ post.templateContent | dump | safe }}
+					{% else %}
+						""
+					{% endif %},
+				"date": "{{ post.date | rssDate }}",
+				"publish": 
+					{% if post.publish %}
+						"{{ post.publish | rssDate }}"
+					{% else %}
+						""
+					{% endif %}
 			}
 			{% if not loop.last %},{% endif %}
 		{%- endfor %}

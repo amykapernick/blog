@@ -4,7 +4,6 @@ module.exports = {
 		'stylelint-order'
 	],
 	extends: [
-		'stylelint-config-css-modules',
 		'stylelint-config-property-sort-order-smacss'
 	],
 	rules: { 

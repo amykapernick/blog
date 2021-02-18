@@ -5,4 +5,12 @@
 {% block content %}
 <h1>Amy's blog</h1>
 
+{# <!-- {{ collections.posts | rssLastUpdatedDate }} --> #}
+
+<ul>
+{%- for post in collections.posts | reverse %}
+	<li>{{ post.data.title }}</li>
+{%- endfor %}
+</ul>
+
 {% endblock %}

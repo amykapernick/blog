@@ -2,7 +2,6 @@
 title: This is your first post
 date: 2017-02-22
 description: This is my first blog post, talking about starting blogging again
-categories: undefined
 featured: /img/feature/medium_3d90feb3-abb5-474b-8512-e8b1d62f1295_1_4l9lo2y6kmyauubxw78osw.jpg
 ---
 
