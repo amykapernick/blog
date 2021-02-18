@@ -1,7 +1,8 @@
 ---
 title: 2017 - A Retrospective
 date: 2018-01-06
-description: What a year it's been! I look back on what's happened to me in the last 12 months, what I've done, what changes I've experienced and how I feel coming out of it all
+description: So the last month or so I’ve been reflecting a little on how this past year has gone and I’ve come to one conclusion. 2017 sucked. This past year I’ve been through some of the hardest things I’ve ever had to face. But I’ve also had some of the most amazing times this year, discovered the most amazing people and have had the best year of my life.
+
 categories: ['New Year', Retrospective]
 blog: [aimhigher]
 featured: /img/2017/67b2178ebf482d7a7a6ebd6ddb112770d485c015_1_x100sidmdupzggkx66t8aw.jpg

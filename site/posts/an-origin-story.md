@@ -1,7 +1,7 @@
 ---
 title: An Origin Story
 date: 2019-01-07
-description: Celebrating 5 years since I started AimHigher Web Design, I reflect on what drove me to start the business
+description: Five years ago I decided to rebuild my parents' business' website for their Christmas present. It was very out of date, the instructions the developer had given them were incredibly complicated and they were quoting a minimum of $400 to make any content changes. While rebuilding the site I realised how much I loved doing it, and I had an epiphany
 blog: [aimhigher]
 featured: /img/feature/homepage.png
 ---

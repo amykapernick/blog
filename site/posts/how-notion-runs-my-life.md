@@ -1,7 +1,7 @@
 ---
 title: How Notion runs my life
 date: 2019-03-23
-description: Talking about how I use Notion to run my life
+description: During the past year, I've started using Notion to organise both my personal and professional life. I discovered it accidentally while looking for a tool to manage my side projects and now I use it as my wiki, social media calendar, to draft documents, store random bits of information and manage both my blog posts (even this post is written in Notion first) and conference talk submissions.
 categories: [Productivity, Tools]
 blog: [aimhigher]
 featured: /img/tools/notion/notion-11-.png

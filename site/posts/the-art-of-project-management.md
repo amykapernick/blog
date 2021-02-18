@@ -1,7 +1,7 @@
 ---
 title: The Art of Project Management
 date: 2017-10-29
-description: Analysis of various project management tools, and their pros and cons
+description: There’s an app for that. I’m not kidding, there’s even an app to find out if there’s an app for that. While we’re a little spoilt for choice, that can often make things harder so I’ve ventured into the world of Project Management software to hopefully make the choice easier for you.
 categories: [Tools, 'Project Management']
 blog: [aimhigher]
 featured: /img/feature/f2e40a703a9837108153384d6d110db422563e98_1_1-6utdisoqjeefidwfabzg.jpg

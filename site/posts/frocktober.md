@@ -1,7 +1,7 @@
 ---
 title: "#Frocktober"
 date: 2017-10-25
-description: Summary of my experience participating in Frocktober in 2017
+description: This month, I’ve been participating in Frocktober with a friend of mine, and we’re aiming to raise $500 for ovarian cancer research. This is a very important cause, with one woman dying from ovarian cancer every 10 minutes.
 blog: [aimhigher]
 featured: /img/frocktober/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.jpg
 ---
