@@ -2,6 +2,7 @@
 backend:
   name: git-gateway
   repo: amykapernick/amygoestoperth
+  branch: dev
 
 local_backend: true
 
@@ -10,12 +11,16 @@ publish_mode: editorial_workflow
 media_folder: site/src/img/cms
 public_folder: "/img/cms/"
 
-site_url: https://blog.amyskapers.dev
+site_url: https://dev--amygoestoperth.netlify.app
 
 collections:
   - name: post
     label: Blog Posts
+    label_singular: Blog Post
     folder: site/posts
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     extension: md
     editor:
       preview: false
