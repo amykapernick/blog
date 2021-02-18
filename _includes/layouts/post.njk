@@ -1,3 +1,9 @@
+{% set pagetitle = post.data.title + " | Amy's Kapers" %}
+{% set description = "" %}
+{% extends 'layouts/main.njk' %}
+
+{% block content %}
 <article>
 	<h1>{{post.data.title}}</h1>
 </article>
+{% endblock %}
