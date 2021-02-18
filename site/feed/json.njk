@@ -32,6 +32,7 @@
 			{
 				"id": "{{ absolutePostUrl }}",
 				"url": "{{ absolutePostUrl }}",
+				"slug": "{{post.fileSlug}}",
 				"title": "{{ post.data.title }}",
 				"content_html": {% if post.templateContent %}{{ post.templateContent | dump | safe }}
 				{% else %}""{% endif %},
