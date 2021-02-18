@@ -3,12 +3,13 @@ title: Generating SSL Certificates
 date: 2020-05-06
 description: I remember a few years back when I first started using SSL certificates on my websites, I spent several hours trying to get stuff working on the command line, eventually finding an online generator and working out what they needed me to do to verify the site and generate the certificate. And once that was done, I still needed to install it on my hosting, the whole process was complicated and confusing, and even once I'd written it down it still took some concentration to get it done (and needed to be repeated every 90 days to renew the certificate).
 categories: [SSL, Security]
+blog: [aimhigher]
 featured: /img/feature/undraw_safe_bnk7.png
 ---
 
 I remember a few years back when I first started using SSL certificates on my websites, I spent several hours trying to get stuff working on the command line, eventually finding an online generator and working out what they needed me to do to verify the site and generate the certificate. And once that was done, I still needed to install it on my hosting, the whole process was complicated and confusing, and even once I'd written it down it still took some concentration to get it done (and needed to be repeated every 90 days to renew the certificate).
 
-So when I then discovered Cloudflare a couple of months later, it was a game changer for me! None of this faffing about verifying ownership, it was better for managing the DNS records as well and my favourite bit, the certificates auto-renewed so I didn't need to remember to renew them! Since then, pretty much every website I build/host/manage is set up with Cloudflare (the exceptions are the sites hosted on Netlify, who handle that for me as well), and I highly recommend it for anyone who wants a free, no-hassle SSL certificate.
+So when I then discovered **Cloudflare** a couple of months later, it was a game changer for me! None of this faffing about verifying ownership, it was better for managing the DNS records as well and my favourite bit, the certificates auto-renewed so I didn't need to remember to renew them! Since then, pretty much every website I build/host/manage is set up with Cloudflare (the exceptions are the sites hosted on Netlify, who handle that for me as well), and I highly recommend it for anyone who wants a free, no-hassle SSL certificate.
 
 But recently, while setting up a custom domain on [Okta](https://www.okta.com/), I needed to provide an SSL certificate, so had to generate one myself. And while I immediately reached for my online generator, the encoding they use was wrong for Okta, so kept throwing errors. Even though it has only been a few years since I first fought with command line SSL certificates, it feels like several decades of development and I now use CLI tools every day, so I thought I'd give it another go.
 

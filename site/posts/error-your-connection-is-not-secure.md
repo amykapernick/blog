@@ -3,6 +3,7 @@ title: Error! Your connection is not secure
 date: 2017-09-18
 description: Confused about what HTTPS means, whether you're being hacked and why you need to care about it? Let me explain some of this for you
 categories: [Security, SSL, HTTPS]
+blog: [aimhigher]
 featured: /img/dev/ssl/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg
 ---
 

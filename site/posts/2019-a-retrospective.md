@@ -3,6 +3,7 @@ title: 2019 - A Retrospective
 date: 2020-01-07
 description: Looking back on the last 12 months and what I got up to in 2019.
 categories: ['New Year', Retrospective]
+blog: [aimhigher]
 featured: /img/2019/MVIMG_20191215_185417.jpg
 ---
 

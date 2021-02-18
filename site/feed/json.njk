@@ -41,6 +41,12 @@
 					{% else %}
 						[]
 					{% endif %},
+				"blogs":
+					{% if post.data.blog %}
+						{{ post.data.blog | dump | safe }}
+					{% else %}
+						[]
+					{% endif %},
 				"featured": "https://blog.amyskapers.dev{{ post.data.featured }}",
 				"content": 
 					{% if post.templateContent %}
