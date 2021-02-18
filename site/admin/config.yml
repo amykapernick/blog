@@ -1,0 +1,25 @@
+---
+backend:
+  name: git-gateway
+  repo: amykapernick/amygoestoperth
+
+local_backend: true
+
+publish_mode: editorial_workflow
+
+media_folder: site/src/img/cms
+public_folder: "/img/cms/"
+
+site_url: https://blog.amyskapers.dev
+
+collections:
+  - name: post
+    label: Blog Posts
+    folder: site/posts
+    extension: md
+    editor:
+      preview: false
+    fields:
+      - label: Title
+        name: title
+        widget: string
