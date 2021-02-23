@@ -5,12 +5,15 @@
 {% block content %}
 <h1>Amy's blog</h1>
 
-{# <!-- {{ collections.posts | rssLastUpdatedDate }} --> #}
+{#
+<!-- {{ collections.posts | rssLastUpdatedDate }} --> #}
 
 <ul>
-{%- for post in collections.posts | reverse %}
-	<li>{{ post.data.title }}</li>
-{%- endfor %}
+	{%- for post in collections.posts | reverse %}
+	<li>
+		<a href="{{post.fileSlug}}">{{ post.data.title }}</a>
+	</li>
+	{%- endfor %}
 </ul>
 
 {% endblock %}

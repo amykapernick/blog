@@ -1,13 +1,10 @@
 require('dotenv').config()
 
-const slug = require('./site/src/filters/slug'),
+const slug = require('./site/utils/filters/slug'),
 pluginRss = require('@11ty/eleventy-plugin-rss')
-const excerpt = require('eleventy-plugin-excerpt');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const image = './site/utils/image.js'
-const markdown = require('./site/utils/markdown/index.js')
-const markdownIt = require('markdown-it')
-const markdownFigures = require('markdown-it-implicit-figures')
+const eleventyRemark = require('@fec/eleventy-plugin-remark')
+const remarkOptions = require('./site/utils/markdown/index.js')
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig({
@@ -20,23 +17,18 @@ module.exports = (eleventyConfig) => {
 
 	eleventyConfig.setTemplateFormats(['html', 'md', 'njk', 'png', 'jpg', 'css'])
 
-	// Markdown
-	eleventyConfig.setLibrary('md', markdown)
-
 
 	eleventyConfig.addPassthroughCopy('site/admin')
 	eleventyConfig.addPassthroughCopy({'site/src/img': 'img'})
 
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss)
-	eleventyConfig.addPlugin(excerpt)
 	eleventyConfig.addPlugin(syntaxHighlight, {
-		// e.g. Use syntax highlighters in njk and md Eleventy templates (not liquid)
-		// templateFormats: ["njk", "md"],
 		alwaysWrapLineHighlights: true,
 		trim: true,
 		lineSeparator: "<br>",
 	});
+	eleventyConfig.addPlugin(eleventyRemark, remarkOptions)
 
 	// Filters
 	eleventyConfig.addFilter('slug', slug)
@@ -51,7 +43,8 @@ module.exports = (eleventyConfig) => {
 	// Other Config
 	return {
 		dir: {
-			input: "site"
+			input: "site",
+			markdownTemplateEngine: 'njk'
 		},
 	}
 }
