@@ -13,7 +13,7 @@ As if spam wasn't already infiltrating enough areas of our lives - in our letter
 
 [Akismet](https://akismet.com/wordpress/) is the most popular spam plugin for WordPress websites (and is in the top 3 for most popular WordPress plugins) and it's there for a reason. It takes a couple of minutes to set up and from there it helps to filter out spam submissions for both your contact forms and any comment forms you have on your site. It may already be on your site, if not you can install it under **Plugins** → **Add New** in the admin side menu
 
-![](/img/dev/wordpress-forms-spam/install_akismet.png)
+![Find Akismet in the plugins section of the WordPress dashboard](/img/dev/wordpress-forms-spam/install_akismet.png){title="Screenshot fo the WordPress dashboard, in the plugins section"}
 
 Navigate to **Settings** → **Akismet Anti-Spam** in the side menu and click **Set up your Akismet account** to register your website
 

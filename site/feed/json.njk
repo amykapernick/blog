@@ -50,7 +50,7 @@
 				"featured": "https://dev--amygoestoperth.netlify.app{{ post.data.featured }}",
 				"content": 
 					{% if post.templateContent %}
-						{{ post.templateContent | dump | safe }}
+						{{ post.templateContent | feedContent | dump | safe }}
 					{% else %}
 						""
 					{% endif %},
