@@ -49,8 +49,8 @@ const options = {
 		{
 			plugin: images,
 			options: {
-				srcDir: path.join(__dirname, 'site/'),
-				targetDir: path.join(__dirname, '_site/img'),
+				srcDir: path.join(__dirname, 'site'),
+				targetDir: path.join(__dirname, '_site'),
 				// figureClassName: '',
 				// pictureClassName: '',
 				// imgClassName: '',

@@ -19,7 +19,7 @@ module.exports = (eleventyConfig) => {
 
 
 	eleventyConfig.addPassthroughCopy('site/admin')
-	eleventyConfig.addPassthroughCopy({'site/src/img': 'img'})
+	eleventyConfig.addPassthroughCopy('site/img/**/*.{gif,mp4}')
 
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss)
