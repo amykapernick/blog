@@ -21,55 +21,55 @@ const images = require('@fec/remark-images')
 const options = {
 	enableRehype: false,
 	plugins: [
-		// // github,
-		// hint,
-		// // kbd,
-		// // oembed,
-		// squeeze,
-		// {
-		// 	plugin: external,
-		// 	options: {
-		// 		target: '_blank',
-		// 		rel: 'nofollow',
-		// 		protocols: ['http', 'https'],
-		// 	}
-		// },
-		// a11yEmoji,
-		// slug,
-		// {
-		// 	plugin: autoLink,
-		// 	options: {
-		// 		behavior: 'prepend',
-		// 		linkProperties: {
-		// 			ariaHidden: 'true', 
-		// 			tabIndex: -1
-		// 		}
-		// 	}
-		// },
+		// github,
+		hint,
+		// kbd,
+		// oembed,
+		squeeze,
 		{
-			plugin: images,
+			plugin: external,
 			options: {
-				srcDir: path.join(__dirname, 'site'),
-				targetDir: path.join(__dirname, '_site'),
-				// figureClassName: '',
-				// pictureClassName: '',
-				// imgClassName: '',
-				// figCaptionClassName: '',
-				// loadingPolicy: 'lazy',
-				imageSizes: [320, 640],
-				// elasticContainer: true,
-				// blurredBackground: true
+				target: '_blank',
+				rel: 'nofollow',
+				protocols: ['http', 'https'],
+			}
+		},
+		a11yEmoji,
+		slug,
+		{
+			plugin: autoLink,
+			options: {
+				behavior: 'prepend',
+				linkProperties: {
+					ariaHidden: 'true', 
+					tabIndex: -1
+				}
 			}
 		},
 		{
+		    plugin: images,
+		    options: {
+				srcDir: path.join(__dirname, '../../../site'),
+				targetDir: path.join(__dirname, '../../../_site'),
+				figureClassName: '',
+				pictureClassName: '',
+				imgClassName: '',
+				figCaptionClassName: '',
+				loadingPolicy: 'lazy',
+				imageSizes: [320, 640],
+				elasticContainer: true,
+				blurredBackground: true
+		    },
+		  },
+		  {
 			plugin: rehype,
 			options: { 
 				allowDangerousHtml: true 
 			},
-		},
-		rehypeRaw,
-		stringify,
-		// sanitise,
+		  },
+
+		  rehypeRaw,
+		  stringify,	
 	]
 }
 

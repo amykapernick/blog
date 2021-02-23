@@ -43,7 +43,8 @@
     "remark-squeeze-paragraphs": "^4.0.0",
     "remark-unwrap-images": "^2.0.0",
     "remarkable-figure-plugin": "^1.0.0",
-    "slugify": "^1.4.6"
+    "slugify": "^1.4.6",
+    "unist-util-visit": "^2.0.3"
   },
   "devDependencies": {
     "@fec/eleventy-plugin-remark": "^2.2.1",

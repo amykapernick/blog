@@ -5,6 +5,7 @@ pluginRss = require('@11ty/eleventy-plugin-rss')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const eleventyRemark = require('@fec/eleventy-plugin-remark')
 const remarkOptions = require('./site/utils/markdown/index.js')
+const absoluteImages = require('./site/utils/markdown/absoluteImages.js')
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig({
@@ -28,14 +29,15 @@ module.exports = (eleventyConfig) => {
 		trim: true,
 		lineSeparator: "<br>",
 	});
-	eleventyConfig.addPlugin(eleventyRemark, remarkOptions)
+	
+	eleventyConfig.addPlugin(eleventyRemark, remarkOptions);
 
 	// Filters
 	eleventyConfig.addFilter('slug', slug)
 	eleventyConfig.addNunjucksFilter("feedContent", (content) => {
-		// console.log(content)
 
-		return content
+		return 	absoluteImages(content)
+
 	});
 
 	

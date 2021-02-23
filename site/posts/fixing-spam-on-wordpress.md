@@ -7,7 +7,7 @@ blog: [aimhigher]
 featured: /img/feature/photo-1530436098968-cab21a5dfea6.jpg
 ---
 
-As if spam wasn't already infiltrating enough areas of our lives - in our letter boxes, on our phones in our emails - it's now in our website contact forms. But as much as I would like to earn millions of dollars through a cryptocurrency, I'd also like to keep my contact form to legitimate submissions, thankfully WordPress has a few options for this.
+As if spam wasn't already infiltrating enough areas of our lives - in our letter boxes, on our phones in our emails - it's now in our website contact forms. But as much as I would like to earn millions of dollars through a cryptocurrency, I'd also like to keep my contact form to legitimate submissions, thankfully %WordPress has a few options for this.
 
 ## Akismet Anti Spam Plugin
 
