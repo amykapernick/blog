@@ -56,7 +56,7 @@ const options = {
 				imgClassName: '',
 				figCaptionClassName: '',
 				loadingPolicy: 'lazy',
-				imageSizes: [320, 640],
+				imageSizes: [320, 640, 960],
 				elasticContainer: true,
 				blurredBackground: true
 		    },
