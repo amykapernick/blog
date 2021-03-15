@@ -9,7 +9,7 @@ featured: /img/dev/performance/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w
 
 Lately there’s a big rise in people running [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) reports on their sites. But what does this number actually mean to developers, to clients and to site visitors? Like their search engine algorithm, Google is a little fuzzy about exactly how they classify sites using this tool but they insist that it’s important for SEO. Can you really expect to get the perfect 100/100 score, or should you take it with a grain of salt?
 
-It’s not really a surprise that site load times have become important, we now expect everything to appear instantly and waiting a mere 3 seconds for a site to load is just unforgivable. With more and more mobile use it’s also expected that the site will load quickly on our handheld devices and hopefully not chew up our entire data quota (that’s needed for Netflix). We’re already seeing visitors abandoning a site if it fails to render quickly enough, and with standards like that it’s important to make sure we don’t have those visitors bouncing elsewhere.
+It’s not really a surprise that site load times have become important, we now expect everything to appear instantly and waiting a mere 3 seconds for a site to load is unforgivable. With more and more mobile use it’s also expected that the site will load quickly on our handheld devices and hopefully not chew up our entire data quota (that’s needed for Netflix). We’re already seeing visitors abandoning a site if it fails to render quickly enough, and with standards like that it’s important to make sure we don’t have those visitors bouncing elsewhere.
 
 ## So should I worry about PageSpeed?
 
@@ -33,7 +33,7 @@ Let me tell you a little secret:
 
 > PageSpeed (the Google product), doesn’t actually measure Page Speed (the time it takes to load your website).
 
-While the Google tool is great to give you a couple of things to look at, it isn’t actually measuring the page load time. So just because your site is ranking low in Google PageSpeed, doesn’t mean that your site is slow.
+While the Google tool is great to give you a couple of things to look at, it isn’t actually measuring the page load time. Because your site is ranking low in Google PageSpeed, doesn’t mean that your site is slow.
 
 ## So what should I look at?
 

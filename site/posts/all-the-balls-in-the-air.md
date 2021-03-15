@@ -33,15 +33,15 @@ Screenshot of Business Calendar app on Android phone showing week view and diffe
 On my phone, I love using Business Calendar 2 because it has a weekly view (this is my preferred view and so many apps don't have the option) and lets me customise the colours of each calendar
 One of the most important features I look for with calendars (phyiscal and digital) is colour. I know it sounds weird but when you’re trying to coordinate different areas of your life, colour coordination makes it much easier to see what’s going on at a glance. Pick colours and assign them to each calendar. And it may sound weird, but pick colours that make sense to you; for example, green always means work to me so my work calendar is green.
 
-The other great thing about having a digital calendar, is that everything has an ical subscription link as well. Take advantage of the fact that Facebook already records your friends’ birthdays and add them to your calendar as well. And make sure that all those events on Facebook are reflected on your calendar (obviously Facebook is blue, but for me birthdays are purple). This is something you see in a lot of other places, so make sure you check for ical links (eg. Meetup also includes this option).
+The other great thing about having a digital calendar, is that everything has an ical subscription link as well. Take advantage of the fact that Facebook already records your friends’ birthdays and add them to your calendar as well. And make sure that all those events on Facebook are reflected on your calendar (eg. Facebook is blue, but for me birthdays are purple). This is something you see in a lot of other places, so make sure you check for ical links (eg. Meetup also includes this option).
 
 ![](/img/tools/routine/9ef241ac338f2572ffc7c77cfaf176e19fdd6083_0_fholrxfhza-dnf0d.png)
 
-The other thing you can take advantage of are the event reminders, and don’t just stop at one. Some of my events will include reminders for what time I need to start getting ready, what time I need to leave and then what time I really really need to leave. This is also useful if you have a location set on the event, my phone will check traffic conditions and let me know when it’s time to leave based on my current location and current traffic.
+The other thing you can take advantage of are the event reminders, and don’t stop at one. Some of my events will include reminders for what time I need to start getting ready, what time I need to leave and then what time I really really need to leave. This is also useful if you have a location set on the event, my phone will check traffic conditions and let me know when it’s time to leave based on my current location and current traffic.
 
 While actually keeping a calendar for social events is still pretty new, there are a lot of people who are doing it. So take advantage of the fact that you can share calendars with people and keep up to date with the availabilities of your significant other or family members. It’s also useful to make sure that everyone is on the same page with an event, I had a friend turn up an hour and a half late for my birthday dinner because she forgot what time we’d agreed on; we were able to coordinate a group dinner because everyone had a calendar event with the correct date, time and location (there are a few different restaurants with similar names) and our regular movie nights always get a calendar event (and occasionally an agenda, to take into account dinner and the movie).
 
-Once your calendar is set up, it’s not only easy to see what you have on but also what you don’t. By looking at either a day or week view, you can see how much free time you have on and hopefully keep some “you time” on the books. And if you struggle to keep some time free each week, just book it in.
+Once your calendar is set up, it’s not only easy to see what you have on but also what you don’t. By looking at either a day or week view, you can see how much free time you have on and hopefully keep some “you time” on the books. And if you struggle to keep some time free each week, book it in to block it out.
 
 ## To Do List
 Once you’ve got your time organised, the next step is to make sure you’ve got your tasks organised as well. How many times have you decided that it’s fine, you’ll remember to do something but you always forget when the time comes? Don’t feel like you’re the only one, the number of times I’ve said I’ll send something when I’m next at my computer, and I never ever remember while I’m at my computer.
@@ -52,13 +52,13 @@ I tried a few different products, including [Wunderlist ](https://www.wunderlist
 
 ![](/img/tools/routine/37e0b6a84fde4f59cdcae3b07f0f1d766c1ee439_0_szhkyuvq_ssg9f_c.jpg)
 
-So apart from the basics of a to-do list app, you can create separate projects (and sub-projects) which allow you to split up the different areas of your life just like you can with your calendars. And you can keep using the colours you’ve assigned to your calendars for your colour coordinating.
+So apart from the basics of a to-do list app, you can create separate projects (and sub-projects) which allow you to split up the different areas of your life like you can with your calendars. And you can keep using the colours you’ve assigned to your calendars for your colour coordinating.
 
 ![](/img/tools/routine/1a3a83febe45639c756f1023b96dc216f045245c_0_wbwwyqppzbdv8roh.png)
 
 The ability to set due dates and times is useful to make sure that you don’t forget about anything. These dates are also used to help with particular views of the app, such as “Today” so you can see what you’ve got going on. I also really like how you can use “plain English” dates, like “Today” or “Next Monday” or even recurring dates such as “every Thursday until 27th May” (oh yea, you can set tasks to be recurring as well).
 
-When you add a task with a due date and time, it will automatically add a reminder 30 minutes before it’s due. You can also create your own reminders (with or without a due time) either a specific period of time before the task is due (you need a due time for this) or just a reminder at a specifc date and time. If you’re using the mobile app you can also use location based reminders, such as when you arrive or leave a particular location.
+When you add a task with a due date and time, it will automatically add a reminder 30 minutes before it’s due. You can also create your own reminders (with or without a due time) either a specific period of time before the task is due (you need a due time for this) or a reminder at a specifc date and time. If you’re using the mobile app you can also use location based reminders, such as when you arrive or leave a particular location.
 
 ![](/img/tools/routine/23b4d84a800043ea5e661ed58cec9616581f146c_0_fgjqnxzubcra1r8-.png)
 

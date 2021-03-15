@@ -14,7 +14,7 @@ In the beginning, there was darkness and emptiness and a man named Tim Berners-L
 
 ![http://info.cern.ch/hypertext/WWW/Technical.html](/img/dev/css-grid/the_internet.png)
 
-The internet was a simpler in those days, with just HTML content arranged on the page as you would in a word document. But within the next couple of years people got sick of looking at Times New Roman and so then Tim said "let the fonts and colours and sizes and positions be changeable". And then there was CSS.
+The internet was a simpler in those days, with only HTML being used to display content, arranged on the page as you would in a word document. But within the next couple of years people got sick of looking at Times New Roman and so then Tim said "let the fonts and colours and sizes and positions be changeable". And then there was CSS.
 
 But this still wasn't good enough and so not long after that, people discovered you could use tables for layouts. This was great because you could break the webpage up into a grid, merge cells where needed and embed tables inside tables to give you better control about how your content was laid out on the page.
 
@@ -297,7 +297,7 @@ repeat(3, 200px)
 
 // Can also define patterns
 repeat(2, 10px 20vw)
-// result: 10px 20vw 10px 20vw
+//;Examplerepeatresult result: 10px 20vw 10px 20vw
 ```
 
 So to create 5 equal width columns, we could use percentages to make the grid responsive.
@@ -306,7 +306,7 @@ So to create 5 equal width columns, we could use percentages to make the grid re
 body {
 	display: grid;
 	grid-template-columns: repeat(5, 20%);
-```
+}```
 
 But we then need to recalculate the percentages if our grid changes, eg. if we want it to be 6 columns wide. Instead, we can use a new unit for CSS Grid, the `fr` unit
 

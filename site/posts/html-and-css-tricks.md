@@ -20,7 +20,7 @@ Now some of these can be a little janky, and not quite as smooth as when using J
 
 <https://codepen.io/amys_kapers/pen/vqowbj?editors=0100>
 
-I had to put together a testimonial carousel for a project, normally I would just have a single testimonial but for this one I thought I'd see how to do this in HTML and CSS only.
+I had to put together a testimonial carousel for a project, normally I would only have a single testimonial but for this one I thought I'd see how to do this in HTML and CSS only.
 
 For this I'm using radio buttons and the next sibling selector (`element + sibling {}`) to test if the button is selected. I'm also using a different CSS hack to make nice looking radio buttons.
 
@@ -34,7 +34,7 @@ For the HTML, each testimonial has an `input`, `label` and `blockquote` element,
 </blockquote>
 ```
 
-The `id` on each `input` allows you to relate the `label` to the input using the `for` attribute, this allows you to click on the `label` to check the `input` rather than just on the `input`. This should be different for each testimonial.
+The `id` on each `input` allows you to relate the `label` to the input using the `for` attribute, this allows you to click on the `label` to check the `input` rather than only on the `input`. This should be different for each testimonial.
 
 The `name` for the inputs should be the same across all, this creates a group of them so only one `input` can be checked at any one time.
 

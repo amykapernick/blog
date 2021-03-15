@@ -21,7 +21,7 @@ I've also had the chance to speak at several [PubConfs](https://pubconf.io/speak
 
 <img src="/img/2019/Speaking_Pictures.jpg" alt="Collage of pictures of me speaking at various events this year">
 
-This year I've had the chance to tick several items off my speaking bucketlist, including giving another keynote, speaking at an international conference, give a live demo (which wasn't a complete failure) and be invited to speak at a conference. As I gave the same talk throughout most of the year, I have wondered whether I was just a "one hit wonder" though, whether this is something I can continue to do or if this year is all I've got. Thankfully as I head into 2020, I've been able to banish those doubts as I've already got 2 conferences lined up, returning to NDC London again this year then joining Ignite the Tour in Sydney in February.
+This year I've had the chance to tick several items off my speaking bucketlist, including giving another keynote, speaking at an international conference, give a live demo (which wasn't a complete failure) and be invited to speak at a conference. As I gave the same talk throughout most of the year, I have wondered whether I was only a "one hit wonder" though, whether this is something I can continue to do or if this year is all I've got. Thankfully as I head into 2020, I've been able to banish those doubts as I've already got 2 conferences lined up, returning to NDC London again this year then joining Ignite the Tour in Sydney in February.
 
 It's not all sunshine and roses though, it's taken a while to get to where I am (and a lot of rejections).
 
@@ -53,7 +53,7 @@ Several times throughout the year I've had people ask me if I travel a lot, and 
   
 ## Community
 
-This year I've become more involved in the community, starting by accidentally joining the committee for [DDD Perth](https://dddperth.com/) (my one job for the AGM was **not** to join the committee 😂). While I've watched people organising conferences from afar, and have done some event organising myself, this was completely different. DDD Perth first started in Perth 5 years ago with around 100 attendees and in 2019 we had just over 800 attendees on the day, it was so much fun to be involved with the event and to see all our hard work pay off when the event was even more successful than the previous year.
+This year I've become more involved in the community, starting by accidentally joining the committee for [DDD Perth](https://dddperth.com/) (my one job for the AGM was **not** to join the committee 😂). While I've watched people organising conferences from afar, and have done some event organising myself, this was completely different. DDD Perth first started in Perth 5 years ago with around 100 attendees and in 2019 we had a little over 800 attendees on the day, it was so much fun to be involved with the event and to see all our hard work pay off when the event was even more successful than the previous year.
 
 I've also continued to be involved with [Fenders](https://www.fenders.co/), as this community group is what helped me get to where I am today. Without the support and help from the amazing members in Fenders, I wouldn't have had half the opportunities I've had this year. I've also continued helping and mentoring at various other community events this year, including several women who code workshops, one of which I got to run my first workshop, *Intro to HTML*, which was a huge success (1 hour to teach a group about HTML and every attendee had a live webpage at the end of the hour).
 
@@ -76,7 +76,7 @@ During the past 12 months, I've had the chance to meet so many amazing people, a
   
 ## Work
 
-By the time 2019 finished, I'd officially been working for myself fulltime for 2 years, and somehow I'm still able to pay my rent (mostly) on time! This has been an incredible achievement to me, especially considering the fact that I've lost a third of the year to travel (and a bit more to plague after the travel). But this year hasn't just been about the boring work projects, this year I've also got to work on some cool side projects, including tinkering around with machine learning and image recognition and building my Quokkabot
+By the time 2019 finished, I'd officially been working for myself fulltime for 2 years, and somehow I'm still able to pay my rent (mostly) on time! This has been an incredible achievement to me, especially considering the fact that I've lost a third of the year to travel (and a bit more to plague after the travel). But this year hasn't only been about the boring work projects, this year I've also got to work on some cool side projects, including tinkering around with machine learning and image recognition and building my Quokkabot
 
 https://twitter.com/twilio/status/1182056785332580353
 

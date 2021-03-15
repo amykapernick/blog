@@ -1,12 +1,12 @@
 ---
 title: CSS Grid Calendar
 date: 2020-02-24
-description: Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than just ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.
+description: Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.
 categories: [CSS Grid, Dev, Calendar, Eleventy]
 featured: /img/dev/css-grid-calendar/css-grid-calendar.png
 ---
 
-Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than just ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.
+Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.
 
 ---
 
@@ -42,7 +42,7 @@ module.exports = eleventyConfig => {
 }
 ```
 
-So that we don't have to create each date manually, we can use JavaScript to generate an array that includes details for each date block. I've just set it up to generate dates for the one year, but you could also get it to repeat for further years. This is generated in the `_data` folder, under `_data/year.js`
+So that we don't have to create each date manually, we can use JavaScript to generate an array that includes details for each date block. I've only set it up to generate dates for the one year, but you could also get it to repeat for further years. This is generated in the `_data` folder, under `_data/year.js`
 
 ```js
 // _data/year.js
@@ -153,7 +153,7 @@ Add a custom font and a few colours, and that's looking pretty good.
 ~[This is a caption](/img/dev/css-grid-calendar/year_blocks.png)
 
 
-But we also want to be able to see what day and month each of these is, so we use the `data-` attributes to create pseudo elements. If the element has a `data-monthName` attribute (ie. is the first on the month), it creates a pseudo element and positions it just inside the left side of the month's blocks. Each block also gets a psuedo element of the day name, which are positioned at the top of the calendar, so the repeats overlay each other (and we just see one).
+But we also want to be able to see what day and month each of these is, so we use the `data-` attributes to create pseudo elements. If the element has a `data-monthName` attribute (ie. is the first on the month), it creates a pseudo element and positions it just inside the left side of the month's blocks. Each block also gets a psuedo element of the day name, which are positioned at the top of the calendar, so the repeats overlay each other (and we only see one).
 
 ```css
 .dates {

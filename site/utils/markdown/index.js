@@ -1,5 +1,6 @@
 const path = require('path');
 
+const eleventyRemark = require('@fec/eleventy-plugin-remark')
 const gfm = require('remark-gfm')
 const github = require('remark-github')
 const hint = require('remark-hint')
@@ -73,4 +74,4 @@ const options = {
 	]
 }
 
-module.exports = options
+module.exports = [eleventyRemark, options]

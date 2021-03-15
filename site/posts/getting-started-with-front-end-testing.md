@@ -24,7 +24,7 @@ Under the VS Code Settings you can then define when to automatically format a fi
 
 ![Automatic formatting settings in VS Code](/img/dev/front-end-testing/fender-testing-2.png)
 
-Linting is a fairly personal choice (although tabs are clearly the right option, they're actually [better for accessibility](https://dev.to/alexandersandberg/why-we-should-default-to-tabs-instead-of-spaces-for-an-accessible-first-environment-101f)), but you can find some starter files on [Github](https://github.com/amykapernick/starter-files).
+Linting is a fairly personal choice (although tabs are the right option, they're actually [better for accessibility](https://dev.to/alexandersandberg/why-we-should-default-to-tabs-instead-of-spaces-for-an-accessible-first-environment-101f)), but you can find some starter files on [Github](https://github.com/amykapernick/starter-files).
 
 ## Accessibility Testing
 
@@ -78,7 +78,7 @@ pa11y('https://localhost:65519', {
 browser.close()
 ```
 
-To make it a bit easier to check the results, you can save them to a file instead of just printing to the console. By default pa11y gives the results in json format, but [you can change this](https://github.com/pa11y/pa11y#reporters) and customise it to give a more user-friendly HTML report instead
+To make it a bit easier to check the results, you can save them to a file instead of printing to the console. By default pa11y gives the results in json format, but [you can change this](https://github.com/pa11y/pa11y#reporters) and customise it to give a more user-friendly HTML report instead
 
 ```javascript
 // Also require the `file-system` package

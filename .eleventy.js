@@ -1,52 +1,39 @@
 require('dotenv').config()
 
-const slug = require('./site/utils/filters/slug'),
-pluginRss = require('@11ty/eleventy-plugin-rss')
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const eleventyRemark = require('@fec/eleventy-plugin-remark')
-const remarkOptions = require('./site/utils/markdown/index.js')
-const absoluteImages = require('./site/utils/markdown/absoluteImages.js')
+const {
+	browserSyncConfig, 
+	templateFormats,
+	config
+} = require('./site/_config/index.js')
+
+const pluginRss = require('@11ty/eleventy-plugin-rss')
+const eleventyRemark = require('./site/utils/markdown/index.js')
+const slug = require('./site/utils/filters/slug')
+const feedContent = require('./site/utils/filters/feedContent')
+const syntaxHighlight = require('./site/utils/markdown/syntaxHighlighting')
+const inclusiveLanguage = require('./site/utils/markdown/inclusiveLanguage')
 
 module.exports = (eleventyConfig) => {
-	eleventyConfig.setBrowserSyncConfig({
-		notify: false,
-		watch: true,
-		logFileChanges: false,
-		logPrefix: "Blog"
-	})
+	eleventyConfig.setBrowserSyncConfig(browserSyncConfig)
 	eleventyConfig.setQuietMode(true);
+	eleventyConfig.setTemplateFormats(templateFormats)
 
-	eleventyConfig.setTemplateFormats(['html', 'md', 'njk', 'png', 'jpg', 'css'])
-
-
+	// Passthrough Copy
 	eleventyConfig.addPassthroughCopy('site/admin')
 	eleventyConfig.addPassthroughCopy('site/img/**/*.{gif,mp4}')
 
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss)
-	eleventyConfig.addPlugin(syntaxHighlight, {
-		alwaysWrapLineHighlights: true,
-		trim: true,
-		lineSeparator: "<br>",
-	});
-	
-	eleventyConfig.addPlugin(eleventyRemark, remarkOptions);
+	eleventyConfig.addPlugin(...syntaxHighlight);
+	eleventyConfig.addPlugin(...eleventyRemark);
+	eleventyConfig.addPlugin(...inclusiveLanguage)
 
 	// Filters
 	eleventyConfig.addFilter('slug', slug)
-	eleventyConfig.addNunjucksFilter("feedContent", (content) => {
-
-		return 	absoluteImages(content)
-
-	});
+	eleventyConfig.addNunjucksFilter("feedContent", feedContent);
 
 	
-
-	// Other Config
 	return {
-		dir: {
-			input: "site",
-			markdownTemplateEngine: 'njk'
-		},
+		...config
 	}
 }

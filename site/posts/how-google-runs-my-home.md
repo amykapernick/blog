@@ -60,7 +60,7 @@ I also have a fantastic ability to remember things that I need to buy at inoppor
 
 > Hey Google, can you put eggs, milk and beans on the list?
 
-As I've already said, I have Google Homes around my house, and now I can add something to the shopping list no matter where I am. This works with Google's shopping list, and while you can integrate with different apps the ease with which I can add items or even multiple items at once meant that I've just switched to using Google's. Obviously there are a few things that don't work quite as well as I'd like (mints, mince or mint) and it didn't quite know what I meant when I said
+As I've already said, I have Google Homes around my house, and now I can add something to the shopping list no matter where I am. This works with Google's shopping list, and while you can integrate with different apps the ease with which I can add items or even multiple items at once meant that I've just switched to using Google's. Now there are a few things that don't work quite as well as I'd like (mints, mince or mint) and it didn't quite know what I meant when I said
 
 > Hey Google, can you add scourers to the list?
 
@@ -70,7 +70,7 @@ When I'm heading out the door, I'll often also check traffic conditions, travel 
 
 > Hey Google, how long will it take to get to the international airport?
 
-Google will give me travel times based on current traffic conditions and then send the directions to my phone. This way when I get in the car I just need to tap the notification and the directions are all good to go.
+Google will give me travel times based on current traffic conditions and then send the directions to my phone. This way when I get in the car I only need to tap the notification and the directions are all good to go.
 
 I often also like to listen to music when I'm cooking or cleaning, and Google helps me with
 
@@ -94,7 +94,7 @@ Honestly I don't use the one in my bedroom very much, but the voice commands on 
 
 > Hey Google, tell me about my day
 
-but I have multiple different calendars and it doesn't give information about all of them, just my default calendar (and I have 3 main calendars). Hopefully this is changed soon as it would be really good to get a reminder about what I have on each morning. Thankfully it can still give me information about the weather for the day and news headlines so I can get a bit of information from it.
+but I have multiple different calendars and it doesn't give information about all of them, only my default calendar (and I have 3 main calendars). Hopefully this is changed soon as it would be really good to get a reminder about what I have on each morning. Thankfully it can still give me information about the weather for the day and news headlines so I can get a bit of information from it.
 
 ## Office
 
@@ -180,7 +180,7 @@ I also get annoyed at having to continually restart conversations
 
 "Hey Google, can you ask Harmony to turn on Foxtel?"
 
-If a command wasn't successful, I'd like the ability to try again. Most of the time I just need to say it slightly differently or more clearly and it understands me so having to go through the whole "Hey Google" bit again is a pain. I think this is functionality that is now available (Continued Conversation), but on devices that use US English only (don't ask me why that makes a difference).
+If a command wasn't successful, I'd like the ability to try again. Most of the time I need to say it slightly differently or more clearly and it understands me so having to go through the whole "Hey Google" bit again is a pain. I think this is functionality that is now available (Continued Conversation), but on devices that use US English only (don't ask me why that makes a difference).
 
 ### Manners
 
@@ -202,9 +202,9 @@ While I can get good driving directions, I often want to know when the next trai
 
 ### Personalisation
 
-This is just a little thing, but I would love to be able to change the command so instead of "Hey Google", you could give it a name. I work at home by myself and it's nice to pretend like I actually have my own assistant (maybe one day). It'd be nice if when I needed something, I could go "Hey Patricia, when's my next meeting?". This is one little bonus the Alexa has over the Google Home in that it has a more human name.
+This is a little thing, but I would love to be able to change the command so instead of "Hey Google", you could give it a name. I work at home by myself and it's nice to pretend like I actually have my own assistant (maybe one day). It'd be nice if when I needed something, I could go "Hey Patricia, when's my next meeting?". This is one little bonus the Alexa has over the Google Home in that it has a more human name.
 
 ---
 
-While a lot of people are still sceptical, I'm so glad I decided to get a Google Home, it's made my life much easier and I no longer have to worry about things I don't want to. I use it on a daily basis, and even managed to convince my Mum to get one, and that was just on the shopping list functionality. There is still a way to go, and it definitely works better when you have various things connected together (Chromecast, Harmony, Netflix, Spotify, etc) but the different options you have available are endless.
+While a lot of people are still sceptical, I'm so glad I decided to get a Google Home, it's made my life much easier and I no longer have to worry about things I don't want to. I use it on a daily basis, and even managed to convince my Mum to get one, and that was only on the shopping list functionality. There is still a way to go, and it definitely works better when you have various things connected together (Chromecast, Harmony, Netflix, Spotify, etc) but the different options you have available are endless.
 

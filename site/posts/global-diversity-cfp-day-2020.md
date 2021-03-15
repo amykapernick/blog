@@ -46,6 +46,6 @@ Although GDCFP Day gives a workshop structure and a few videos to show, most of 
 
 ---
 
-Global Diversity CFP Day is a fantastic initiative that has helped to create a positive change in the community. We're now starting to see more people taking a chance and sharing something they know at events, and as it continues each year we're seeing those people getting the chance to give back (as I've been able to). Even for the more experienced speakers, it's an opportunity for them to come up with some fresh or ideas, or even just a  day that's set aside for them to focus on writing proposals and getting feedback.
+Global Diversity CFP Day is a fantastic initiative that has helped to create a positive change in the community. We're now starting to see more people taking a chance and sharing something they know at events, and as it continues each year we're seeing those people getting the chance to give back (as I've been able to). Even for the more experienced speakers, it's an opportunity for them to come up with some fresh or ideas, or even just a day that's set aside for them to focus on writing proposals and getting feedback.
 
 These events have been wonderful to be a part of, and while I can, I'll continue to spend my time helping out with them, either as a mentor, a facilitator or an attendee. Without these workshops, I wouldn't have had the opportunities I've had the last couple of years, and my life would definitely be more boring because of that.

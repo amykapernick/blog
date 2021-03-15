@@ -1,12 +1,12 @@
 ---
 title: Building Quokka on Demand
 date: 2020-02-07
-description: Last year I got the chance to give a live demo at the Superclass at Twilio Engage in Sydney. It was just a quick demo so I didn't have the chance to do much, but I thought it would be a good opportunity to show how easy the APIs are to use, and maybe I could put a little Perth in it. Then I came up with the idea of Quokkabot 🎉.
+description: Last year I got the chance to give a live demo at the Superclass at Twilio Engage in Sydney. It was a quick demo so I didn't have the chance to do much, but I thought it would be a good opportunity to show how quick it is to get started with the Twilio APIs, and maybe I could put a little Perth in it. Then I came up with the idea of Quokkabot 🎉.
 categories: [Quokkas, Dev, Twilio]
 featured: /img/quokkabot/Image_from_iOS.jpg
 ---
 
-Last year I got the chance to give a live demo at the Superclass at [Twilio Engage](https://twilioengage.com/sydney2019) in Sydney. It was just a quick demo so I didn't have the chance to do much, but I thought it would be a good opportunity to show how easy the APIs are to use, and maybe I could put a little Perth in it. Then I came up with the idea of Quokkabot 🎉.
+Last year I got the chance to give a live demo at the Superclass at [Twilio Engage](https://twilioengage.com/sydney2019) in Sydney. It was a quick demo so I didn't have the chance to do much, but I thought it would be a good opportunity to show how quick it is to get started with the Twilio APIs and maybe I could put a little Perth in it. Then I came up with the idea of Quokkabot 🎉.
 
 Using the [Twilio WhatsApp API](https://www.twilio.com/whatsapp), it allows people to send a message in and ask for a picture of a Quokka. For those who haven't heard of them before, Quokkas are Australian marsupials (related to kangaroos and wallabies), only found on a small island called Rottnest Island, off the coast of Perth. They're herbivores (although will eat most food you leave lying around) and have no natural predators and aren't afraid of humans. But what's made them famous the most is they look like they're smiling, and are excellent at posing for selfies. So I built a bot which allowed people to ask for (and get a photo of a quokka) to brighten their day.
 
@@ -21,7 +21,7 @@ In the [Twilio Console](https://www.twilio.com/console), navigate to **Functions
 
 ![](/img/quokkabot/twilio_function.png)
 
-Twilio gives you some code to start with (even though we're using the Blank template 🤷‍♀️), we just need to make a couple of tweaks to get started. This function will be triggered whenever a WhatsApp message is sent to your number and will send a response to the same number.
+Twilio gives you some code to start with (even though we're using the Blank template 🤷‍♀️), we only need to make a couple of tweaks to get started. This function will be triggered whenever a WhatsApp message is sent to your number and will send a response to the same number.
 
 ```js
     exports.handler = function(context, event, callback) {

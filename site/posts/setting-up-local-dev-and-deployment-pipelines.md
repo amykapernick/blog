@@ -7,7 +7,7 @@ blog: [aimhigher]
 featured: /img/feature/2e2caf5740aabb6fe6334d2aef4cab7acd28b408_rawpixel-com-579231-unsplash.jpg
 ---
 
-Since I discovered git, everything I do gets recorded on GitHub (it’s one of the most amazing things I’ve learnt in web). I’ve also started using XAMPP so that I can develop on my local machine. But while copying files from my local development onto my server I thought surely there must be an easier way to do this. Unfortunately there didn’t seem to be a lot of information about simply setting this up with FTP so I’m documenting it to make it easier for the next person.
+Since I discovered git, everything I do gets recorded on GitHub (it’s one of the most amazing things I’ve learnt in web). I’ve also started using XAMPP so that I can develop on my local machine. But while copying files from my local development onto my server I thought surely there must be an easier way to do this. Unfortunately there didn’t seem to be a lot of information about setting this up with FTP so I’m documenting it to make it easier for the next person.
 
 These instructions are specific to a WordPress build and using cPanel but can be adjusted to different situations.
 
@@ -25,7 +25,7 @@ To start, you will need to have WordPress installed on both your [local machine]
 
 ## Setup Git Repository
 
-Technically you could use the whole WordPress folder as your repository but I just include my theme folder and have no issues with that. You can get a copy of the Twenty Seventeen WordPress theme from my [repository](https://github.com/amykapernick/wordpress). Clone this repository into the Themes folder of your local installation.
+Technically you could use the whole WordPress folder as your repository but I only include my theme folder and have no issues with that. You can get a copy of the Twenty Seventeen WordPress theme from my [repository](https://github.com/amykapernick/wordpress). Clone this repository into the Themes folder of your local installation.
 
 ## Install Gulp and Sass
 
@@ -38,7 +38,7 @@ I use Gulp to not only compile my Sass (definitely one of the most amazing thing
 - [Gulp String Replace](https://www.npmjs.com/package/gulp-string-replace)
 - [Gulp Sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
 
-These are all modules needed in my Gulpfile but feel free to use different ones or add your own, just remember to adjust as necessary.
+These are all modules needed in my Gulpfile but feel free to use different ones or add your own, remember to adjust as necessary.
 
 ```javascript
 //Variables

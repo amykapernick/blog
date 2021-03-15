@@ -2,7 +2,7 @@
 title: 'Building Quokkabot Part 3: Moving to Azure Static Web Apps'
 date: 2020-06-01
 publish: 2020-05-27
-description: Last week I got the chance to speak at Microsoft Build, and do a first-look demo on their newly announced featured - Azure Static Web Apps. And as I didn't get access to Static Web Apps until they same time everyone else did (the day before my demo), I got to showcase how easy it was the first time you used it (ok, so maybe it was the second time that I'd used it).
+description: Last week I got the chance to speak at Microsoft Build, and do a first-look demo on their newly announced featured - Azure Static Web Apps. And as I didn't get access to Static Web Apps until they same time everyone else did (the day before my demo), I got to showcase how simple it was the first time you used it (ok, so maybe it was the second time that I'd used it).
 categories:
   - Quokkas
   - Dev
@@ -10,7 +10,7 @@ categories:
   - Azure Static Web Apps
 featured: /img/welcome_to_quokkabot.png
 ---
-Last week I got the chance to speak at [Microsoft Build](https://mybuild.microsoft.com/), and do a first-look demo on their newly announced featured - [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/overview?WT.mc_id=AZ-MVP-5003595). And as I didn't get access to Static Web Apps until they same time everyone else did (the day before my demo), I got to showcase how easy it was the first time you used it (ok, so maybe it was the second time that I'd used it).
+Last week I got the chance to speak at [Microsoft Build](https://mybuild.microsoft.com/), and do a first-look demo on their newly announced featured - [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/overview?WT.mc_id=AZ-MVP-5003595). And as I didn't get access to Static Web Apps until they same time everyone else did (the day before my demo), I got to showcase how simple it was the first time you used it (ok, so maybe it was the second time that I'd used it).
 
 ## Deploying from GitHub
 
@@ -46,7 +46,7 @@ Again, you're done.
 
 ## Adding an API back end
 
-I already had a [separate repository](https://github.com/amykapernick/quokka_or_not) where I was running the Quokkabot back end on Azure Functions, so as Static Web Apps uses Azure Functions for the back end that was also an easy integration.
+I already had a [separate repository](https://github.com/amykapernick/quokka_or_not) where I was running the Quokkabot back end on Azure Functions, so as Static Web Apps uses Azure Functions for the back end that was also simple to integrate, as it's set up from the start.
 
 I created a new folder in the static site project called `api` and copied all the files from the API repository over, then deployed the updates.
 
@@ -56,7 +56,7 @@ When the GitHub action detects the API folder, it will deploy that part of the p
 
 ## Gotchas
 
-Azure Static Web Apps has only been available for a week, is still in preview and therefore not suited to production apps. But so far this is a really great product, great integrations and simple and easy to use. There are just a few gotchas or issues though
+Azure Static Web Apps has only been available for a week, is still in preview and therefore not suited to production apps. But so far this is a really great product, great integrations and simple and easy to use. There are a few gotchas or issues though
 
 ### Node Modules
 

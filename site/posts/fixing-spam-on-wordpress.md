@@ -19,7 +19,7 @@ Navigate to **Settings** → **Akismet Anti-Spam** in the side menu and click **
 
 ![](/img/dev/wordpress-forms-spam/akismet_admin.png)
 
-In the new tab, click **Set Up Your Akismet Account**, then select the plan you want to (if your site is just for personal use, the *Personal* plan should be fine, if your site is for a business then you need to have at least the *Plus* plan.
+In the new tab, click **Set Up Your Akismet Account**, then select the plan you want to (if your site is only for personal use, the *Personal* plan should be fine, if your site is for a business then you need to have at least the *Plus* plan.
 
 ![](/img/dev/wordpress-forms-spam/akismet_plans.png)
 
@@ -39,7 +39,7 @@ If you like, you can also change the settings here to define how strict Akismet 
 
 ## Captcha for WP Forms
 
-If Akismet isn't enough to stop the spam (or you want to stop it before it gets that far), you can also set up your contact form to show a CAPTCHA to help prevent bots submitting spam to your form. I use [WPForms](https://wpforms.com/) and [Google reCAPTCHA](https://www.google.com/recaptcha/intro/v3.html), but there are many alternatives out there, this is just a combination I've found works well and is easy to set up
+If Akismet isn't enough to stop the spam (or you want to stop it before it gets that far), you can also set up your contact form to show a CAPTCHA to help prevent bots submitting spam to your form. I use [WPForms](https://wpforms.com/) and [Google reCAPTCHA](https://www.google.com/recaptcha/intro/v3.html), but there are many alternatives out there, this is a combination I've found works well and is easy to set up
 
 ![](/img/dev/wordpress-forms-spam/form_captcha.png)
 
@@ -47,7 +47,7 @@ Under **WPForms** → **Settings** → **reCAPTCHA**, you have the options for s
 
 ![](/img/dev/wordpress-forms-spam/wpforms_recaptcha.png)
 
-In a new tab, go to [https://www.google.com/recaptcha/admin](https://www.google.com/recaptcha/admin) and login with a Google or GSuite account. It should prompt you to set up a new site and enter the details. Make sure you enter a domain under the **Domains** section (and if you have a test or development site, enter that too). I prefer to use the reCAPTCHA v2 checkbox option, but you can also choose the v2 invisible badge if you prefer. The v3 still has a few issues, so I'd recommend against using that just yet. Once you've filled in your site's details, click **Submit** at the bottom
+In a new tab, go to [https://www.google.com/recaptcha/admin](https://www.google.com/recaptcha/admin) and login with a Google or GSuite account. It should prompt you to set up a new site and enter the details. Make sure you enter a domain under the **Domains** section (and if you have a test or development site, enter that too). I prefer to use the reCAPTCHA v2 checkbox option, but you can also choose the v2 invisible badge if you prefer. The v3 still has a few issues, so I'd recommend against using that for now. Once you've filled in your site's details, click **Submit** at the bottom
 
 ![](/img/dev/wordpress-forms-spam/new_recaptcha.png)
 
