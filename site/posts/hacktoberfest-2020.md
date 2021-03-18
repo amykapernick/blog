@@ -13,7 +13,7 @@ For those who aren't familiar with it, Hacktoberfest is a celebration of open so
 
 Each year I hear about this and I keep saying I'm going to do it, but as someone who hasn't contributed to open source, and typically works with the front end, this has always been super confronting and I never know where to start. Thankfully last year [Dominik Kundel](https://dkundel.com/) helped me to get at least one PR in, with the [Open Pixel Art](https://open-pixel-art.com/) project. This project allowed you to contribute 1 pixel to the grid, and even came along with a [special Twilio Quest mission](https://www.twilio.com/quest/learn/open-source) to take you through the contribution process if you haven't done it before. I still got distracted and didn't manage to get the 4 required PRs in, but it reminded me that there are still things I can contribute to!
 
-![](/img/dev/hacktoberfest/open-pixel-art.png)
+![Screenshot of the Open Pixel Art Project which is a 40 by 40 pixel grid, with some of the pixels shaded a certain colour. In the bottom left corner there are a number of pixels shaded red to make the Twilio logo, a red button](/img/dev/hacktoberfest/open-pixel-art.png 'The Open Pixel Art Project is a great first open source contribution - [open-pixel-art.com](https://open-pixel-art.com/)')
 
 ## Contributing to Hacktoberfest 2020
 

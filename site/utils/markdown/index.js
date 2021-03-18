@@ -17,7 +17,20 @@ const slug = require('rehype-slug')
 const stringify = require('rehype-stringify')
 const autoLink = require('remark-autolink-headings')
 const sanitise = require('rehype-sanitize')
-const images = require('@fec/remark-images')
+const parse = require('remark-parse')
+const remark = require('remark')
+const html = require('remark-html')
+// TODO: replace with package once PR is merged
+const images = require('../../../plugins/remark-images')
+
+const processCaption = (markdown) => {
+	const caption = remark()
+    .use(html)
+    .processSync(markdown)
+    .toString()
+
+	return caption
+}
 
 const options = {
 	enableRehype: false,
@@ -59,7 +72,8 @@ const options = {
 				loadingPolicy: 'lazy',
 				imageSizes: [320, 640, 960],
 				elasticContainer: true,
-				blurredBackground: true
+				blurredBackground: true,
+				processCaption
 		    },
 		  },
 		  {

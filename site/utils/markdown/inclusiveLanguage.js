@@ -1,3 +1,4 @@
+// TODO: Replace with package once PR is merged
 const inclusiveLanguage = require('../../../plugins/eleventy-plugin-inclusive-language/')
 
 const words = [
