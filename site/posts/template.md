@@ -24,11 +24,9 @@ draft: true
 
 https://twitter.com/Amys_Kapers/status/1260845733109850116
 
-https://twitter.com/Amys_Kapers/status/1260845733109850116
-
 ### Instagram
 
-https://www.instagram.com/p/B_lyBmxp_tG/
+https://www.instagram.com/p/B_lyBmxp_tG
 
 ### Spotify
 
@@ -38,15 +36,9 @@ https://open.spotify.com/playlist/6gMk1wEc0IiqDJklHIPzQn?si=lwPnRPCuQ3GK4PJocHy6
 
 https://www.twitch.tv/amyskapers
 
-### Vimeo
-
-https://vimeo.com/413450595
-
-### Can I Use
-
 ### Codepen
 
-@[codepen](YzPVgPZ)
+https://codepen.io/amys_kapers/pen/abZPRwN
 
 ---
 
