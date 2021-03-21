@@ -12,6 +12,7 @@ const slug = require('./site/utils/filters/slug')
 const feedContent = require('./site/utils/filters/feedContent')
 const syntaxHighlight = require('./site/utils/markdown/syntaxHighlighting')
 const inclusiveLanguage = require('./site/utils/markdown/inclusiveLanguage')
+const postContent = require('./site/utils/markdown/postContent')
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig(browserSyncConfig)
@@ -30,7 +31,8 @@ module.exports = (eleventyConfig) => {
 
 	// Filters
 	eleventyConfig.addFilter('slug', slug)
-	eleventyConfig.addNunjucksFilter("feedContent", feedContent);
+	eleventyConfig.addFilter("feedContent", feedContent);
+	eleventyConfig.addFilter('postContent', postContent)
 
 	
 	return {

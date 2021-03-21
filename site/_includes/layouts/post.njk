@@ -1,10 +1,10 @@
-{% set pagetitle = post.data.title + " | Amy's Kapers" %}
+{% set pagetitle = [title, " | Amy's Blog"] | join %}
 {% set description = "" %}
 {% extends 'layouts/main.njk' %}
 
 {% block content %}
 <article>
 	<h1>{{title}}</h1>
-	{{content | safe}}
+	{{content | postContent | safe}}
 </article>
 {% endblock %}

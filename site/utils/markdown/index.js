@@ -24,7 +24,7 @@ const parse = require('remark-parse')
 const remark = require('remark')
 const html = require('remark-html')
 // TODO: replace with package once PR is merged
-const images = require('../../../plugins/remark-images')
+const images = require('@fec/remark-images')
 
 const processCaption = (markdown) => {
 	const caption = remark()
@@ -38,18 +38,18 @@ const processCaption = (markdown) => {
 const options = {
 	enableRehype: false,
 	plugins: [
-		gfm,
-		github,
+		// gfm,
+		// github,
 		hint,
 		// kbd,
-		{
-			plugin: oembed,
-			options: {
-				syncWidget: true,
-				asyncImg: true,
-			}
-		},
-		squeeze,
+		// {
+		// 	plugin: oembed,
+		// 	options: {
+		// 		syncWidget: true,
+		// 		asyncImg: true,
+		// 	}
+		// },
+		
 		{
 			plugin: external,
 			options: {
@@ -92,9 +92,10 @@ const options = {
 				allowDangerousHtml: true 
 			},
 		  },
-
+		  
 		  rehypeRaw,
 		  stringify,	
+		  squeeze,
 	]
 }
 
