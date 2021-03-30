@@ -1,5 +1,5 @@
 ---
-title: 'Building Quokkabot: Part 2'
+title: 'Building Quokkabot Part 2: Quokka Recognition'
 date: 2020-05-19
 description: After building Quokka on Demand, I decided to go further, and turn it into a Quokka identifying bot instead.
 categories:
