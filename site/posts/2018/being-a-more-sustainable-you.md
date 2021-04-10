@@ -4,7 +4,7 @@ date: 2018-10-10
 description: During the past couple of years, I started focusing more on myself and when I burnt out last year I decided to put myself first. Since then I've taken on so many new responsibilities, adventures and stressors, but since making the decision to put myself first I've been in a much better place mentally and emotionally.
 categories: ['Mental Health', 'Productivity']
 blog: [aimhigher]
-featured: /img/feature/img_20180722_135436.jpg
+featured: feature/img_20180722_135436.jpg
 ---
 
 During the past couple of years, I started focusing more on myself and when I burnt out last year I decided to put myself first. Since then I've taken on so many new responsibilities, adventures and stressors, but since making the decision to put myself first I've been in a much better place mentally and emotionally. By making conscious decisions about what I devote my energy to and by not letting myself feel bad for spending time on myself, I'm not only in a better place mentally, but I'm happier than I've been in a long time and truly enjoying my life.

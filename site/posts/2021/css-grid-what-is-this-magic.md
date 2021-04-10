@@ -4,7 +4,7 @@ date: 2020-06-25
 description: 
 categories: [CSS, 'CSS Grid']
 draft: true
-featured: /img/dev/css-grid/grid_cover.png
+featured: dev/css-grid/grid_cover.png
 excerpt: <p>We've come a long way with our CSS layouts, from the table layouts that continue to haunt our nightmares, to floats and clearfixes, through flexbox and negative margins, all the way to CSS grid and our ability to fully control our layouts in both directions.</p>
 ---
 
@@ -297,7 +297,7 @@ repeat(3, 200px)
 
 // Can also define patterns
 repeat(2, 10px 20vw)
-//;Examplerepeatresult result: 10px 20vw 10px 20vw
+//;ExamplerepeatresultExamplerepeatresultExamplerepeatresult result: 10px 20vw 10px 20vwresultresult
 ```
 
 So to create 5 equal width columns, we could use percentages to make the grid responsive.

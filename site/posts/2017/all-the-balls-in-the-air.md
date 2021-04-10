@@ -4,7 +4,7 @@ date: 2017-04-02
 description: These days your’re expected to manage several different aspects of life and at the same time keep on top of it all. Now the first thing you need to remember is to know your limits, it’s all too easy to take on too much and before too long you end up crashing and burning. I’m not going to cover that now because that’s an entirely different topic, but make sure you know where the line is, because that’s not something you want to cross.
 categories: [Productivity, Tools]
 blog: [aimhigher]
-featured: /img/feature/21dbeebf5dce6f22ad559ef5f72c1c40288f7984_1_jbh3upwpmskrznxgczihoa.jpg
+featured: feature/21dbeebf5dce6f22ad559ef5f72c1c40288f7984_1_jbh3upwpmskrznxgczihoa.jpg
 ---
 
 These days your’re expected to manage several different aspects of life and at the same time keep on top of it all. Now the first thing you need to remember is to know your limits, it’s all too easy to take on too much and before too long you end up crashing and burning. I’m not going to cover that now because that’s an entirely different topic, but make sure you know where the line is, because that’s not something you want to cross.

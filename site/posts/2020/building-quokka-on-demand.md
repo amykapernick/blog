@@ -3,7 +3,7 @@ title: 'Building Quokkabot Part 1: Quokkas on Demand'
 date: 2020-02-07
 description: Last year I got the chance to give a live demo at the Superclass at Twilio Engage in Sydney. It was a quick demo so I didn't have the chance to do much, but I thought it would be a good opportunity to show how quick it is to get started with the Twilio APIs, and maybe I could put a little Perth in it. Then I came up with the idea of Quokkabot 🎉.
 categories: [Quokkas, Dev, Twilio]
-featured: /img/quokkabot/Image_from_iOS.jpg
+featured: quokkabot/Image_from_iOS.jpg
 ---
 
 Last year I got the chance to give a live demo at the Superclass at [Twilio Engage](https://twilioengage.com/sydney2019) in Sydney. It was a quick demo so I didn't have the chance to do much, but I thought it would be a good opportunity to show how quick it is to get started with the Twilio APIs and maybe I could put a little Perth in it. Then I came up with the idea of Quokkabot 🎉.

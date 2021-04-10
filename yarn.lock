@@ -18,10 +18,10 @@
     p-queue "^6.6.2"
     short-hash "^1.0.0"
 
-"@11ty/eleventy-img@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-img/-/eleventy-img-0.8.2.tgz#7de80e592152ba0150163e6cca4ce5473bbb46df"
-  integrity sha512-Evb6wNfSo1H7YsN/F2ScV+02Ow2+KtT3rJ5Gn2cdQipZwvL9UAo03C9gcWQoX4OaLajQkPKcECqXx5JiVYXv5g==
+"@11ty/eleventy-img@^0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-img/-/eleventy-img-0.8.3.tgz#008502d17bec00e84a9342e67cdd47743c6987b7"
+  integrity sha512-Ei/EYO8aWinRl1v+Ppc5X9eU7V+ndfNWbJ1H3SoscZop+ZUaqefyMWzH8kAQ/L6/GpdVwFQg5Zr63IJ5bSqi4g==
   dependencies:
     "@11ty/eleventy-cache-assets" "^2.1.0"
     debug "^4.3.1"
@@ -1422,6 +1422,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+date-fns@^2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.20.1.tgz#7e60b7035284a5f83e37500376e738d9f49ecfd3"
+  integrity sha512-8P5M8Kxbnovd0zfvOs7ipkiVJ3/zZQ0F/nrBW4x5E+I0uAZVZ80h6CKd24fSXQ5TLK5hXMtI4yb2O5rEZdUt2A==
 
 date-time@^0.1.1:
   version "0.1.1"

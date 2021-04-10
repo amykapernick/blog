@@ -4,7 +4,7 @@ date: 2020-01-07
 description: It's now been a couple of years since I first started doing these (and I still have a half written one for 2018). But last time I took the time to sit down and reflect on the past 12 months, it was really interesting to remind myself of all the things I've forgotten, and the past 12 months have felt like a lifetime for me.
 categories: ['New Year', Retrospective]
 blog: [aimhigher]
-featured: /img/2019/MVIMG_20191215_185417.jpg
+featured: 2019/MVIMG_20191215_185417.jpg
 ---
 
 It's now been a couple of years since I first started doing these (and I still have a half written one for 2018). But last time I took the time to sit down and reflect on the past 12 months, it was really interesting to remind myself of all the things I've forgotten, and the past 12 months have felt like a lifetime for me.

@@ -3,7 +3,7 @@ title: CSS Grid Calendar
 date: 2020-02-24
 description: Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.
 categories: [CSS Grid, Dev, Calendar, Eleventy]
-featured: /img/dev/css-grid-calendar/css-grid-calendar.png
+featured: dev/css-grid-calendar/css-grid-calendar.png
 ---
 
 Last month I started getting overwhelmed at what I had coming up this year (that's right, it was only January). I wanted something where I could see the whole year at a glance, I didn't need many details but wanted to see what trips/conferences I had happening and even where I was applying to (so I could keep in mind how busy I was). But as I'm a developer, rather than ducking down to Officeworks and buying a year-in-view calendar, I decided to build one instead.

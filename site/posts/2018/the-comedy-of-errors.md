@@ -2,7 +2,7 @@
 title: The Comedy of Errors
 date: 2018-04-19
 description: My experience dealing with Microsoft support, as a Shakespearean comedy (because not everyone died)
-featured: /img/feature/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg
+featured: feature/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg
 ---
 
 I'd like to thank Microsoft for inspiring this tale, and Shakespeare for inspiring the style. Although names have been changed, all events actually happened. Conversations have been simplified but subject matter and time periods remain the same.

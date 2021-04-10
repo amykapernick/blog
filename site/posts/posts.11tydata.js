@@ -7,7 +7,7 @@ const visible = (data) => {
 
 module.exports = {
 	eleventyComputed: {
-		permalink: (data) => visible(data) ? `{{title | slug}}/index.html` : false,
+		permalink: (data) => visible(data) ? `${data.page.fileSlug}/index.html` : false,
 		eleventyExcludeFromCollections: (data) => visible(data) ? false : true,
 	},
 	layout: `layouts/post.njk`,

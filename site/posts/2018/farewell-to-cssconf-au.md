@@ -3,7 +3,7 @@ title: Farewell to CSSConf AU
 date: 2018-04-16
 description: Recap of my time at the final CSSConf Au in Melbourne in 2018
 categories: [Conference, 'CSS Conf']
-featured: /img/conferences/css-conf-au-2018bc13f1f12f0d93dde12c8543cf8c7f15e4dbc8d5_img_20180320_100538.jpg
+featured: conferences/css-conf-au-2018/bc13f1f12f0d93dde12c8543cf8c7f15e4dbc8d5_img_20180320_100538.jpg
 ---
 
 Last month I got the awesome opportunity to go to the final CSSConf AU in Melbourne and see a range of amazing speakers from all over the world (including one of my good friends from Perth). This was the first time I'd been to a CSSConf and I'm so glad I was able to make it before they finished up. The entire experience from start to finish was amazing, inclusive, inspiring, encouraging and came close to being the best conference I've been to (Mixin still ranks as my favourite conference. Although I didn't make it to JSConf (I did get to Decompress though), my week was packed with inspiring talks, meeting amazing people and thoroughly enjoying the time I spent in Melbourne (probably about as much as I enjoyed collapsing into bed when I made it home 😂😴).

@@ -4,7 +4,7 @@ date: 2017-11-01
 description: What does Google Pagespeed actually mean? And what do you need to do about your score? Is it all just a scam? Probably
 categories: [Performance]
 blog: [aimhigher]
-featured: /img/dev/performance/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w-00wj1r0de.jpg
+featured: dev/performance/87f42bf6ef376c00fc9247f7bf79956009ed0af4_0_wddo0w-00wj1r0de.jpg
 ---
 
 Lately there’s a big rise in people running [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) reports on their sites. But what does this number actually mean to developers, to clients and to site visitors? Like their search engine algorithm, Google is a little fuzzy about exactly how they classify sites using this tool but they insist that it’s important for SEO. Can you really expect to get the perfect 100/100 score, or should you take it with a grain of salt?

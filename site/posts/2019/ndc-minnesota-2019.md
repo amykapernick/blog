@@ -3,7 +3,7 @@ title: NDC Minnesota 2019
 date: 2019-05-16
 description: A few of the amazing talks I saw during my time at NDC Minnesota in 2019.
 categories: [Conference, NDC]
-featured: /img/conferences/ndc-minnesota-2019/d6etpv9x4auc2ys.jpg-large.jpg
+featured: conferences/ndc-minnesota-2019/d6etpv9x4auc2ys.jpg-large.jpg
 ---
 
 This week I had the chance to not only attend, but speak at NDC Minnesota 2019 (their second year running in Minnesota). This was my second NDC conference (having spoken at London earlier this year) and once again I got the chance to meet a wide range of amazing people from different areas in tech and this time even made it to a few talks! This was my second time at an NDC conference (having spoken at NDC London earlier this year) and despite the fact that it was a much smaller conference both the attendees and other speakers were just as friendly and inclusive.

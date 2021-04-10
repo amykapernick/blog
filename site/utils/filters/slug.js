@@ -1,7 +1,7 @@
-const slugify = require('slugify')
+module.exports = (post) => {
+	if(post?.data?.external) {
+		return post.data.external
+	}
 
-module.exports = (string, replacement = '-') => slugify(string, {
-	replacement,
-	lower: true,
-	remove: /[*+~.()'"!:@#?]/g
-})
+	return post.fileSlug
+}
