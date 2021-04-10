@@ -52,6 +52,7 @@
     "remark-unwrap-images": "^2.0.0",
     "remarkable-figure-plugin": "^1.0.0",
     "slugify": "^1.4.7",
+    "strip-markdown": "^4.0.0",
     "unified": "^9.2.1"
   },
   "devDependencies": {

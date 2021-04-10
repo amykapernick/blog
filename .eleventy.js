@@ -15,6 +15,8 @@ const inclusiveLanguage = require('./site/utils/markdown/inclusiveLanguage')
 const postContent = require('./site/utils/markdown/postContent')
 const formatDate = require('./site/utils/filters/date')
 const image = require('./site/utils/image')
+const excerpt = require('./site/utils/markdown/excerpt')
+const socialShare = require('./site/utils/filters/socialShare')
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig(browserSyncConfig)
@@ -31,11 +33,16 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(...eleventyRemark);
 	eleventyConfig.addPlugin(...inclusiveLanguage)
 
+	eleventyConfig.setFrontMatterParsingOptions(excerpt)
+
 	// Filters
 	eleventyConfig.addFilter('slug', slug)
 	eleventyConfig.addFilter('formatDate', formatDate)
 	eleventyConfig.addFilter('feedContent', feedContent);
 	eleventyConfig.addFilter('postContent', postContent)
+	eleventyConfig.addFilter('socialShare', socialShare)
+
+	// Shortcodes
 	eleventyConfig.addNunjucksAsyncShortcode('image', image)
 
 	

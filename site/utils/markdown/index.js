@@ -23,7 +23,6 @@ const sanitise = require('rehype-sanitize')
 const parse = require('remark-parse')
 const remark = require('remark')
 const html = require('remark-html')
-// TODO: replace with package once PR is merged
 const images = require('@fec/remark-images')
 
 const processCaption = (markdown) => {

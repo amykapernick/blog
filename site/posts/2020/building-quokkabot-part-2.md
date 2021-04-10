@@ -11,7 +11,6 @@ categories:
 featured:
   src: quokkabot/quokkabot_feature.png
 ---
-
 Last year, for a demo at Twilio Superclass in Sydney, I built a bot that sent pictures of Quokkas when requested - Quokka on Demand (covered in Part 1 of this blog series, *[Building Quokka on Demand](/building-quokka-on-demand/)*). After that was done, chatting with Phil and Devin from Twilio, they came up with a new idea - a Quokka recognising bot, something people can send pictures to, and it identifies if there's a Quokka in the photo.
 
 Now I've never done anything with image recognition, or really any form of AI or machine learning before, so this was a bit confronting. Thankfully, I had people who were able to able to help me out, and so while sitting at the helpdesk at Microsoft Ignite, one of my friends, Damian, helped me to set up and configure [Microsoft's Cognitive Services Custom Vision](https://www.customvision.ai/) (yep that's a mouthful) to run image classification - does the image have a Quokka in it or not?
