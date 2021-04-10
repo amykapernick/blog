@@ -10,7 +10,7 @@ module.exports = {
 		permalink: (data) => visible(data) ? `${data.page.fileSlug}/index.html` : false,
 		eleventyExcludeFromCollections: (data) => visible(data) ? false : true,
 	},
-	layout: `layouts/post.njk`,
+	layout: `templates/post.njk`,
 	tags: [
 		`posts`
 	]

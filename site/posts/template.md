@@ -1,6 +1,5 @@
 ---
 title: Template
-date: 2020-05-07
 description: Draft Template for blog posts
 draft: true
 ---
