@@ -3,7 +3,8 @@ title: "#Frocktober"
 date: 2017-10-25
 description: This month, I’ve been participating in Frocktober with a friend of mine, and we’re aiming to raise $500 for ovarian cancer research. This is a very important cause, with one woman dying from ovarian cancer every 10 minutes.
 blog: [aimhigher]
-featured: frocktober/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.jpg
+featured:
+  src: frocktober/65cd12d3005927029132da8392e790f9e55d8617_1_coensdbbtmtzjsj4oeypyg.jpg
 ---
 
 So for anyone who knows me, or who follows me on Instagram, I’ve been wearing a lot of dresses lately (and oversharing about it).

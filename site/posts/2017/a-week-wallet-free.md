@@ -4,7 +4,8 @@ date: 2017-03-26
 description: A discussion was raised at dinner last week, about why women have much bigger purses than men. Do we really have needs so different that I need to carry around a massive wallet and my friends get to carry a few cards in their phone case? So I decided to do an experiment, can I go a week without my wallet?
 categories: [Technology]
 blog: [aimhigher]
-featured: feature/044b615a492d6c0a0530c3fc343baa8ff9ca82cc_1_mem0ijvrqdy6v7qodrggva.jpg
+featured:
+  src: feature/044b615a492d6c0a0530c3fc343baa8ff9ca82cc_1_mem0ijvrqdy6v7qodrggva.jpg
 ---
 
 A discussion was raised at dinner last week, about why women have much bigger purses than men. Do we really have needs so different that I need to carry around a massive wallet and my friends get to carry a few cards in their phone case? So I decided to do an experiment, can I go a week without my wallet?

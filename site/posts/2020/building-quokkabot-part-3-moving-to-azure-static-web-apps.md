@@ -8,7 +8,8 @@ categories:
   - Dev
   - Azure
   - Azure Static Web Apps
-featured: quokkabot/welcome_to_quokkabot.png
+featured:
+  src: quokkabot/welcome_to_quokkabot.png
 ---
 Last week I got the chance to speak at [Microsoft Build](https://mybuild.microsoft.com/), and do a first-look demo on their newly announced featured - [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/overview?WT.mc_id=AZ-MVP-5003595). And as I didn't get access to Static Web Apps until they same time everyone else did (the day before my demo), I got to showcase how simple it was the first time you used it (ok, so maybe it was the second time that I'd used it).
 

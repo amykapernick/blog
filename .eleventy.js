@@ -36,7 +36,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('formatDate', formatDate)
 	eleventyConfig.addFilter('feedContent', feedContent);
 	eleventyConfig.addFilter('postContent', postContent)
-	eleventyConfig.addNunjucksShortcode('image', image)
+	eleventyConfig.addNunjucksAsyncShortcode('image', image)
 
 	
 	return {

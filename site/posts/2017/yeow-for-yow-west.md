@@ -3,7 +3,8 @@ title: YEOW! for YOW West
 date: 2017-05-09
 description: Recap of my experiences at the YOW! West Conference in Perth in 2017 and some of the speakers I heard.
 categories: [Conference, 'YOW!']
-featured: conferences/yow-west-2017/18d6c8661fb952283165bb2d2653c66797ae02bb_1_gsr6iqaq5zqaylrf8tgr-q.png
+featured:
+  src: conferences/yow-west-2017/18d6c8661fb952283165bb2d2653c66797ae02bb_1_gsr6iqaq5zqaylrf8tgr-q.png
 ---
 
 Last week I was lucky enough to get a free last minute ticket to YOW West in Perth (big shout out to Mandy who made it happen 🤗). Unfortunately I couldn’t take the full 2 days off work, but I did get to see a few awesome talks and meet (or catch up with) some amazing and inspiring people.

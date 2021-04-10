@@ -3,7 +3,8 @@ title: Never gonna give you up, never gonna let you down
 date: 2017-08-18
 description: Sometimes life gets really tough, and sometimes it feels like everything is happening to you all at once, so what happens when you don't like to let people down and don't take the time out?
 categories: ['Mental Health']
-featured: feature/aa0866f4266d409a70bc450e2ff2119b208f698d_1_ql5l9mqz4da8wdevacw9pq.jpg
+featured:
+  src: feature/aa0866f4266d409a70bc450e2ff2119b208f698d_1_ql5l9mqz4da8wdevacw9pq.jpg
 ---
 
 Never gonna run around and desert you…

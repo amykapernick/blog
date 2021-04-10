@@ -1,21 +1,23 @@
 const Image = require('@11ty/eleventy-img')
 
-const respImg = async (src = 'feature/placeholder.png', alt) => {
+const respImg = async (featured = {}) => {
 	const imgFolder = './site/img/',
-	sizes = [],
-	metadata = await Image(`${imgFolder}${src}`, {
-		widths: [300, 600],
-		formats: ['jpg', 'webp'],
-		outputDir: './_site/img/',
-		urlPath: '/img/'
-	}),
-	attributes = {
-		alt,
-		sizes,
-		loading: 'lazy',
-	}
-
-	console.log(metadata)
+		sizes = [],
+		{
+			src = 'feature/placeholder.png', 
+			alt = ''
+		} = featured,
+		metadata = await Image(`${imgFolder}${src}`, {
+			widths: [300, 600],
+			formats: ['jpg', 'webp'],
+			outputDir: './_site/img/',
+			urlPath: '/img/'
+		}),
+		attributes = {
+			alt,
+			sizes,
+			loading: 'lazy',
+		}
 	
 	return Image.generateHTML(metadata, attributes)
 }

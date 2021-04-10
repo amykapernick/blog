@@ -3,7 +3,8 @@ title: JAOO! for YOW! Brisbane!
 date: 2017-02-12
 description: Recap of my time at YOW! Brisbane Conference in 2017, the speakers I saw and the experiences I had
 categories: [Conference, 'YOW!']
-featured: feature/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
+featured:
+  src: feature/35adefb0628ee616c281438acbe1a38f032daa40_1_-_-8heu4onebgwjkfkeqoa.jpg
 ---
 
 So this year I was lucky enough to get the chance to attend YOW Conference in Brisbane. As my first full two-day and first inter-state conference, as well as knowing the standard of speakers they have attending, my expectations were high but they’ve been unbelievably blown away.

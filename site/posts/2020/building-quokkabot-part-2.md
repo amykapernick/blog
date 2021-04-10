@@ -8,7 +8,8 @@ categories:
   - Twilio
   - Azure Functions
   - Cognitive Services
-featured: quokkabot/quokkabot_feature.png
+featured:
+  src: quokkabot/quokkabot_feature.png
 ---
 
 Last year, for a demo at Twilio Superclass in Sydney, I built a bot that sent pictures of Quokkas when requested - Quokka on Demand (covered in Part 1 of this blog series, *[Building Quokka on Demand](/building-quokka-on-demand/)*). After that was done, chatting with Phil and Devin from Twilio, they came up with a new idea - a Quokka recognising bot, something people can send pictures to, and it identifies if there's a Quokka in the photo.

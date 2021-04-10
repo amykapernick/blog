@@ -3,32 +3,28 @@
 {% extends 'layouts/main.njk' %}
 
 {% block content %}
-	<h1>Amy's blog</h1>
+<h1>Amy's blog</h1>
 
-	{# <!-- {{ collections.posts | rssLastUpdatedDate }} --> #}
+{#
+<!-- {{ collections.posts | rssLastUpdatedDate }} --> #}
 
-	<ul>
-		{% for post in collections.posts | reverse %}
-			<li>
-			{% image post.data.featured, 'item.image.alt' %}
-				<a 
-					href="{{post | slug}}" 
-					target={{"_blank" if post.data.external else "_self" }}
-				>{{ post.data.title }}</a>
-				<time 
-					datetime="{{post.data.date | formatDate('yyyy-mm-dd')}}"
-				>
-					{{post.data.date | formatDate}}
-				</time>
-				{% if post.data.tags %}
-					<ul>
-						{% for tag in post.data.tags %}
-							<li>{{tag}}</li>
-						{% endfor %}
-					</ul>
-				{% endif %}
-			</li>
-		{% endfor %}
-	</ul>
+<ul>
+	{% for post in collections.posts | reverse %}
+	<li>
+		{% image post.data.featured %}
+		<a href="{{post | slug}}" target={{"_blank" if post.data.external else "_self" }}>{{ post.data.title }}</a>
+		<time datetime="{{post.data.date | formatDate('yyyy-mm-dd')}}">
+			{{post.data.date | formatDate}}
+		</time>
+		{% if post.data.tags %}
+		<ul>
+			{% for tag in post.data.tags %}
+			<li>{{tag}}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</li>
+	{% endfor %}
+</ul>
 
 {% endblock %}

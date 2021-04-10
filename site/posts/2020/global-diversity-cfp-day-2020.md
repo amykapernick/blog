@@ -3,7 +3,8 @@ title: Global Diversity CFP Day 2020
 date: 2020-02-03
 description: For the past three years, I've been involved with Global Diversity CFP Days, first as an attendee, then as a mentor and most recently as a facilitator. And these workshops have been incredible, as they've given me the opportunity to go from someone who didn't think they had anything to talk about, to someone who's spoken at numerous conferences and can help people do the same.
 categories: [Conferences, Workshop, CFP]
-featured: speaking/MVIMG_20200118_133304.jpg
+featured:
+  src: speaking/MVIMG_20200118_133304.jpg
 ---
 
 For the past three years, I've been involved with Global Diversity CFP Days, first as an attendee, then as a mentor and most recently as a facilitator. And these workshops have been incredible, as they've given me the opportunity to go from someone who didn't think they had anything to talk about, to someone who's spoken at numerous conferences and can help people do the same.

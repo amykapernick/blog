@@ -3,7 +3,8 @@ title: On Submitting to Conferences
 date: 2020-01-21
 description: After Global Diversity CFP Day, sharing some of the thoughts that I have spinning around my head from the past sessions and what I've learnt speaking at conferences
 categories: [Conferences, CFPs]
-featured: speaking/49021351368_62d563412f_o.jpg
+featured:
+  src: speaking/49021351368_62d563412f_o.jpg
 ---
 
 Well [Global Diversity CFP Day](https://www.globaldiversitycfpday.com/) has wrapped up again for another year, and my head is still spinning with things I wish I'd remembered to share. So while it's all still fresh (and while I can continue to postpone my other work 😂), I thought I'd take the chance to write them down.

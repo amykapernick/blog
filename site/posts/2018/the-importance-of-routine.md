@@ -4,7 +4,8 @@ date: 2018-10-29
 description: When I first started working for myself fulltime, I was excited for the freedom and flexibility I could have. No rules, no restrictions and no routines, I could do whatever I wanted! But it didn't take me long before I found I was a little lost, and not really getting anything done. Maybe routines aren't necessarily a bad thing...
 categories: [Productivity]
 blog: [aimhigher]
-featured: feature/rawpixel-603656-unsplash.jpg
+featured:
+  src: feature/rawpixel-603656-unsplash.jpg
 ---
 
 When I started working for myself fulltime, I was so excited for the freedom and flexibility I could have. No rules, no restrictions, no routines. I could do whatever I wanted, when I wanted and no one could tell me otherwise. But it didn't take me long before I realised I was a little lost and not getting anything done. I'd spend several days vegging out on the couch and then have to stay up until 3am to meet a deadline. Then I'd sleep until midday the next day and the whole cycle would start all over again. So I decided to implement a routine. It took me a couple of goes and over 6 months but I eventually made progress with this, and I found that instead of feeling restricted because of it, I felt better than when I'd just been doing whatever I felt like.

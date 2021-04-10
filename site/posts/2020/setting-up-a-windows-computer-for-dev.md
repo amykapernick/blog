@@ -4,7 +4,8 @@ publish: 2019-11-05
 date: 2020-08-20
 description: In the past, Windows has developed a reputation for being a difficult OS to use as a developer. Things were difficult to install and run, involved complex workarounds and you could forget doing anything involving Ruby. Thankfully in recent years that's improved, even more so with the Windows Subsystem for Linux (WSL) so it's now possible to do pretty much everything you can on a Unix system.
 categories: [Windows, Dev]
-featured: feature/patrick-amoy-0vc8ujenzm0-unsplash.jpg
+featured:
+  src: feature/patrick-amoy-0vc8ujenzm0-unsplash.jpg
 tableContents: true
 ---
 
