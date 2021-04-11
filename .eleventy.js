@@ -14,24 +14,29 @@ const syntaxHighlight = require('./site/utils/markdown/syntaxHighlighting')
 const inclusiveLanguage = require('./site/utils/markdown/inclusiveLanguage')
 const postContent = require('./site/utils/markdown/postContent')
 const formatDate = require('./site/utils/filters/date')
-const image = require('./site/utils/image')
+const image = require('./site/utils/shortcodes/image')
 const excerpt = require('./site/utils/markdown/excerpt')
 const socialShare = require('./site/utils/filters/socialShare')
+const svg = require('./site/utils/plugins/svg')
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig(browserSyncConfig)
 	eleventyConfig.setQuietMode(true);
 	eleventyConfig.setTemplateFormats(templateFormats)
+	eleventyConfig.addWatchTarget('site/src/scss/**/*')
 
 	// Passthrough Copy
 	eleventyConfig.addPassthroughCopy('site/admin')
 	eleventyConfig.addPassthroughCopy('site/img/**/*.{gif,mp4}')
+	eleventyConfig.addPassthroughCopy({'site/src/fonts': 'fonts'})
+	eleventyConfig.addPassthroughCopy({'site/src/img': 'img'})
 
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(...syntaxHighlight);
 	eleventyConfig.addPlugin(...eleventyRemark);
 	eleventyConfig.addPlugin(...inclusiveLanguage)
+	eleventyConfig.addPlugin(...svg)
 
 	eleventyConfig.setFrontMatterParsingOptions(excerpt)
 

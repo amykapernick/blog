@@ -30,8 +30,17 @@
 	<meta property="twitter:image" content="/img/socials/twitter_wide.png" />
 	<meta name="twitter:creator" content="@amys_kapers" />
 </head>
+{% set colours = generateColours %}
 
-<body>
+<body style="
+		--colour: {{colours[0].colour}}; 
+		--text: {{colours[0].text}};
+		--colour_1: {{colours[1].colour}}; 
+		--colour_2: {{colours[2].colour}}; 
+		--colour_3: {{colours[3].colour}}; 
+		--colour_4: {{colours[4].colour}}; 
+		--colour_5: {{colours[5].colour}}; 
+	">
 	{% include 'partials/header.html' %}
 
 	<main>
@@ -39,8 +48,6 @@
 	</main>
 
 	{% include 'partials/footer.html' %}
-
-	<script src="/js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+@use '../variables.scss' as var;
+
+header {
+	padding: 20px;
+
+	svg {
+		position: absolute;
+		mix-blend-mode: multiply;
+	}
+
+	.squiggle {
+		color: var(--colour_1);
+	}
+
+	.dots {
+		color: var(--colour_2);
+	}
+}
+
+.site-title {
+	color: var.$neutral;
+	font-family: Caveat, cursive;
+	font-size: 6em;
+	font-weight: 700;
+	text-decoration: none;
+	position: relative;
+	bottom: -0.25em;
+	line-height: 1;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

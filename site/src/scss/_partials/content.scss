@@ -1,0 +1,33 @@
+@use '../variables.scss' as var;
+
+.content {
+	padding: 0 20px;
+
+	header {
+		color: var(--text);
+		position: relative;
+		padding: 20px 0;
+
+		&:before {
+			content: '';
+			background: var(--colour);
+			position: absolute;
+			top: 0;
+			left: -20px;
+			width: 100vw;
+			bottom: 0;
+			z-index: -1;
+		}
+
+		h1 {
+			margin-top: 0;
+			color: inherit;
+		}
+	}
+
+	.tags {
+		a {
+			color: inherit;
+		}
+	}
+}
