@@ -6,7 +6,7 @@
 {% block content %}
 {% set colours = generateColours %}
 
-{# <ul>
+<ul>
 	{% for post in collections.posts | reverse %}
 		<li>
 			<article style="--colour: {{colours[loop.index]}}">
@@ -40,6 +40,6 @@
 			</article>
 		</li>
 	{% endfor %}
-</ul> #}
+</ul>
 
 {% endblock %}
