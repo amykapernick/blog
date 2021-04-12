@@ -1,0 +1,114 @@
+@use './variables.scss' as var;
+@use './mixins.scss';
+
+body {
+	color: var.$neutral;
+	font-family: var.$font_main;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	line-height: 1.4;
+}
+
+a {
+	color: var.$darkpurple;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+pre, code {
+	font-family: 'Source Code Pro', monospace;
+}
+
+kbd {
+	display: inline-block;
+	padding: 0 5px;
+	background: var.$white;
+	color: var.$red;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: var.$font_heading;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2, h3, h4 {
+	color: var.$darkpurple;
+}
+
+hr {
+	height: 10px;
+	border: none;
+	background-image: var.$underline_darkpurple;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 6px;
+
+	@media(min-width: 70em) {
+		background-size: auto 7px;
+	}
+}
+
+blockquote {
+	@include mixins.shadow_bottom_right;
+
+	--shadow_size: 30px;
+	--shadow_colour: var(--heading_colour);
+	display: inline-block;
+	position: relative;
+	width: 90%;
+	max-width: max-content;
+	margin: 20px 0 50px;
+	padding: 40px 40px 40px 0;
+	color: var.$darkpurple;
+	color: var(--heading_colour);
+	font-size: 1.3em;
+	font-weight: 500;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 100vw;
+	}
+
+	&:before {
+		left: auto;
+	}
+
+	&:after {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border: 1.5px solid var.$darkpurple;
+		border-color: var(--heading_colour);
+		background: var.$white;
+	}
+
+	@media(min-width: 60em) {
+		margin-top: 50px;
+		margin-bottom: 80px;
+		padding-right: 70px;
+	}
+
+	@media(min-width: 70em) {
+		margin-top: 60px;
+		margin-bottom: 100px;
+	}
+}

@@ -1,0 +1,186 @@
+@use '../variables.scss' as var;
+
+.header {
+	position: relative;
+	padding: 20px 20px 0;
+	font-family: Caveat, cursive;
+	font-size: 4em;
+	font-weight: 700;
+
+	svg {
+		display: none;
+		position: absolute;
+		mix-blend-mode: multiply;
+	}
+
+	.squiggle {
+		top: 0.4em;
+		left: 9.5ch;
+		width: 200px;
+		transform: rotate(-40deg);
+		color: var.$yellow;
+		color: var(--colour_1);
+	}
+
+	.dots {
+		top: 0.1em;
+		left: calc(9.5ch + 140px);
+		width: 150px;
+		color: var.$pink;
+		color: var(--colour_2);
+	}
+
+	.heart {
+		right: calc(9ch + 60px);
+		bottom: 0;
+		width: 70px;
+		color: var.$pink;
+	}
+
+	.petals {
+		right: -65px;
+		bottom: -20px;
+		width: 90px;
+		color: var.$purple;
+	}
+}
+
+.home {
+	.header {
+		text-align: right;
+
+		.heart, .petals {
+			display: block;
+		}
+
+		.squiggle {
+			top: 0.3em;
+			right: calc(9ch + 100px);
+			left: auto;
+			transform: rotate(-140deg) scaleY(-1);
+			color: var.$blue;
+		}
+	}
+}
+
+.site-title {
+	display: block;
+	color: var.$neutral;
+
+	line-height: 1;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@media(min-width: 40em) {
+	.header {
+		font-size: 5em;
+
+		svg {
+			display: block;
+		}
+	}
+
+	.home {
+		.header {
+			text-align: right;
+
+			.dots {
+				display: none;
+			}
+
+			.heart {
+				right: calc(9ch + 110px);
+			}
+
+			.petals {
+				right: -30px;
+			}
+
+			.squiggle {
+				right: calc(9ch + 150px);
+			}
+		}
+
+		.site-title {
+			margin-right: 40px;
+		}
+	}
+}
+
+@media(min-width: 60em) {
+	.header {
+		padding: 40px 5vw 0;
+		font-size: 6em;
+
+		.squiggle {
+			top: 0.05em;
+			width: 400px;
+		}
+
+		.dots {
+			top: 0.05em;
+			left: calc(9.5ch + 320px);
+			width: 220px;
+		}
+	}
+
+	.home {
+		.header {
+			.heart {
+				right: calc(9ch + 200px);
+			}
+
+			.petals {
+				right: 0;
+				width: 120px;
+			}
+
+			.squiggle {
+				top: -0.3em;
+				right: calc(9ch + 250px);
+			}
+		}
+
+		.site-title {
+			margin-right: 75px;
+		}
+	}
+}
+
+@media(min-width: 70em) {
+	.header {
+		width: 90vw;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 40px 0 0;
+		font-size: 6em;
+
+		.squiggle {
+			left: 8.5ch;
+		}
+
+		.dots {
+			left: calc(8.5ch + 320px);
+		}
+	}
+
+	.home {
+		.header {
+			.heart {
+				right: calc(9ch + 150px);
+			}
+
+			.petals {
+				right: -60px;
+			}
+
+			.squiggle {
+				right: calc(9ch + 200px);
+			}
+		}
+	}
+}

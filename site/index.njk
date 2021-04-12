@@ -1,0 +1,48 @@
+{% set pagetitle = "Amy's Blog" %}
+{% set description = "Front end developer who lives in Perth with her border collie. Just a few musings and ramblings..." %}
+{% set class = "home" %}
+{% extends 'layouts/main.njk' %}
+
+{% block content %}
+
+<h1 class="sr-only">Amy's Blog</h1>
+
+<ul class="feed">
+	{% for post in collections.posts | reverse %}
+		<li>
+			<article class="post">
+				{% image post.data.featured %}
+				<h2><a href="{{post | slug}}" target={{"_blank" if post.data.external else "_self" }}>{{ post.data.title }}</a></h2>
+				<time datetime="{{post.data.date | formatDate('yyyy-mm-dd')}}">
+					{{post.data.date | formatDate}}
+				</time>
+				<p class="excerpt">{{post.data.excerpt}}</p>
+				<ul class="share">
+					<li>
+						<a href="{{post | slug | socialShare('facebook')}}" target="_blank">
+						{% svg 'icons/facebook_circle' %}
+							<span class="sr-only">Share to Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{post | slug | socialShare('twitter')}}" target="_blank">
+						{% svg 'icons/twitter_circle' %}
+							<span class="sr-only">Share to Twitter</span>
+						</a>
+					</li>
+				</ul>
+				{% if post.data.categories %}
+					<ul class="tags">
+						{% for tag in post.data.categories %}
+							<li>
+								<a>#{{tag}}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</article>
+		</li>
+	{% endfor %}
+</ul>
+
+{% endblock %}

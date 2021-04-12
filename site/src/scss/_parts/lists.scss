@@ -1,0 +1,31 @@
+@use '../variables.scss' as var;
+@use '../mixins.scss';
+
+.list {
+	@include mixins.shadow_bottom_right;
+
+	--shadow_size: 30px;
+	--shadow_colour: var(--heading_colour);
+
+	margin-bottom: 50px;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 100vw;
+	}
+
+	&:before {
+		left: auto;
+	}
+
+	&:after {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border: 1.5px solid var.$darkpurple;
+		border-color: var(--heading_colour);
+		background: var.$white;
+	}
+}
