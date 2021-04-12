@@ -13,6 +13,8 @@
 		mix-blend-mode: multiply;
 	}
 
+
+
 	.squiggle {
 		top: 0.4em;
 		left: 9.5ch;
@@ -81,6 +83,10 @@
 
 		svg {
 			display: block;
+		}
+
+		.heart, .petals {
+			display: none;
 		}
 	}
 
