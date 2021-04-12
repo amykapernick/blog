@@ -55,12 +55,26 @@ There may be large popout quotes, featured within the content
 
 ## Lists
 
+
+
+### List Title
+
+<div class="list">
+
+Here is a list
+
 - Here
 - Is
 - A
 - List
 
+</div>
+
+
+
 ### Numbered Lists
+
+<div class="list">
 
 Here is a numbered list
 
@@ -68,14 +82,21 @@ Here is a numbered list
 2. Second item
 3. Third item
 
+</div>
+
+
+
 ### Task Lists
 
+<div class="list full">
+
 - [x]  Done
 - [x]  Done
 - [ ]  Not Done
 - [ ]  Not Done
 
----
+</div>
+
 
 ## Code
 
@@ -115,3 +136,5 @@ This code block has a label on it, to let readers know that this is a block of `
 ## Inline Code Snippets
 
 Any inline code snippets (eg. `<code>` ) should look similar to the blocks, but will just be one text and background colour.
+
+---

@@ -25,33 +25,18 @@ figure {
 .content {
 	section {
 		&:nth-of-type(4n) {
-			h2 {
-				color: var.$green;
-
-				&:after {
-					background-image: var.$underline_green;
-				}
-			}
+			--heading_colour: #{var.$green};
+			--heading_underline: #{var.$underline_green};
 		}
 
 		&:nth-of-type(4n - 1) {
-			h2 {
-				color: var.$purple;
-
-				&:after {
-					background-image: var.$underline_purple;
-				}
-			}
+			--heading_colour: #{var.$purple};
+			--heading_underline: #{var.$underline_purple};
 		}
 
 		&:nth-of-type(4n - 2) {
-			section {
-				color: var.$blue;
-
-				&:after {
-					background-image: var.$underline_blue;
-				}
-			}
+			--heading_colour: #{var.$blue};
+			--heading_underline: #{var.$underline_blue};
 		}
 	}
 }

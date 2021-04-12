@@ -21,8 +21,11 @@ pre, code {
 	font-family: 'Source Code Pro', monospace;
 }
 
-code, kbd {
-
+kbd {
+	display: inline-block;
+	padding: 0 5px;
+	background: var.$white;
+	color: var.$red;
 }
 
 h1, h2, h3, h4, h5 {
@@ -58,5 +61,54 @@ hr {
 
 	@media(min-width: 70em) {
 		background-size: auto 7px;
+	}
+}
+
+blockquote {
+	display: inline-block;
+	position: relative;
+	width: 90%;
+	max-width: max-content;
+	margin: 20px 0 50px;
+	padding: 40px 40px 40px 0;
+	color: var.$darkpurple;
+	color: var(--heading_colour);
+	font-size: 1.3em;
+	font-weight: 500;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 100vw;
+	}
+
+	&:before {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border: 1.5px solid var.$darkpurple;
+		border-color: var(--heading_colour);
+		background: var.$white;
+	}
+
+	&:after {
+		z-index: -2;
+		top: 30px;
+		right: -30px;
+		bottom: -30px;
+		background: var.$darkpurple;
+		background: var(--heading_colour);
+	}
+
+	@media(min-width: 60em) {
+		margin-top: 50px;
+		margin-bottom: 80px;
+		padding-right: 70px;
+	}
+
+	@media(min-width: 70em) {
+		margin-top: 60px;
+		margin-bottom: 100px;
 	}
 }
