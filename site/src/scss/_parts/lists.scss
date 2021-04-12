@@ -1,6 +1,12 @@
 @use '../variables.scss' as var;
+@use '../mixins.scss';
 
 .list {
+	@include mixins.shadow_bottom_right;
+
+	--shadow_size: 30px;
+	--shadow_colour: var(--heading_colour);
+
 	margin-bottom: 50px;
 
 	&:before, &:after {
@@ -11,20 +17,15 @@
 	}
 
 	&:before {
+		left: auto;
+	}
+
+	&:after {
 		top: 0;
 		right: 0;
 		bottom: 0;
 		border: 1.5px solid var.$darkpurple;
 		border-color: var(--heading_colour);
 		background: var.$white;
-	}
-
-	&:after {
-		z-index: -2;
-		top: 30px;
-		right: -30px;
-		bottom: -30px;
-		background: var.$darkpurple;
-		background: var(--heading_colour);
 	}
 }

@@ -1,8 +1,10 @@
 @use './variables.scss' as var;
 
-::root {
+:root {
 	--colour: #{var.$darkpurple};
 	--text: #{var.$white};
+	--shadow_colour: #{var.$blue};
+	--shadow_size: 10px;
 }
 
 *, *:before, *:after {
@@ -32,4 +34,18 @@ body {
 .sr-only {
 	position: absolute;
 	right: -200vw;
+}
+
+@keyframes animate_underline {
+	0% {
+		background-position: left center;
+	}
+
+	50% {
+		background-position: right center;
+	}
+
+	100% {
+		background-position: left center;
+	}
 }

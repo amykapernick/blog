@@ -1,45 +1,45 @@
 {% set pagetitle = "Amy's Blog" %}
-{% set description = "" %}
+{% set description = "Front end developer who lives in Perth with her border collie. Just a few musings and ramblings..." %}
+{% set class = "home" %}
 {% extends 'layouts/main.njk' %}
 
 {% block content %}
 {% set colours = generateColours %}
-<h1>Amy's blog</h1>
 
-<ul>
+{# <ul>
 	{% for post in collections.posts | reverse %}
-	<li>
-		<article style="--colour: {{colours[loop.index]}}">
-			<!-- {% image post.data.featured %} -->
-			<a href="{{post | slug}}" target={{"_blank" if post.data.external else "_self" }}>{{ post.data.title }}</a>
-			<time datetime="{{post.data.date | formatDate('yyyy-mm-dd')}}">
-				{{post.data.date | formatDate}}
-			</time>
-			<p>{{post.data.excerpt}}</p>
-			<ul>
-				<li>
-					<a href="{{post | slug | socialShare('facebook')}}" target="_blank">
-						<span>Share to Facebook</span>
-					</a>
-				</li>
-				<li>
-					<a href="{{post | slug | socialShare('twitter')}}" target="_blank">
-						<span>Share to Twitter</span>
-					</a>
-				</li>
-			</ul>
-			{% if post.data.categories %}
-				<ul class="tags">
-					{% for tag in post.data.categories %}
-						<li>
-							<a>#{{tag}}</a>
-						</li>
-					{% endfor %}
+		<li>
+			<article style="--colour: {{colours[loop.index]}}">
+				<!-- {% image post.data.featured %} -->
+				<a href="{{post | slug}}" target={{"_blank" if post.data.external else "_self" }}>{{ post.data.title }}</a>
+				<time datetime="{{post.data.date | formatDate('yyyy-mm-dd')}}">
+					{{post.data.date | formatDate}}
+				</time>
+				<p>{{post.data.excerpt}}</p>
+				<ul>
+					<li>
+						<a href="{{post | slug | socialShare('facebook')}}" target="_blank">
+							<span>Share to Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{post | slug | socialShare('twitter')}}" target="_blank">
+							<span>Share to Twitter</span>
+						</a>
+					</li>
 				</ul>
-			{% endif %}
-		</article>
-	</li>
+				{% if post.data.categories %}
+					<ul class="tags">
+						{% for tag in post.data.categories %}
+							<li>
+								<a>#{{tag}}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</article>
+		</li>
 	{% endfor %}
-</ul>
+</ul> #}
 
 {% endblock %}

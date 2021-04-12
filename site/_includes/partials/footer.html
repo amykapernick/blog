@@ -1,0 +1,15 @@
+<footer>
+	{% svg 'illustrations/flower_2' %}
+	<nav>
+		<ul>
+			{% for item in socials %}
+			<li>
+				<a href="{{item.url}}" target="_blank">
+					{% svg item.icon %}
+					<span class="sr-only">{{item.label}}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
+</footer>

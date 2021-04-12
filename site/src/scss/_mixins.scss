@@ -1,0 +1,70 @@
+@use './variables.scss' as var;
+
+@mixin shadow_defaults {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	background: var.$blue;
+	background: var(--shadow_colour);
+	mix-blend-mode: multiply;
+}
+
+@mixin shadow_bottom_left {
+	&:before {
+		@include shadow_defaults;
+
+		top: 10px;
+		top: var(--shadow_size);
+		right: 10px;
+		right: var(--shadow_size);
+		bottom: -10px;
+		bottom: calc(-1 * var(--shadow_size));
+		left: -10px;
+		left: calc(-1 * var(--shadow_size));
+	}
+}
+
+@mixin shadow_bottom_right {
+	&:before {
+		@include shadow_defaults;
+
+		top: 10px;
+		top: var(--shadow_size);
+		right: -10px;
+		right: calc(-1 * var(--shadow_size));
+		bottom: -10px;
+		bottom: calc(-1 * var(--shadow_size));
+		left: 10px;
+		left: var(--shadow_size);
+	}
+}
+
+@mixin shadow_top_left {
+	&:before {
+		@include shadow_defaults;
+
+		top: -10px;
+		top: calc(-1 * var(--shadow_size));
+		right: 10px;
+		right: var(--shadow_size);
+		bottom: 10px;
+		bottom: var(--shadow_size);
+		left: -10px;
+		left: calc(-1 * var(--shadow_size));
+	}
+}
+
+@mixin shadow_top_right {
+	&:before {
+		@include shadow_defaults;
+
+		top: -10px;
+		top: calc(-1 * var(--shadow_size));
+		right: -10px;
+		right: calc(-1 * var(--shadow_size));
+		bottom: 10px;
+		bottom: var(--shadow_size);
+		left: 10px;
+		left: var(--shadow_size);
+	}
+}

@@ -1,7 +1,9 @@
 @use '../variables.scss' as var;
+@use '../mixins.scss';
 
 figure {
 	--figure_colour: var(--colour_5);
+	--shadow_colour: var(--figure_colour);
 	width: max-content;
 	margin: 10px auto 20px;
 
@@ -13,46 +15,26 @@ figure {
 	}
 
 	picture {
+		@include mixins.shadow_bottom_left;
 		display: block;
 		position: relative;
-
-		&:before {
-			content: '';
-			position: absolute;
-			z-index: -1;
-			top: 10px;
-			right: 10px;
-			bottom: -10px;
-			left: -10px;
-			background: var.$blue;
-			background: var(--figure_colour);
-			mix-blend-mode: multiply;
-		}
 
 		&:last-child {
 			margin-bottom: 40px;
 
 			&:after {
-				content: '';
-				position: absolute;
-				z-index: -1;
+				@include mixins.shadow_defaults;
 				top: 60%;
 				right: 40px;
 				bottom: -30px;
 				width: 100vw;
-				background: var.$blue;
-				background: var(--figure_colour);
-				mix-blend-mode: multiply;
 			}
 		}
 	}
 
 	&:nth-of-type(2n) {
 		picture {
-			&:before {
-				right: -10px;
-				left: 10px;
-			}
+			@include mixins.shadow_bottom_right;
 
 			&:last-child {
 				&:after {
@@ -83,6 +65,8 @@ figcaption {
 
 @media(min-width: 40em) {
 	figure {
+		--shadow_size: 30px;
+
 		margin-bottom: 50px;
 
 		img {
@@ -90,13 +74,6 @@ figcaption {
 		}
 
 		picture {
-			&:before {
-				top: 30px;
-				right: 30px;
-				bottom: -30px;
-				left: -30px;
-			}
-
 			&:last-child {
 				margin-bottom: 150px;
 
@@ -109,11 +86,6 @@ figcaption {
 
 		&:nth-of-type(2n) {
 			picture {
-				&:before {
-					right: -30px;
-					left: 30px;
-				}
-
 				&:last-child {
 					&:after {
 						left: 90px;
