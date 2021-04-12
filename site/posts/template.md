@@ -20,18 +20,30 @@ The image above has a caption, but the image below does not
 
 Sometimes there will be lots of images as well, in a gallery form, similar to below. These gallery images may or may not have captions
 
-![](/img/feature/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg 'Image caption')
+<div class="gallery">
+
+![](/img/2018/088665f97c06255f64eb49004b3705bd423b8fed_1_yarlxievsh1e6deaa5uzhq.jpg)
 
 ![](/img/2018/3ff417ab6c4a58030417e0f4436065eede65d2fb_1_ja-8lujov_31dexwat8jhw.jpg 'Image caption')
 
-![](/img/2018/088665f97c06255f64eb49004b3705bd423b8fed_1_yarlxievsh1e6deaa5uzhq.jpg)
+
+![](/img/feature/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg 'Image caption')
 
 ![](/img/2018/3ff417ab6c4a58030417e0f4436065eede65d2fb_1_ja-8lujov_31dexwat8jhw.jpg)
 
 ![](/img/feature/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg 'Image caption')
 
+![](/img/2018/3ff417ab6c4a58030417e0f4436065eede65d2fb_1_ja-8lujov_31dexwat8jhw.jpg)
 
 ![](/img/2018/3ff417ab6c4a58030417e0f4436065eede65d2fb_1_ja-8lujov_31dexwat8jhw.jpg 'Image caption')
+
+![](/img/2018/088665f97c06255f64eb49004b3705bd423b8fed_1_yarlxievsh1e6deaa5uzhq.jpg)
+
+![](/img/feature/a4b79abde79d111584938e8b01ddf2f5dae211f3_photo-1481047540402-8f3d39289bca.jpg 'Image caption')
+
+![](/img/2018/3ff417ab6c4a58030417e0f4436065eede65d2fb_1_ja-8lujov_31dexwat8jhw.jpg)
+
+</div>
 
 I'm undecided about whether gallery images must all be the same size (if they are, they should be square), it's up to you whether you want to include a mixture of sizes (square, portrait and landscape) or make them all square.
 
@@ -72,22 +84,26 @@ There are `inline code snippets` as well as blocks of code. Don't worry about th
 ```scss
 pre,
 code {
-  &[class*="language-"] {
-    color: #16a6b1;
-    font-size: 1em;
-    font-family: "Space Mono", "Anonymous Pro", monospace;
-    text-align: left;
+	&[class*='language-'] {
+		color: #16a6b1;
+		font-family: 'Space Mono', 'Anonymous Pro', monospace;
+		font-size: 1em;
+		text-align: left;
 
-    &.line-numbers {
-      padding: 0;
-    }
+		&.line-numbers {
+			padding: 0;
+		}
 
-    &::selection,
-    &::mozselection {
-      background: #6ca7d8;
-    }
-  }
+		&::selection,
+		&::mozselection {
+			background: #6ca7d8;
+		}
+	}
 }
+```
+
+```bash
+yarn install
 ```
 
 Code blocks should have the option of adding a label, describing the code language it is (see below for example)

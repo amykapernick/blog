@@ -1,0 +1,147 @@
+@use '../variables.scss' as var;
+
+pre,
+code {
+	color: var.$background;
+	font-size: 0.9em;
+	line-height: 1.5;
+	text-align: left;
+	hyphens: none;
+	tab-size: 4;
+}
+
+pre {
+	position: relative;
+	max-width: 800px;
+	margin: 1em auto;
+	padding: 1em 2em;
+	overflow: auto;
+	background: var.$neutral;
+
+	& > code[class*='language-'] {
+		z-index: 1;
+
+		&::selection,
+		&::mozselection {
+			background: #6ca7d8;
+		}
+
+		&[class*='language'] {
+			&:before {
+				position: absolute;
+				top: 0;
+				right: 20px;
+				padding: 5px 10px;
+				border-radius: 0 0 10px 10px;
+				background: var.$purple;
+				color: #ffffff;
+			}
+
+			&[class*='bash'] {
+				&:before {
+					content: '$';
+					position: static;
+					margin-right: 10px;
+					margin-left: -20px;
+					background: none;
+					color: #999999;
+				}
+			}
+
+			&[class*='html'], &[class*='css'], &[class*='scss'], &[class*='javascript'] {
+				padding-top: 1em;
+			}
+
+			&[class*='html'] {
+				&:before {
+					content: 'HTML';
+					background: var.$orange;
+				}
+			}
+
+			&[class*='css'] {
+				&:before {
+					content: 'CSS';
+					background: var.$blue;
+				}
+			}
+
+			&[class*='scss'] {
+				&:before {
+					content: 'SCSS';
+				}
+			}
+
+			&[class*='javascript'] {
+				&:before {
+					content: 'JS';
+					background: var.$yellow;
+				}
+			}
+		}
+	}
+}
+
+:not(pre) {
+	& > code {
+		display: inline-block;
+		padding: 0 5px;
+		background: var.$white;
+		color: var.$red;
+	}
+}
+
+pre {
+	.hljs {
+		display: block;
+		color: var.$background;
+	}
+
+	[class*='hljs'] {
+		&[class$='comment'], &[class$='quote'] {
+			color: var.$neutral_light_50;
+		}
+
+		&[class$='variable'], &[class$='template-variable'], &[class$='tag'], &[class$='name'], &[class$='selector-id'], &[class$='selector-class'], &[class$='regexp'], &[class$='deletion'] {
+			color: var.$pink;
+		}
+
+		&[class$='number'], &[class$='built_in'], &[class$='literal'], &[class$='type'], &[class$='params'], &[class$='meta'], &[class$='link'] {
+			color: var.$orange;
+		}
+
+		&[class$='attribute'] {
+			color: var.$yellow;
+		}
+
+		&[class$='string'], &[class$='symbol'], &[class$='bullet'], &[class$='addition'], &[class$='selector-pseudo'] {
+			color: var.$green;
+		}
+
+		&[class$='title'], &[class$='section'] {
+			color: var.$blue;
+		}
+
+		&[class$='keyword'], &[class$='selector-tag'] {
+			color: var.$purple;
+		}
+
+		&[class$='emphasis'] {
+			font-style: italic;
+		}
+
+		&[class$='strong'] {
+			font-weight: bold;
+		}
+
+		@media screen and (-ms-high-contrast: active) {
+			&[class$='addition'], &[class$='attribute'], &[class$='built_in'], &[class$='bullet'], &[class$='comment'], &[class$='link'], &[class$='literal'], &[class$='meta'], &[class$='number'], &[class$='params'], &[class$='string'], &[class$='symbol'], &[class$='type'], &[class$='quote'] {
+				color: highlight;
+			}
+
+			&[class$='keyword'], &[class$='selector-tag'] {
+				font-weight: bold;
+			}
+		}
+	}
+}

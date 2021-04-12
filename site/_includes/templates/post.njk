@@ -5,25 +5,25 @@
 
 
 {% block content %}
-	<article 
-		class="content" 
-	>
-		<header>
-			<h1>{{title}}</h1>
-			<time datetime="{{date | formatDate('yyyy-mm-dd')}}">
-				{{date | formatDate}}
-			</time>
-			{% if categories %}
-			<ul class="tags">
-				{% for tag in categories %}
-				<li>
-					<a>#{{tag}}</a>
-				</li>
-				{% endfor %}
-			</ul>
-			{% endif %}
+<article class="content">
+	<header>
+		<h1>{{title}}</h1>
+		<time datetime="{{date | formatDate('yyyy-mm-dd')}}">
+			{{date | formatDate}}
+		</time>
+		{% if categories %}
+		<ul class="tags">
+			{% for tag in categories %}
+			<li>
+				<a>#{{tag}}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		<div class="underline">
 			{% svg 'illustrations/underline' %}
-		</header>
-		{{content | postContent | safe}}
-	</article>
+		</div>
+	</header>
+	{{content | postContent | safe}}
+</article>
 {% endblock %}

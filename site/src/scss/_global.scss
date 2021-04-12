@@ -1,5 +1,10 @@
 @use './variables.scss' as var;
 
+::root {
+	--colour: #{var.$darkpurple};
+	--text: #{var.$white};
+}
+
 *, *:before, *:after {
 	box-sizing: border-box;
 	outline-offset: 0.2em;
@@ -21,6 +26,7 @@ body {
 	top: 0;
 	width: 100vw;
 	margin: 0;
+	background: var.$background;
 }
 
 .sr-only {

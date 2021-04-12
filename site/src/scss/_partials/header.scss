@@ -1,33 +1,90 @@
 @use '../variables.scss' as var;
 
-header {
-	padding: 20px;
+.header {
+	position: relative;
+	padding: 20px 20px 0;
+	font-family: Caveat, cursive;
+	font-size: 4em;
+	font-weight: 700;
 
 	svg {
+		display: none;
 		position: absolute;
 		mix-blend-mode: multiply;
 	}
 
 	.squiggle {
+		top: 0.4em;
+		left: 9.5ch;
+		width: 200px;
+		transform: rotate(-40deg);
+		color: var.$yellow;
 		color: var(--colour_1);
 	}
 
 	.dots {
+		top: 0.1em;
+		left: calc(9.5ch + 140px);
+		width: 150px;
+		color: var.$pink;
 		color: var(--colour_2);
 	}
 }
 
 .site-title {
+	display: block;
 	color: var.$neutral;
-	font-family: Caveat, cursive;
-	font-size: 6em;
-	font-weight: 700;
-	text-decoration: none;
-	position: relative;
-	bottom: -0.25em;
+
 	line-height: 1;
+	text-decoration: none;
 
 	&:hover {
 		text-decoration: underline;
+	}
+}
+
+@media(min-width: 40em) {
+	.header {
+		font-size: 5em;
+
+		svg {
+			display: block;
+		}
+	}
+}
+
+@media(min-width: 60em) {
+	.header {
+		padding: 40px 5vw 0;
+		font-size: 6em;
+
+		.squiggle {
+			top: 0.05em;
+			width: 400px;
+		}
+
+		.dots {
+			top: 0.05em;
+			left: calc(9.5ch + 320px);
+			width: 220px;
+		}
+	}
+}
+
+@media(min-width: 70em) {
+	.header {
+		width: 90vw;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 40px 0 0;
+		font-size: 6em;
+
+		.squiggle {
+			left: 8.5ch;
+		}
+
+		.dots {
+			left: calc(8.5ch + 320px);
+		}
 	}
 }

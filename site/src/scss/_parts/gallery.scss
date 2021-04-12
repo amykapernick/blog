@@ -1,0 +1,268 @@
+@use '../variables.scss' as var;
+
+@media(min-width: 40em) {
+	@supports(grid-template-areas: '.') {
+		.gallery {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(2, 1fr);
+			max-width: 100%;
+			margin: 20px auto;
+			gap: 20px;
+
+			figure, picture, img {
+				width: 100%;
+				max-width: 100%;
+				height: 100%;
+				max-height: 100%;
+			}
+
+			picture {
+				margin: 0;
+
+				&:before, &:after {
+					content: normal;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+
+					&:after {
+						content: normal;
+					}
+				}
+			}
+
+			figcaption {
+				margin-top: 0;
+			}
+
+			img {
+				display: block;
+				overflow: hidden;
+				object-fit: cover;
+				object-position: center;
+			}
+
+			figure {
+				display: grid;
+				grid-template-rows: 1fr auto;
+				width: 100%;
+				margin: 0;
+
+				&:nth-child(10n + 2),
+				&:nth-child(10n + 5),
+				&:nth-child(10n + 6) {
+					grid-row: span 2;
+				}
+
+				&:nth-child(10n) {
+					grid-column: span 2;
+				}
+
+				&:nth-child(10n + 1),
+				&:nth-child(10n + 5),
+				&:nth-child(10n + 6),
+				&:nth-child(10n) {
+					picture {
+						&:before {
+							content: '';
+						}
+					}
+				}
+
+				&:nth-child(10n + 1) {
+					picture {
+						&:before {
+							top: -10px;
+							right: 10px;
+							bottom: 10px;
+							left: -10px;
+						}
+					}
+				}
+
+				&:nth-child(10n + 5) {
+					picture {
+						&:before {
+							top: -10px;
+							right: -10px;
+							bottom: 10px;
+							left: 10px;
+						}
+					}
+				}
+
+				&:nth-child(10n + 6) {
+					picture {
+						margin-bottom: 10px;
+
+						&:before {
+							top: 10px;
+							right: 10px;
+							bottom: -10px;
+							left: -10px;
+						}
+					}
+				}
+
+				&:nth-child(10n) {
+					picture {
+						margin-bottom: 10px;
+
+						&:before {
+							top: 10px;
+							right: -10px;
+							bottom: -10px;
+							left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 50em) {
+	.gallery {
+		display: grid;
+		grid-auto-rows: 100px 300px 300px 50px 300px 300px;
+		grid-gap: 40px;
+		grid-template-columns: repeat(3, 1fr);
+		margin: 50px auto 100px;
+
+		img {
+			position: absolute;
+		}
+
+		figure {
+			&:nth-child(10n + 1) {
+				grid-row-start: 2;
+			}
+
+			&:nth-child(10n) {
+				grid-column: span 1;
+			}
+
+			&:nth-child(10n + 2),
+			&:nth-child(10n + 6) {
+				grid-column: span 2;
+			}
+
+			&:nth-child(10n + 5) {
+				picture {
+					&:after {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -90%;
+						right: auto;
+						bottom: 90%;
+						left: 40%;
+						width: 100vw;
+						background: var.$blue;
+						background: var(--figure_colour);
+						mix-blend-mode: multiply;
+					}
+				}
+			}
+
+			&:nth-child(10n + 6) {
+				picture {
+					&:last-child {
+						&:after {
+							content: '';
+							position: absolute;
+							z-index: -1;
+							top: 40%;
+							right: 70%;
+							bottom: -100%;
+							left: auto;
+							width: 100vw;
+							background: var.$blue;
+							background: var(--figure_colour);
+							mix-blend-mode: multiply;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 60em) {
+	.gallery {
+		figure {
+			&:nth-child(10n + 1) {
+				picture {
+					&:before {
+						top: -30px;
+						right: 30px;
+						bottom: 30px;
+						left: -30px;
+					}
+				}
+			}
+
+			&:nth-child(10n + 5) {
+				picture {
+					&:before {
+						top: -30px;
+						right: -30px;
+						bottom: 30px;
+						left: 30px;
+					}
+				}
+			}
+
+			&:nth-child(10n + 6) {
+				picture {
+					margin-bottom: 30px;
+
+					&:before {
+						top: 30px;
+						right: 30px;
+						bottom: -30px;
+						left: -30px;
+					}
+				}
+			}
+
+			&:nth-child(10n) {
+				picture {
+					margin-bottom: 30px;
+
+					&:before {
+						top: 30px;
+						right: -30px;
+						bottom: -30px;
+						left: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 70em) {
+	.gallery {
+		grid-auto-rows: 170px 400px 400px 50px 400px 400px;
+		width: 90vw;
+		max-width: 90vw;
+		margin-left: calc(500px - 45vw);
+	}
+}
+
+@media(min-width: 80em) {
+	.gallery {
+		grid-gap: 65px;
+	}
+}
+
+@media(min-width: 80em) {
+	.gallery {
+		width: 1330px;
+		max-width: 1330px;
+		margin-left: -165px;
+	}
+}

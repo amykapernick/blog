@@ -8,7 +8,7 @@ const respImg = async (featured = {}) => {
 			alt = ''
 		} = featured,
 		metadata = await Image(`${imgFolder}${src}`, {
-			widths: [300, 600],
+			widths: [300, 600, 800, 1000],
 			formats: ['jpg', 'webp'],
 			outputDir: './_site/img/',
 			urlPath: '/img/'

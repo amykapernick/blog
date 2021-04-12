@@ -5,8 +5,8 @@ body {
 	font-family: var.$font_main;
 	font-size: 18px;
 	font-weight: 400;
+	letter-spacing: 0.03em;
 	line-height: 1.4;
-	letter-spacing: 0.3em;
 }
 
 a {
@@ -21,10 +21,15 @@ pre, code {
 	font-family: 'Source Code Pro', monospace;
 }
 
+code, kbd {
+
+}
+
 h1, h2, h3, h4, h5 {
-	letter-spacing: 0.35em;
 	font-family: var.$font_heading;
-	
+	font-weight: 400;
+	letter-spacing: 0.04em;
+
 	a {
 		color: inherit;
 		text-decoration: none;
@@ -39,39 +44,19 @@ h1 {
 	font-size: 2em;
 }
 
-h1, h2 {
+h2, h3, h4 {
 	color: var.$darkpurple;
 }
 
-h3 {
-	color: var.$navy;
-}
-
 hr {
-	background: url('/img/squiggle.png'), url('/img/squiggle.png');
-	background-repeat: repeat-x;
-	background-size: auto 6px;
-	background-position: left center;
 	height: 10px;
 	border: none;
-	// $darkpurple: #9440a0;
-	filter: invert(32%) sepia(58%) saturate(826%) hue-rotate(249deg) brightness(92%) contrast(94%);
-	// $blue: #318ce7;
-	filter: invert(48%) sepia(83%) saturate(1946%) hue-rotate(189deg) brightness(93%) contrast(95%);
-	// $green: #64ad66;
-	filter: invert(62%) sepia(19%) saturate(962%) hue-rotate(72deg) brightness(95%) contrast(87%);
-	// $pink: #cb5699;
-	filter: invert(53%) sepia(54%) saturate(2164%) hue-rotate(294deg) brightness(85%) contrast(84%);
-	// $purple: #7561c1;
-	filter: invert(44%) sepia(22%) saturate(1401%) hue-rotate(212deg) brightness(89%) contrast(89%);
-	// $red: #e53f51;
-	filter: invert(57%) sepia(92%) saturate(4394%) hue-rotate(325deg) brightness(87%) contrast(107%);
-	// $yellow: #ffce03;
-	filter: invert(85%) sepia(51%) saturate(4519%) hue-rotate(358deg) brightness(103%) contrast(107%);
-	// $orange: #f78d2b;
-	filter: invert(61%) sepia(68%) saturate(1336%) hue-rotate(341deg) brightness(100%) contrast(94%);
-	// $navy: #364c93;
-	filter: invert(28%) sepia(41%) saturate(970%) hue-rotate(188deg) brightness(92%) contrast(91%);
+	background-image: var.$underline_darkpurple;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 6px;
+
+	@media(min-width: 70em) {
+		background-size: auto 7px;
+	}
 }
-
-

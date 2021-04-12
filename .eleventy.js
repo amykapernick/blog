@@ -33,7 +33,7 @@ module.exports = (eleventyConfig) => {
 
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss)
-	eleventyConfig.addPlugin(...syntaxHighlight);
+	// eleventyConfig.addPlugin(...syntaxHighlight);
 	eleventyConfig.addPlugin(...eleventyRemark);
 	eleventyConfig.addPlugin(...inclusiveLanguage)
 	eleventyConfig.addPlugin(...svg)

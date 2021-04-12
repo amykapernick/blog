@@ -1,0 +1,57 @@
+@use '../variables.scss' as var;
+
+figure {
+	&:nth-of-type(6n) {
+		--figure_colour: var(--colour_4);
+	}
+
+	&:nth-of-type(6n - 1) {
+		--figure_colour: var(--colour_3);
+	}
+
+	&:nth-of-type(6n - 2) {
+		--figure_colour: var(--colour_2);
+	}
+
+	&:nth-of-type(6n - 3) {
+		--figure_colour: var(--colour_1);
+	}
+
+	&:nth-of-type(6n - 4) {
+		--figure_colour: var(--colour);
+	}
+}
+
+.content {
+	section {
+		&:nth-of-type(4n) {
+			h2 {
+				color: var.$green;
+
+				&:after {
+					background-image: var.$underline_green;
+				}
+			}
+		}
+
+		&:nth-of-type(4n - 1) {
+			h2 {
+				color: var.$purple;
+
+				&:after {
+					background-image: var.$underline_purple;
+				}
+			}
+		}
+
+		&:nth-of-type(4n - 2) {
+			section {
+				color: var.$blue;
+
+				&:after {
+					background-image: var.$underline_blue;
+				}
+			}
+		}
+	}
+}

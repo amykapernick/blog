@@ -24,6 +24,8 @@ const parse = require('remark-parse')
 const remark = require('remark')
 const html = require('remark-html')
 const images = require('@fec/remark-images')
+const section = require('remark-sectionize')
+const highlight = require('remark-highlight.js')
 
 const processCaption = (markdown) => {
 	const caption = remark()
@@ -48,7 +50,13 @@ const options = {
 		// 		asyncImg: true,
 		// 	}
 		// },
-		
+		section,
+		{
+			plugin: highlight,
+			options: {
+
+			}
+		},
 		{
 			plugin: external,
 			options: {
@@ -79,9 +87,9 @@ const options = {
 				imgClassName: '',
 				figCaptionClassName: '',
 				loadingPolicy: 'lazy',
-				imageSizes: [320, 640, 960],
-				elasticContainer: true,
-				blurredBackground: true,
+				imageSizes: [300, 600, 800],
+				elasticContainer: false,
+				blurredBackground: false,
 				processCaption
 		    },
 		  },

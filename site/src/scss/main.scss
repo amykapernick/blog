@@ -1,10 +1,14 @@
 @import './global.scss';
 @import './typography.scss';
+@import './_parts/code.scss';
 
 @import './_parts/tags.scss';
+@import './_parts/figures.scss';
+@import './_parts/gallery.scss';
 
 @import './_partials/header.scss';
 @import './_partials/content.scss';
+@import './_partials/colours.scss';
 
 @font-face {
 	font-family: 'DM Serif Display';
