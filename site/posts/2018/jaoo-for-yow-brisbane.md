@@ -1,6 +1,6 @@
 ---
 title: JAOO! for YOW! Brisbane!
-date: 2017-02-12
+date: 2017-12-02
 description: Recap of my time at YOW! Brisbane Conference in 2017, the speakers I saw and the experiences I had
 categories: [Conference, 'YOW!']
 featured:
