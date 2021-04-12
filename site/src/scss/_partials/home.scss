@@ -1,0 +1,543 @@
+@use '../variables.scss' as var;
+@use '../mixins.scss';
+
+.feed {
+	margin: 50px 0 0;
+	padding: 0 20px;
+	list-style: none;
+
+	> li {
+		--shadow_colour: var(--colour);
+		margin: 0;
+		padding: 0;
+
+		&:nth-child(6n) {
+			--shadow_colour: var(--colour_1);
+		}
+
+		&:nth-child(6n - 1) {
+			--shadow_colour: var(--colour_2);
+		}
+
+		&:nth-child(6n - 2) {
+			--shadow_colour: var(--colour_3);
+		}
+
+		&:nth-child(6n - 3) {
+			--shadow_colour: var(--colour_4);
+		}
+
+		&:nth-child(6n - 4) {
+			--shadow_colour: var(--colour_5);
+		}
+	}
+}
+
+.post {
+	@include mixins.shadow_bottom_right;
+
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	max-width: 420px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid var(--shadow_colour);
+	background: var.$white;
+
+	img {
+		max-width: calc(100% + 40px);
+		height: auto;
+		margin: -20px 0 0 -20px;
+		border-bottom: 1px solid var(--shadow_colour);
+	}
+
+	h2 {
+		margin: 20px 0 10px;
+		color: var.$neutral;
+		font-size: 1.2em;
+
+		a {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+
+	time {
+		display: block;
+		color: var(--shadow_colour);
+	}
+
+	.excerpt {
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 8;
+		-webkit-box-orient: vertical;
+	}
+
+	.share {
+		display: flex;
+		position: relative;
+		z-index: 5;
+		justify-content: flex-end;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			padding: 6px;
+			color: var(--shadow_colour);
+		}
+
+		svg {
+			height: 45px;
+
+			.cls-p {
+				color: var.$white;
+			}
+		}
+	}
+
+	.tags {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		flex-wrap: nowrap;
+		padding: 10px 10px 50px;
+		background: rgba(var.$neutral, 0.4);
+		background: linear-gradient(180deg, rgba(var.$white, 0.8) 0%, rgba(var.$white, 0.6) 50%, rgba(var.$white, 0) 100%
+		);
+
+		li {
+			white-space: nowrap;
+
+			&:nth-child(n+3) {
+				display: none;
+			}
+		}
+
+		a {
+			color: var(--shadow_colour);
+			text-shadow: 1px 1px 0 var.$neutral;
+		}
+	}
+}
+
+@media(min-width: 40em) {
+	.post {
+		margin: 0;
+	}
+
+	.feed {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 0;
+		padding: 0 50px;
+
+		> li {
+			position: relative;
+			flex: 1 1 auto;
+			width: 40%;
+			margin: 20px;
+
+			.post {
+				picture {
+					position: relative;
+					z-index: 0;
+					top: -20px;
+					left: -20px;
+					width: calc(100% + 40px);
+					max-width: calc(100% + 40px);
+					height: 30vw;
+					max-height: 300px;
+					overflow: hidden;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					margin: 0;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+
+			&:nth-child(1), &:nth-child(8n), &:nth-child(13) {
+				width: 100%;
+				margin: 0;
+				padding: 50px 0;
+
+				&:not(:first-child) {
+					margin-top: 50px;
+					margin-bottom: 50px;
+				}
+
+				&:before {
+					@include mixins.shadow_defaults;
+					z-index: -5;
+					top: -7px;
+					bottom: 0;
+					left: -50px;
+					width: 100vw;
+				}
+
+				.post {
+					@include mixins.shadow_top_left;
+
+					width: 50%;
+					max-width: unset;
+					padding: 30px;
+
+					h2 {
+						font-size: 1.5em;
+					}
+
+					.excerpt {
+						-webkit-line-clamp: 5;
+					}
+
+					picture {
+						position: absolute;
+						z-index: -2;
+						top: -30px;
+						bottom: -30px;
+						left: calc(100% - 20px);
+						width: 50vw;
+						max-width: unset;
+						height: auto;
+						max-height: unset;
+					}
+
+					img {
+						max-width: 800px;
+					}
+
+					.tags {
+						padding: 0 10px;
+						background: none;
+					}
+				}
+
+				&:nth-child(2n) {
+					.post {
+						@include mixins.shadow_bottom_right;
+						margin-left: auto;
+
+						picture {
+							right: calc(100% - 20px);
+							left: auto;
+						}
+					}
+				}
+			}
+
+			&:nth-child(n+9):nth-child(-n+12) {
+				width: 100%;
+				margin-right: 0;
+				margin-left: 0;
+
+				.post {
+					max-width: unset;
+					padding-left: calc(30vw + 20px);
+
+					picture {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						width: 30vw;
+						height: auto;
+						max-height: unset;
+
+						img {
+							border-bottom: 0;
+						}
+					}
+
+					.excerpt {
+						-webkit-line-clamp: 4;
+					}
+				}
+
+				&:nth-child(2n) {
+					.post {
+						@include mixins.shadow_bottom_left;
+
+						max-width: unset;
+						padding-right: calc(30vw + 20px);
+						padding-left: 20px;
+
+						picture {
+							right: 0;
+							left: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 50em) {
+	.feed {
+		> li {
+			&:nth-child(2) {
+				.post {
+					&:after {
+						@include mixins.shadow_defaults;
+						top: -50px;
+						right: 30%;
+						bottom: 50px;
+						width: 50vw;
+					}
+				}
+			}
+
+			&:nth-child(4) {
+				.post {
+					&:after {
+						@include mixins.shadow_defaults;
+						top: 80%;
+						bottom: -200px;
+						left: 80%;
+						width: 50vw;
+					}
+				}
+			}
+
+			&:nth-child(9) {
+				.post {
+					&:after {
+						@include mixins.shadow_defaults;
+						top: -25%;
+						bottom: 30%;
+						left: 80%;
+						width: 50vw;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				.post {
+					&:after {
+						@include mixins.shadow_defaults;
+						top: -100px;
+						right: 40%;
+						bottom: -100px;
+						width: 100vw;
+					}
+				}
+			}
+
+			&:nth-child(12) {
+				.post {
+					&:after {
+						@include mixins.shadow_defaults;
+						top: 40%;
+						bottom: -80px;
+						left: 40%;
+						width: 70vw;
+					}
+				}
+			}
+
+			&:nth-child(n+9):nth-child(-n+12) {
+				.post {
+					padding-left: calc(300px + 20px);
+
+					picture {
+						width: 300px;
+					}
+				}
+
+				&:nth-child(2n) {
+					.post {
+						padding-right: calc(300px + 20px);
+						// padding-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 60em) {
+	.feed {
+		--shadow_size: 30px;
+		padding: 0 5vw;
+
+		> li {
+			width: 25%;
+			margin: 40px 25px;
+
+			.post {
+				picture {
+					height: 25vw;
+					max-height: 350px;
+				}
+			}
+
+			&:nth-child(1), &:nth-child(8n), &:nth-child(13) {
+				padding: 150px 5vw;
+
+				&:not(:first-child) {
+					margin-top: 100px;
+					margin-bottom: 100px;
+				}
+
+				&:before {
+					left: -5vw;
+				}
+
+				.post {
+					width: 40vw;
+					padding: 50px;
+
+					picture {
+						top: -50px;
+						bottom: -50px;
+						left: calc(100% - 80px);
+					}
+				}
+
+				&:nth-child(2n) {
+					.post {
+						picture {
+							right: calc(100% - 20px);
+						}
+					}
+				}
+			}
+
+			&:nth-child(2) {
+				.post {
+					&:after {
+						top: -80px;
+						bottom: 80px;
+					}
+				}
+			}
+
+			&:nth-child(n+9):nth-child(-n+12) {
+				.post {
+					width: 80%;
+					margin-right: auto;
+					padding-left: calc(400px + 20px);
+
+					picture {
+						width: 400px;
+					}
+				}
+
+				&:nth-child(2n) {
+					.post {
+						margin-right: 0;
+						margin-left: auto;
+						padding-right: calc(400px + 20px);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 70em) {
+	.feed {
+		width: 90vw;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0;
+
+		> li {
+			&:nth-child(1), &:nth-child(8n), &:nth-child(13) {
+				padding: 150px 0;
+
+				&:before {
+					left: -5vw;
+				}
+
+				.post {
+					width: 45vw;
+					padding: 50px;
+
+					h2 {
+						margin-top: 0;
+					}
+
+					picture {
+						top: -50px;
+						bottom: -50px;
+						left: 40vw;
+					}
+
+					&:nth-child(2n) {
+						.post {
+							picture {
+								right: 40vw;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 80em) {
+	.feed {
+		> li {
+			&:nth-child(1), &:nth-child(8n), &:nth-child(13) {
+				padding: 200px 0;
+
+				.post {
+					picture {
+						top: -100px;
+						bottom: -100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 1333.33px) {
+	.feed {
+		> li {
+			&:nth-child(1), &:nth-child(8n), &:nth-child(13) {
+				&:before {
+					left: calc(-1 * (50vw - 600px));
+				}
+
+				.post {
+					width: 560px;
+					padding: 90px;
+
+					picture {
+						left: 500px;
+						width: 700px;
+					}
+
+					&:nth-child(2n) {
+						picture {
+							right: 500px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -2,6 +2,7 @@
 title: Template
 description: Draft Template for blog posts
 draft: true
+categories: [Tags, Quokkas, Dev, Twilio, More tags, tags]
 ---
 
 “You’re all right,” Mrs. Weasley muttered distractedly, releasing Mr. Weasley and staring around at them all with red eyes, “you’re alive. . . . Oh boys. . And to everybody’s surprise, she seized Fred and George and pulled them both into such a tight hug that their heads banged together. 
