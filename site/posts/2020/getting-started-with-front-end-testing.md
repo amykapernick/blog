@@ -8,7 +8,6 @@ categories: [Dev, Testing, Tools, 'Front End']
 featured:
   src: feature/igor-miske-JVSgcV8_vb4-unsplash+(2).jpg
 ---
-
 We all know that testing is important, your project can't be run unless all your unit and integration tests are written (and pass), but we often forget about testing the front end. There are so many different tests we need to be running on the front end - accessibility testing, performance testing, user testing, HTML validation, visual regression testing - it's hard to work out what you need to test for and where to start.
 
 To help you get started, I'm going to showcase a few different tests for accessibility, visual regression and end-to-end testing as well as linting, all run on a blog using Express with Contentful as a headless CMS. Most of these tools are language agnostic so you can integrate them with whatever stack and workflows you use. If you're looking for more options, there's a list of more testing tools and resources in *[Twelve Days of Front End Testing](https://24ways.org/2019/twelve-days-of-front-end-testing/)* from *[24ways](https://24ways.org/about/)* last year.
