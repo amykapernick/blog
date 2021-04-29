@@ -10,8 +10,6 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const eleventyRemark = require('./site/utils/markdown/index.js')
 const slug = require('./site/utils/filters/slug')
 const feedContent = require('./site/utils/filters/feedContent')
-const syntaxHighlight = require('./site/utils/markdown/syntaxHighlighting')
-// const inclusiveLanguage = require('./site/utils/markdown/inclusiveLanguage')
 const postContent = require('./site/utils/markdown/postContent')
 const formatDate = require('./site/utils/filters/date')
 const image = require('./site/utils/shortcodes/image')
@@ -34,7 +32,6 @@ module.exports = (eleventyConfig) => {
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(...eleventyRemark);
-	// eleventyConfig.addPlugin(...inclusiveLanguage)
 	eleventyConfig.addPlugin(...svg)
 
 	eleventyConfig.setFrontMatterParsingOptions(excerpt)

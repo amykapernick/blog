@@ -12,7 +12,15 @@
 		<li>
 			<article class="post">
 				{% image post.data.featured %}
-				<h2><a href="{{post | slug}}" target={{"_blank" if post.data.external else "_self" }}>{{ post.data.title }}</a></h2>
+				<h2>
+					<a href="{{post | slug}}" target={{"_blank" if post.data.external else "_self" }}>
+						{% if post.data.external %}
+							<span class="sr-only">External Link</span>
+							{% svg 'icons/external' %}
+						{% endif %}
+						{{ post.data.title }}
+					</a>
+				</h2>
 				<time datetime="{{post.data.date | formatDate('yyyy-mm-dd')}}">
 					{{post.data.date | formatDate}}
 				</time>
