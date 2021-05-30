@@ -16,6 +16,7 @@ const image = require('./site/utils/shortcodes/image')
 const excerpt = require('./site/utils/markdown/excerpt')
 const socialShare = require('./site/utils/filters/socialShare')
 const svg = require('./site/utils/plugins/svg')
+const content = require('./site/utils/content/all')
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig(browserSyncConfig)
@@ -42,6 +43,11 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('feedContent', feedContent);
 	eleventyConfig.addFilter('postContent', postContent)
 	eleventyConfig.addFilter('socialShare', socialShare)
+
+	// Custom Collections
+	eleventyConfig.addCollection('content', (collectionApi) => {
+		return content(collectionApi)
+	})
 
 	// Shortcodes
 	eleventyConfig.addNunjucksAsyncShortcode('image', image)

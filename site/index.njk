@@ -1,3 +1,10 @@
+---
+title: Blog
+pagination:
+  data: collections.content
+  size: 10
+  alias: posts
+---
 {% set pagetitle = "Amy's Blog" %}
 {% set description = "Front end developer who lives in Perth with her border collie. Just a few musings and ramblings..." %}
 {% set class = "home" %}
@@ -8,7 +15,7 @@
 <h1 class="sr-only">Amy's Blog</h1>
 
 <ul class="feed">
-	{% for post in collections.posts | reverse %}
+	{% for post in posts %}
 		<li>
 			<article class="post">
 				{% image post.data.featured %}
@@ -51,6 +58,34 @@
 			</article>
 		</li>
 	{% endfor %}
+</ul>
+
+<ul class="pagination">
+	<li>
+		{% if pagination.href.previous %}
+			<a href="{{ pagination.href.previous }}">Previous</a>
+		{% else %}
+			Previous
+		{% endif %}
+	</li>
+	{%- for pageEntry in pagination.pages %}
+		<li
+			{% if page.url == pagination.hrefs[ loop.index0 ] %} 
+				aria-current="page"
+			{% endif %}
+		>
+			<a href="{{ pagination.hrefs[ loop.index0 ] }}">
+				{{ loop.index }}
+			</a>
+		</li>
+	{%- endfor %}
+    <li>
+		{% if pagination.href.next %}
+			<a href="{{ pagination.href.next }}">Next</a>
+		{% else %}
+			Next
+		{% endif %}
+	</li>
 </ul>
 
 {% endblock %}
