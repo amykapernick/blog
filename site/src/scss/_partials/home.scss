@@ -104,6 +104,16 @@
 		a {
 			padding: 6px;
 			color: var(--shadow_colour);
+
+			&:hover {
+				color: var.$white;
+
+				svg {
+					.cls-p {
+						color: var(--shadow_colour);
+					}
+				}
+			}
 		}
 
 		svg {
