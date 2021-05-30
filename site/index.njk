@@ -2,7 +2,7 @@
 title: Blog
 pagination:
   data: collections.content
-  size: 10
+  size: 12
   alias: posts
 ---
 {% set pagetitle = "Amy's Blog" %}
@@ -14,7 +14,7 @@ pagination:
 
 <h1 class="sr-only">Amy's Blog</h1>
 
-<ul class="feed">
+<ul class="feed {{'even' if (pagination.pageNumber / 2 == 0) else 'odd'}}">
 	{% for post in posts %}
 		<li>
 			<article class="post">
