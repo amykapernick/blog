@@ -34,7 +34,9 @@ eleventyExcludeFromCollections: true
 					{% else %}
 						[]
 					{% endif %},
-				"featured": "{{env.url}}{{ post.data.featured }}",
+					{% if post.data.featured %}
+						"featured": {{ post.data.featured | dump | safe }},
+					{% endif %}
 				"content": 
 					{% if post.templateContent %}
 						{{ post.templateContent | feedContent | dump | safe }}
