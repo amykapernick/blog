@@ -3,5 +3,5 @@ module.exports = (post) => {
 		return post.data.external
 	}
 
-	return post.fileSlug
+	return `/${post.fileSlug}`
 }
