@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="/img/amy_small.png" />
 
 	{% if env.env == "dev" %}
-	{% include 'partials/dev_styles.html' %}
+		{% include 'partials/dev_styles.html' %}
 	{% endif %}
 
 	{# Meta Info #}
@@ -29,11 +29,12 @@
 	<meta name="twitter:site" content="@amys_kapers" />
 	<meta property="twitter:image" content="/img/socials/twitter_wide.png" />
 	<meta name="twitter:creator" content="@amys_kapers" />
+
+	{% block head %}{% endblock %}
 </head>
 {% set colours = generateColours %}
 
-<body 
-	style="
+<body style="
 		--colour: {{colours[0].colour}}; 
 		--text: {{colours[0].text}};
 		--colour_1: {{colours[1].colour}}; 
@@ -41,9 +42,7 @@
 		--colour_3: {{colours[3].colour}}; 
 		--colour_4: {{colours[4].colour}}; 
 		--colour_5: {{colours[5].colour}}; 
-	"
-	class="{{class}}"
->
+	" class="{{class}}">
 	{% include 'partials/header.html' %}
 
 	<main>

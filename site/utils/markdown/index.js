@@ -17,7 +17,6 @@ const autoLink = require('remark-autolink-headings')
 const remark = require('remark')
 const html = require('remark-html')
 const images = require('@fec/remark-images')
-const section = require('remark-sectionize')
 const highlight = require('remark-highlight.js')
 
 const processCaption = (markdown) => {
@@ -42,7 +41,6 @@ const options = {
 		// 		asyncImg: true,
 		// 	}
 		// },
-		section,
 		{
 			plugin: highlight,
 			options: {
