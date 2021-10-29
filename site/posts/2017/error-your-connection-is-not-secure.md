@@ -4,6 +4,7 @@ date: 2017-09-18
 description: These days, there are more and places offering their website through encrypted protocols, or HTTPS. But what does this actually mean for you? Is this something you should be worried about? And should you be concerned if a site isn’t encrypted?
 categories: [Security, SSL, HTTPS]
 blog: [aimhigher]
+canonical: https://aimhigherweb.design/blog/error-your-connection-is-not-secure
 featured:
   src: dev/ssl/dad706da1ff6689d327196aa17bc66b410c43f69_1_nguze1lsf0sywbjiclaszg.jpg
 ---
