@@ -3,7 +3,6 @@ title: The Importance of Routine
 date: 2018-10-29
 description: When I first started working for myself fulltime, I was excited for the freedom and flexibility I could have. No rules, no restrictions and no routines, I could do whatever I wanted! But it didn't take me long before I found I was a little lost, and not really getting anything done. Maybe routines aren't necessarily a bad thing...
 categories: [Productivity]
-blog: [aimhigher]
 featured:
   src: feature/rawpixel-603656-unsplash.jpg
 ---
