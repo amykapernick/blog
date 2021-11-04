@@ -1,4 +1,5 @@
 ---
+permalink: /{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html
 title: Blog
 pagination:
   data: collections.content
