@@ -17,7 +17,7 @@
 		<ul class="tags">
 			{% for cat in post.data.categories %}
 				<li>
-					<a href="/{{cat}}">#{{cat}}</a>
+					<a href="/{{cat | slug}}">#{{cat | slug}}</a>
 				</li>
 			{% endfor %}
 		</ul>
