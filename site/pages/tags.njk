@@ -1,29 +1,29 @@
 ---
-permalink: /{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html
-title: Blog
+permalink: /tags/{{tag.name}}/{% if tag.page > 0 %}{{ tag.page + 1 }}/{% endif %}index.html
+title: Tags
 pagination:
-  data: collections.content
-  size: 12
-  alias: posts
+  data: collections.tags
+  size: 1
+  alias: tag
 ---
-{% set pagetitle = "Amy's Blog" %}
+{% set pagetitle = "#" + tag.name + " | Amy's Blog" %}
 {% set description = "Front end developer who lives in Perth with her border collie. Just a few musings and ramblings..." %}
 {% set class = "home" %}
 {% extends 'layouts/main.njk' %}
 
 {% block content %}
 
-<h1 class="sr-only">Amy's Blog</h1>
+<h1 class="tag-page">Filtered by: #{{tag.name}}</h1>
 
-<ul class="feed {{'even' if (pagination.pageNumber / 2 == 0) else 'odd'}}">
-	{% for post in posts %}
+<ul class="feed {{'even' if (tag.page / 2 == 0) else 'odd'}}">
+	{% for post in tag.posts %}
 		<li>
 			{% include 'parts/card.njk' %}
 		</li>
 	{% endfor %}
 </ul>
 
-<ul class="pagination">
+{# <ul class="pagination">
 	<li>
 		{% if pagination.href.previous %}
 			<a href="{{ pagination.href.previous }}">Previous</a>
@@ -49,6 +49,6 @@ pagination:
 			Next
 		{% endif %}
 	</li>
-</ul>
+</ul> #}
 
 {% endblock %}

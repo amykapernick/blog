@@ -1,8 +1,9 @@
 const allItems = (collectionApi) => {
 	const content = collectionApi.getAllSorted().reverse()
-	const types = ['posts', 'video', 'podcasts']
-	// console.log(content[0].data.tags)
-	return content.filter(item => item.data.tags.some(tag => types.indexOf(tag !== -1)))
+	const types = ['posts', 'videos', 'podcasts']
+	const allFiltered = content.filter(item => types.some(type => item.data.tags?.includes(type)))
+
+	return allFiltered
 }
 
 module.exports = allItems

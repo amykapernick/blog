@@ -3,12 +3,14 @@
 {% extends 'layouts/main.njk' %}
 
 {% block head %}
-	{% if canonical %}
-		<link rel="canonical" href="{{canonical}}" />
-	{% endif %}
+{% if canonical %}
+<link rel="canonical" href="{{canonical}}" />
+{% endif %}
 {% endblock %}
 
+
 {% block content %}
+
 <article class="content">
 	<header>
 		<h1>{{title}}</h1>
@@ -19,7 +21,7 @@
 		<ul class="tags">
 			{% for tag in categories %}
 			<li>
-				<a>#{{tag}}</a>
+				<a href="/tags/{{tag | slug}}">#{{tag}}</a>
 			</li>
 			{% endfor %}
 		</ul>
