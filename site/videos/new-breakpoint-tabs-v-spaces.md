@@ -4,7 +4,6 @@ date: 2021-04-29
 external: https://www.youtube.com/watch?v=OzSv4ae6-Xo
 author: ./img/new-breakpoint.png
 categories:
-  - Video
   - Accessibility
 featured:
   src: feature/new_breakpoint.jpg

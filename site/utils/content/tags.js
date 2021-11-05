@@ -9,7 +9,7 @@ const chunks = (array, size) => {
 }
 
 const allTags = (collectionApi) => {
-	const posts = collectionApi.getAllSorted().map(item => item)
+	const posts = collectionApi.getAllSorted().reverse().map(item => item)
 	const tags = [...new Set(posts.map(item => item.data.tags).flat().filter(Boolean))]
 	const allData = []
 	
