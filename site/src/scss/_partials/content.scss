@@ -132,6 +132,12 @@
 			color: inherit;
 		}
 	}
+
+	.remark-oembed-inline {
+		> * {
+			margin: 0 auto;
+		}
+	}
 }
 
 @media(min-width: 40em) {

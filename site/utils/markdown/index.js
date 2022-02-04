@@ -21,7 +21,7 @@ const highlight = require('remark-highlight.js')
 
 const processCaption = (markdown) => {
 	const caption = remark()
-    .use(html)
+    .use(html, {sanitize: false})
     .processSync(markdown)
     .toString()
 
@@ -34,13 +34,13 @@ const options = {
 		// gfm,
 		// github,
 		hint,
-		// {
-		// 	plugin: oembed,
-		// 	options: {
-		// 		syncWidget: true,
-		// 		asyncImg: true,
-		// 	}
-		// },
+		{
+			plugin: oembed,
+			options: {
+				syncWidget: true,
+				asyncImg: true,
+			}
+		},
 		{
 			plugin: highlight,
 			options: {
