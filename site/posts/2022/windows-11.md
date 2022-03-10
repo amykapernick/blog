@@ -6,8 +6,6 @@ categories: [Windows, Tech, Windows 11]
 featured:
   src: feature/windows-broken.jpg
 ---
-# Windows 11 - The Good and the Bad
-
 Towards to end of last year I decided to go for it and install Windows 11. Now keeping in mind that I was installing it on my only computer, and only a couple of days before I ran a workshop, it probably wasn’t the best idea (everyone knows you don’t install updates before workshops, let along an entire new operating system), but thankfully everything worked out fine. Coming up on about 5 months now, it’s grown on me, and although there’s a few things that could get an improvement, you can see the thought that’s gone into this latest Windows version.
 
 ## The Good
