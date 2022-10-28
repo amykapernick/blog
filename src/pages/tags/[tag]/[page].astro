@@ -1,0 +1,84 @@
+---
+import Layout from "../../../layouts/feed.astro";
+import { isBefore, parseISO } from "date-fns";
+import slugify from "../../../utils/slugify";
+
+export async function getStaticPaths({ paginate }) {
+	const postFiles = await Astro.glob("../../../../posts/**/*.md");
+	const videoFiles = await Astro.glob("../../../../videos/**/*.md");
+
+	const allPosts = [];
+	const allTags = [];
+
+	const allFiles = [...postFiles, ...videoFiles];
+
+	allFiles.forEach((post) => {
+		const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/, "i");
+		const { slug } = matches?.groups;
+
+		if (post?.frontmatter?.categories) {
+			allTags.push(...post.frontmatter.categories);
+		}
+
+		allPosts.push({ post: { ...post, slug } });
+	});
+
+	allPosts.sort((a, b) => {
+		return isBefore(
+			parseISO(a.post.frontmatter.date),
+			parseISO(b.post.frontmatter.date)
+		)
+			? 1
+			: -1;
+	});
+
+	const tags = [...new Set(allTags)].sort((a, b) => {
+		if (a < b) {
+			return -1;
+		}
+		if (a > b) {
+			return 1;
+		}
+		return 0;
+	});
+
+	return tags.map((tag) => {
+		const filteredPosts = allPosts.filter(({ post }) =>
+			post?.frontmatter?.categories?.includes(tag)
+		);
+		return paginate(filteredPosts, {
+			params: { tag: slugify(tag) },
+			pageSize: 12,
+		});
+	});
+}
+
+const { page = {} } = Astro.props;
+const { tag } = Astro.params;
+const posts = page?.data.map(({ post }) => post) || [];
+
+console.log({ page, tag });
+
+const content = {
+	title: `#${tag} | Amy's Block`,
+	class: "home",
+};
+
+const totalPages = [];
+let i = 1;
+
+while (i <= page.lastPage) {
+	totalPages.push(i);
+	i++;
+}
+
+const data = {
+	posts,
+	page: { ...page, totalPages },
+	content,
+};
+---
+
+<Layout data={data}>
+	<h1 class="tag-page">Filtered by: #{tag}</h1>
+</Layout>

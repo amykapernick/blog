@@ -2,7 +2,17 @@
 import Layout from "../partials/layout.astro";
 import Card from "../parts/card.astro";
 
-const { page, posts, content } = Astro.props.data;
+const { page, posts, content, mainFeed } = Astro.props.data;
+
+const feedClasses = ["feed"];
+
+if (mainFeed) {
+	if (page.currentPage % 2 == 0) {
+		feedClasses.push("even");
+	} else {
+		feedClasses.push("odd");
+	}
+}
 ---
 
 <style lang="scss"></style>
@@ -10,7 +20,7 @@ const { page, posts, content } = Astro.props.data;
 <Layout content={content}>
 	<slot />
 	<div>
-		<ul class={`feed ${page.currentPage / 2 == 0 ? "odd" : "even"}`}>
+		<ul class={feedClasses.join(" ")}>
 			{
 				posts.map((post) => (
 					<li>

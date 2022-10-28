@@ -37,8 +37,6 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 const posts = page.data.map(({ post }) => post);
 
-console.log({ page });
-
 const totalPages = [];
 let i = 1;
 
@@ -51,6 +49,7 @@ const data = {
 	posts,
 	page: { ...page, totalPages },
 	content,
+	mainFeed: true,
 };
 ---
 
