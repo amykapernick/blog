@@ -26,17 +26,17 @@
     "hast-util-is-element": "^2.1.2",
     "rehype-external-links": "^2.0.1",
     "rehype-picture": "^4.0.2",
-    "remark-gfm": "^1.0.0",
+    "remark-gfm": "^3.0.1",
     "remark-hint": "^1.0.10",
     "remark-oembed": "^1.2.2",
-    "remark-squeeze-paragraphs": "^4.0.0",
-    "sass": "^1.35.2",
+    "remark-squeeze-paragraphs": "^5.0.1",
+    "sass": "^1.55.0",
     "unist-util-visit": "^4.1.1"
   },
   "devDependencies": {
-    "stylelint": "^13.13.1",
-    "stylelint-config-property-sort-order-smacss": "^7.1.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.20.1"
+    "stylelint": "^14.14.0",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
