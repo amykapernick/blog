@@ -1,0 +1,75 @@
+---
+import { Picture } from "@astrojs/image/components";
+import PostExcerpt from "@igor.dvlpr/astro-post-excerpt";
+import SVG from "./svg.astro";
+import { parseISO, format } from "date-fns";
+import socialShare from "../utils/socialShare";
+import slugify from "../utils/slugify";
+
+const {
+	featured,
+	external,
+	title,
+	date = new Date().toISOString(),
+	slug,
+	categories,
+} = Astro.props.data;
+
+const image = featured?.src
+	? `../public/img/${featured.src}`
+	: "/img/feature/placeholder.png";
+---
+
+<article class="post">
+	<Picture
+		src={image}
+		alt=""
+		formats={["avif", "webp", "jpg", "png"]}
+		widths={[300, 600, 800]}
+		aspectRatio="3:4"
+	/>
+	<h2>
+		<a href={slug} target={external ? "_blank" : "_self"}>
+			{
+				external && (
+					<>
+						<span class="sr-only">External Link</span>
+						<SVG name="icons/external.svg" />
+					</>
+				)
+			}
+			{title}
+		</a>
+	</h2>
+	<time datetime={format(parseISO(date), "yyyy-mm-dd")}>
+		{format(parseISO(date), "dd MMM yyyy")}
+	</time>
+	<p class="excerpt">
+		<PostExcerpt post={Astro.props.data} words={50} addEllipsis={true} />
+	</p>
+	{
+		categories && (
+			<ul class="tags">
+				{categories.map((tag) => (
+					<li>
+						<a href={`/tags/${slugify(tag)}`}>{slugify(tag)}</a>
+					</li>
+				))}
+			</ul>
+		)
+	}
+	<ul class="share">
+		<li>
+			<a href={socialShare(slug, "facebook")} target="_blank">
+				<SVG name="icons/facebook_circle.svg" />
+				<span class="sr-only">Share to Facebook</span>
+			</a>
+		</li>
+		<li>
+			<a href={socialShare(slug, "twitter")} target="_blank">
+				<SVG name="icons/twitter_circle.svg" />
+				<span class="sr-only">Share to Twitter</span>
+			</a>
+		</li>
+	</ul>
+</article>

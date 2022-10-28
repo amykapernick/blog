@@ -12,7 +12,6 @@ node_modules
 /build
 /dist
 .netlify
-/public
 /src/resources/*.css
 /static/img/blog/*
 _site

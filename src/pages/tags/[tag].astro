@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/feed.astro";
+
+const tag = "web";
+
+// TODO: Get tag page filter working
+const content = {
+	title: `#${tag} | Amy's Block`,
+	class: "home",
+};
+---
+
+<Layout content={content}>
+	<h1 class="tag-page">Filtered by: #{tag}</h1>
+</Layout>

@@ -1,0 +1,84 @@
+@import './global.scss';
+@import './typography.scss';
+@import './_parts/code.scss';
+
+@import './_parts/tags.scss';
+@import './_parts/figures.scss';
+@import './_parts/gallery.scss';
+@import './_parts/lists.scss';
+@import './_parts/card.scss';
+
+@import './_partials/header.scss';
+@import './_partials/footer.scss';
+@import './_partials/content.scss';
+@import './_partials/colours.scss';
+@import './_partials/home.scss';
+
+@font-face {
+	font-family: 'DM Serif Display';
+	font-style: italic;
+	font-weight: 400;
+	src: url('/fonts/DMSerifDisplay-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DM Serif Display';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: 300;
+	src: url('/fonts/Rajdhani-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/Rajdhani-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: 500;
+	src: url('/fonts/Rajdhani-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: 600;
+	src: url('/fonts/Rajdhani-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/Rajdhani-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Caveat';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/Caveat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Caveat';
+	font-style: normal;
+	src: url('/fonts/Caveat-VariableFont_wght.ttf') format('truetype');
+}

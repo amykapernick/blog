@@ -1,0 +1,23 @@
+---
+import SVG from "../parts/svg.astro";
+
+import socials from "../../_data/socials";
+---
+
+<footer>
+	<SVG name="illustrations/flower_2.svg" />
+	<nav>
+		<ul>
+			{
+				socials.map(({ url, icon, label }) => (
+					<li>
+						<a href={url} target="_blank">
+							<SVG name={`${icon}.svg`} />
+							<span class="sr-only">{label}</span>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</nav>
+</footer>
