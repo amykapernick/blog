@@ -21,13 +21,16 @@ const image = featured?.src
 ---
 
 <article class="post">
-	<Picture
+	<!-- <Picture
 		src={image}
 		alt=""
 		formats={["avif", "webp", "jpg", "png"]}
 		widths={[300, 600, 800]}
 		aspectRatio="3:4"
-	/>
+	/> -->
+	<picture>
+		<img src={image} alt="" />
+	</picture>
 	<h2>
 		<a href={slug} target={external ? "_blank" : "_self"}>
 			{
