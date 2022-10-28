@@ -1,0 +1,88 @@
+---
+import Header from "./header.astro";
+import Footer from "./footer.astro";
+import DevStyles from "./devStyles.astro";
+import Favicon from "../img/amy_small.png";
+
+import "../scss/main.scss";
+
+import generateColours from "../utils/generateColours.js";
+
+const env = import.meta.env.MODE;
+
+const siteData = {
+	title: "Amy's Blog",
+	description:
+		"Front end developer who lives in Perth with her border collie. Just a few musings and ramblings...",
+};
+
+const content = {
+	...siteData,
+	...Astro?.props?.content,
+	...Astro?.props?.content?.meta,
+};
+
+const { title, description } = content;
+
+const colours = generateColours;
+
+const styles = `
+	--colour: ${colours[0].colour}; 
+	--text: ${colours[0].text};
+	--colour_1: ${colours[1].colour}; 
+	--colour_2: ${colours[2].colour}; 
+	--colour_3: ${colours[3].colour}; 
+	--colour_4: ${colours[4].colour}; 
+	--colour_5: ${colours[5].colour}; 
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en-AU">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,shrink-to-fit=no"
+		/>
+		<link rel="shortcut icon" href={Favicon} />
+
+		<title>{title}</title>
+		<meta name="description" content={description} />
+
+		<!-- TODO: Update social data -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/img/socials/linkedin_wide.png" />
+		<meta name="author" content="Amy Kapernick" />
+		<meta property="og:url" content="https://blog.amyskapers.dev" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@amys_kapers" />
+		<meta
+			property="twitter:image"
+			content="/img/socials/twitter_wide.png"
+		/>
+		<meta name="twitter:creator" content="@amys_kapers" />
+
+		<slot name="head" />
+
+		<script
+			src="https://cdn.usefathom.com/script.js"
+			data-site="YZSOKFBM"
+			defer
+		></script>
+	</head>
+
+	<body style={styles} class={Astro.props.class}>
+		{env === "development" && <DevStyles />}
+		<Header />
+
+		<main>
+			<slot />
+		</main>
+
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/post.astro";
+
+export async function getStaticPaths() {
+	const posts = await Astro.glob("../../posts/**/*.md");
+
+	const allPosts = [];
+
+	posts.forEach((post) => {
+		const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/, "i");
+		const { slug } = matches?.groups;
+
+		allPosts.push({ params: { slug } });
+	});
+
+	return allPosts;
+}
+
+const { slug } = Astro.params;
+
+const posts = await Astro.glob("../../posts/**/*.md");
+
+const post = posts.find(({ file }) => new RegExp(`${slug}.md`, "i").test(file));
+
+const { frontmatter } = post;
+
+const postContent = {
+	...frontmatter,
+};
+
+const Content = post.Content;
+---
+
+<Layout content={postContent}>
+	<Content />
+</Layout>

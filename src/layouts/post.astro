@@ -1,0 +1,46 @@
+---
+import Layout from "../partials/layout.astro";
+import SVG from "../parts/svg.astro";
+import { parseISO, format } from "date-fns";
+import slugify from "../utils/slugify";
+
+const content = {
+	...Astro.props.content,
+};
+
+const { title, date, categories } = content;
+
+content.title = `${title} | Amy's Blog`;
+
+// TODO: Setup a way to pass canonical tag to layout
+---
+
+<style lang="scss"></style>
+
+<Layout content={content}>
+	<article class="content">
+		<header>
+			<h1>{title}</h1>
+			<time datetime={format(parseISO(date), "yyyy-mm-dd")}>
+				{format(parseISO(date), "dd MMM yyyy")}
+			</time>
+			{
+				categories && (
+					<ul class="tags">
+						{categories.map((tag) => (
+							<li>
+								<a href={`/tags/${slugify(tag)}`}>
+									#{slugify(tag)}
+								</a>
+							</li>
+						))}
+					</ul>
+				)
+			}
+			<div class="underline">
+				<SVG name="illustrations/underline.svg" />
+			</div>
+		</header>
+		<slot />
+	</article>
+</Layout>

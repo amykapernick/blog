@@ -1,0 +1,59 @@
+---
+import { isBefore, parseISO } from "date-fns";
+import Layout from "../layouts/feed.astro";
+
+const content = {
+	title: "Amy's Blog",
+	description:
+		"Front end developer who lives in Perth with her border collie. Just a few musings and ramblings...",
+	class: "home",
+};
+
+const postFiles = await Astro.glob("../../posts/**/*.md");
+const videoFiles = await Astro.glob("../../videos/**/*.md");
+
+const allPosts = [];
+
+[...postFiles, ...videoFiles].forEach((post) => {
+	const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/, "i");
+	const { slug } = matches?.groups;
+
+	console.log({ ...post });
+
+	allPosts.push({ post: { ...post, slug } });
+});
+
+allPosts.sort((a, b) => {
+	return isBefore(
+		parseISO(a.post.frontmatter.date),
+		parseISO(b.post.frontmatter.date)
+	)
+		? 1
+		: -1;
+});
+
+const page = {
+	currentPage: 1,
+	lastPage: Math.ceil(allPosts.length / 12),
+	url: { current: "/1", next: "/2" },
+};
+const posts = allPosts.slice(0, 13).map(({ post }) => post);
+
+const totalPages = [];
+let i = 1;
+
+while (i <= page.lastPage) {
+	totalPages.push(i);
+	i++;
+}
+
+const data = {
+	posts,
+	page: { ...page, totalPages },
+	content,
+};
+---
+
+<Layout data={data}>
+	<h1 class="sr-only">Amy's Blog</h1>
+</Layout>
