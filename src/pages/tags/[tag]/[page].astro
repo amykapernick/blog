@@ -57,8 +57,6 @@ const { page = {} } = Astro.props;
 const { tag } = Astro.params;
 const posts = page?.data.map(({ post }) => post) || [];
 
-console.log({ page, tag });
-
 const content = {
 	title: `#${tag} | Amy's Block`,
 	class: "home",
