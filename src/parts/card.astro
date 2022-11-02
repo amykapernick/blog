@@ -32,7 +32,7 @@ const image = featured?.src
 		<img src={`/img/${featured.src}`} alt="" />
 	</picture>
 	<h2>
-		<a href={slug} target={external ? "_blank" : "_self"}>
+		<a href={`/${slug}`} target={external ? "_blank" : "_self"}>
 			{
 				external && (
 					<>
