@@ -3,19 +3,18 @@ import Layout from "../partials/layout.astro";
 import SVG from "../parts/svg.astro";
 import { parseISO, format } from "date-fns";
 import slugify from "../utils/slugify";
+import Video from "../parts/video.astro";
 
 const content = {
 	...Astro.props.content,
 };
 
-const { title, date, categories } = content;
+const { title, date, categories, video } = content;
 
 content.title = `${title} | Amy's Blog`;
 
 // TODO: Setup a way to pass canonical tag to layout
 ---
-
-<style lang="scss"></style>
 
 <Layout content={content}>
 	<article class="content">
@@ -42,5 +41,6 @@ content.title = `${title} | Amy's Blog`;
 			</div>
 		</header>
 		<slot />
+		{video && <Video video={video} title={title} />}
 	</article>
 </Layout>

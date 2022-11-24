@@ -1,13 +1,12 @@
 ---
 title: "New Breakpoint - Tabs vs. Spaces"
 date: 2021-04-29
-external: https://www.youtube.com/watch?v=OzSv4ae6-Xo
+video: https://www.youtube.com/watch?v=OzSv4ae6-Xo
 author: ./img/new-breakpoint.png
 categories:
   - Accessibility
 featured:
   src: feature/new_breakpoint.jpg
-empty: true
 ---
 So, do developers who use tabs take four or eight steps at a time, or do developers who use spaces care more for accuracy than tabs-based developers?
 

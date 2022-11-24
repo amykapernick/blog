@@ -1,0 +1,57 @@
+---
+import videoEmbed from "../utils/videoEmbed";
+import SVG from "./svg.astro";
+
+const { video, title } = Astro.props;
+
+const { embedUrl, embedAttrs, ...embedProps } = videoEmbed(video);
+
+console.log({ embedUrl, embedAttrs, embedProps });
+---
+
+<style lang="scss">
+	iframe {
+		$width: 90vw;
+		$ratio: 0.5625;
+		$max_width: 800px;
+
+		width: $width;
+		height: $width * $ratio;
+		max-width: $max_width;
+		max-height: $max_width * $ratio;
+		display: block;
+	}
+
+	figure {
+		margin: 50px auto;
+	}
+
+	figcaption {
+		margin-top: 20px;
+		font-size: 1.2em;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		svg {
+			height: 1em;
+			margin-right: 1ch;
+		}
+	}
+</style>
+
+{
+	embedUrl && (
+		<figure>
+			<iframe src={embedUrl} title={title} {...embedAttrs} />
+			<figcaption>
+				<a href={video} target="_blank">
+					<SVG name="icons/video.svg" /> View the original video page
+				</a>
+			</figcaption>
+		</figure>
+	)
+}

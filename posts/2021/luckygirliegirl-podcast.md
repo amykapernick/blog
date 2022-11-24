@@ -7,6 +7,5 @@ categories:
   - Interview
 featured:
   src: feature/2021.04.27_1luckygirliegirl_podcast_amy_kapernick_and_christina_aldan.jpg
-empty: true
 ---
 Tune in to this episode of 1 Luckygirliegirl and be a fly-on-the-wall for my conversation with Amy about lockdown Down Under, awkward socializing, and spending time doing not-work.

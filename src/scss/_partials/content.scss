@@ -141,7 +141,7 @@
 	}
 
 	.remark-oembed-inline {
-		>* {
+		>*:not(blockquote) {
 			margin: 0 auto;
 		}
 	}

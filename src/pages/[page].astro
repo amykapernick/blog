@@ -15,11 +15,18 @@ export async function getStaticPaths({ paginate }) {
 
 	const allPosts = [];
 
-	[...postFiles, ...videoFiles].forEach((post) => {
-		const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/, "i");
+	postFiles.forEach((post) => {
+		const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/i);
 		const { slug } = matches?.groups;
 
-		allPosts.push({ post: { ...post, slug } });
+		allPosts.push({ post: { ...post, slug, type: "post" } });
+	});
+
+	videoFiles.forEach((post) => {
+		const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/i);
+		const { slug } = matches?.groups;
+
+		allPosts.push({ post: { ...post, slug, type: "video" } });
 	});
 
 	allPosts.sort((a, b) => {
