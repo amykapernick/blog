@@ -7,9 +7,7 @@ do
     esac
 done
 
-echo "${NETLIFY_SITE_ID}"  | sed 's/./& /g'
-
-echo "${NETLIFY_AUTH_TOKEN}"  | sed 's/./& /g'
+netlify -v
 
 COMMAND='netlify deploy --build --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --json --message "Deploying from GitHub Actions"'
 
