@@ -7,7 +7,7 @@ do
     esac
 done
 
-MESSAGE = "Deploying from GitHub Actions"
+MESSAGE="Deploying from GitHub Actions"
 
 COMMAND="netlify deploy --debug --build --site ${NETLIFY_SITE_ID} --auth ${NETLIFY_AUTH_TOKEN} --json --message ${MESSAGE}"
 
