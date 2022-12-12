@@ -29,7 +29,8 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: ./_actions/netlify_deploy.sh
+        # run: ./_actions/netlify_deploy.sh
+        run: netlify deploy --debug --build --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --json --message "Deploying from GitHub Actions"
         # run: echo ${{secrets.NETLIFY_SITE_ID }} | sed 's/./& /g'
 
       # - uses: actions/github-script@v6
