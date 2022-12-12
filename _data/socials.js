@@ -1,7 +1,7 @@
 const socials = [
 	{
 		label: 'Website',
-		url: 'https://www.amyskapers.dev',
+		url: 'https://amyskapers.dev',
 		icon: 'icons/blog'
 	},
 	{
@@ -11,13 +11,8 @@ const socials = [
 	},
 	{
 		label: 'GitHub',
-		url: 'https://github.com/amykapernick/amygoestoperth',
+		url: 'https://github.com/amykapernick/blog',
 		icon: 'icons/github'
-	},
-	{
-		label: 'Instagram',
-		url: 'https://www.instagram.com/amys_kapers',
-		icon: 'icons/instagram'
 	},
 	{
 		label: 'LinkedIn',
@@ -30,15 +25,15 @@ const socials = [
 		icon: 'icons/notist'
 	},
 	{
-		label: 'Twitch',
-		url: 'https://twitch.tv/amyskapers',
-		icon: 'icons/twitch'
-	},
-	{
 		label: 'Twitter',
 		url: 'https://twitter.com/amys_kapers',
 		icon: 'icons/twitter'
 	},
+	{
+		label: 'Mastadon',
+		url: 'https://aus.social/@amys_kapers',
+		icon: 'icons/mastadon'
+	}
 ]
 
 export default socials
