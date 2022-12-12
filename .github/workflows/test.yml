@@ -43,19 +43,19 @@ jobs:
               body: 'The build works! You can view the deploy preview at ${{steps.build_site.outputs.NETLIFY_URL}}'
             })
 
-  # test:
-  #   needs: [build]
-  #   runs-on: ubuntu-22.04
-  #   steps:
-  #     - name: Checkout Repo Code
-  #       uses: actions/checkout@v3
+  test:
+    needs: [build]
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Repo Code
+        uses: actions/checkout@v3
 
-  #     - name: Run A11y Tests
-  #       id: a11y
-  #       uses: amykapernick/a11y_test_action@prod
-  #       with:
-  #         url: ${{needs.build.outputs.deploy_url}}
-  #         pages: "['/']"
+      - name: Run A11y Tests
+        id: a11y
+        uses: amykapernick/a11y_test_action@prod
+        with:
+          url: ${{needs.build.outputs.deploy_url}}
+          pages: "['/']"
 
-  #     - name: Get A11y Results
-  #       run: echo ${{steps.a11y.outputs.results}}
+      - name: Get A11y Results
+        run: echo ${{steps.a11y.outputs.results}}
