@@ -33,15 +33,15 @@ jobs:
         # run: netlify deploy --debug --build --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --json --message "Deploying from GitHub Actions"
         # run: echo ${{secrets.NETLIFY_SITE_ID }} | sed 's/./& /g'
 
-      # - uses: actions/github-script@v6
-      #   with:
-      #     script: |
-      #       github.rest.issues.createComment({
-      #         issue_number: context.issue.number,
-      #         owner: context.repo.owner,
-      #         repo: context.repo.repo,
-      #         body: 'The build works! You can view the deploy preview at ${{steps.build_site.outputs.NETLIFY_URL}}'
-      #       })
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'The build works! You can view the deploy preview at ${{steps.build_site.outputs.NETLIFY_URL}}'
+            })
 
   # test:
   #   needs: [build]
