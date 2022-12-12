@@ -11,6 +11,10 @@ netlify -v
 
 netlify status
 
+echo '$NETLIFY_SITE_ID'
+
+echo "${NETLIFY_SITE_ID}"
+
 COMMAND='netlify deploy --debug --build --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --json --message "Deploying from GitHub Actions"'
 
 if [ "$prod" = "true" ]; then
