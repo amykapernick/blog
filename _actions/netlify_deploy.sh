@@ -7,6 +7,10 @@ do
     esac
 done
 
+echo '$NETLIFY_SITE_ID'
+
+echo '$NETLIFY_AUTH_TOKEN'
+
 COMMAND='netlify deploy --build --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --json --message "Deploying from GitHub Actions"'
 
 if [ "$prod" = "true" ]; then
