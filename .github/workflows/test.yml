@@ -54,4 +54,4 @@ jobs:
       - name: Percy Test
         # We'll pass the deploy URL in as an output of the build job
         # https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context
-        run: npx @percy/cli snapshot --base_url ${{needs.build.outputs.deploy_url}} --config snapshots.yml
+        run: npx @percy/cli snapshot --base-url ${{needs.build.outputs.deploy_url}} --config snapshots.yml
