@@ -18,7 +18,8 @@ a {
 	}
 }
 
-pre, code {
+pre,
+code {
 	font-family: 'Source Code Pro', monospace;
 }
 
@@ -29,7 +30,11 @@ kbd {
 	color: var.$red;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
 	font-family: var.$font_heading;
 	font-weight: 400;
 	letter-spacing: 0.04em;
@@ -48,7 +53,9 @@ h1 {
 	font-size: 2em;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
 	color: var.$darkpurple;
 }
 
@@ -65,23 +72,24 @@ hr {
 	}
 }
 
-blockquote {
+blockquote,
+aside {
 	@include mixins.shadow_bottom_right;
 
-	--shadow_size: 30px;
+	--shadow_size: 5px;
 	--shadow_colour: var(--heading_colour);
 	display: inline-block;
 	position: relative;
 	width: 90%;
 	max-width: max-content;
-	margin: 20px 0 50px;
-	padding: 40px 40px 40px 0;
+	margin: 10px 0;
+	padding: 10px 10px 10px 0;
 	color: var.$darkpurple;
 	color: var(--heading_colour);
-	font-size: 1.3em;
 	font-weight: 500;
 
-	&:before, &:after {
+	&:before,
+	&:after {
 		content: '';
 		position: absolute;
 		z-index: -1;
@@ -100,6 +108,14 @@ blockquote {
 		border-color: var(--heading_colour);
 		background: var.$white;
 	}
+}
+
+blockquote {
+	--shadow_size: 30px;
+
+	margin: 20px 0 50px;
+	padding: 40px 40px 40px 0;
+	font-size: 1.3em;
 
 	@media(min-width: 60em) {
 		margin-top: 50px;
