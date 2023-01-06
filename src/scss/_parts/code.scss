@@ -59,6 +59,7 @@ pre {
 				&:before {
 					content: 'HTML';
 					background: var.$orange;
+					color: var.$neutral;
 				}
 			}
 
@@ -66,12 +67,15 @@ pre {
 				&:before {
 					content: 'CSS';
 					background: var.$blue;
+					color: var.$neutral;
 				}
 			}
 
 			&[class*='scss'] {
 				&:before {
 					content: 'SCSS';
+					background: var.$pink;
+					color: var.$neutral;
 				}
 			}
 
@@ -96,88 +100,88 @@ pre {
 }
 
 pre {
-	.hljs {
+	code {
 		display: block;
 		color: var.$background;
 	}
 
-	[class*='hljs'] {
-		&[class$='comment'],
-		&[class$='quote'] {
+	code[class*='language-'] {
+		.comment,
+		.quote {
 			color: var.$grey;
 		}
 
-		&[class$='variable'],
-		&[class$='template-variable'],
-		&[class$='tag'],
-		&[class$='name'],
-		&[class$='selector-id'],
-		&[class$='selector-class'],
-		&[class$='regexp'],
-		&[class$='deletion'] {
+		.variable,
+		.template-variable,
+		.tag,
+		.name,
+		.selector-id,
+		.selector-class,
+		.regexp,
+		.deletion {
 			color: var.$pink;
 		}
 
-		&[class$='number'],
-		&[class$='built_in'],
-		&[class$='literal'],
-		&[class$='type'],
-		&[class$='params'],
-		&[class$='meta'],
-		&[class$='link'] {
+		.number,
+		.built_in,
+		.literal,
+		.type,
+		.params,
+		.meta,
+		.link {
 			color: var.$orange;
 		}
 
-		&[class$='attribute'] {
+		.attribute {
 			color: var.$yellow;
 		}
 
-		&[class$='string'],
-		&[class$='symbol'],
-		&[class$='bullet'],
-		&[class$='addition'],
-		&[class$='selector-pseudo'] {
+		.string,
+		.symbol,
+		.bullet,
+		.addition,
+		.selector-pseudo {
 			color: var.$green;
 		}
 
-		&[class$='title'],
-		&[class$='section'] {
+		.title,
+		.section {
 			color: var.$blue;
 		}
 
-		&[class$='keyword'],
-		&[class$='selector-tag'] {
+		.keyword,
+		.selector-tag {
 			color: var.$purple;
 		}
 
-		&[class$='emphasis'] {
+		.emphasis {
 			font-style: italic;
 		}
 
-		&[class$='strong'] {
+		.strong {
 			font-weight: bold;
 		}
 
 		@media screen and (-ms-high-contrast: active) {
-			&[class$='addition'],
-			&[class$='attribute'],
-			&[class$='built_in'],
-			&[class$='bullet'],
-			&[class$='comment'],
-			&[class$='link'],
-			&[class$='literal'],
-			&[class$='meta'],
-			&[class$='number'],
-			&[class$='params'],
-			&[class$='string'],
-			&[class$='symbol'],
-			&[class$='type'],
-			&[class$='quote'] {
+			.addition,
+			.attribute,
+			.built_in,
+			.bullet,
+			.comment,
+			.link,
+			.literal,
+			.meta,
+			.number,
+			.params,
+			.string,
+			.symbol,
+			.type,
+			.quote {
 				color: highlight;
 			}
 
-			&[class$='keyword'],
-			&[class$='selector-tag'] {
+			.keyword,
+			.selector-tag {
 				font-weight: bold;
 			}
 		}

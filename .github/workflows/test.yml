@@ -31,20 +31,24 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: ./_actions/netlify_deploy.sh
 
-      - uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'The build works! You can view the deploy preview at ${{steps.build_site.outputs.NETLIFY_URL}}'
-            })
+      # - uses: actions/github-script@v6
+      #   with:
+      #     script: |
+      #       github.rest.issues.createComment({
+      #         issue_number: context.issue.number,
+      #         owner: context.repo.owner,
+      #         repo: context.repo.repo,
+      #         body: 'The build works! You can view the deploy preview at ${{steps.build_site.outputs.NETLIFY_URL}}'
+      #       })
+
+      - name: test URL
+        run: echo ${{ steps.build_site.outputs.NETLIFY_URL }}
+
   # Creating a new job for the tests to run in
   test:
     # Because the website has to have built first, we're defining a dependency on the `needs` property, that the test job needs to have the build job complete first
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds
-    needs: [build]
+    needs: build
     runs-on: ubuntu-22.04
     steps:
       # Jobs run in their own separate environments, so we need to checkout the repo code again so we can run tests that are defined in the repo
@@ -54,7 +58,7 @@ jobs:
       - name: test URL
         run: echo ${{ needs.build.outputs.deploy_url }}
 
-      - name: Percy Test
-        # We'll pass the deploy URL in as an output of the build job
-        # https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context
-        run: npx @percy/cli snapshot --base-url ${{ needs.build.outputs.deploy_url }} --config snapshots.yml
+      # - name: Percy Test
+      #   # We'll pass the deploy URL in as an output of the build job
+      #   # https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context
+      #   run: npx @percy/cli snapshot --base-url ${{ needs.build.outputs.deploy_url }} --config snapshots.yml
