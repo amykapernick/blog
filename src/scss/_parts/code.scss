@@ -6,6 +6,7 @@ code {
 	font-size: 0.9em;
 	line-height: 1.5;
 	text-align: left;
+	white-space: pre-wrap;
 	hyphens: none;
 	tab-size: 4;
 }
@@ -51,7 +52,13 @@ pre {
 			&[class*='html'],
 			&[class*='css'],
 			&[class*='scss'],
-			&[class*='javascript'] {
+			&[class*='javascript'],
+			&[class*='json'],
+			&[class*='shell'],
+			&[class*='yaml'],
+			&[class*='yml'],
+			&[class*='markdown'],
+			&[class*='md'] {
 				padding-top: 1em;
 			}
 
@@ -86,6 +93,32 @@ pre {
 					color: var.$neutral;
 				}
 			}
+
+			&[class*='json'] {
+				&:before {
+					content: 'JSON';
+				}
+			}
+
+			&[class*='shell'] {
+				&:before {
+					content: 'Shell';
+				}
+			}
+
+			&[class*='yaml'],
+			&[class*='yml'] {
+				&:before {
+					content: 'YAML';
+				}
+			}
+
+			&[class*='markdown'],
+			&[class*='md'] {
+				&:before {
+					content: 'Markdown';
+				}
+			}
 		}
 	}
 }
@@ -117,6 +150,7 @@ pre {
 		.name,
 		.selector-id,
 		.selector-class,
+		.atrule,
 		.regexp,
 		.deletion {
 			color: var.$pink;
