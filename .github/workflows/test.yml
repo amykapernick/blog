@@ -54,6 +54,7 @@ jobs:
 
       - name: Percy Test
         env:
+          # To authenticate, Percy will look for the PERCY_TOKEN env variable, so we can pass the secret through as an environment variable similarly to in the Netlify script previously
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         # We'll pass the deploy URL in as an output of the build job
         # https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context

@@ -1,6 +1,20 @@
 #!/bin/bash
 
+# First we'll check if the p(roduction) flag has been set, and get the value of it if it has
+# https://pubs.opengroup.org/onlinepubs/9699919799/utilities/getopts.html
+while getopts p: flag
+do
+    case "${flag}" in
+        p) prod=${OPTARG};;
+    esac
+done
+
 COMMAND="netlify deploy --build --site ${NETLIFY_SITE_ID} --auth ${NETLIFY_AUTH_TOKEN} --json"
+
+# If the primary flag has been set, we'll append the --prod flag to the command, this tells Netlify to publish the built site
+if [ "$prod" = "true" ]; then
+    COMMAND="$COMMAND --prod"
+fi
 
 OUTPUT=$($COMMAND)
 
