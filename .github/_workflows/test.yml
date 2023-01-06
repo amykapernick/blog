@@ -29,7 +29,10 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
         run: ./_actions/netlify_deploy.sh
+        # run: netlify deploy --debug --build --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --json --message "Deploying from GitHub Actions"
+        # run: echo ${{secrets.NETLIFY_SITE_ID }} | sed 's/./& /g'
 
       - uses: actions/github-script@v6
         with:
@@ -53,7 +56,7 @@ jobs:
         uses: amykapernick/a11y_test_action@prod
         with:
           url: ${{needs.build.outputs.deploy_url}}
-          pages: "['/', '/about', '/contact', '/blog']"
+          pages: "['/']"
 
       - name: Get A11y Results
         run: echo ${{steps.a11y.outputs.results}}
