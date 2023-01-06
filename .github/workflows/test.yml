@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-22.04
+    # Because the testing job is different, we need to out the Netlify URL so we can access it in another job
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs
+    outputs:
+      deploy_url: ${{steps.build_site.outputs.NETLIFY_URL}}
     steps:
       - name: Checkout Repo Code
         uses: actions/checkout@v3
@@ -21,19 +25,12 @@ jobs:
         run: npm install
 
       - name: Deploy to Netlify
-        # If we add an ID to our step, it can be referred to elsewhere in our workflow, this ID must be unique
-        # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsid
         id: build_site
-        # For this step we also need to use some environment variables, which we're pulling in from GitHub Secrets
-        # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsenv
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        # This step will run a command in the terminal, which runs a custom script we'll create to build and deploy the site
         run: ./_actions/netlify_deploy.sh
 
-        # Once the site is build, we're going to use the GitHub Script package to add a comment to our PR, so that we know everything has built and so we can easily find the preview URL if we want to check something
-        # https://github.com/actions/github-script
       - uses: actions/github-script@v6
         with:
           script: |
@@ -43,3 +40,21 @@ jobs:
               repo: context.repo.repo,
               body: 'The build works! You can view the deploy preview at ${{steps.build_site.outputs.NETLIFY_URL}}'
             })
+  # Creating a new job for the tests to run in
+  test:
+    # Because the website has to have built first, we're defining a dependency on the `needs` property, that the test job needs to have the build job complete first
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds
+    needs: [build]
+    runs-on: ubuntu-22.04
+    steps:
+      # Jobs run in their own separate environments, so we need to checkout the repo code again so we can run tests that are defined in the repo
+      - name: Checkout Repo Code
+        uses: actions/checkout@v3
+
+      - name: Run Lighthouse Test
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          # We'll pass the deploy URL in as an output of the build job
+          # https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context
+          urls: |
+            ${{needs.build.outputs.deploy_url}}
