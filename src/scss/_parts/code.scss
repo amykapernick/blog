@@ -18,7 +18,7 @@ pre {
 	overflow: auto;
 	background: var.$neutral;
 
-	& > code[class*='language-'] {
+	&>code[class*='language-'] {
 		z-index: 1;
 
 		&::selection,
@@ -48,7 +48,10 @@ pre {
 				}
 			}
 
-			&[class*='html'], &[class*='css'], &[class*='scss'], &[class*='javascript'] {
+			&[class*='html'],
+			&[class*='css'],
+			&[class*='scss'],
+			&[class*='javascript'] {
 				padding-top: 1em;
 			}
 
@@ -76,6 +79,7 @@ pre {
 				&:before {
 					content: 'JS';
 					background: var.$yellow;
+					color: var.$neutral;
 				}
 			}
 		}
@@ -83,7 +87,7 @@ pre {
 }
 
 :not(pre) {
-	& > code {
+	&>code {
 		display: inline-block;
 		padding: 0 5px;
 		background: var.$white;
@@ -98,15 +102,29 @@ pre {
 	}
 
 	[class*='hljs'] {
-		&[class$='comment'], &[class$='quote'] {
-			color: var.$neutral_light_50;
+		&[class$='comment'],
+		&[class$='quote'] {
+			color: var.$grey;
 		}
 
-		&[class$='variable'], &[class$='template-variable'], &[class$='tag'], &[class$='name'], &[class$='selector-id'], &[class$='selector-class'], &[class$='regexp'], &[class$='deletion'] {
+		&[class$='variable'],
+		&[class$='template-variable'],
+		&[class$='tag'],
+		&[class$='name'],
+		&[class$='selector-id'],
+		&[class$='selector-class'],
+		&[class$='regexp'],
+		&[class$='deletion'] {
 			color: var.$pink;
 		}
 
-		&[class$='number'], &[class$='built_in'], &[class$='literal'], &[class$='type'], &[class$='params'], &[class$='meta'], &[class$='link'] {
+		&[class$='number'],
+		&[class$='built_in'],
+		&[class$='literal'],
+		&[class$='type'],
+		&[class$='params'],
+		&[class$='meta'],
+		&[class$='link'] {
 			color: var.$orange;
 		}
 
@@ -114,15 +132,21 @@ pre {
 			color: var.$yellow;
 		}
 
-		&[class$='string'], &[class$='symbol'], &[class$='bullet'], &[class$='addition'], &[class$='selector-pseudo'] {
+		&[class$='string'],
+		&[class$='symbol'],
+		&[class$='bullet'],
+		&[class$='addition'],
+		&[class$='selector-pseudo'] {
 			color: var.$green;
 		}
 
-		&[class$='title'], &[class$='section'] {
+		&[class$='title'],
+		&[class$='section'] {
 			color: var.$blue;
 		}
 
-		&[class$='keyword'], &[class$='selector-tag'] {
+		&[class$='keyword'],
+		&[class$='selector-tag'] {
 			color: var.$purple;
 		}
 
@@ -135,11 +159,25 @@ pre {
 		}
 
 		@media screen and (-ms-high-contrast: active) {
-			&[class$='addition'], &[class$='attribute'], &[class$='built_in'], &[class$='bullet'], &[class$='comment'], &[class$='link'], &[class$='literal'], &[class$='meta'], &[class$='number'], &[class$='params'], &[class$='string'], &[class$='symbol'], &[class$='type'], &[class$='quote'] {
+			&[class$='addition'],
+			&[class$='attribute'],
+			&[class$='built_in'],
+			&[class$='bullet'],
+			&[class$='comment'],
+			&[class$='link'],
+			&[class$='literal'],
+			&[class$='meta'],
+			&[class$='number'],
+			&[class$='params'],
+			&[class$='string'],
+			&[class$='symbol'],
+			&[class$='type'],
+			&[class$='quote'] {
 				color: highlight;
 			}
 
-			&[class$='keyword'], &[class$='selector-tag'] {
+			&[class$='keyword'],
+			&[class$='selector-tag'] {
 				font-weight: bold;
 			}
 		}
