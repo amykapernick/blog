@@ -6,7 +6,7 @@
 	padding: 0 20px;
 	list-style: none;
 
-	> li {
+	>li {
 		--shadow_colour: var(--colour);
 		margin: 0;
 		padding: 0;
@@ -45,7 +45,7 @@
 		position: relative;
 		margin: 5px;
 		padding: 5px 15px;
-		color: var.$neutral_light_50;
+		color: var.$grey;
 		font-family: var.$font_heading;
 		font-size: 1.5em;
 		font-weight: 500;
@@ -72,7 +72,8 @@
 			border: 2px solid transparent;
 		}
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			&:before {
 				border-color: var(--colour);
 			}
@@ -83,8 +84,8 @@
 h1.tag-page {
 	margin-top: 2em;
 	margin-bottom: 1em;
-	text-align: right;
 	padding-right: 50px;
+	text-align: right;
 }
 
 @media(min-width: 40em) {
@@ -94,7 +95,7 @@ h1.tag-page {
 		margin-top: 0;
 		padding: 0 50px;
 
-		> li {
+		>li {
 			position: relative;
 			flex: 1 1 auto;
 			width: 40%;
@@ -124,8 +125,9 @@ h1.tag-page {
 		}
 
 		&.even {
-			> li {
-				&:nth-child(1), &:nth-child(8) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(8) {
 					width: 100%;
 					margin: 0;
 					padding: 50px;
@@ -251,8 +253,10 @@ h1.tag-page {
 		}
 
 		&.odd {
-			> li {
-				&:nth-child(1), &:nth-child(4), &:nth-child(10) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(4),
+				&:nth-child(10) {
 					width: 100%;
 					margin: 0;
 					padding: 50px;
@@ -318,7 +322,10 @@ h1.tag-page {
 					}
 				}
 
-				&:nth-child(2), &:nth-child(3), &:nth-child(11), &:nth-child(12) {
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(11),
+				&:nth-child(12) {
 					.post {
 						margin-bottom: 40vw;
 
@@ -415,7 +422,7 @@ h1.tag-page {
 @media(min-width: 50em) {
 	.feed {
 		&.even {
-			> li {
+			>li {
 				&:nth-child(2) {
 					.post {
 						&:after {
@@ -495,7 +502,7 @@ h1.tag-page {
 		}
 
 		&.odd {
-			> li {
+			>li {
 				&:nth-child(n+5):nth-child(-n+9) {
 					.post {
 						padding-left: calc(300px + 20px);
@@ -512,7 +519,10 @@ h1.tag-page {
 					}
 				}
 
-				&:nth-child(2), &:nth-child(3), &:nth-child(11), &:nth-child(12) {
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(11),
+				&:nth-child(12) {
 					.post {
 						picture {
 							bottom: -250px;
@@ -529,7 +539,8 @@ h1.tag-page {
 					}
 				}
 
-				&:nth-child(2), &:nth-child(11) {
+				&:nth-child(2),
+				&:nth-child(11) {
 					margin-right: 50px;
 
 					.post {
@@ -544,7 +555,8 @@ h1.tag-page {
 					}
 				}
 
-				&:nth-child(3), &:nth-child(12) {
+				&:nth-child(3),
+				&:nth-child(12) {
 					align-self: start;
 					margin-left: 50px;
 
@@ -573,7 +585,7 @@ h1.tag-page {
 		--shadow_size: 30px;
 		padding: 0 5vw;
 
-		> li {
+		>li {
 			width: 25%;
 			margin: 40px 25px;
 
@@ -586,8 +598,9 @@ h1.tag-page {
 		}
 
 		&.even {
-			> li {
-				&:nth-child(1), &:nth-child(8) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(8) {
 					padding: 150px 5vw;
 
 					&:not(:first-child) {
@@ -655,8 +668,10 @@ h1.tag-page {
 		}
 
 		&.odd {
-			> li {
-				&:nth-child(1), &:nth-child(4), &:nth-child(10) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(4),
+				&:nth-child(10) {
 					padding: 150px 5vw;
 
 					&:not(:first-child) {
@@ -712,7 +727,10 @@ h1.tag-page {
 					}
 				}
 
-				&:nth-child(2), &:nth-child(3), &:nth-child(11), &:nth-child(12) {
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(11),
+				&:nth-child(12) {
 					&:nth-child(2n - 1) {
 						margin-top: 200px;
 
@@ -764,8 +782,9 @@ h1.tag-page {
 		padding: 0;
 
 		&.even {
-			> li {
-				&:nth-child(1), &:nth-child(8) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(8) {
 					padding: 150px 0;
 
 					&:before {
@@ -799,8 +818,10 @@ h1.tag-page {
 		}
 
 		&.odd {
-			> li {
-				&:nth-child(1), &:nth-child(4), &:nth-child(10) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(4),
+				&:nth-child(10) {
 					padding: 150px 0;
 
 					&:before {
@@ -838,8 +859,9 @@ h1.tag-page {
 @media(min-width: 80em) {
 	.feed {
 		&.even {
-			> li {
-				&:nth-child(1), &:nth-child(8) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(8) {
 					padding: 200px 0;
 
 					.post {
@@ -853,8 +875,10 @@ h1.tag-page {
 		}
 
 		&.odd {
-			> li {
-				&:nth-child(1), &:nth-child(4), &:nth-child(10) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(4),
+				&:nth-child(10) {
 					padding: 200px 0;
 
 					.post {
@@ -865,13 +889,17 @@ h1.tag-page {
 					}
 				}
 
-				&:nth-child(2), &:nth-child(11), &:nth-child(3), &:nth-child(12) {
+				&:nth-child(2),
+				&:nth-child(11),
+				&:nth-child(3),
+				&:nth-child(12) {
 					&:nth-child(2n) {
 						margin-top: 0;
 					}
 				}
 
-				&:nth-child(3), &:nth-child(12) {
+				&:nth-child(3),
+				&:nth-child(12) {
 					.post {
 						margin-top: 0;
 					}
@@ -888,8 +916,9 @@ h1.tag-page {
 @media(min-width: 1333.33px) {
 	.feed {
 		&.even {
-			> li {
-				&:nth-child(1), &:nth-child(8) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(8) {
 					&:before {
 						left: calc(-1 * (50vw - 600px));
 					}
@@ -916,8 +945,10 @@ h1.tag-page {
 		}
 
 		&.odd {
-			> li {
-				&:nth-child(1), &:nth-child(4), &:nth-child(10) {
+			>li {
+				&:nth-child(1),
+				&:nth-child(4),
+				&:nth-child(10) {
 					&:before {
 						left: calc(-1 * (50vw - 600px));
 					}

@@ -2,7 +2,6 @@
 title: Getting Started with Front End Testing
 date: 2020-01-04
 description: We all know that testing is important, your project can't be run unless all your unit and integration tests are written (and pass), but we often forget about testing the front end. There are so many different tests we need to be running on the front end - accessibility testing, performance testing, user testing, HTML validation, visual regression testing - it's hard to work out what you need to test for and where to start.
-external: https://www.javascriptjanuary.com/blog/getting-started-with-front-end-testing
 author: ./img/javascript-january.png
 categories: [Dev, Testing, Tools, 'Front End']
 featured:
