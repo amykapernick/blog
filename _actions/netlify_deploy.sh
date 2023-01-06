@@ -7,7 +7,7 @@ do
     esac
 done
 
-COMMAND="netlify deploy --debug --build --site ${NETLIFY_SITE_ID} --auth ${NETLIFY_AUTH_TOKEN} --json -m=${PR_TITLE}"
+COMMAND="netlify deploy --debug --build --site ${NETLIFY_SITE_ID} --auth ${NETLIFY_AUTH_TOKEN} --json"
 
 if [ "$prod" = "true" ]; then
     COMMAND="$COMMAND --prod"
