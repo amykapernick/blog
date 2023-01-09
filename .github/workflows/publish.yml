@@ -17,6 +17,12 @@ jobs:
         with:
           node-version: 16.x
 
+      - name: Add Issues from Comments
+        uses: "alstr/todo-to-issue-action@v4"
+        with:
+          AUTO_ASSIGN: true
+          CLOSE_ISSUES: true
+
       - name: Install Node Packages
         run: npm install
 

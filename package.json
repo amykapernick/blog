@@ -16,7 +16,7 @@
   "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "homepage": "https://blog.amyskapers.dev",
   "dependencies": {
-    "@astrojs/image": "^0.11.0",
+    "@astrojs/image": "^0.11.6",
     "@astrojs/markdown-remark": "^1.1.3",
     "@astrojs/rss": "^1.0.3",
     "@astrojs/sitemap": "^1.0.0",
@@ -32,6 +32,7 @@
     "remark-oembed": "^1.2.2",
     "remark-squeeze-paragraphs": "^5.0.1",
     "sass": "^1.55.0",
+    "sharp": "^0.31.3",
     "unist-util-visit": "^4.1.1"
   },
   "devDependencies": {

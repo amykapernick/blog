@@ -26,5 +26,7 @@ export default defineConfig({
 		],
 		extendDefaultPlugins: true,
 	},
-	integrations: [sitemap(), image()]
+	integrations: [sitemap(), image({
+		serviceEntryPoint: '@astrojs/image/sharp'
+	})]
 });
