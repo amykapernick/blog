@@ -1,9 +1,10 @@
 ---
+import { getImage } from "@astrojs/image";
+import { parseISO, format } from "date-fns";
 import Layout from "../partials/layout.astro";
 import SVG from "../parts/svg.astro";
-import { parseISO, format } from "date-fns";
-import slugify from "../utils/slugify";
 import Video from "../parts/video.astro";
+import slugify from "../utils/slugify";
 
 const content = {
 	...Astro.props.content,
@@ -13,7 +14,27 @@ const { title, date, categories, video } = content;
 
 content.title = `${title} | Amy's Blog`;
 
-// TODO: Setup a way to pass canonical tag to layout
+const { src: facebook } = await getImage({
+	src: `/img/${content?.featured?.src}`,
+	width: 1200,
+	height: 630,
+});
+
+const { src: twitter } = await getImage({
+	src: `/img/${content?.featured?.src}`,
+	width: 1200,
+	height: 675,
+});
+
+const { src: linkedin } = await getImage({
+	src: `/img/${content?.featured?.src}`,
+	width: 1200,
+	height: 627,
+});
+
+content.imageOg = facebook;
+content.imageLinkedin = linkedin;
+content.imageTwitter = twitter;
 ---
 
 <Layout content={content}>

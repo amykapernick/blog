@@ -41,6 +41,7 @@ const { frontmatter } = post;
 
 const postContent = {
 	...frontmatter,
+	slug,
 };
 
 if (frontmatter?.video && !postContent.categories.includes("video")) {

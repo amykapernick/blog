@@ -17,21 +17,18 @@ const {
 } = Astro.props.data;
 
 const image = featured?.src
-	? `../public/img/${featured.src}`
+	? `/img/${featured.src}`
 	: "/img/feature/placeholder.png";
 ---
 
 <article class="post">
-	<!-- <Picture
+	<Picture
 		src={image}
 		alt=""
 		formats={["avif", "webp", "jpg", "png"]}
 		widths={[300, 600, 800]}
 		aspectRatio="3:4"
-	/> -->
-	<picture>
-		<img src={`/img/${featured.src}`} alt="" />
-	</picture>
+	/>
 	<h2>
 		<a
 			href={external ? external : `/${slug}`}
