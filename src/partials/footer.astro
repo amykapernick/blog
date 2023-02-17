@@ -11,7 +11,7 @@ import socials from "../../_data/socials";
 			{
 				socials.map(({ url, icon, label }) => (
 					<li>
-						<a href={url} target="_blank">
+						<a href={url} target="_blank" rel="nofollow me">
 							<SVG name={`${icon}.svg`} />
 							<span class="sr-only">{label}</span>
 						</a>
