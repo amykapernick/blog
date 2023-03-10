@@ -6,7 +6,6 @@ categories: [Hardware, Keyboards, Toys]
 featured:
   src: 2023/keyboards/PXL_20230307_001427226.MP.jpg
 ---
-# Demystifying Mechanical Keyboards
 
 In recent years, we’ve started to see a lot more talking about mechanical keyboards, or at least I’ve definitely seen it happening a lot more with developers and in tech. And while this wasn’t a band wagon I was planning to jump onto, turns out a lot of the time mechanical keyboards ticked all the boxes that I wanted in a keyboard - full size, rechargeable, bluetooth and “nice” typing feel.
 
@@ -90,8 +89,6 @@ As we’ve already looked at, make sure the switches match the keycaps you’re 
 ### Keyboard Layout
 
 A lot of the parts of your keyboard layout can easily be adjusted on your computer, eg. if you have a different language keyboard or if you’re using it on a Windows or Mac (the `Ctrl` keys are generally in different places). Make sure you also know how many keys you need to get, whether you have a full sized layout (104 keys), 80% or ten-keyless (TKL) layout (87 keys) or a compact layout (61-84 keys). Do you need 2 `Ctrl` keys, do you have custom function keys? Are there extra media control keys? The last thing you need is to have a mis-matched key on an otherwise perfect keyboard!
-
----
 
 ## What do I have now?
 
