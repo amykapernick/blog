@@ -80,7 +80,7 @@ I've also continued to be involved with [Fenders](https://www.fenders.co/), as t
 
 While I believe supporting the community is important, and I'll always continue to be involved where I can, this year I was lucky enough to be publicly acknowledged for the work I do with my community, several times. During 2019 I was nominated for the [WiTWA Tech [+] 20 Awards](https://www.witwa.org.au/nominees) and became a [Twilio Champion](https://www.twilio.com/champions) and [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003595?fullName=Amy%20Kapernick). All of these were a bit of a shock as I've never felt like I met any of the requirements, but it was exciting to have other people remind me of everything I do for my community (and definitely a reminder to have to write them all down 😂).
 
-https://twitter.com/Amys_Kapers/status/1201255698786476032
+<a href="https://twitter.com/Amys_Kapers/status/1201255698786476032" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1201255698786476032.png" /></a>
 
 This year I've also continued to feed my conference addiction, with most of the time being there as a speaker, organiser or manning a booth (sometimes all of the above). While I've had the chance to see some interesting talks at these events, I've also had the chance to meet lots of amazing people (while getting stuck in the hallway track), and build on my network.
 
@@ -147,11 +147,11 @@ During the past 12 months, I've had the chance to meet so many amazing people, a
 
 By the time 2019 finished, I'd officially been working for myself fulltime for 2 years, and somehow I'm still able to pay my rent (mostly) on time! This has been an incredible achievement to me, especially considering the fact that I've lost a third of the year to travel (and a bit more to plague after the travel). But this year hasn't only been about the boring work projects, this year I've also got to work on some cool side projects, including tinkering around with machine learning and image recognition and building my Quokkabot
 
-https://twitter.com/twilio/status/1182056785332580353
+<a href="https://twitter.com/twilio/status/1182056785332580353" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1182056785332580353.png" /></a>
 
 A few months back, I had the chance to do a quick live demo at Twilio Superclass in Sydney, and decided to showcase their WhatsApp API and built a bot that would send you pictures of quokkas (if you asked for them). As with most side projects, this then escalated drastically and with lots of help from friends as I delved into the world of backend JavaScript, Machine Learning and image recognition I managed to get a working bot on WhatsApp that you can send an image to and it will tell you if it's a quokka (and is right most of the time). What was an idea for a short demo has now gone well and truly beyond that and it's been an adventure as I've had the chance to learn things I never would have considered.
 
-https://twitter.com/Amys_Kapers/status/1193231787784359937
+<a href="https://twitter.com/Amys_Kapers/status/1193231787784359937" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1193231787784359937.png" /></a>
 
 ---
 

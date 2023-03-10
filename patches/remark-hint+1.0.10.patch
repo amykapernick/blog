@@ -1,0 +1,15 @@
+diff --git a/node_modules/remark-hint/index.js b/node_modules/remark-hint/index.js
+index 0c754ce..e1b0e16 100644
+--- a/node_modules/remark-hint/index.js
++++ b/node_modules/remark-hint/index.js
+@@ -30,6 +30,10 @@ module.exports = () => (tree) => {
+       return node;
+     }
+ 
++    if (children.length <= 0) {
++      return node;
++    }
++
+     const [{ value, type }, ...siblings] = children;
+     if (type !== 'text') {
+       return node;

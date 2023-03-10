@@ -81,6 +81,15 @@ figcaption {
 	}
 }
 
+.static_tweet {
+	display: block;
+	max-width: 450px;
+	margin: 20px auto;
+	overflow: hidden;
+	border: 1px solid var.$grey;
+	border-radius: 40px;
+}
+
 @media(min-width: 40em) {
 	figure {
 		--shadow_size: 30px;

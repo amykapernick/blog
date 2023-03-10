@@ -21,7 +21,7 @@ This year the conference expanded to have four tracks (making it even more diffi
 
 To keep track of what was going on throughout the day, they also set up a tweet wall near the registration desk. This gave everyone the chance to see what others were tweeting about and provide a little health competition to get on the leaderboard. Unsurprisingly Michelle was well out in front for the whole day (and even scheduled tweets during her talk so she didn't lose her place), but I managed to keep my place in second throughout the entire day. Even DDD Perth didn't manage to overtake us, but they did finish in third place (although with only half as many tweets as Michelle). It was a group effort but we even managed to get #dddperth trending in Perth by the end of the opening keynote and in Australia by the end of the day!
 
-https://twitter.com/DDDPerth/status/1025558951172001793
+<a href="https://twitter.com/DDDPerth/status/1025558951172001793" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025558951172001793.png" /></a>
 
 ## [Towards a welcoming Web](https://t.co/BhWuXFzUC0) - [Karolina Szczur](https://thefox.is/)
 
@@ -39,7 +39,7 @@ Fixing the web isn't going to be easy, and we're all going to have to work toget
 
 ## What to do with our unconscious bias - [Ming Johanson](https://mingjohanson.com.au/)
 
-https://twitter.com/Amys_Kapers/status/1025583161286131713
+<a href="https://twitter.com/Amys_Kapers/status/1025583161286131713" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025583161286131713.png" /></a>
 
 I've seen Ming talk previously, and she does a fantastic job of talking about hard topics. This time she talked about biases, in particular our unconscious ones. We form our unconscious biases between the ages of 2 and 7, and we're heavily influenced by those around us (and not necessarily those particularly close to us.
 
@@ -53,13 +53,13 @@ We need to stop blaming, ignoring and finding fault in our lives, but instead ow
 
 ## Toxic Developers and You - [Patrik Affentranger](https://twitter.com/pzimat)
 
-https://twitter.com/Amys_Kapers/status/1025588645544177664
+<a href="https://twitter.com/Amys_Kapers/status/1025588645544177664" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025588645544177664.png" /></a>
 
 It was exciting to get to see Patrik give his first conference talk (as a fellow member of the Fenders community), and to see so much local support for him (although a few people looked at how many team members were in the room and questioned who the toxic dev was) with standing room only (and at least one person sitting on the floor).
 
 We've all worked with someone who is at least a little toxic, but what actually makes them so? Patrik started off by listing traits associated with toxic developers, they don't necessarily mean you're toxic but if you have several traits you might want to reassess a few things.
 
-https://twitter.com/Amys_Kapers/status/1025591034787459072
+<a href="https://twitter.com/Amys_Kapers/status/1025591034787459072" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025591034787459072.png" /></a>
 
 Remember just because someone is difficult, doesn't necessarily mean that they're toxic. Toxic devs make us feel like we don't know what we're talking about. They make us anxious, affect our sleep, make us doubt ourselves and can make us paranoid. Working with toxic devs can negatively impact our work, our motivation and our productivity.
 
@@ -75,7 +75,7 @@ And remember, people might be going through some other shit in their life, so th
 
 The work that Donna has done to make both the Perth community and her workplace better is incredible and so it's not really a surprise that she led her work to win the "Best Place to Work" award multiple years running. She talked about the difference between a manager and a leader, and why it's better for your company to have the latter.
 
-https://twitter.com/Amys_Kapers/status/1025601777310228480
+<a href="https://twitter.com/Amys_Kapers/status/1025601777310228480" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025601777310228480.png" /></a>
 
 Talking about the importance of emotional intelligence and actually grooming those in your team to one day replace you, it's no wonder that Donna has managed to get most of her friends to come and work with her, it definite;y sounds like an awesome place to work.
 
@@ -87,17 +87,17 @@ To finish up, Donna encouraged everyone to make it easier for teams to have the 
 
 It was super interesting to see Mandy's talk, as I did a similar one recently (we didn't plan it, we just happened to both have the same idea separately (kinda like Leibniz and Newton :D ).
 
-https://twitter.com/Amys_Kapers/status/1025631570286137344
+<a href="https://twitter.com/Amys_Kapers/status/1025631570286137344" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025631570286137344.png" /></a>
 
 Mandy talked about the issue prevelant in the industry today, where there isn't much value placed in front end developers who can't write Javascript. HTML is still changing quite a lot, and good semantic functional HTML is really important for your site to be used by a wide variety of software and devices like your Google Home and many reading apps like Pocket and Apple Reader.
 
-https://twitter.com/Amys_Kapers/status/1025632220915019776
+<a href="https://twitter.com/Amys_Kapers/status/1025632220915019776" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025632220915019776.png" /></a>
 
 Using her gorgeous dog as an example through most of her slides, Mandy demonstrated using a screen reader on a page that used semantic elements and on a page that just used divs hacked to perform as other elements. If anyone in the audience didn't realise it before, they knew then what a horrible experience unsemantic HTML gives to anyone using a screen reader or assistive technology.
 
 > When we don't give semantic cues in our web content, people using assistive technology will likely get stuck in a huge block of content, or worse leave
 
-https://twitter.com/Amys_Kapers/status/1025637082465628160
+<a href="https://twitter.com/Amys_Kapers/status/1025637082465628160" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025637082465628160.png" /></a>
 
 With the HTML standards that we have today, there is no need for us to reinvent the wheel, and there's probably an element out there that would suit our needs, and will do a lot of the work on functionality and styling with us.
 
@@ -107,5 +107,5 @@ To finish off the talk, Mandy delved into the mysterious world of metadata and g
 
 Giving every one of us something to take away, Mandy reminded us all of the importance of writing functional HTML, and why we need to respect those who don't know JavaScript (or at least know that it's not always the answer).
 
-https://twitter.com/battlepanda_au/status/1025752304325017600
+<a href="https://twitter.com/battlepanda_au/status/1025752304325017600" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025752304325017600.png" /></a>
 
