@@ -89,7 +89,7 @@ Estimates are a useful tool (when used properly), unfortunately sometimes they�
 
 Normally when people starting talking architecture, I get a little lost, I’m perfectly happy to leave that to someone else. Simon’s presentation was very well done however and I found myself able to follow and relate to the entire talk.
 
-https://twitter.com/Amys_Kapers/status/937523751003885568
+<a href="https://twitter.com/Amys_Kapers/status/937523751003885568" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/937523751003885568.png" /></a>
 
 We need to make sure that we’re planning ahead instead of just running at a problem head-first; but at the same time we also need to stop spending so much time planning at the start before we get into anything. Small iterations are great for helping to work through a project and get a better idea of issues that may arise quickly. We can plan for how things will work but often it doesn’t happen that way.
 
@@ -211,7 +211,7 @@ While Katrina mostly talked about her journey and what we don’t think about in
 
 One of the things that led me to Sandy’s talk, was how you manage to move from a career as a professional athlete, to a programmer, and she did not disappoint.
 
-https://twitter.com/Amys_Kapers/status/937940216257454081
+<a href="https://twitter.com/Amys_Kapers/status/937940216257454081" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/937940216257454081.png" /></a>
 
 Getting to the Olympics is obviously something that takes a lot of dedication, resilience and dedication, and thankfully that can then be useful in your life after the sport.
 
@@ -223,11 +223,11 @@ If you’re the best player on your team, you have less of a chance to learn fro
 
 This point also tied back into Heidi’s talk, in knowing when it’s time to leave. We don’t have to stay in the same team forever, and sometimes the change is what we need.
 
-https://twitter.com/Amys_Kapers/status/937945883450130433
+<a href="https://twitter.com/Amys_Kapers/status/937945883450130433" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/937945883450130433.png" /></a>
 
 The week before I went to YOW, I also got the chance to talk about Failure and my experiences with it. So it was great to see Sandy (and a few others) talking about a topic that’s really important and something we need to reassess our point of view on.
 
-https://twitter.com/Amys_Kapers/status/937946043420831745
+<a href="https://twitter.com/Amys_Kapers/status/937946043420831745" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/937946043420831745.png" /></a>
 
 All in all, Sandy’s talk gave us some excellent insights into surviving our careers and life, as well as a good chance to reminisce about some really bad hair choices with her photos. There were a few other points that I won’t repeat here (I’m trying to control my language on my blog), but I may include her slides below to share them.
 

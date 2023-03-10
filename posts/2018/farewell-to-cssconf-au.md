@@ -71,7 +71,7 @@ There are also various other methods of looking after your users, whether that b
 
 I'm a little biased when it comes to Julie's talk, she's an amazing part of the community we have in Perth and it was amazing to get to see her give her first conference talk in Melbourne (even better to see her nail it).
 
-https://twitter.com/Amys_Kapers/status/975905801519812608
+<a href="https://twitter.com/Amys_Kapers/status/975905801519812608" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/975905801519812608.png" /></a>
 
 Having spent a fair chunk of her career in accessibility, Julie went through some of the simple CSS tricks that we can use in our day-to-day development to not just make it better for people with vision impairments, but make it a better experience for everyone. More than 9% of Australians have some form of diminished vision and would benefit from (and appreciate) just a couple of small tweaks; and the rest of us would just appreciate it when trying to look at a site while outside in the sun or when there's a lot of glare.
 
@@ -88,7 +88,7 @@ a {
 
 We don't necessarily know who is going to be accessing our site and how they want to use it, so the best thing we can do as developers is to make sure that anyone who wants to do something weird with the site can do so (even if that means destroying the perfectly crafted colour scheme with a high-contrast mode).
 
-https://twitter.com/Amys_Kapers/status/975910032297549824
+<a href="https://twitter.com/Amys_Kapers/status/975910032297549824" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/975910032297549824.png" /></a>
 
 ## [Interaction of Colour Systems](https://speakerdeck.com/broccolini/color-systems)
 
@@ -96,7 +96,7 @@ https://twitter.com/Amys_Kapers/status/975910032297549824
 
 One of the things I admire most about the work that designers like Diana do is the attention to detail they have about the difference between different colours, the way they interact with each other and how different user groups might react to them.
 
-https://twitter.com/Amys_Kapers/status/975943750080872448
+<a href="https://twitter.com/Amys_Kapers/status/975943750080872448" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/975943750080872448.png" /></a>
 
 And lets not forget that she reminded us it's ok because everyone is like this when working from home 😂.
 
@@ -104,7 +104,7 @@ And lets not forget that she reminded us it's ok because everyone is like this w
 
 When coming up with a new colour system for Github, there were so many differing factors to take into account, including whether people would still recognise different buttons/sections/features when a colour was changed, whether there were too many colours being used on the site, whether they were accessible and the most important - how would the user base react to the change?
 
-https://twitter.com/Amys_Kapers/status/975950415110918144
+<a href="https://twitter.com/Amys_Kapers/status/975950415110918144" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/975950415110918144.png" /></a>
 
 ## [Effective Design and Engineering Collaboration](https://theresa.ma/cssconfau.pdf)
 
@@ -112,7 +112,7 @@ https://twitter.com/Amys_Kapers/status/975950415110918144
 
 Theresa's talk was really interesting from more of a psychological point of view and addressed the different issues you have communicating with a team and between teams, particularly when they are extremely large and span all across the globe. Working through this often means defining a "language" to be used (and no I don't mean English) and making sure everyone is on the same page.
 
-https://twitter.com/Amys_Kapers/status/975968243130155008
+<a href="https://twitter.com/Amys_Kapers/status/975968243130155008" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/975968243130155008.png" /></a>
 
 One of the biggest road blocks we have when approaching this situation is we see everyone else as "one of the others", someone who we don't know and assume is probably doing it wrong or is the source of confusion. Challenging us to meet some of these people we don't know at work, Theresa walked us through her journey through developing a more standard language at Yelp.
 
@@ -128,7 +128,7 @@ We need to start playing nicely as a team (and with other teams), if we work tog
 
 I've started this approach to conferences where I read the talk descriptions right back at the beginning when I get my ticket, but then I don't read them again. By the time I get to the conference I've usually forgotten what the talk was about (unless the title is really memorable or suggestive) and I can go in with an open mind and see what happens. I'd spoken to Ivana a couple of times before her talk and hadn't discussed what she was talking about so I was so happy to be blown away by her presentation.
 
-https://twitter.com/Amys_Kapers/status/975975535456108544
+<a href="https://twitter.com/Amys_Kapers/status/975975535456108544" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/975975535456108544.png" /></a>
 
 With the web changing so quickly and so many lines between languages and jobs being blurred, it's getting hard to define what role we perform each day. Am I a front-end developer, a CSS developer, a JS developer, Full-stack, UX/UI, designers, developer, engineer, the list goes on and on (this is why I've started listing my job title as "Front End Jedi" 😂)
 

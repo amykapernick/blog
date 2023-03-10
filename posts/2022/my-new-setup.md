@@ -11,13 +11,13 @@ Over the new year, we moved house (because that isn’t a stressful enough time 
 
 This is partially a chance to brag about my new desk and insist that I’m doing better at blogging this year, but also a chance to show what I’m using and how I did this. Most of this I posted on this Twitter thread, but this goes a bit more in-depth into my choices and why.
 
-https://twitter.com/Amys_Kapers/status/1477489907358568449
+<a href="https://twitter.com/Amys_Kapers/status/1477489907358568449" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1477489907358568449.png" /></a>
 
 ## The Desk
 
 When I first started looking at upgrading my desk, I reached out to the collective hive mind on the internet, looking for a standing desk that was **available in Australia** (the disadvantage of having so many international friends is I can’t get a bunch of things, or shipping costs more than my car), as well as being electric and having customisable presets available for heights.
 
-https://twitter.com/Amys_Kapers/status/1472714362439700481
+<a href="https://twitter.com/Amys_Kapers/status/1472714362439700481" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1472714362439700481.png" /></a>
 
 I got a heap of recommendations, with the top two suggestions being [Zen Space Desks](https://www.zenspacedesks.com.au/) and [Desky](https://desky.com.au/) (both of which are actually based in Brisbane, Australia as well). Both were around the same price range, and for most of the features they were the same (you can see [my full comparison here](https://www.notion.so/Desks-64d31835ad824e66a95274cebd79869c), prices and availability may have changed). Rather than just getting a desk I specifically looked at:
 

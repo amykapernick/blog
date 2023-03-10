@@ -33,7 +33,7 @@ Most of the time, especially when starting, it’s easiest to buy a keyboard tha
 - Do you want additional keys for media controls, or a volume slider/dial?
 - Does it only allow use on one device or can it be connected to multiple devices at once or at the flick of a switch?
 
-![PXL_20230307_003324745.MP.jpg](2023/keyboards/PXL_20230307_003324745.MP.jpg)
+![PXL_20230307_003324745.MP.jpg](/img/2023/keyboards/PXL_20230307_003324745.MP.jpg)
 
 ### Your Preferences
 
@@ -51,7 +51,7 @@ I came across The PNK Stuff when looking for a keyboard for my sister’s birthd
 
 Working out which switches to get was something I found a bit stressful, and it definitely helps to try a few different options and work out what you like. My Keychron keyboard I got brown switches which were described as gentle (not clicky), but still tactile (I can feel the key press, that’s the nice feeling I’m after), this time around I’ve gotten blue switches (didn’t get a choice) and they’re definitely the clicky you associate with a mechanical keyboard, but something I’ll likely replace soon.
 
-![PXL_20230310_074225658.MP.jpg](2023/keyboards/9c49150b-4f03-48aa-be35-410df8f8886e/PXL_20230310_074225658.MP.jpg)
+![PXL_20230310_074225658.MP.jpg](/img/2023/keyboards/PXL_20230310_074225658.MP.jpg)
 
 ### Types of Switches
 
@@ -73,7 +73,7 @@ Most of the time you’ll be dealing with normal profile switches, but you can a
 
 While technically all switches can be swapped out, the introduction of hot swappable keyboards and switches has made it much easier. This means rather than soldering switches to the keyboard, they are plugged into place with pins connecting to the board without solder, and are then easier to swap out and change. 
 
-https://twitter.com/drpoindexter/status/1634059291761037312?s=20
+<a target="_blank" href="https://twitter.com/drpoindexter/status/1634059291761037312"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1634059291761037312.png" /></a>
 
 Hot swappability is super useful when you’re trying things out and changing the switches before you know what you want, and also make it easier if you want to combine multiple types of switches. For example, maybe you want your function keys to be really clicky, your space bar to be quiet and the rest of your keyboard to be tactile. Or maybe you’re just like me and really shouldn’t be trusted with a soldering iron 🤣.
 
@@ -81,7 +81,7 @@ Hot swappability is super useful when you’re trying things out and changing th
 
 The final touch to our keyboard, and the part where we can most express who we are as computer users, the keycaps are probably the easiest thing to swap out on a whim or when you feel like a change.
 
-![PXL_20230310_074345883.MP.jpg](2023/keyboards/PXL_20230310_074345883.MP.jpg)
+![PXL_20230310_074345883.MP.jpg](/img/2023/keyboards/PXL_20230310_074345883.MP.jpg)
 
 ### Switch Compatibility
 
@@ -99,4 +99,4 @@ By the end of writing this post, I now have a big long list of things I want to 
 
 For now though, I have a [Bluetooth keyboard](https://www.thepnkstuff.com/products/gaming-typewriter-bluetooth-keyboard-and-mouse-set?variant=41617371070517) (which is actually a Xinmeng RF968 keyboard), with knockoff Cherry MX blue switches and [white typewriter style keycaps](https://www.thepnkstuff.com/products/typewriter-keycap-set?variant=32101229690933). It’s hot swappable so I foresee some new brown tactile switches as I’m not a fan of the blue clicky ones.
 
-![PXL_20230310_074345883.MP.jpg](2023/keyboards/PXL_20230307_033704104.MP.jpg)
+![PXL_20230310_074345883.MP.jpg](/img/2023/keyboards/PXL_20230307_033704104.MP.jpg)
