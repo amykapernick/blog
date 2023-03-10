@@ -23,7 +23,7 @@ fs.readdir(dir, (err, files) => {
 
 				const getContent = async (match, p1, p2, p3) => {
 					let post
-					return fetch('https://hook.eu1.make.com/bbzndk8nqa23u2w2vyi9rmjuvj1836tm', {
+					return fetch('{webhook_url}', {
 						method: 'post',
 						body: JSON.stringify({ tweetId: p3 }),
 						headers: { 'Content-Type': 'application/json' }
