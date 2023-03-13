@@ -58,7 +58,11 @@ Most of the time you’re looking at three different kinds of switches - linear,
 
 ### Styles of Switches
 
-While there are a lot of similarities, you need to make a decision about the style of switch you’re getting as they’re not always compatible with each other and can require different keycaps. The two most common styles of switches are [Cherry and Gateron](https://www.keychron.com/blogs/news/gateron-switches-vs-cherry-switches). A lot of them won’t make a huge difference until you’re deep down the rabbit hole, but it’s worth knowing what you’ve got and making sure it works with your keyboard and keycaps.
+While there are a lot of similarities, you need to make a decision about the style of switch you’re getting as they’re not always compatible with each other and can require different keycaps. ~~The two most common styles of switches are [Cherry and Gateron](https://www.keychron.com/blogs/news/gateron-switches-vs-cherry-switches)~~. 
+
+!> Correction: Cherry and Gateron are the same style of switch, and can most of the time be used interchangeably. Thanks for the correction Eumir!
+
+A lot of them won’t make a huge difference until you’re deep down the rabbit hole, but it’s worth knowing what you’ve got and making sure it works with your keyboard and keycaps.
 
 ### Switch Stems
 
@@ -81,6 +85,12 @@ Hot swappability is super useful when you’re trying things out and changing th
 The final touch to our keyboard, and the part where we can most express who we are as computer users, the keycaps are probably the easiest thing to swap out on a whim or when you feel like a change.
 
 ![PXL_20230310_074345883.MP.jpg](/img/2023/keyboards/PXL_20230310_074345883.MP.jpg)
+
+### Keycap Profiles
+
+!> Thanks to Eumir for his point on a quick chat about keycap profiles.
+
+Similarly to switches, keycaps also come in multiple different profiles (see next on compatible switch and keycap profile combiantions). You can get high profile keycaps, low profile and a bunch of in between options, apart from making sure they fit on your switches it mostly comes down to your individual preference. Most of the time your keycaps won't be all flat either, have a look at your current keyboard, unless it's a SUPER low profile one your keycaps probably aren't completely flat, they curve and tilt to be easier to reach depending on where the keys sit.
 
 ### Switch Compatibility
 
