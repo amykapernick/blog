@@ -1,5 +1,5 @@
 ---
-title: Demystifying Bluetooth Keyboards
+title: Demystifying Mechanical Keyboards
 date: 2023-03-10
 description: The problem with mechanical keyboards though was there seemed to be a lot of jargon around it, and most of the time I wasn’t confident if I could buy keys that would fit on a certain keyboard, or whether I could easily change things if I wanted. Overwhelmed by choice and options, and terms like Cherry MX, hot-swappable, clicky tactile, I didn’t want to own up to being confused and ask for help.
 categories: [Hardware, Keyboards, Toys]
