@@ -16,6 +16,12 @@ import formatHeadings from "../utils/toc";
 			&:before, &:after {
 				content: normal;
 			}
+
+			h2 {
+				&:after {
+					content: normal;
+				}
+			}
 		}
 	}
 
@@ -50,25 +56,22 @@ import formatHeadings from "../utils/toc";
 		}
 
 		h2 {
+			color: currentColor;
 			margin-top: 0;
 			font-size: 1.2em;
-			
-			&:after {
-				content: normal;
-			}
 		}
 	}
 
 	button {
 		margin: 0;
-		background: var.$purple_bright;
-		border: 2px solid var.$purple_bright;
-		color: var.$white;
+		background: var(--colour);
+		border: 2px solid var(--colour);
+		color: var(--text);
 		cursor: pointer;
 
 		&:hover {
-			background: var.$white;
-			color: var.$purple_bright;
+			background: var(--text);
+			color: var(--colour);
 		}
 
 		.close {
@@ -112,6 +115,7 @@ import formatHeadings from "../utils/toc";
 					content: '';
 					width: 100%;
 					transform: none;
+					border-color: var(--colour);
 				}
 
 				&:before {
