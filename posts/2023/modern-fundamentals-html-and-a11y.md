@@ -10,12 +10,9 @@ featured:
 
 In this series of blog posts we’re going to be looking at some of the fundamentals we need to know as modern front end developers. These fundamentals are framework agnostic, if you’re building it for the web you should have an understanding of these concepts.
 
----
-
 To get started we’re looking at HTML (HyperText Markup Language) which is literally the foundation of the web. No matter what language or framework you’re building, it’ll all render out to HTML in the browser (unless you’re building in [Flash](https://developer.mozilla.org/en-US/docs/Glossary/Adobe_Flash), but that’s a completely different conversation). If we look at HTML as our foundation, we need to make sure we have a good solid foundation to our websites otherwise it’s going to make everything else that we build on top that much harder, so it’s important to start strong. It’s because of this that we’re going to look at the importance of Semantic HTML, the most solid foundation we can build.
 
 > Semantic HTML introduces meaning to the content inside an element
-> 
 
 The way that semantic HTML introduces meaning to content is [similar to how TypeScript introduces meaning to the values and functions we have inside JavaScript](https://medium.com/@mandy.michael/understanding-why-semantic-html-is-important-as-told-by-typescript-bd71ad41e6c4), by using a semantic HTML element we’re able to define the type of content we’re using, rather than it being a generic `any` value. We can technically use generic container elements like `div` and `span` for displaying all our content, then add a whole bunch of code on top of it to get it to look and function the way we want it to, but if we choose a semantic element instead, it’s literally built in!
 

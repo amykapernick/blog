@@ -2,7 +2,7 @@
 @use '../mixins.scss';
 
 .content {
-	--heading_colour: #{var.$darkpurple};
+	--heading_colour: #{var.$purple_bright};
 	--heading_underline: #{var.$underline_darkpurple};
 
 	padding: 0 20px;
@@ -18,7 +18,7 @@
 	}
 
 	h2 {
-		color: var.$darkpurple;
+		color: var.$purple_bright;
 		color: var(--heading_colour);
 
 		&:after {
