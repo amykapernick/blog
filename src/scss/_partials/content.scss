@@ -1,7 +1,8 @@
 @use '../variables.scss' as var;
+@use '../mixins.scss';
 
 .content {
-	--heading_colour: #{var.$darkpurple};
+	--heading_colour: #{var.$purple_bright};
 	--heading_underline: #{var.$underline_darkpurple};
 
 	padding: 0 20px;
@@ -17,7 +18,7 @@
 	}
 
 	h2 {
-		color: var.$darkpurple;
+		color: var.$purple_bright;
 		color: var(--heading_colour);
 
 		&:after {
@@ -54,7 +55,8 @@
 			z-index: -1;
 			top: -7px;
 			bottom: 0;
-			left: -20px;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 100vw;
 			background: var.$blue;
 			background: var(--colour);
@@ -85,51 +87,11 @@
 			}
 		}
 
-		&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-			position: relative;
+		@include mixins.post_header_background {
 			margin-top: 0;
-			margin-bottom: 2em;
-			color: var.$white;
-			color: var(--text);
 
-			a {
-				color: inherit;
-			}
-
-			&:before {
-				content: '';
-				position: absolute;
-				z-index: -1;
-				top: -1.5em;
-				bottom: -1em;
-				left: -20px;
-				width: 100vw;
-				background: var.$blue;
-				background: var(--colour);
-			}
-
-			&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-				position: relative;
+			@include mixins.post_header_background {
 				margin-top: -1em;
-				margin-bottom: 2em;
-				color: var.$white;
-				color: var(--text);
-
-				a {
-					color: inherit;
-				}
-
-				&:before {
-					content: '';
-					position: absolute;
-					z-index: -1;
-					top: -1.5em;
-					bottom: -1em;
-					left: -20px;
-					width: 100vw;
-					background: var.$blue;
-					background: var(--colour);
-				}
 			}
 		}
 	}
@@ -145,6 +107,25 @@
 			margin: 0 auto;
 		}
 	}
+
+	blockquote {
+		cite {
+			display: block;
+			font-weight: 400;
+			font-size: italic;
+			margin-top: 1em;
+			text-align: right;
+
+			&:before {
+				content: '- ';
+				
+			}
+	
+			a {
+				font-weight: inherit;
+			}
+		}
+	}
 }
 
 @media(min-width: 40em) {
@@ -153,22 +134,6 @@
 
 		header {
 			padding-top: 50px;
-
-			&:before {
-				left: -50px;
-			}
-
-			&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-				&:before {
-					left: -50px;
-				}
-
-				&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-					&:before {
-						left: -50px;
-					}
-				}
-			}
 		}
 	}
 }
@@ -189,22 +154,6 @@
 			h1 {
 				font-size: 3.5em;
 			}
-
-			&:before {
-				left: -10vw;
-			}
-
-			&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-				&:before {
-					left: -10vw;
-				}
-
-				&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-					&:before {
-						left: -10vw;
-					}
-				}
-			}
 		}
 	}
 }
@@ -218,24 +167,6 @@
 		h2 {
 			&:after {
 				background-size: auto 7px;
-			}
-		}
-
-		header {
-			&:before {
-				left: calc(500px - 50vw);
-			}
-
-			&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-				&:before {
-					left: calc(500px - 50vw);
-				}
-
-				&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote) {
-					&:before {
-						left: calc(500px - 50vw);
-					}
-				}
 			}
 		}
 	}

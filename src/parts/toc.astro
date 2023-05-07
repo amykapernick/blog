@@ -1,0 +1,231 @@
+---
+import formatHeadings from "../utils/toc";
+	const { headings } = Astro.props
+	const toc = formatHeadings(headings)
+---
+
+<style lang="scss">
+	@use '../scss/variables.scss' as var;
+	@use '../scss/mixins.scss';
+
+	:global(.content) {
+		aside.toc {
+			color: inherit;
+			position: fixed;
+
+			&:before, &:after {
+				content: normal;
+			}
+		}
+	}
+
+	.toc {
+		background: var.$background;
+		bottom: 20px;
+		right: 20px;
+		z-index: 50;
+		padding: 5px;
+		text-align: right;
+		max-width: 300px;
+		width: auto;
+
+		&.open {
+			padding: 20px 20px 5px;
+
+			.items, h2 {
+				display: block;
+			}
+
+			button {
+				margin: 0 -15px 0 0;
+
+				.open {
+					display: none;
+				}
+
+				.close {
+					display: block;
+				}
+			}
+		}
+
+		h2 {
+			margin-top: 0;
+			font-size: 1.2em;
+			
+			&:after {
+				content: normal;
+			}
+		}
+	}
+
+	button {
+		margin: 0;
+		background: var.$purple_bright;
+		border: 2px solid var.$purple_bright;
+		color: var.$white;
+		cursor: pointer;
+
+		&:hover {
+			background: var.$white;
+			color: var.$purple_bright;
+		}
+
+		.close {
+			display: none;
+		}
+
+	}
+
+	.items, h2 {
+		display: none;
+		text-align: left;
+	}
+
+	.items {
+		padding-left: 1em;
+
+		a {
+			font-weight: inherit;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		ul {
+			padding-left: 1em;
+		}
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
+
+	@media(min-width: 90em) {
+		:global(.content) {
+			aside.toc {
+				--shadow_size: 20px;
+				
+				&:before, &:after {
+					content: '';
+					width: 100%;
+					transform: none;
+				}
+
+				&:before {
+					top: var(--shadow_size);
+					left: var(--shadow_size);
+				}
+
+				&.open {
+					&:before, &:after {
+						content: normal;
+					}
+				}
+			}
+		}
+
+		.toc {
+			@include mixins.shadow_bottom_right;
+
+			background: var.$background;
+			bottom: 50px;
+			padding: 10px 10px 5px;
+			width: calc(50vw - 500px - 40px);
+			right: auto;
+			left: calc(1000px + (50vw - 500px) + 20px);
+			text-align: left;
+
+			.items, h2 {
+				display: block;
+			}
+
+			button {
+				margin: 0 0 0 -5px;
+
+				.open {
+					display: none;
+				}
+
+				.close {
+					display: block;
+				}
+			}
+
+			&.open {
+				padding: 5px;
+				width: auto;
+
+				.items, h2 {
+					display: none;
+				}
+				
+				button {
+					margin: 0;
+
+					.open {
+						display: block;
+					}
+
+					.close {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	
+	@media(min-width: 100em) {
+		.toc {
+			left: calc(1000px + (50vw - 500px) + 40px);
+			width: calc(50vw - 500px - 60px);
+		}
+	}
+</style>
+
+<aside id="toc" class="toc">
+	<h2>Table of Contents</h2>
+	<ul class="items">
+		<li>
+			<a href="#main">Start</a>
+		</li>
+		{toc.map(({heading, link, items}) => (
+			<li>
+				<a href={`#${link}`}>{heading}</a>
+				{items && (
+					<ul>
+						{items.map(i => (
+							<li>
+								<a href={`#${i.link}`}>{i.heading}</a>
+							</li>
+						))}
+					</ul>
+				)}
+			</li>
+		))}
+	</ul>
+	<button>
+		<span class="open">☰</span>
+		<span class="close">🗙</span>
+		<span class="sr-only">Toggle Table of Contents</span>
+	</button>
+</aside>
+
+<script>
+	const toggleToc = () => {
+		const toc = document.querySelector('#toc')
+		toc.classList.toggle('open')
+	}
+
+	document.querySelector('#toc button').addEventListener('click', () => {
+		toggleToc();
+	})
+
+	document.querySelectorAll('#toc .items a').forEach(link => {
+		link.addEventListener('click', () => {
+			toggleToc();
+		})
+	})
+</script>

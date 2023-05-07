@@ -11,7 +11,7 @@ body {
 }
 
 a {
-	color: var.$darkpurple;
+	color: var.$purple_bright;
 
 	&:hover {
 		text-decoration: none;
@@ -56,7 +56,7 @@ h1 {
 h2,
 h3,
 h4 {
-	color: var.$darkpurple;
+	color: var.$purple_bright;
 }
 
 hr {
@@ -84,7 +84,7 @@ aside {
 	max-width: max-content;
 	margin: 10px 0;
 	padding: 10px 10px 10px 0;
-	color: var.$darkpurple;
+	color: var.$purple_bright;
 	color: var(--heading_colour);
 	font-weight: 500;
 
@@ -104,7 +104,7 @@ aside {
 		top: 0;
 		right: 0;
 		bottom: 0;
-		border: 1.5px solid var.$darkpurple;
+		border: 1.5px solid var.$purple_bright;
 		border-color: var(--heading_colour);
 		background: var.$white;
 	}
@@ -116,6 +116,7 @@ blockquote {
 	margin: 20px 0 50px;
 	padding: 40px 40px 40px 0;
 	font-size: 1.3em;
+
 
 	@media(min-width: 60em) {
 		margin-top: 50px;

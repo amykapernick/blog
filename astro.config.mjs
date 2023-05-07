@@ -12,7 +12,7 @@ export default defineConfig({
 		rehypePlugins: [
 			[externalLinks, { rel: ['noopener', 'noreferrer'], target: '_blank' }],
 			[rehypeFigure, { allImages: true, useTitle: true }],
-			'rehype-picture'
+			'rehype-picture',
 		],
 		remarkPlugins: [
 			['remark-oembed', { syncWidget: true, asyncImg: true }],
@@ -22,7 +22,7 @@ export default defineConfig({
 				}
 			}],
 			'remark-hint',
-			'remark-squeeze-paragraphs'
+			'remark-squeeze-paragraphs',
 		],
 		extendDefaultPlugins: true,
 	},

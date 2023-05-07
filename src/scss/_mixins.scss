@@ -68,3 +68,31 @@
 		left: var(--shadow_size);
 	}
 }
+
+@mixin post_header_background {
+	& + *:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote):not(hr) {
+		position: relative;
+		margin-bottom: 2em;
+		color: var.$white;
+		color: var(--text);
+
+		a {
+			color: inherit;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: -1.5em;
+			bottom: -1em;
+			left: 50%;
+			width: 100vw;
+			transform: translateX(-50%);
+			background: var.$blue;
+			background: var(--colour);
+		}
+
+		@content;
+	}
+}

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/post.astro";
+import TableOfContents from '../parts/toc.astro'
 
 export async function getStaticPaths() {
 	const posts = await Astro.glob("../../posts/**/*.md");
@@ -48,9 +49,13 @@ if (frontmatter?.video && !postContent.categories.includes("video")) {
 	postContent.categories.push("video");
 }
 
+const headings = post.getHeadings()
+
+
 const Content = post.Content;
 ---
 
 <Layout content={postContent}>
+	{frontmatter?.toc && <TableOfContents {headings} />}
 	<Content />
 </Layout>
