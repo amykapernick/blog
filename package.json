@@ -35,7 +35,6 @@
     "remark-hint": "^1.0.10",
     "remark-oembed": "^1.2.2",
     "remark-squeeze-paragraphs": "^5.0.1",
-    "remark-toc": "^8.0.1",
     "sass": "^1.58.3",
     "sharp": "^0.31.3",
     "unist-util-visit": "^4.1.2"
