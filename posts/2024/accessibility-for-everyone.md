@@ -10,16 +10,17 @@ featured:
 In a world that relies more and more on technology to go about our everyday lives, we as the creators of these technologies face an important responsibility to ensure that we’re not excluding those that live around us and want to use what we’re creating.
 
 > The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.
-- Tim Berners-Lee
-([Accessibility - W3C](http://www.w3.org/standards/webdesign/accessibility))
-> 
+>
+> \- Tim Berners-Lee
+> ([Accessibility - W3C](http://www.w3.org/standards/webdesign/accessibility)) 
 
 But what does that actually mean, and in particular what does that mean for us? It means that when we create technologies, whether that’s software, hardware or something else entirely, **anyone** can interact with it and use it, using whatever means they prefer and given whatever capabilities they have. It means the internet, the technologies, the solutions we’re creating are made for everyone and with everyone in mind.
 
 ## Why is Accessibility Important?
 
 > For better or worse, the people who design the touchpoints of society determine who can participate and who is left out, often unwittingly
-- Kat Holmes, *Mismatch: How Inclusion Shapes Design*
+> 
+> \- Kat Holmes, *Mismatch: How Inclusion Shapes Design*
 > 
 
 Ignoring the fact that by building an non-accessible product we’re excluding people around us, studies have shown that we can only benefit from making things more accessible. A study by the Diversity Council of Australia and Suncorp in found that inclusive teams and workplaces have a drastic increase in employee satisfaction, provided better experiences to their customers, innovated  more, were more effective and were more likely to stay in the company, with some of these increasing by up to 19 times compared with previous performance. 
@@ -27,18 +28,18 @@ Ignoring the fact that by building an non-accessible product we’re excluding p
 We’re also seeing drastic changes to legislation and regulations around accessibility and inclusion, with countries all over the world updating to ensure that as technology becomes more intermingled with our day-to-day, all of their citizens are being able to take advantage of these new conveniences. This means it’s not a case of if, but when, we’re going to be required to make sure that what we create is accessible to **all** our users. And the secret is it’s much easier to make these changes and improvements earlier on, rather than trying to band aid a fix later on.
 
 > Every inaccessible website tells [people with an impairment] *“you aren’t welcome in this world”*
-If you don’t know whether your website or app is accessible, it’s not. Start learning.
-- Larene Le Gassick
-[Twitter](https://twitter.com/LareneLg/status/1270578058714443776)
+> If you don’t know whether your website or app is accessible, it’s not. Start learning.
 > 
+> \- Larene Le Gassick
+> [Twitter](https://twitter.com/LareneLg/status/1270578058714443776)
+
 
 ## Who Benefits from Accessibility?
 
 Now that we’ve established that accessibility is important, the next question we have to ask is who is benefiting from these improvements that we make? Who are we keeping in mind? When we think about people accessibility we think of impairments, most often people who are blind or deaf or people who use wheelchairs or have missing limbs, but these are only a fraction of the people who benefit from accessible products.
 
-![https://inclusive.microsoft.design/](/img/dev/a11y/impairments.png)
+![Line drawings of someone with a missing arm, someone in a wheelchair and a blind person using a cane](/img/dev/a11y/impairments.png "https://inclusive.microsoft.design/")
 
-https://inclusive.microsoft.design/
 
 But looking at just these people initially, the World Bank estimates that 1 billion people, that’s [15% of the global population, have some form of permanent impairment](https://www.worldbank.org/en/topic/disability) or disability, that’s a lot of people to exclude from our products. Taking into account supportive friends and family of these individuals (because they typically won’t support a company that excludes people they care about), that’s [$13 trillion in disposable income](https://www.forbes.com/sites/carolinecasey/2023/02/15/disability-inclusion-means-action/) each year, which results in a lot of lost potential revenue because of this exclusion.
 
@@ -48,9 +49,7 @@ When we initially think about impairments, we’re generally only thinking about
 - **Temporary** - not likely to be resolved quickly, but will resolve in the short term
 - **Situational** - result of the situation alone, can be resolved by leaving it
 
-![https://inclusive.microsoft.design/](/img/dev/a11y/impairment_types.png)
-
-https://inclusive.microsoft.design/
+![Line drawings of a person with a missing arm for permanent impairments, someone with a broken arm for temporary impairments and someone holding a child for situational impairments](/img/dev/a11y/impairment_types.png "https://inclusive.microsoft.design/")
 
 These impairments are further broken down into categories:
 
@@ -61,9 +60,8 @@ These impairments are further broken down into categories:
 
 Each category affects how people use technology in different ways, some people may interact with it differently, some may consume content differently, some may have difficulty processing information in certain formats and some may prefer to have extra functionality disabled to make things easier for them.
 
-![https://inclusive.microsoft.design/](/img/dev/a11y/impairment_categories.png)
+![Line drawing of an ear for hearing impairments, an eye for vision impairments, a broken arm for mobility impairments and a brain for cognitive impairments](/img/dev/a11y/impairment_categories.png "https://inclusive.microsoft.design/")
 
-https://inclusive.microsoft.design/
 
 In the end, who is actually going to benefit from the accessibility improvements that we make? Everyone. Taking into account all the temporary and situational impairments as well as those with permanent impairments, we’ve all been in a situation where we’ve benefited from an accessibility improvement, have a think, have you ever:
 
