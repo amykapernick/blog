@@ -14,9 +14,9 @@ In this series of blog posts, we’ll be talking about the skills and giving tip
 
 In the [**last part**](https://blog.dddperth.com/speaker-skills-part-1-fc385913a26), we looked at the initial stage of preparing a presentation: planning it out, choosing your format, building out the structure, and then building your slide deck. In this part, we’ll be looking at the performance, tips, and tricks for delivery, and techniques on the day.
 
-# The Basics
+## The Basics
 
-## Timing
+#### Timing
 
 Timing all takes into account the length of your presentation and makes sure you stick to time. While it’s hard to work timing out when you first start presenting, it’s important to practice and work out how close you are, and ways that you can mitigate either running behind or ahead on the day. The event organisers have given you a certain length of time slot, and it’s important to stick to it. Most of the time they understand going under the length a little (think about 10% of the allotted talk length as a buffer), but going over your talk length shows a lack of respect to the event organisers, the audience and the other speakers (and I’ve seen presentations go 10–15min over the allotted length).
 
@@ -28,7 +28,7 @@ It’s also worth finding out from the organisers if someone in the room will be
 
 When practicing, it’s also worth keeping track of whether you talk faster or slower on the day. When nervous, most people have a tendency to talk faster, which means you need to prepare some more content. But over time that may change, when you get more comfortable on stage you may start to talk slower or elaborate more throughout your presentation and need to prepare less content than before.
 
-## Breathe
+#### Breathe
 
 It sounds like an obvious one, but make sure you remember to breathe when you’re presenting. When you’re nervous, or getting excited about what you’re presenting on, it's easy to get lost in the moment and find we’re talking faster and faster, and maybe we’ve forgotten to stop and take a breath.
 
@@ -36,7 +36,7 @@ It sounds like an obvious one, but make sure you remember to breathe when you’
 
 Whenever you find yourself feeling out of breath, stop and take a deep breath, take a sip of water and take the chance to recover. If you find you forget to take a breath, try adding reminders to your speaker notes, an emoji or note to stop and take a breath for a second.
 
-## Be Silent
+#### Be Silent
 
 The same as we utilise white space in a website design, we should also utilise silence in a presentation. There is a right amount of _**white space**_ to include in our presentation, a chance to stop and recover and let what you’ve just said sink in with the audience.
 
@@ -46,7 +46,7 @@ Purposefully pausing is one of the most important tools that a speaker has, it�
 
 If you have a tendency to forget to stop and breathe, make notes on your slides where would be a good chance to pause, and use the opportunity to trigger the audience and take a drink of water so you can recover, before moving on.
 
-## Be Prepared
+#### Be Prepared
 
 We all know the deal, if something can go wrong it probably will, so make sure you’re prepared for what could happen on the day. Make sure that you have a backup of your presentation (on a device other than your laptop), and if possible be prepared to present from someone else’s device.
 
@@ -56,7 +56,7 @@ If you’re doing a live demo, make sure you have a backup recording of your dem
 
 The more you present, the more chances that you’ll end up encountering AV issues at some point, so it’s better to be prepared before it happens. It could be the entire AV system not working (I’ve had to present without anything before), it could be no audio, it could be interference with the speakers, it could be no working internet. I’ve been at a conference where a speaker gave six presentations across the event, and he experienced serious AV issues with 4 of them. I’ve even seen while at a Microsoft conference, there be issues that took down the entire Azure portal (only for about half an hour), but that just goes to show that you’re never safe.
 
-## Nerves
+#### Nerves
 
 When you stand on stage in front of a group of people (or prepare to do so), your body thinks it’s under attack and invokes the fight or flight response. This means your body starts producing adrenaline, readying you to fight or run away, and when you don’t use that adrenaline it invokes feelings of nausea (which doesn’t tend to help the nerves).
 
@@ -77,13 +77,13 @@ Work out what relaxes you best, and use it in the leadup to your presentation. W
 
 You may even find that you enjoy it, so embrace the nerves and the adrenaline rush. Some people like sky diving or base jumping, some people swim with sharks or drive fast cars to get that same rush, but me, I stand in front of hundreds of people and talk tech.
 
-## Eye Contact
+#### Eye Contact
 
 Have you ever been in a presentation where the speaker makes eye contact with you and you feel like they’re talking to you directly? It’s a trick, you don’t have to actually make eye contact, just look in someone’s direction and it has the same effect.
 
 Don’t dart your eyes around the room though, it gives the impression that you’re nervous. Find a few people around the room and make eye contact with them. Keep cycling through and coming back to them (at regular but not too often intervals), preferably find people who look engaged.
 
-## Movement and Gestures
+#### Movement and Gestures
 
 As much as you monitor your eye contact, make sure your movements are deliberate and big so they can be seen at the back of the room and look intentional rather than the result of nerves. You can use the gestures to anchor ideas or prompt the audience, eg.
 
@@ -91,7 +91,7 @@ As much as you monitor your eye contact, make sure your movements are deliberate
 - Use your fingers when counting points or steps
 - Point at things on the slide with your arm rather than your laser pointer, easier for people at the back of the room to see
 
-## Questions
+#### Questions
 
 After dealing with the nerves and everything else associated with getting on stage, we’re then confronted with an even more terrifying choice — do we take questions? If we do take questions, what if someone asks a question we don’t know the answer to? What if someone asks a question that isn’t really a question? What if someone tells us we’re wrong? What if no one asks any questions?
 
@@ -105,13 +105,13 @@ It’s also worth letting the audience know if you’re available for questions 
 
 If you’re feeling nervous about taking questions, check to see if the event organisers can help you to moderate them. Maybe there’s someone in the room who can help to moderate questions from the audience and deal with arguments or questions that aren’t questions. The most important thing to remember though, is it’s also perfectly ok to opt out of questions altogether. Taking questions isn’t a requirement, so if you don’t want to allow questions at the end, that’s a valid option.
 
-## Humour
+#### Humour
 
 A lot of the time people talk about opening with a joke, or including humour throughout a talk. This isn’t a requirement and depends on a number of things including you and your presentation style, the talk topic, the audience and the event that you’re presenting at.
 
 If you want to include jokes, try including a small, safe joke at the start of your talk, and use the audience’s reaction to gauge future performance. If they don’t react well at the beginning, maybe give it a miss and continue with a humourless presentation, otherwise you risk offending or putting the audience offside and ruining an otherwise good presentation.
 
-# Live Demos
+## Live Demos
 
 Live demos are a special kind of nightmare when it comes to presenting, both for the presenter and also for the audience at times. At the bare minimum if you’re doing a live demo make sure that you have a video recording as a backup. Even if you think that nothing could go wrong, you have no guarantees (see previous section on being prepared).
 
@@ -125,7 +125,7 @@ If you have access to a portable second monitor, that can also be useful as you 
 
 In the event that something breaks or doesn’t work, take a deep breath and see if you can solve the issue while talking it through with the audience. They don’t care that you’ve had something break (we’re all developers, we know it happens), they only care how you handle it, they’ll probably learn more by seeing you talking through and fixing an issue (what are the chances they’ll have the code work the first time anyway). If you can’t fix the issue within a minute or so, move on to the next thing or switch to your backup recording, don’t spend the entire show code fixing. It could also be worth setting up various git commits for each step of your demo, that way if something doesn’t work you can easily switch to code that does work. Or negate the typing altogether and just switch commits.
 
-# Practice
+## Practice
 
 When you’re starting out, it’s not just a case of practice makes perfect, practice until you’re bored with it. Even if you sound bored when you’re practicing, the adrenaline that hits you on stage will help to increase the tempo and you’ll sound excited again.
 
@@ -139,15 +139,15 @@ Make sure that you’re practicing the entire session as a whole as well as indi
 
 Practice with people as well as alone, even if it’s just friends and family. Even if they don’t understand the content of the presentation, make sure you know what it’s like to talk in front of people. If you can, see if you can present at work or at a local company to get some feedback from an audience. Or if you know other local speakers at the same event or other events on at similar times, see if you can organise a group practice session together to all get feedback on your talks.
 
-## Live Demos
+#### Live Demos
 
 If you’re doing a live demo, make sure you practice everything carefully. Spend time writing and re-writing the code to the point where it becomes second nature, or have code on another screen that you can copy and paste easily. Practice switching between the demo and code as well, see what could go wrong and what seems clunky so you have the chance to smooth things over before the big day.
 
-# On the Day
+## On the Day
 
 The morning of the event, make sure you try and eat breakfast. Depending on how your nerves affect your stomach, it may be the only meal you have until after you’ve presented and having some food in your system will help. If you’re presenting later but your stomach still feels a little nervous, bring snacks with you, something simple and light that is easy to tolerate but helps give you a boost when you need it.
 
-## What to wear
+#### What to wear
 
 The most important thing to remember when deciding what to wear on the day, is that you’re comfortable. You’re likely going to be standing for a while so comfort is key, and if you feel good in what you’re wearing it’ll give you a huge confidence boost. If you’re standing to present, make sure your shoes are comfortable for long periods of time, especially if you’ve been spending the day on your feet already. If you’re on a panel or sitting on a chair, reconsider a skirt or dress unless it’s longer or you are certain that you won’t be sitting on a stool (and organisers, please stop putting panellists on stools).
 
@@ -171,7 +171,7 @@ If the presentation is being recorded, or live streamed, try and avoid anything 
 
 Finally when choosing what you’re wearing, keep in mind where you want the audience to look — at your hands and face — so simple clothing that contrasts your skin helps draw the attention to your hands and face when you talk. Avoid anything too busy, and any clothing with writing on it as the audience then focuses on trying to read that rather than listening to you.
 
-## Check your environment
+#### Check your environment
 
 When you get on stage to present, that shouldn’t be the first time you walk into the room. Find a a chance to check the room out beforehand, either during a break or at the start of the day. Have a look at the room, see where the projector is, where the lectern is, how the chairs are arranged. If you get the chance to see a talk in the same room, it can help to see what the audience’s perspective is, where to stand that doesn’t block the screen or perhaps there’s something awkward about the stage or lectern that you can pick out beforehand and avoid.
 
@@ -179,7 +179,7 @@ Make sure you have everything you need to get started, and check to see that the
 
 Check that your slides display as intended on the projector, see if someone at the back of the room can read everything clearly and that the text is legible. If you need audio at some point, make sure that’s all working fine and if you’re doing any live coding double check the font size from the back of the room (bump it up if required).
 
-## Remove Distractions
+#### Remove Distractions
 
 When you first get setup on stage, make sure you remove any distractions. Take anything out of your pockets so that you don’t fiddle and take off your speaker lanyard as this can interfere with your mic and removing it helps to set you apart from the rest of the audience.
 
@@ -189,7 +189,7 @@ This also includes removing distractions on your computer, make sure you close a
 
 When you’re closing things down, make sure you also open up anything you’re going to need for your presentation; like your slides, any apps you’ll need and any browser tabs logged in and ready to go. Make sure your presentation is ready to go from the beginning and if you’re using a slide clicker that it’s connected and ready to go.
 
-## We’re on your side
+#### We’re on your side
 
 At the end of the day, you need to remember that everyone in the room is on your side (yes, that’s the audience). They’ve all chosen to come to your talk, they all want you to succeed and they’re cheering you on.
 
@@ -197,7 +197,7 @@ So relax (or at least try to), and enjoy the experience. Mistakes happen so don�
 
 Even if you notice someone leave partway though your presentation, or they look distracted, that’s likely due to something completely unrelated to you and your presentation. I’ve had to leave a talk (from the front row) because I’d forgotten about a meeting, it happens. The same goes for if people in the audience is on their phone, maybe they’re frantically jotting down notes or tweeting about how amazing your talk is!
 
-## Have fun
+#### Have fun
 
 Public speaking can be an exciting, rewarding experience, so enjoy it. I first started presenting in 2017, and although I always hated presentations in school and at uni, I discovered I loved the feeling of getting on stage and sharing with an audience.
 
@@ -205,25 +205,25 @@ Public speaking can be an exciting, rewarding experience, so enjoy it. I first s
 
 Most tech conferences have very supportive audiences and organising committees. They’re there to help with whatever you need in your speaker journey. So talk to your speaker contacts and see if there’s anything they can do to help you, or ask your fellow speakers for help or advice, even if it’s just a supportive face in the front row of your talk.
 
-# Levelling Up
+## Levelling Up
 
-## Speaker Pose Bingo
+#### Speaker Pose Bingo
 
 We’ve talked about making sure our movements are intentional, but there’s bonus points if you can make any coveted speaker poses. These poses are often used and can be collected by attendees for speaker pose bingo. This is a very advanced step though so don’t feel like you have to nail this one your first go.
 
-## Presenting with an Interpreter
+#### Presenting with an Interpreter
 
 Find out from the organisers if the event is going to be captioned, or if there is a sign interpreter on stage with you. If there’s a sign interpreter, they’ll typically ask for your presentation ahead of time so they can prepare for what you’re going to be saying and what is happening throughout your talk.
 
 This concept goes further to international conferences as well where someone may be translating a speaker who’s presenting in another language, as well as providing various languages of captioning for the audience. If you’re presenting at an event that has any form of translating or interpreting going on, it’s worth checking out this [**blog post on interpreting**](https://wordridden.com/post/744).
 
-## Live Captioning
+#### Live Captioning
 
 If the event isn’t live captioned, you can provide some form of captioning yourself to help anyone in the room who might benefit from it. PowerPoint allows you to [**enable live captioning in a presentation**](https://support.microsoft.com/en-us/office/present-with-real-time-automatic-captions-or-subtitles-in-powerpoint-68d20e49-aec3-456a-939d-34a79e8ddd5f), you can edit ****Subtitle Settings**** and turn them on and off in presenter view. These kinds of automated captions will have a few quirks and depending on the technical jargon you’re using it might get a bit confused, but something is always better than nothing.
 
 [![Screenshot of the Slide Show toolbar in Microsoft PowerPoint, showing the 'Captions & Subtitles' section](/img/speaking/1_BR1XQSix18PVSTV66oxsoQ.png "Present with real-time, automatic captions or subtitles in PowerPoint")](https://support.microsoft.com/en-us/office/present-with-real-time-automatic-captions-or-subtitles-in-powerpoint-68d20e49-aec3-456a-939d-34a79e8ddd5f)
 
-## Voice
+#### Voice
 
 Your voice is one of the import important tools you have to engage your audience (although I have seen a speaker present with no voice). If you sound bored, why should the audience listen to you? Whereas if you sound excited, that excitement is infectious and it makes the audience feels like they should listen to you and be excited as well.
 
@@ -233,7 +233,7 @@ Remember that your stance can also change your tone of voice. If you’re slouch
 
 Working on your voice also means working on your pace. This isn’t a competition of most words per minute, people need a chance to process the information you’re giving them. So stop, take a breath and slow down so you’re not talking too fast. If you find yourself having to talk fast to fit everything in, you’re trying to cram too much information into the wrong talk length, go back to your talk outline and start cutting out content that you don’t need.
 
-## Build a Speaker Pack
+#### Build a Speaker Pack
 
 When you start getting into presenting at more events, it’s worth putting together a speaker pack. This pack will consist of different things depending on you and your requirements, but a good place to start is:
 
@@ -241,7 +241,7 @@ As you present more and more, you can build out your speaker pack and include ex
 
 ---
 
-# Resources
+## Resources
 
 - [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.microsoft.com/en-us/office/present-with-real-time-automatic-captions-or-subtitles-in-powerpoint-68d20e49-aec3-456a-939d-34a79e8ddd5f)
 - [Interpreting for web geeks](https://wordridden.com/post/744)
