@@ -5,30 +5,16 @@ import Footer from "./footer.astro";
 import DevStyles from "./devStyles.astro";
 import Favicon from "../img/amy_small.png";
 import Logo from "../img/logo.png";
+import generateSocialImages from "../utils/generateSocialImages";
 
 import "../scss/main.scss";
 
 import generateColours from "../utils/generateColours.js";
+import { format, parseISO } from "date-fns";
 
 const env = import.meta.env.MODE;
 
-const { src: facebook } = await getImage({
-	src: Logo?.src,
-	width: 1200,
-	height: 630,
-});
-
-const { src: twitter } = await getImage({
-	src: Logo?.src,
-	width: 1200,
-	height: 675,
-});
-
-const { src: linkedin } = await getImage({
-	src: Logo?.src,
-	width: 1200,
-	height: 627,
-});
+const socialImages = Logo?.src ? await generateSocialImages(Logo?.src) : {}
 
 const siteData = {
 	title: "Amy's Blog",
@@ -38,14 +24,14 @@ const siteData = {
 
 const content = {
 	...siteData,
-	imageOg: facebook,
-	imageLinkedin: linkedin,
-	imageTwitter: twitter,
+	...socialImages,
 	...Astro?.props?.content,
 	...Astro?.props?.content?.meta,
 };
 
 const { title, description } = content;
+
+const date = content.updated ? content.updated : content.date || new Date().toISOString();
 
 const colours = generateColours;
 
@@ -58,6 +44,7 @@ const styles = `
 	--colour_4: ${colours[4].colour}; 
 	--colour_5: ${colours[5].colour}; 
 `;
+
 ---
 
 <!DOCTYPE html>
@@ -74,11 +61,11 @@ const styles = `
 		<title>{title}</title>
 		<meta name="description" content={description} />
 
-		{
-			content?.canonical && (
-				<link rel="canonical" href={content.canonical} />
-			)
-		}
+		{content?.canonical && (
+			<link rel="canonical" href={content.canonical} />
+		)}
+
+		<meta http-equiv="last-modified" content={format(parseISO(date), 'yyyyMMddHHmm')} />
 
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />

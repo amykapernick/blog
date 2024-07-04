@@ -44,6 +44,11 @@
 	}
 
 	header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		align-content: center;
+		justify-content: space-between;
 		position: relative;
 		padding: 20px 0 40px;
 		color: var.$white;
@@ -62,14 +67,10 @@
 			background: var(--colour);
 		}
 
-		time {
-			display: block;
-			margin: 20px 0;
-		}
-
 		h1 {
 			margin: 0 0 20px;
 			color: inherit;
+			flex: 1 0 100%;
 		}
 
 		.underline {
@@ -97,6 +98,9 @@
 	}
 
 	.tags {
+		flex: 1 0 100%;
+		margin-top: 20px;
+
 		a {
 			color: inherit;
 		}
@@ -118,9 +122,9 @@
 
 			&:before {
 				content: '- ';
-				
+
 			}
-	
+
 			a {
 				font-weight: inherit;
 			}

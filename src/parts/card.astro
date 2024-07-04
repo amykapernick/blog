@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Picture } from 'astro:assets';
 import PostExcerpt from "@igor.dvlpr/astro-post-excerpt";
 import SVG from "./svg.astro";
 import { parseISO, format } from "date-fns";
@@ -10,11 +10,12 @@ const {
 	featured,
 	external,
 	title,
-	date = new Date().toISOString(),
 	slug,
 	categories,
 	type,
 } = Astro.props.data;
+
+const date = Astro.props.data.updated ? Astro.props.data.updated : Astro.props.data.date || new Date().toISOString();
 
 const image = featured?.src
 	? `/img/${featured.src}`
@@ -28,6 +29,8 @@ const image = featured?.src
 		formats={["avif", "webp", "jpg", "png"]}
 		widths={[300, 600, 800]}
 		aspectRatio="3:4"
+		width={800}
+		height={600}
 	/>
 	<h2>
 		<a

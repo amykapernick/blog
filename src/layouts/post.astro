@@ -1,40 +1,21 @@
 ---
-import { getImage } from "@astrojs/image";
 import { parseISO, format } from "date-fns";
 import Layout from "../partials/layout.astro";
 import SVG from "../parts/svg.astro";
 import Video from "../parts/video.astro";
 import slugify from "../utils/slugify";
+import generateSocialImages from '../utils/generateSocialImages'
+
+
+const { title, categories, video, featured, date = new Date().toISOString(), updated } = Astro.props.content;
+
+const socialImages = featured?.src ? await generateSocialImages(featured.src) : {}
 
 const content = {
 	...Astro.props.content,
+	title: `${title} | Amy's Blog`,
+	...socialImages
 };
-
-const { title, date, categories, video } = content;
-
-content.title = `${title} | Amy's Blog`;
-
-const { src: facebook } = await getImage({
-	src: `/img/${content?.featured?.src}`,
-	width: 1200,
-	height: 630,
-});
-
-const { src: twitter } = await getImage({
-	src: `/img/${content?.featured?.src}`,
-	width: 1200,
-	height: 675,
-});
-
-const { src: linkedin } = await getImage({
-	src: `/img/${content?.featured?.src}`,
-	width: 1200,
-	height: 627,
-});
-
-content.imageOg = facebook;
-content.imageLinkedin = linkedin;
-content.imageTwitter = twitter;
 
 ---
 
@@ -42,9 +23,20 @@ content.imageTwitter = twitter;
 	<article class="content" id="main">
 		<header>
 			<h1>{title}</h1>
-			<time datetime={format(parseISO(date), "yyyy-mm-dd")}>
-				{format(parseISO(date), "dd MMM yyyy")}
-			</time>
+			{updated &&
+				<span>
+					Updated on: 
+					<time datetime={format(parseISO(updated), "yyyy-mm-dd")}>
+						{format(parseISO(updated), "dd MMM yyyy")}
+					</time>
+				</span>
+			}
+			<span>
+				{updated && "Published on: "}
+				<time datetime={format(parseISO(date), "yyyy-mm-dd")}>
+					{format(parseISO(date), "dd MMM yyyy")}
+				</time>
+			</span>
 			{
 				categories && (
 					<ul class="tags">

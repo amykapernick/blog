@@ -1,58 +1,39 @@
 ---
 import Layout from "../layouts/post.astro";
 import TableOfContents from '../parts/toc.astro'
+import getAllPosts from "../utils/getAllPosts";
 
 export async function getStaticPaths() {
-	const posts = await Astro.glob("../../posts/**/*.md");
-	const videos = await Astro.glob("../../videos/**/*.md");
+	const postFiles = await Astro.glob("../../posts/**/*.md");
+	const videoFiles = await Astro.glob("../../videos/**/*.md");
 
-	const allPosts = [];
+	const { allPosts } = await getAllPosts({
+		files: {
+			post: postFiles,
+			video: videoFiles,
+		},
+	})
 
-	posts.forEach((post) => {
-		if (post?.frontmatter?.external) return;
-
-		const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/i);
-		const { slug } = matches?.groups;
-
-		allPosts.push({ params: { slug } });
-	});
-
-	videos.forEach((post) => {
-		if (post?.frontmatter?.external) return;
-
-		const matches = post.file.match(/\/(?<slug>(?:\w|\w|-)+)\.md$/i);
-		const { slug } = matches?.groups;
-
-		allPosts.push({ params: { slug } });
-	});
-
-	return allPosts;
+	return allPosts.map(({post}) => ({
+		params: {
+			slug: post.slug
+		},
+		props: {
+			...post
+		}
+	}));
 }
 
 const { slug } = Astro.params;
-
-const posts = await Astro.glob("../../posts/**/*.md");
-const videos = await Astro.glob("../../videos/**/*.md");
-
-const post = [...posts, ...videos].find(({ file }) =>
-	new RegExp(`${slug}.md`, "i").test(file)
-);
-
-const { frontmatter } = post;
+const { frontmatter, getHeadings, Content } = Astro.props;
 
 const postContent = {
 	...frontmatter,
 	slug,
 };
 
-if (frontmatter?.video && !postContent.categories.includes("video")) {
-	postContent.categories.push("video");
-}
+const headings = getHeadings()
 
-const headings = post.getHeadings()
-
-
-const Content = post.Content;
 ---
 
 <Layout content={postContent}>
