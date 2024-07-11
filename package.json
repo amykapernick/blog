@@ -17,7 +17,6 @@
   "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "homepage": "https://blog.amyskapers.dev",
   "dependencies": {
-    "@astrojs/image": "^0.18.0",
     "@astrojs/markdown-remark": "^5.1.1",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
@@ -48,7 +47,7 @@
   },
   "overrides": {
     "@igor.dvlpr/astro-post-excerpt": {
-      "astro": "^2.0.0"
+      "astro": "^4.11.5"
     }
   }
 }
