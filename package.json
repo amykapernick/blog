@@ -10,6 +10,7 @@
     "start": "doppler run -- npm run dev",
     "dev": "astro dev",
     "build": "astro build",
+    "build:local": "doppler run -- npm run build",
     "preview": "astro preview",
     "clean": "rm -rf dist",
     "postinstall": "patch-package"

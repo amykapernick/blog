@@ -28,7 +28,11 @@ jobs:
 
       - name: Deploy to Netlify
         id: build_site
+        uses: South-Paw/action-netlify-cli@v2
+        with:
+          args: "deploy --build --json --prod"
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: ./_actions/netlify_deploy.sh --p true
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.SITE_ID }}
+        
+
