@@ -30,9 +30,9 @@ jobs:
         id: build_site
         uses: South-Paw/action-netlify-cli@v2
         with:
-          args: "deploy --build --json --prod"
+          args: "deploy --build --json --prod --message \"Updated site (probably a new post)\""
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         
 
