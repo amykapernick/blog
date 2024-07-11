@@ -1,0 +1,132 @@
+{
+	"heading-increment": true,
+	"heading-style": {
+		"style": "atx"
+	},
+	"ul-style": {
+		"style": "dash"
+	},
+	"list-indent": true,
+	"ul-indent": {
+		"indent": 4,
+		"start_indent": 2,
+		"start_indented": true
+	},
+	"no-trailing-spaces": {
+		"br_spaces": 2,
+		"list_item_empty_lines": true,
+		"strict": true
+	},
+	"no-hard-tabs": {
+		"code_blocks": true,
+		"ignore_code_languages": [],
+		"spaces_per_tab": 4
+	},
+	"no-reversed-links": false,
+	"no-multiple-blanks": {
+		"maximum": 1
+	},
+	"line-length": {
+		"line_length": 100000,
+		"code_blocks": false,
+		"code_block_line_length": 100000,
+		"headings": false,
+		"heading_line_length": 10000,
+		"tables": false,
+		"strict": false,
+		"stern": false
+	},
+	"commands-show-output": false,
+	"no-missing-space-atx": true,
+	"no-multiple-space-atx": false,
+	"blanks-around-headings": {
+		"lines_above": 1,
+		"lines_below": 1
+	},
+	"heading-start-left": true,
+	"no-duplicate-heading": false,
+	"single-h1": {
+		"front_matter_title": "^\\s*title\\s*[:=]",
+		"level": 1
+	},
+	"no-trailing-punctuation": {
+		"punctuation": ".,;:"
+	},
+	"no-multiple-space-blockquote": true,
+	"no-blanks-blockquote": true,
+	"ol-prefix": {
+		"style": "one_or_ordered"
+	},
+	"list-marker-space": {
+		"ul_single": 1,
+		"ol_single": 1,
+		"ul_multi": 1,
+		"ol_multi": 1
+	},
+	"blanks-around-fences": {
+		"list_items": false
+	},
+	"blanks-around-lists": true,
+	"no-inline-html": {
+		"allowed_elements": [
+			"kbd",
+			"a",
+			"div",
+			"img",
+			"picture",
+			"aside",
+			"cite"
+		]
+	},
+	"no-bare-urls": true,
+	"hr-style": {
+		"style": "---"
+	},
+	"no-emphasis-as-heading": true,
+	"no-space-in-emphasis": true,
+	"no-space-in-code": true,
+	"no-space-in-links": true,
+	"fenced-code-language": true,
+	"first-line-h1": false,
+	"no-empty-links": true,
+	"proper-names": {
+		"code_blocks": true,
+		"html_elements": false,
+		"names": [
+			"JavaScript",
+			"HTML",
+			"GitHub"
+		]
+	},
+	"no-alt-text": false,
+	"code-block-style": {
+		"style": "fenced"
+	},
+	"single-trailing-newline": true,
+	"code-fence-style": {
+		"style": "backtick"
+	},
+	"emphasis-style": {
+		"style": "asterisk"
+	},
+	"strong-style": {
+		"style": "asterisk"
+	},
+	"link-fragments": true,
+	"reference-links-images": {
+		"shortcut_syntax": false
+	},
+	"link-image-reference-definitions": false,
+	"link-image-style": {
+		"autolink": true,
+		"collapsed": true,
+		"full": true,
+		"inline": true,
+		"shortcut": true,
+		"url_inline": true
+	},
+	"table-pipe-style": {
+		"style": "leading_and_trailing"
+	},
+	"table-column-count": true
+}

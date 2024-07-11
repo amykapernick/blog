@@ -9,7 +9,7 @@ featured:
 
 So the last month or so I've been reflecting a little on how this past year has gone and I've come to one conclusion. 2017 sucked. This past year I've been through some of the hardest things I've ever had to face. But I've also had some of the most amazing times this year, discovered the most amazing people and have had the best year of my life.
 
-- - -
+---
 
 To say that 2017 didn't get off to a great start would be putting it lightly. New Years Eve I'd, gone to bed early with a headache, got woken up at midnight (still with a headache) when my neighbours all turned their music up, and spent New Years day binging on Netflix and whatever food I could find in the house (I was still reeling from a break-up just before Christmas).
 
@@ -63,7 +63,7 @@ This hasn't been all sunshine and roses though. This year I've struggled with ad
 
 Thankfully, this year I discovered how amazing the people in my life are. I discovered that I have friends who are there for me at a moments notice (depending on traffic), friends you are there for me when I need a helping hand, a shoulder, or a distraction. This year I've been pleasantly surprised people who've gotten a thoughtful gift, or brought me flowers when I've had a bad day, or have been there to offer me support with any of the challenges I've faced.
 
-This year, I got the chance to hear the wonderful Kris Howard speak several times, and her talk at DDD Perth (_The Campsite Rule_), which discussed the different types of mentors was one which has stuck with me. She discussed the different types of mentors we have (inspirational, formal, career, tech, champion, peer, etc) and it brought me to tears when I realised how many of them that I already had in my life. This last year I've done a lot in my career and most of that wouldn't have been possible without the people who are mentors in my life. Some of them have inspired me to be like them, some have supported me through doing something different, and some of them have simply been there to encourage me along the way.
+This year, I got the chance to hear the wonderful Kris Howard speak several times, and her talk at DDD Perth (*The Campsite Rule*), which discussed the different types of mentors was one which has stuck with me. She discussed the different types of mentors we have (inspirational, formal, career, tech, champion, peer, etc) and it brought me to tears when I realised how many of them that I already had in my life. This last year I've done a lot in my career and most of that wouldn't have been possible without the people who are mentors in my life. Some of them have inspired me to be like them, some have supported me through doing something different, and some of them have simply been there to encourage me along the way.
 
 ![](/img/2017/99bd9066755cd65fe9cefeb4a830a2428bff3e6a_1_eppf6efktp3k-scgdvyoaq.jpg)
 ![](/img/2017/11d6caf1f11e82d1888529f6d3c82a22831e1283_1_yphkrgsmr1amnjt84kuhtw.jpg)
@@ -75,7 +75,6 @@ In 2016, I also discovered the wonder of conferences, and this year I got the ch
 
 ![](/img/2017/62c648fff9839e170d5ef373531e1763f1406c24_1_obosgn_x6dvtecrvurzvtg.jpg)
 This year I learnt more about the web than I have in the last 4 years (information overload much?) and although it's incredibly scary it's also been an amazing experience and I've fallen more and more in love with the web with every new discovery (except anything that involves IE).
-
 
 ![](/img/2017/67b2178ebf482d7a7a6ebd6ddb112770d485c015_1_x100sidmdupzggkx66t8aw.jpg)
 
@@ -90,4 +89,3 @@ This year I also started my blog, wrote a couple of things on it and rebuilt my 
 ---
 
 I'm not going to sugar-coat it, this year has been rough. But it's also been incredible, amazing and life changing. This year I've taken chances, tried new things, met new people and discovered more about myself than I ever knew. Although I want to keep a little credit for myself, most of this has been down to the incredible people I have in my life, for making this year what it was. My life is scary but I've always got someone there when I need them and that is something that I never thought I would have. But even better than everything they've done for me this year, I know they'll also be here to make 2018 even better!
-

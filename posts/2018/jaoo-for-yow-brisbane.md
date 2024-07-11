@@ -11,11 +11,11 @@ So this year I was lucky enough to get the chance to attend YOW Conference in Br
 
 Firstly, I'd like to give a big shout-out to everyone who spent time and effort making this happen. I've found this year that it's no mean feat to put together a local presentation night, so to put together a multi-city, multi-day conference with 39(!!!) speakers from all over the world is a feat I'd expect of someone with time-turner and at least one decent superpower.
 
-- - -
+<aside class="callout" data-tag="Update">
 
-_Update: Full disclosure, I did actually start writing this just after the conference, but life has caught up with me a little. Better late than never_
+Full disclosure, I did actually start writing this just after the conference, but life has caught up with me a little. Better late than never
 
-- - -
+</aside>
 
 ## Cloud Data Pipelines for Genomics from a Bioinformatician and a Developer
 
@@ -47,7 +47,7 @@ We always seem to run into issues when blindly following instructions (I feel dy
 
 Stop treating the product owner like the customer
 
-One big issue we have is treating the product owner like the customer, which is probably a concept most devs are familiar with. When working in customer service, “_the customer is always right (even when they're wrong)_” is often a frustrating concept to deal with; and when working in development we sometimes have the same issues with a product owner (particularly when they're not technical). How many times have you been given instructions or deadlines by someone who doesn't understand the work that you do?
+One big issue we have is treating the product owner like the customer, which is probably a concept most devs are familiar with. When working in customer service, “*the customer is always right (even when they're wrong)*” is often a frustrating concept to deal with; and when working in development we sometimes have the same issues with a product owner (particularly when they're not technical). How many times have you been given instructions or deadlines by someone who doesn't understand the work that you do?
 
 > Don't just assume that you're working on something useful, meaningful or for the greater good
 
@@ -71,7 +71,7 @@ Recently it's surfaced how many companies have unhealthy environments and how ma
 
 As a freelancer, I'm often plagued by the law of estimates (especially when I don't estimate properly), so the title alone of Woody's talk sounded interesting to me. To top it off, his [wife is also a children's book illustrator](http://www.andreazuill.org/) and is responsible for all his slides. They weren't in any way relevant to the slide content, but I love getting a good giggle out of imagery being used in presentations.
 
-The first thing Woody did was get us to write a one word summary of an estimate on a sticky note and put it up on the wall. Not surprisingly, we all seemed to use similar words and themes with negative connotations (restrictions, limit, pain, guess), which is something that seems to be repeated at his talks all over the world. Apparently some people don't listen to instructions though, when running this same exercise with a group of managers and execs, Woody found that most of them filled the post-it with text and didn't listen to the** one word** limit.
+The first thing Woody did was get us to write a one word summary of an estimate on a sticky note and put it up on the wall. Not surprisingly, we all seemed to use similar words and themes with negative connotations (restrictions, limit, pain, guess), which is something that seems to be repeated at his talks all over the world. Apparently some people don't listen to instructions though, when running this same exercise with a group of managers and execs, Woody found that most of them filled the post-it with text and didn't listen to the**one word** limit.
 
 ![](/img/conferences/yow-brisbane-2017/415e8c0ca35be75f2ea967ab8ebd898b9475e38a_0_0dntgyec0fvs6yms.jpg)
 
@@ -234,7 +234,8 @@ All in all, Sandy's talk gave us some excellent insights into surviving our care
 ![](/img/conferences/yow-brisbane-2017/7e0c45a327a20f957615a7f3f96df0086298b663_0_jl2504x4y57rb1sx_.jpg)
 
 ![](/img/conferences/yow-brisbane-2017/691a8d8daf763de878b0b00c7e653af514496f93_0_bdqbnjugpp7mgzex_.jpg)
-- - -
+
+---
 
 I really can't stress how important I think conferences are for our industry. It's an amazing chance to meet new people and network, to hear from others in our industry and learn about the new things that people are doing.
 

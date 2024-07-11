@@ -44,8 +44,6 @@ When working out which element is the right one to use, [htmlreference.io](http:
 
 ![Screenshot of htmlreference.io which lists 113 different HTML elements](/img/dev/modern-fundamentals/htmlreference.png "htmlreference.io is a great list of the different HTML elements and their uses, including visual examples and links to further documentation")
 
-
-
 ## Accessibility
 
 But what's this got to do with Accessibility you say? We're just talking about using the right kind of HTML elements. Well the secret is that using Semantic HTML is the best first step we can take to building more accessible web experiences for everyone. Looking at the [top 5 most common accessibility issues on the web](https://blog.pope.tech/2020/12/01/how-to-fix-the-5-most-common-accessibility-errors/), 4 of them are related to non-semantic or invalid HTML. If we were able to fix them, we could solve over 90% of all accessibility issues. That's making the web 90% better, 90% more accessible straight out of the gate!
@@ -60,7 +58,7 @@ Before we go on, I also want to address a commonly used abbreviation used, which
 
 ## Semantic HTML and Accessibility
 
-We've already talked about how semantic HTML elements introduce meaning to the content inside it, but what does that actually do? This meaning associated with each of the elements is provided to assistive technologies and they can then let the user know more about what it actually is. Maybe it's a button or a link that can be clicked on, or a form input that needs filling in, or maybe it's a semantic container element and it provides context to the other elements inside it, like if it's a navigation section or maybe it's to do with the content it contains, like a heading or an image. 
+We've already talked about how semantic HTML elements introduce meaning to the content inside it, but what does that actually do? This meaning associated with each of the elements is provided to assistive technologies and they can then let the user know more about what it actually is. Maybe it's a button or a link that can be clicked on, or a form input that needs filling in, or maybe it's a semantic container element and it provides context to the other elements inside it, like if it's a navigation section or maybe it's to do with the content it contains, like a heading or an image.
 
 With continuous updates to browser technologies, changes are there's a HTML element to suit your needs, without necessarily needing to reach for a third party alternative or build something yourself.  The time and effort that goes into releasing a new/updated HTML element to browsers, ensuring it works for everyone and with every assistive technology, native HTML elements are the best option rather than reaching for something else or rolling your own solution. And as we continue to get updates on both the elements we have and the ones we want, there are less and less reasons to not use what the browser has built in already.
 
@@ -82,7 +80,7 @@ By using the right semantic container elements we can more accurately break up o
 
 ## ARIA
 
-When trying to build things more accessibility, the first step is often to add ARIA attributes to all the different elements. ARIA (Accessible Rich Internet Applications) is a set of roles and attributes that the W3C (World Wide Web Consortium) defined as part of their Web Accessibility Initiative (WAI) to help make the web experiences we're building more accessible (I promise that's the last new acronym for a while as well). This includes commonly used attributes like `aria-label` or [`role`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) (which we just talked about), but extends to include a bunch of [other states and properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) that we can use, some common like `aria-hidden` and `aria-invalid` and others not commonly used like `aria-flowto` and `aria-keyshortcuts`. 
+When trying to build things more accessibility, the first step is often to add ARIA attributes to all the different elements. ARIA (Accessible Rich Internet Applications) is a set of roles and attributes that the W3C (World Wide Web Consortium) defined as part of their Web Accessibility Initiative (WAI) to help make the web experiences we're building more accessible (I promise that's the last new acronym for a while as well). This includes commonly used attributes like `aria-label` or [`role`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) (which we just talked about), but extends to include a bunch of [other states and properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) that we can use, some common like `aria-hidden` and `aria-invalid` and others not commonly used like `aria-flowto` and `aria-keyshortcuts`.
 
 Despite having access to these attributes though, they should only be used when semantic HTML doesn't do the whole job for us (not kidding, that's literally the [first rule of ARIA](https://www.w3.org/TR/using-aria/#rule1)).
 
@@ -99,8 +97,8 @@ The most common use case I've found for using ARIA (other than building more com
 <!-- Linking a generic or un-described link with a label -->
 <h2 id="html_and_a11y">Semantic HTML and Accessibility</h2>
 <p>
-	To get started we're looking at HTML which is literally the foundation of the web...
-	<a href="/html-and-a11y" aria-labelledby="html_and_a11y">Read more</a>
+    To get started we're looking at HTML which is literally the foundation of the web...
+    <a href="/HTML-and-a11y" aria-labelledby="html_and_a11y">Read more</a>
 </p>
 ```
 

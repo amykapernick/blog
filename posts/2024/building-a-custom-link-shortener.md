@@ -44,7 +44,7 @@ This works just fine, but in an effort to clean the data up a little, I changed 
 
 The way Netlify lets you define any redirects for your site, with a `_redirects` file in the below format, makes it really easy to auto generate redirects for each of my URLs. Defining first my slug as the URL on the “site” I want redirected, then where to send it to and lastly setting the status code to [302](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302) (I don't want a permanent redirect, because I regularly change some of the short URLs).
 
-```
+```text
 # Auto-generated Redirects
 # /{slug} {url} 302
 /speaking/resources https://kaperscrewe.notion.site/Speaking-Resources-ac3378daafeb4bdcace6b7d678781418?pvs=4 302
@@ -60,7 +60,7 @@ To make things a bit nicer I can also add a redirect to my website so I don't ne
 
 ## Generating the redirect file
 
-Eleventy has a bunch of [different templating languages](https://www.11ty.dev/docs/languages/) and [data formats](https://www.11ty.dev/docs/data/) you can use, I generally use [Nunjucks](https://www.11ty.dev/docs/languages/nunjucks/) and a combination of [markdown](https://www.11ty.dev/docs/data-frontmatter/), and [json](https://www.11ty.dev/docs/data-global/)/[javascript data files](https://www.11ty.dev/docs/data-js/). I already have the file of redirect data in the `_data/urls.json` file, so that can easily be loaded in as global data.
+Eleventy has a bunch of [different templating languages](https://www.11ty.dev/docs/languages/) and [data formats](https://www.11ty.dev/docs/data/) you can use, I generally use [Nunjucks](https://www.11ty.dev/docs/languages/nunjucks/) and a combination of [markdown](https://www.11ty.dev/docs/data-frontmatter/), and [json](https://www.11ty.dev/docs/data-global/)/[JavaScript data files](https://www.11ty.dev/docs/data-js/). I already have the file of redirect data in the `_data/urls.json` file, so that can easily be loaded in as global data.
 
 At the top of the template, [the permalink](https://www.11ty.dev/docs/permalinks/) for the generated file can be set, in this case it'll be `_redirects`, and this doesn't depend on the name/location of the template file at all, it can be anything. Then we [loop](https://mozilla.github.io/nunjucks/templating.html#for) through the redirect data from the data file, and spit it out in the [correct format](#netlify-redirects) (`/{slug} {url} 302`).
 
@@ -134,15 +134,15 @@ domain=$(echo $data | jq -r '.domain')
 redirects=$(echo $data | jq -r '.redirects')
 
 for redirect in $(echo "${redirects}" | jq -r '.[] | @base64'); do
-	slug=$(echo ${redirect} | base64 --decode | jq -r '.slug')
-	url=$(echo ${redirect} | base64 --decode | jq -r '.url')
+    slug=$(echo ${redirect} | base64 --decode | jq -r '.slug')
+    url=$(echo ${redirect} | base64 --decode | jq -r '.url')
 
-	if [ -f "site/src/img/qr_codes/${slug}.svg" ]; then
-		echo "QR code for ${slug} already exists"
-		continue
-	fi
+    if [ -f "site/src/img/qr_codes/${slug}.svg" ]; then
+        echo "QR code for ${slug} already exists"
+        continue
+    fi
 
-	npx qrcode "${domain}/${slug}" -t svg -q 1 -o "site/src/img/qr_codes/${slug}.svg"
+    npx qrcode "${domain}/${slug}" -t svg -q 1 -o "site/src/img/qr_codes/${slug}.svg"
 done
 ```
 
@@ -166,13 +166,13 @@ jobs:
           node-version: "20"
           
       - name: Generate QR Codes
-        run: .github/actions/qrcode.sh
+        run: .GitHub/actions/qrcode.sh
         
       - name: Set up git
         continue-on-error: true
         run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ GitHub.actor }}"
+          git config --global user.email "${{ GitHub.actor }}@users.noreply.GitHub.com"
           
       - run: git add -A && git commit -m "Generated new QR Codes"
         continue-on-error: true
@@ -215,38 +215,38 @@ To make it easier to access/find the QR codes, I want to publish them along with
 
 ```js
 module.exports = (eleventyConfig) => {
-	eleventyConfig.addPassthroughCopy({ "site/src": "." });
+    eleventyConfig.addPassthroughCopy({ "site/src": "." });
 
-	return {
-		dir: {
-			input: "site",
-		},
-	}
+    return {
+        dir: {
+            input: "site",
+        },
+    }
 };
 ```
 
 ## Updating the CMS Preview
 
-Now that the QR codes are being generated, it'd be nice to see things a bit more in the preview of the CMS, so I can [add some customisation](https://decapcms.org/docs/customization/). Inside the template for the admin file (without a permalink `admin/index.njk` will be rebuilt to `admin/index.html`), I can register a custom CSS file for the CMS preview pane.
+Now that the QR codes are being generated, it'd be nice to see things a bit more in the preview of the CMS, so I can [add some customisation](https://decapcms.org/docs/customization/). Inside the template for the admin file (without a permalink `admin/index.njk` will be rebuilt to `admin/index.HTML`), I can register a custom CSS file for the CMS preview pane.
 
 ```html
-<!doctype html>
-<html>
+<!doctype HTML>
+<HTML>
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Content Manager</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
 </head>
 
 <body>
-	<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-	<script>
-		CMS.registerPreviewStyle("/styles/preview.css");
-	</script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+        CMS.registerPreviewStyle("/styles/preview.css");
+    </script>
 </body>
 
-</html>
+</HTML>
 ```
 
 ![](/img/dev/link-shortener/Untitled_1.png "CMS UI with custom CSS file to load in theme fonts and styles.")
@@ -255,46 +255,46 @@ To create a custom preview as well as adding the styles, we can create a [custom
 
 ```js
 const RedirectsPreview = createClass({
-	render: function () {
-		const siteUrl = this.props.entry.getIn(['data', 'domain'])
+    render: function () {
+        const siteUrl = this.props.entry.getIn(['data', 'domain'])
 
-		return h('dl', {
-			class: 'preview_urls'
-		},
-			this.props.widgetsFor('redirects').map((redirect, index) => {
-				return h('div', { key: index },
-					h('dt',
-						{},
-						siteUrl, '/', redirect.getIn(['data', 'slug']),
-					),
-					h('dd',
-						{},
-						redirect.getIn(['data', 'url']),
-						h('details', {},
-							h('summary', {},
-								'QR Code ',
-								h('code', {},
-									'https://kapers.dev/img/qr_codes/',
-									redirect.getIn(['data', 'slug']),
-									'.svg'
-								)
-							),
-							h('a', {
-								href: `https://kapers.dev/img/qr_codes/${redirect.getIn(['data', 'slug'])}.svg`,
-								download: `qr_${redirect.getIn(['data', 'slug'])}.svg`
-							},
-								h('span', {style: {display: 'none'}}, 'Download QR Code'),
-								h('img', {
-									src: `https://kapers.dev/img/qr_codes/${redirect.getIn(['data', 'slug'])}.svg`,
-									alt: ""
-								})
-							),
-						)
-					)
-				)
-			})
-		)
-	}
+        return h('dl', {
+            class: 'preview_urls'
+        },
+            this.props.widgetsFor('redirects').map((redirect, index) => {
+                return h('div', { key: index },
+                    h('dt',
+                        {},
+                        siteUrl, '/', redirect.getIn(['data', 'slug']),
+                    ),
+                    h('dd',
+                        {},
+                        redirect.getIn(['data', 'url']),
+                        h('details', {},
+                            h('summary', {},
+                                'QR Code ',
+                                h('code', {},
+                                    'https://kapers.dev/img/qr_codes/',
+                                    redirect.getIn(['data', 'slug']),
+                                    '.svg'
+                                )
+                            ),
+                            h('a', {
+                                href: `https://kapers.dev/img/qr_codes/${redirect.getIn(['data', 'slug'])}.svg`,
+                                download: `qr_${redirect.getIn(['data', 'slug'])}.svg`
+                            },
+                                h('span', {style: {display: 'none'}}, 'Download QR Code'),
+                                h('img', {
+                                    src: `https://kapers.dev/img/qr_codes/${redirect.getIn(['data', 'slug'])}.svg`,
+                                    alt: ""
+                                })
+                            ),
+                        )
+                    )
+                )
+            })
+        )
+    }
 })
 
 CMS.registerPreviewTemplate('urls', RedirectsPreview)
@@ -304,25 +304,25 @@ The custom preview template will loop through and generate the following HTML fo
 
 ```html
 <div>
-	<dt>{domain}/{slug}</dt>
-	<dd>
-		{url}
-		<details>
-			<summary>QR Code <code>{domain}/img/qr_codes/{slug}.svg</code></summary>
-			<a 
-				href="{domain}/img/qr_codes/{slug}.svg" 
-				download="{slug}.svg"
-			>
-				<span style="display: none;">Download QR Code</span>
-				<img 
-					src="{domain}/img/qr_codes/{slug}.svg" 
-					width="200" 
-					height="200" 
-					alt=""
-				/>
-			</a>
-		</details>
-	</dd>
+    <dt>{domain}/{slug}</dt>
+    <dd>
+        {url}
+        <details>
+            <summary>QR Code <code>{domain}/img/qr_codes/{slug}.svg</code></summary>
+            <a 
+                href="{domain}/img/qr_codes/{slug}.svg" 
+                download="{slug}.svg"
+            >
+                <span style="display: none;">Download QR Code</span>
+                <img 
+                    src="{domain}/img/qr_codes/{slug}.svg" 
+                    width="200" 
+                    height="200" 
+                    alt=""
+                />
+            </a>
+        </details>
+    </dd>
 </div>
 ```
 
@@ -336,7 +336,7 @@ While this is a pretty good system there's a few minor things that I'd love to i
 
 ### QR Codes take time to generate
 
-The preview in the CMS will update straight away, but the QR code won't necessarily have updated yet so the image will fail to load. It's not a big deal, the workflow takes under a minute to run, build and deploy the site so waiting a second and refreshing the page will get the QR code, but it'd be nice to add in generating QR codes on the fly for when they're not there yet. The [`qrcode`](https://www.npmjs.com/package/qrcode) package can also be used as a javascript package so it wouldn't take too much to implement this.
+The preview in the CMS will update straight away, but the QR code won't necessarily have updated yet so the image will fail to load. It's not a big deal, the workflow takes under a minute to run, build and deploy the site so waiting a second and refreshing the page will get the QR code, but it'd be nice to add in generating QR codes on the fly for when they're not there yet. The [`qrcode`](https://www.npmjs.com/package/qrcode) package can also be used as a JavaScript package so it wouldn't take too much to implement this.
 
 ### Nested URLs break QR code generation
 

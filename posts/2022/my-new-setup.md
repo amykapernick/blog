@@ -21,25 +21,25 @@ When I first started looking at upgrading my desk, I reached out to the collecti
 
 I got a heap of recommendations, with the top two suggestions being [Zen Space Desks](https://www.zenspacedesks.com.au/) and [Desky](https://desky.com.au/) (both of which are actually based in Brisbane, Australia as well). Both were around the same price range, and for most of the features they were the same (you can see [my full comparison here](https://www.notion.so/Desks-64d31835ad824e66a95274cebd79869c), prices and availability may have changed). Rather than just getting a desk I specifically looked at:
 
-- Desk frame
-- Desk top
-- Under desk CPU mount (apparently this is the only time CPU is still used to refer to a computer)
-- Under desk cable management
-- Integrated power points
+  - Desk frame
+  - Desk top
+  - Under desk CPU mount (apparently this is the only time CPU is still used to refer to a computer)
+  - Under desk cable management
+  - Integrated power points
 
 Eventually it came down to the fact that the Zen Space CPU mount was double the capacity of Desky (20kg v 10kg) and although I'm nowhere near close either, I wanted to future proof. Oh and Zen Space had an app (although I've since found out you need a bluetooth dongle which you have to contact them about). I also decided to just buy a frame which drastically reduced shipping costs, and allowed me to buy my own top and fit it to exactly the size I wanted.
 
-- [Stand Up Frame Kit to suit straight desktops - Zen Space Desks](https://www.zenspacedesks.com.au/product/stand-up-frame-kit-to-suit-straight-desktops/) (in black)
-- [Integrated Cable Management Channel - Zen Space Desks](https://www.zenspacedesks.com.au/product/integrated-cable-management-channel/) (with 8 ports and ethernet)
-- [Universal CPU Mount - Zen Space Desks](https://www.zenspacedesks.com.au/product/universal-cpu-mount/) (with mounting brackets)
-- [Sit/Stand Desk Castors | Products | Zen Space Desks](https://www.zenspacedesks.com.au/product/sit-stand-desk-castors/)
-- [Anti Fatigue Sit Stand Mat - Zen Space Desks](https://www.zenspacedesks.com.au/product/anti-fatigue-sit-stand-mat/)
+  - [Stand Up Frame Kit to suit straight desktops - Zen Space Desks](https://www.zenspacedesks.com.au/product/stand-up-frame-kit-to-suit-straight-desktops/) (in black)
+  - [Integrated Cable Management Channel - Zen Space Desks](https://www.zenspacedesks.com.au/product/integrated-cable-management-channel/) (with 8 ports and ethernet)
+  - [Universal CPU Mount - Zen Space Desks](https://www.zenspacedesks.com.au/product/universal-cpu-mount/) (with mounting brackets)
+  - [Sit/Stand Desk Castors | Products | Zen Space Desks](https://www.zenspacedesks.com.au/product/sit-stand-desk-castors/)
+  - [Anti Fatigue Sit Stand Mat - Zen Space Desks](https://www.zenspacedesks.com.au/product/anti-fatigue-sit-stand-mat/)
 
 ## The Desk Top
 
 Because I just bought a frame, I then went to Bunnings to track down a piece of wood to put on top. I did look at a few local places that did solid timber slabs, but given all the upgrades I'd bought, I needed to pare back the fanciness of the top a little.
 
-My existing desk was 1.2m * 75cm , so at the very least I wanted it to be that big, ideally bigger. The space allowed for about that deep, and 2m wide, and I managed to find a nice piece of Acacia that was 2.2m * 60cm which would work nicely (although wood need the end cut off). However when I went to buy the top, I found an identical sized jarrah top for not much more, so impulsively splurged on a nicer top (and glad I did as those tops are no longer available).
+My existing desk was 1.2m *75cm , so at the very least I wanted it to be that big, ideally bigger. The space allowed for about that deep, and 2m wide, and I managed to find a nice piece of Acacia that was 2.2m* 60cm which would work nicely (although wood need the end cut off). However when I went to buy the top, I found an identical sized jarrah top for not much more, so impulsively splurged on a nicer top (and glad I did as those tops are no longer available).
 
 ![A Jarrah wooden desk top resting on saw horses](/img/2022/desk/FIEZPVmVcAEfDZI.jpg)
 
@@ -67,9 +67,9 @@ We unfortunately hit a snag when attaching them where the sticky strips didn't w
 
 Although I'd gotten 8 power plugs to go with the integrated cabling under the desk, it wasn't quite enough to plug everything in, thankfully someone pointed out that the plugs that Zen Space includes with their desks are fairly standard, and you can purchase additional ones to add on. This ultimately led to the discovery of a store in Perth (4Cabling) that would be any network nerd's dream, and I walked away with:
 
-- [Elsafe Quad Power Outlet](https://www.4cabling.com.au/oe-elsafe-qifkit-quad-auto-switched-power-outlet-4-gpo-black.html) and [Elsafe Dual Power Outlet](https://www.4cabling.com.au/oe-elsafe-qikfit-dual-auto-switched-power-outlet-2-x-gpo-black.html) (and extensions, for an additional 6 points)
-- [Elsafe Quad Data Outlet](https://www.4cabling.com.au/oe-elsafe-qifkit-4x-data-cutout-black.html) (plus the inserts required, and shorter network cables)
-- [TP-Link Switch](https://www.4cabling.com.au/tp-link-tl-sg1005d-5-port-unmanaged-gigabit-desktop-switch.html) (I only had one port, so this gave me the ability to plug in 4 devices)
+  - [Elsafe Quad Power Outlet](https://www.4cabling.com.au/oe-elsafe-qifkit-quad-auto-switched-power-outlet-4-gpo-black.html) and [Elsafe Dual Power Outlet](https://www.4cabling.com.au/oe-elsafe-qikfit-dual-auto-switched-power-outlet-2-x-gpo-black.html) (and extensions, for an additional 6 points)
+  - [Elsafe Quad Data Outlet](https://www.4cabling.com.au/oe-elsafe-qifkit-4x-data-cutout-black.html) (plus the inserts required, and shorter network cables)
+  - [TP-Link Switch](https://www.4cabling.com.au/tp-link-tl-sg1005d-5-port-unmanaged-gigabit-desktop-switch.html) (I only had one port, so this gave me the ability to plug in 4 devices)
 
 ## The Setup
 
@@ -79,13 +79,13 @@ This was also where I hit another snag, because the desk wasn't as deep, the cab
 
 Most of the rest of my setup I already had, my keyboard and mouse I upgraded and was specifically looking for something that was rechargeable (why does everything just take batteries, there's literally a charging port right there!) and bluetooth connectivity. I was less fussed on shiny lights but for the keyboard figured the $20 extra to get RGB lights wasn't going to make much of a difference.
 
-- [Keychron K1 108 key keyboard](https://www.keychron.com/products/keychron-k1-wireless-mechanical-keyboard) (now only available in smaller versions)
-- [Logitech MX Master 3 Mouse](https://www.logitech.com/en-au/products/mice/mx-master-3.910-005698.html)
+  - [Keychron K1 108 key keyboard](https://www.keychron.com/products/keychron-k1-wireless-mechanical-keyboard) (now only available in smaller versions)
+  - [Logitech MX Master 3 Mouse](https://www.logitech.com/en-au/products/mice/mx-master-3.910-005698.html)
 
 I upgraded my camera and mic setup last year when recording [my online course](https://leveluptutorials.com/tutorials/accessibility-for-everyone), although I ended up finding the boom arm and shock mount on Facebook Marketplace.
 
-- [Logitech StreamCam](https://www.logitech.com/en-au/products/webcams/streamcam.960-001299.html)
-- [Blue Yeti Mic with Boom Arm and Shockmount](https://www.bluemic.com/en-au/products/yeti/)
+  - [Logitech StreamCam](https://www.logitech.com/en-au/products/webcams/streamcam.960-001299.html)
+  - [Blue Yeti Mic with Boom Arm and Shockmount](https://www.bluemic.com/en-au/products/yeti/)
 
 Although I only had two monitors, I managed to track down a triple monitor arm that allowed me to attach it through the desk rather than clamping onto the back, with the [Brateck Triple Monitor Mount](https://brateck.com.au/product/mabt-ldt57-c03/), which meant that I wouldn't have to buy another monitor arm when I went back to a triple screen setup, even if my screens were weirdly high for the time being.
 

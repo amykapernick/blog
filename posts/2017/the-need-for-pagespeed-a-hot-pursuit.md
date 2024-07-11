@@ -42,7 +42,6 @@ While Google PageSpeed gives you a really good basic overview of your site, ther
 
 [WebPagetest](https://www.webpagetest.org/) is a little more intimidating, but provides a lot more information, breaking down scores into the different sections of your site (code, images, etc). It also measures the page load time, taking into account the initial load (the first time that a user visits your site) and subsequent load times (taking into account any browser caching that you've enabled to optimise the experience).
 
-
 ![](/img/dev/performance/7a7b2c7cf9d459bc75951c6ee5d8524b733d508f_0_g1gl9ba4kblbjbu5.png)
 
 Another great tool (also by Google), is Test My Site which is more centered around mobile performance and compares your site to others in your industry. This is a really great tool if you want to get an idea about how you're ranking against your competitors. This is generated off WebPagetest but is a much more simplified version.
@@ -51,13 +50,11 @@ Another great tool (also by Google), is Test My Site which is more centered arou
 
 The best way to determine whether your page load time is affecting your site's traffic, though is using your Google Analytics. The bounce rate of your website measures how many people ‘bounce' from your site before navigating to another page. The expected bounce rate depends a lot on the type of site, but in general:
 
-* 80%+ is very bad
-* 70–80% is poor
-* 50–70% is average
-* 30–50% is excellent
-
+  - 80%+ is very bad
+  - 70–80% is poor
+  - 50–70% is average
+  - 30–50% is excellent
 
 ![](/img/dev/performance/214d1c2a2b6153643d40d1c8860d670ff316b836_0_dmj1mpen0efjc2og.png)
 
 While site performance is very important and you should definitely look at improving the page load time, you don't necessarily need to be worried because you've received an average PageSpeed score. Try running reports on some of the other tools to see if they stack up and check the bounce rate to see if you're losing site visitors. Optimising your site is always a good thing to do though, let's see if we can make the web a little faster.
-

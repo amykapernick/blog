@@ -102,7 +102,7 @@ And lets not forget that she reminded us it's ok because everyone is like this w
 
 ![](/img/conferences/css-conf-au-2018ezgif-1-77d99effd9.gif)
 
-When coming up with a new colour system for Github, there were so many differing factors to take into account, including whether people would still recognise different buttons/sections/features when a colour was changed, whether there were too many colours being used on the site, whether they were accessible and the most important - how would the user base react to the change?
+When coming up with a new colour system for GitHub, there were so many differing factors to take into account, including whether people would still recognise different buttons/sections/features when a colour was changed, whether there were too many colours being used on the site, whether they were accessible and the most important - how would the user base react to the change?
 
 <a href="https://twitter.com/Amys_Kapers/status/975950415110918144" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/975950415110918144.png" /></a>
 
@@ -145,4 +145,3 @@ As a primarily CSS developer at the start of my career, I'm starting to experien
 In the industry that changes every day, we're also starting to notice that some of it stays very "same same", whether it be an team that insists on continuing to do things a particular way, a company that insists on hiring people who've completed a particular journey as a developer (eg. studied a computer science or software engineering degree) or an organisation where every team member looks and thinks the same way. Ivana raised an amazing point in her talk, that different journeys mean a different perspective, and oftentimes this different perspective and change from "how we always do things" is what a team needs to go from average to amazing.
 
 I spent Ivana's talk being inspired and amazed and thoroughly enjoyed listening to someone remind me that we're all working together and trying to make a change to the industry. It addressed a serious issue, but didn't bog down in the negatives (the final talk for the day is a tough spot to deal with) and came out inspiring and positive, reminding us that there are others out there trying to change it too and if we continue to work together we can make the web a much more pleasant place to work.
-

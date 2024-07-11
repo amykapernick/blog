@@ -10,15 +10,15 @@ I'd like to thank Microsoft for inspiring this tale, and Shakespeare for inspiri
 
 ## Dramatis Personae
 
-**Solinus**, _generic Microsoft support officer_
+**Solinus**, *generic Microsoft support officer*
 
-**Aemilia**, _myself_
+**Aemilia**, *myself*
 
-**Balthazar**,_ shop owner_
+**Balthazar**,*shop owner*
 
-## Act I.
+## Act I
 
-### Scene I. _Aemilia's Office_
+### Scene I. *Aemilia's Office*
 
 `Aemilia sits at a desk`
 **Aemilia**. Alas! Mine computer device hath ceased! What am I to doth?
@@ -34,14 +34,14 @@ Thank the gods it hath a warranty
 
 **Aemilia**. O summer's day; hither tis
 
-```
+```text
 Aemilia hands computer to Solinus
 Exeunt Solinus
 ```
 
-## Act II.
+## Act II
 
-### Scene I. _Aemilia's Living Room_
+### Scene I. *Aemilia's Living Room*
 
 `3 weeks have passed, Aemilia sits on a couch`
 **Aemilia**. The sands of time are passing by, whither is mine computer?
@@ -55,9 +55,9 @@ Exeunt Solinus
 
 `Exeunt Solinus`
 
-### Scene II. _Aemilia's Living Room_
+### Scene II. *Aemilia's Living Room*
 
-```
+```text
 Some time has passed
 Enter Solinus
 ```
@@ -74,9 +74,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene III. _Aemilia's Living Room_
+### Scene III. *Aemilia's Living Room*
 
-```
+```text
 More time has passed
 Enter Solinus
 ```
@@ -89,23 +89,23 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-## Act III.
+## Act III
 
-### Scene I. _Aemilia's Office_
+### Scene I. *Aemilia's Office*
 
 `Several days have passed, Solinus stands in the room`
 **Solinus**. O Aemilia, Aemilia, wherefore art thou Aemilia? We w're unable to redirect thy comput'r, prithee contact us lief
 
-```
+```text
 Exeunt Solinus
 Enter Aemilia
 ```
 
 **Aemilia**. I hath heard Solinus speaketh but that gent hast gone anon, I wilt findeth that gent immediately
 
-### Scene II. _Aemilia's Office_
+### Scene II. *Aemilia's Office*
 
-```
+```text
 Some time has passed
 Enter Solinus
 ```
@@ -126,9 +126,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene III. _Aemilia's Office_
+### Scene III. *Aemilia's Office*
 
-```
+```text
 More time has passed
 Enter Solinus
 ```
@@ -145,9 +145,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene IV. _Aemilia's Office_
+### Scene IV. *Aemilia's Office*
 
-```
+```text
 More time has passed
 Enter Solinus
 ```
@@ -160,9 +160,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-## Act IV.
+## Act IV
 
-### Scene I. _Aemilia's Office_
+### Scene I. *Aemilia's Office*
 
 `Another week has passed, Aemilia sits at a desk`
 **Aemilia**. Anoth'r week hast hath passed, and still nay computer
@@ -176,9 +176,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene II. _Aemilia's Office_
+### Scene II. *Aemilia's Office*
 
-```
+```text
 Some time has passed
 Enter Solinus
 ```
@@ -191,9 +191,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene III. _Aemilia's Office_
+### Scene III. *Aemilia's Office*
 
-```
+```text
 More time has passed
 Enter Solinus
 ```
@@ -210,9 +210,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene IV. _Aemilia's Office_
+### Scene IV. *Aemilia's Office*
 
-```
+```text
 More time has passed
 Enter Solinus
 ```
@@ -225,11 +225,11 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-## Act V.
+## Act V
 
-### Scene I. _Aemilia's Office_
+### Scene I. *Aemilia's Office*
 
-```
+```text
 Several days have passed
 ```
 
@@ -244,9 +244,9 @@ Several days have passed
 
 `Exeunt Solinus`
 
-### Scene II._ Aemilia's Office_
+### Scene II.*Aemilia's Office*
 
-```
+```text
 Some time has passed
 Enter Solinus
 ```
@@ -259,9 +259,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene III. _Aemilia's Office_
+### Scene III. *Aemilia's Office*
 
-```
+```text
 More time has passed
 Enter Solinus
 ```
@@ -274,9 +274,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene IV. _Aemilia's Office_
+### Scene IV. *Aemilia's Office*
 
-```
+```text
 More time has passed
 Enter Solinus
 ```
@@ -293,9 +293,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-## Act VI.
+## Act VI
 
-### Scene I. _Aemilia's Office_
+### Scene I. *Aemilia's Office*
 
 `Three business days have passed`
 **Aemilia**. Hark Solinus! Three days has't hath passed and mine own computer hast still not arriv'd
@@ -313,9 +313,9 @@ Enter Solinus
 
 `Exeunt Solinus`
 
-### Scene II. _Aemilia's Office_
+### Scene II. *Aemilia's Office*
 
-```
+```text
 Some time has passed
 Enter Solinus
 ```
@@ -338,9 +338,9 @@ Enter Solinus
 
 `Exeunt Aemilia`
 
-### Scene III. _Aemilia's Office_
+### Scene III. *Aemilia's Office*
 
-```
+```text
 Some more time has passed, Aemilia sits at her desk
 [A carrier pigeon flies into the room and drops a letter]
 ```
@@ -357,7 +357,7 @@ Kind wishes, Solinus
 
 `Exeunt Aemilia`
 
-### Scene IV. _The Store_
+### Scene IV. *The Store*
 
 `More time has passed, Aemilia speaks to Balthazar at the store counter`
 **Aemilia**. Prithee kind sir, the parcel wast hath sent to the wrong addresseth
@@ -368,7 +368,7 @@ Kind wishes, Solinus
 
 **Balthazar**. We needeth to v'rify bef're thee can collecteth thy parcel
 
-```
+```text
 [Aemilia burts into tears]
 ```
 
@@ -379,4 +379,3 @@ Kind wishes, Solinus
 **Aemilia**. O summer's day; you and your lady, take from my heart all thankfullness!
 
 `Exeunt Aemilia`
-

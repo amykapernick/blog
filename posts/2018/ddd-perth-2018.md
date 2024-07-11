@@ -69,7 +69,7 @@ So make sure to challenge toxic behaviours; for example if someone just continua
 
 > How can we fix that? What would you do differently?
 
-And remember, people might be going through some other shit in their life, so they may not be toxic, they may just have something going on. 
+And remember, people might be going through some other shit in their life, so they may not be toxic, they may just have something going on.
 
 ## Creating a 'best place to work' culture - [Donna Edwards](https://twitter.com/Don_IsGood)
 
@@ -89,7 +89,7 @@ It was super interesting to see Mandy's talk, as I did a similar one recently (w
 
 <a href="https://twitter.com/Amys_Kapers/status/1025631570286137344" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025631570286137344.png" /></a>
 
-Mandy talked about the issue prevelant in the industry today, where there isn't much value placed in front end developers who can't write Javascript. HTML is still changing quite a lot, and good semantic functional HTML is really important for your site to be used by a wide variety of software and devices like your Google Home and many reading apps like Pocket and Apple Reader.
+Mandy talked about the issue prevelant in the industry today, where there isn't much value placed in front end developers who can't write JavaScript. HTML is still changing quite a lot, and good semantic functional HTML is really important for your site to be used by a wide variety of software and devices like your Google Home and many reading apps like Pocket and Apple Reader.
 
 <a href="https://twitter.com/Amys_Kapers/status/1025632220915019776" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025632220915019776.png" /></a>
 
@@ -108,4 +108,3 @@ To finish off the talk, Mandy delved into the mysterious world of metadata and g
 Giving every one of us something to take away, Mandy reminded us all of the importance of writing functional HTML, and why we need to respect those who don't know JavaScript (or at least know that it's not always the answer).
 
 <a href="https://twitter.com/battlepanda_au/status/1025752304325017600" target="_blank"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1025752304325017600.png" /></a>
-

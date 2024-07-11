@@ -13,7 +13,8 @@
     "build:local": "doppler run -- npm run build",
     "preview": "astro preview",
     "clean": "rm -rf dist",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "lint": "markdownlint posts/**/*.md -c ./markdownlint.config.js --fix"
   },
   "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "homepage": "https://blog.amyskapers.dev",

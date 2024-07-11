@@ -32,7 +32,7 @@ module.exports = async function (context) {
     message.body(`Welcome to Quokkabot!`)
 
     res.set('content-type', 'text/xml')
-	res.end(message.toString())
+    res.end(message.toString())
 };
 ```
 
@@ -59,7 +59,7 @@ module.exports = async function (context) {
     )
 
     res.set('content-type', 'text/xml')
-	res.end(message.toString())
+    res.end(message.toString())
 };
 ```
 
@@ -82,11 +82,11 @@ publishIterationName = process.env.ITERATION,
 predictor = new PredictionApi.PredictionAPIClient(key, endpoint)
 
 const customVision = async (image) => {
-	return (results = await predictor.classifyImageUrl(projectId, publishIterationName, { url: image })) 
+    return (results = await predictor.classifyImageUrl(projectId, publishIterationName, { url: image })) 
 }
 
 module.exports = {
-	customVision
+    customVision
 }
 ```
 
@@ -115,7 +115,7 @@ module.exports = async function (context) {
     )
 
     res.set('content-type', 'text/xml')
-	res.end(message.toString())
+    res.end(message.toString())
 };
 ```
 
@@ -134,28 +134,28 @@ publishIterationName = process.env.ITERATION,
 predictor = new PredictionApi.PredictionAPIClient(key, endpoint)
 
 const customVision = async (image) => {
-	const results = await predictor.classifyImageUrl(projectId, publishIterationName, { url: image }),
-	outcome = quokkaTest(results)
+    const results = await predictor.classifyImageUrl(projectId, publishIterationName, { url: image }),
+    outcome = quokkaTest(results)
 
-	return outcome
+    return outcome
 }
 
 const quokkaTest = (results) => {
-	let outcome = {}
+    let outcome = {}
 
-	results.predictions.forEach(tag => {
-		if (tag.tagName == 'Negative') {
-			outcome.negative = tag.probability
-		} else if (tag.tagName == 'Quokka') {
-			outcome.quokka = tag.probability
-		}
-	})
+    results.predictions.forEach(tag => {
+        if (tag.tagName == 'Negative') {
+            outcome.negative = tag.probability
+        } else if (tag.tagName == 'Quokka') {
+            outcome.quokka = tag.probability
+        }
+    })
 
-	return outcome
+    return outcome
 }
 
 module.exports = {
-	customVision
+    customVision
 }
 ```
 
@@ -199,7 +199,7 @@ module.exports = async function (context) {
     message.body(reply)
 
     res.set('content-type', 'text/xml')
-	res.end(message.toString())
+    res.end(message.toString())
 };
 ```
 
@@ -210,26 +210,26 @@ Because this originally started with the ability to request pictures of Quokkas,
 ```javascript
 // quokkabot.js
 const quokkaBot = (text) => {
-	let results = {},
-	photo = Math.floor(Math.random() * 12)
+    let results = {},
+    photo = Math.floor(Math.random() * 12)
 
-	if(RegExp('quokka', 'i').test(text)) {
-		results.body = `This is a quokka`
-		
-	}
-	else {
-		results.body = `Welcome to Quokka bot! I can do a bunch of different things that have to do with quokkas.
-		\nNeed a picture of a quokka? Just ask me
-		\nNot sure if you've seen a quokka? Send me a picture and I'll tell you if there's a quokka in it`
-	}
+    if(RegExp('quokka', 'i').test(text)) {
+        results.body = `This is a quokka`
+        
+    }
+    else {
+        results.body = `Welcome to Quokka bot! I can do a bunch of different things that have to do with quokkas.
+        \nNeed a picture of a quokka? Just ask me
+        \nNot sure if you've seen a quokka? Send me a picture and I'll tell you if there's a quokka in it`
+    }
 
-	results.media = `https://quokkas.amyskapers.dev/img/quokka_(${photo}).jpg`
+    results.media = `https://quokkas.amyskapers.dev/img/quokka_(${photo}).jpg`
 
-	return results
+    return results
 }
 
 module.exports = {
-	quokkaBot
+    quokkaBot
 }
 ```
 
@@ -283,9 +283,10 @@ module.exports = async function (context) {
     }
 
     res.set('content-type', 'text/xml')
-	res.end(message.toString())
+    res.end(message.toString())
 };
 ```
+
 ---
 
-Now that this is working though, this is only the start (more posts incoming). The current state of this project is in [GitHub](https://github.com/amykapernick/quokkas). 
+Now that this is working though, this is only the start (more posts incoming). The current state of this project is in [GitHub](https://github.com/amykapernick/quokkas).

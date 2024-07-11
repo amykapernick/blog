@@ -13,11 +13,11 @@ These instructions are specific to a WordPress build and using cPanel but can be
 
 To set this up you'll need a few things:
 
-- Install [XAMPP](https://www.apachefriends.org/index.html) (or [MAMP](https://www.mamp.info/en/) on a Mac) for local development
-- [Github](https://github.com/) Account (can also use GitLab or Bitbucket)
-- Latest [WordPress](https://en-au.wordpress.org/) version
-- [Git client](https://git-for-windows.github.io/) (for Windows computers, Mac and Linux can use Terminal). You could also use [Ubuntu Bash](https://msdn.microsoft.com/en-au/commandline/wsl/install_guide) if you have the lastest Windows 10
-- Access to your hosting through cPanel (or similar)
+  - Install [XAMPP](https://www.apachefriends.org/index.html) (or [MAMP](https://www.mamp.info/en/) on a Mac) for local development
+  - [GitHub](https://github.com/) Account (can also use GitLab or Bitbucket)
+  - Latest [WordPress](https://en-au.wordpress.org/) version
+  - [Git client](https://git-for-windows.github.io/) (for Windows computers, Mac and Linux can use Terminal). You could also use [Ubuntu Bash](https://msdn.microsoft.com/en-au/commandline/wsl/install_guide) if you have the lastest Windows 10
+  - Access to your hosting through cPanel (or similar)
 
 ## Install WordPress
 
@@ -31,12 +31,12 @@ Technically you could use the whole WordPress folder as your repository but I on
 
 I use Gulp to not only compile my Sass (definitely one of the most amazing things I've learnt) but also to create source maps and change the file paths when changing from local to online. If you're starting from scratch, you'll have to install the following:
 
-- [Node.js](https://nodejs.org/en/)
-- [Gulp](https://www.npmjs.com/package/gulp-install) (via Git Bash, Terminal or similar)
-- [Gulp Sass](https://www.npmjs.com/package/gulp-sass)
-- [Gulp Replace](https://www.npmjs.com/package/gulp-replace)
-- [Gulp String Replace](https://www.npmjs.com/package/gulp-string-replace)
-- [Gulp Sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
+  - [Node.js](https://nodejs.org/en/)
+  - [Gulp](https://www.npmjs.com/package/gulp-install) (via Git Bash, Terminal or similar)
+  - [Gulp Sass](https://www.npmjs.com/package/gulp-sass)
+  - [Gulp Replace](https://www.npmjs.com/package/gulp-replace)
+  - [Gulp String Replace](https://www.npmjs.com/package/gulp-string-replace)
+  - [Gulp Sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
 
 These are all modules needed in my Gulpfile but feel free to use different ones or add your own, remember to adjust as necessary.
 
@@ -137,4 +137,3 @@ This doesn't have to be done every time, but includes any updates in content (su
 ## Plugins
 
 Again, unfortunately this method doesn't result in the plugins being brought across. My method to approach this, is to install the plugins on both local and live and when the database gets imported, it will bring through any config that you've set.
-

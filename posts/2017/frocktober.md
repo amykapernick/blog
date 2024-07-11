@@ -17,4 +17,3 @@ This month, I've been participating in Frocktober with a friend of mine, and we'
 While the past (almost) month, has been a massive eye-opener into the fact that I apparently own way too many dresses, hopefully we can also raise more money to help support ovarian cancer research. Because with 1 in 80 women being diagnosed with it, chances are it will touch all of our lives.
 
 Please help us and donate at <https://frocktober2017.everydayhero.com/au/tracy>
-

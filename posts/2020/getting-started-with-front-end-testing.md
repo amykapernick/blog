@@ -24,7 +24,7 @@ Under the VS Code Settings you can then define when to automatically format a fi
 
 ![Automatic formatting settings in VS Code](/img/dev/front-end-testing/fender-testing-2.png)
 
-Linting is a fairly personal choice (although tabs are the right option, they're actually [better for accessibility](https://dev.to/alexandersandberg/why-we-should-default-to-tabs-instead-of-spaces-for-an-accessible-first-environment-101f)), but you can find some starter files on [Github](https://github.com/amykapernick/starter-files).
+Linting is a fairly personal choice (although tabs are the right option, they're actually [better for accessibility](https://dev.to/alexandersandberg/why-we-should-default-to-tabs-instead-of-spaces-for-an-accessible-first-environment-101f)), but you can find some starter files on [GitHub](https://github.com/amykapernick/starter-files).
 
 ## Accessibility Testing
 
@@ -38,13 +38,13 @@ Out of the box the pa11y command line tool runs over your site with the WCAG2AA 
 const pa11y = require('pa11y')
 
 const runTest = async () => {
-	const results = await Promise.all([
-		// Basic pa11y test with no options
-		pa11y(`http://localhost:65519`),
-	])
+    const results = await Promise.all([
+        // Basic pa11y test with no options
+        pa11y(`http://localhost:65519`),
+    ])
 
-	// Display Results
-	console.log(results)
+    // Display Results
+    console.log(results)
 }
 
 runTest()
@@ -64,14 +64,14 @@ const puppeteer = require('puppeteer-core');
 
 //Define the browser settings at the start of your runTest function
 const browser = await puppeteer.launch({
-	ignoreHTTPSErrors: true,
-	executablePath: '/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',
-	args: ['--no-sandbox'],
+    ignoreHTTPSErrors: true,
+    executablePath: '/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',
+    args: ['--no-sandbox'],
 })
 
 // Define the browser option in the pa11y function
 pa11y('https://localhost:65519', {
-	browser: browser
+    browser: browser
 })
 
 // Close the browser at the end of your function
@@ -86,7 +86,7 @@ const fs = require('file-system')
 
 // Replace the console.log of results with saving to a file
 fs.writeFile('tests/results/pa11y.json', JSON.stringify(results), err => {
-	console.log(err)
+    console.log(err)
 })
 ```
 
@@ -94,22 +94,22 @@ The results pa11y gives you will include a code snippet to show where the error 
 
 ```json
 [
-	{
-		"documentTitle": "My Testing Blog",
-		"pageUrl": "http://localhost:65519/",
-		"issues": [
-			{
-				"code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
-				"type": "error",
-				"typeCode": 1,
-				"message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
-				"context": "<html><head>\n\t\t<meta charset=\"utf-8\">...</html>",
-				"selector": "html",
-				"runner": "htmlcs",
-				"runnerExtras": {}
-			}
-		]
-	}
+    {
+        "documentTitle": "My Testing Blog",
+        "pageUrl": "http://localhost:65519/",
+        "issues": [
+            {
+                "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+                "type": "error",
+                "typeCode": 1,
+                "message": "The HTML element should have a lang or xml:lang attribute which describes the language of the document.",
+                "context": "<HTML><head>\n\t\t<meta charset=\"utf-8\">...</HTML>",
+                "selector": "HTML",
+                "runner": "htmlcs",
+                "runnerExtras": {}
+            }
+        ]
+    }
 ]
 ```
 
@@ -117,13 +117,13 @@ For example, the error given in the report above is for the guideline 3.1.1, you
 
 ![WCAG Guidelines Principle listing](/img/dev/front-end-testing/fender-testing-3.png)
 
-By default pa11y tests against the WCAG (Web Content Accessibility Guidelines) 2.0 AA standard, you can change this by defining a `[standard` option](https://github.com/pa11y/pa11y#standard-string) in the pa11y function. You can also set a path on the `[screenCapture` option](https://github.com/pa11y/pa11y#screencapture-string) and pa11y with take a screenshot during the test and save it, this is useful when trying to work out why pa11y is giving a particular error. A full list of options is available in the [pa11y repository](https://github.com/pa11y/pa11y#configuration).
+By default pa11y tests against the WCAG (Web Content Accessibility Guidelines) 2.0 AA standard, you can change this by defining a `[standard` option](<https://github.com/pa11y/pa11y#standard-string>) in the pa11y function. You can also set a path on the `[screenCapture` option](<https://github.com/pa11y/pa11y#screencapture-string>) and pa11y with take a screenshot during the test and save it, this is useful when trying to work out why pa11y is giving a particular error. A full list of options is available in the [pa11y repository](https://github.com/pa11y/pa11y#configuration).
 
 ```javascript
 pa11y(`http://localhost:65519`, {
-	browser: browser,
-	standard: 'WCAG2AAA',
-	screenCapture: `${__dirname}/results/pa11y_home.png`,
+    browser: browser,
+    standard: 'WCAG2AAA',
+    screenCapture: `${__dirname}/results/pa11y_home.png`,
 }),
 ```
 
@@ -135,31 +135,31 @@ You can also check multiple pages and screen sizes and run multiple tests by add
 
 ```javascript
 const results = await Promise.all([
-		pa11y(`http://localhost:65519`, {
-			browser: browser,
-			standard: 'WCAG2AAA',
-			screenCapture: `${__dirname}/results/pa11y_home_desktop.png`,
-			viewport: {
-				width: 1280,
-				height: 1024,
-			},
-		}),
-		pa11y(`http://localhost:65519`, {
-			browser: browser,
-			standard: 'WCAG2AAA',
-			screenCapture: `${__dirname}/results/pa11y_home_mobile.png`,
-			viewport: {
-				width: 320,
-				height: 480,
-				isMobile: true,
-			},
-		}),
-		pa11y(`http://localhost:65519/blog-post`, {
-			browser: browser,
-			standard: 'WCAG2AAA',
-			screenCapture: `${__dirname}/results/pa11y_post.png`,
-		}),
-	])
+        pa11y(`http://localhost:65519`, {
+            browser: browser,
+            standard: 'WCAG2AAA',
+            screenCapture: `${__dirname}/results/pa11y_home_desktop.png`,
+            viewport: {
+                width: 1280,
+                height: 1024,
+            },
+        }),
+        pa11y(`http://localhost:65519`, {
+            browser: browser,
+            standard: 'WCAG2AAA',
+            screenCapture: `${__dirname}/results/pa11y_home_mobile.png`,
+            viewport: {
+                width: 320,
+                height: 480,
+                isMobile: true,
+            },
+        }),
+        pa11y(`http://localhost:65519/blog-post`, {
+            browser: browser,
+            standard: 'WCAG2AAA',
+            screenCapture: `${__dirname}/results/pa11y_post.png`,
+        }),
+    ])
 ```
 
 ## Visual Regression Testing
@@ -228,11 +228,12 @@ BackstopJS is a good tool for running this, because it gives you starter config 
   "debugWindow": false
 }
 ```
-<blockquote class="callout" data-tag="Note">
+
+<aside class="callout" data-tag="Note">
 
 Again, if you're using WSL, add the executable path the to config options in `backstop.json`
 
-</blockquote>
+</aside>
 
 ```json
 "engine": "puppeteer",
@@ -263,16 +264,16 @@ Cypress uses the [Chai assertion library](https://docs.cypress.io/guides/referen
 ```javascript
 // Name of Test
 describe('Blog Homepage', () => {
-	// Runs at the start of this test
-	before(() => {
-		// Visit our website in the Cypress browser
-		cy.visit('http://localhost:65519')
-	})
+    // Runs at the start of this test
+    before(() => {
+        // Visit our website in the Cypress browser
+        cy.visit('http://localhost:65519')
+    })
 
-	// Assertion - title should contain specific text
-	it('contains "My Testing Blog" in the title', () => {
-		cy.title().should('contain', 'My Testing Blog')
-	})
+    // Assertion - title should contain specific text
+    it('contains "My Testing Blog" in the title', () => {
+        cy.title().should('contain', 'My Testing Blog')
+    })
 })
 ```
 
@@ -281,20 +282,20 @@ You can add  extra tests within your `describe` function, a list of all the asse
 ```javascript
 // Find the element with the `feed` class name and check that there's an article inside it
 it('Contains posts in blog feed', () => {
-	cy.get('.feed').find('article')
+    cy.get('.feed').find('article')
 })
 
 // Check that all articles on the page contain a heading
 it('All posts contain a title', () => {
-	cy.get('article').get('h2')
+    cy.get('article').get('h2')
 })
 
 // Check that you can click on the post title link
 it('Can access posts via article title', () => {
-	cy.get('article')
-		.first()
-		.find('a')
-		.click()
+    cy.get('article')
+        .first()
+        .find('a')
+        .click()
 })
 ```
 
@@ -302,18 +303,18 @@ You can define extra tests in a new `describe` function, and set the viewport to
 
 ```javascript
 describe('Mobile Blog Post Template', () => {
-	before(() => {
-		cy.viewport('samsung-s10')
-		cy.visit('http://localhost:65519/blog-post')
-	})
+    before(() => {
+        cy.viewport('samsung-s10')
+        cy.visit('http://localhost:65519/blog-post')
+    })
 
-	it('has visible post title', () => {
-		cy.get('h1').should('be.visible')
-	})
+    it('has visible post title', () => {
+        cy.get('h1').should('be.visible')
+    })
 
-	it('Can navigate back to home', () => {
-		cy.get('.site-title').click()
-	})
+    it('Can navigate back to home', () => {
+        cy.get('.site-title').click()
+    })
 })
 ```
 

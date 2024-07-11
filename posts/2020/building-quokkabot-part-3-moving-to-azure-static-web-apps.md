@@ -25,11 +25,11 @@ Select your Azure subscription and resource group (for now, Static Web Apps is f
 
 ![](/img/quokkabot/swas_repo_connect.png)
 
-Specify the details for the site build, my static site sits in the root folder of the repository, and builds out to a folder called `_site`. While I don't have an API to include there yet, leaving the API location as is is fine (if they can't find the `api` folder, they'll ignore it.
+Specify the details for the site build, my static site sits in the root folder of the repository, and builds out to a folder called `_site`. While I don't have an API to include there yet, leaving the API location as is is fine (if they can't find the `api` folder, they'll ignore it).
 
 ![](/img/quokkabot/swas_build.png)
 
-Next, click **Review + create** to create the new resource. 
+Next, click **Review + create** to create the new resource.
 
 This will automatically create a workflow file in your repo, with a GitHub action to build the site and deploy it to Azure.
 
@@ -64,8 +64,6 @@ Azure Static Web Apps has only been available for a week, is still in preview an
 During the build process, Azure uses it's own node_modules folder to install things in, `__oryx_prod_node_modules`, which as it wasn't called `node_modules`, my Eleventy site tried to build out the content 🤦‍♀️. This was an easy fix though, by adding that folder to the [`.eleventyignore` file](https://www.11ty.dev/docs/ignores/), the build ignored it.
 
 ### Azure Functions
-
-**Fixed**
 
 While Static Web Apps does use Azure Functions for the API back ends, there's a layer that sits between the two, which currently stops the API sending custom headers with the response (such as `Content-Type`). This has been lodged as an issue though and should be fixed shortly.
 

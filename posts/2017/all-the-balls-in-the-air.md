@@ -44,11 +44,12 @@ While actually keeping a calendar for social events is still pretty new, there a
 Once your calendar is set up, it's not only easy to see what you have on but also what you don't. By looking at either a day or week view, you can see how much free time you have on and hopefully keep some “you time” on the books. And if you struggle to keep some time free each week, book it in to block it out.
 
 ## To Do List
+
 Once you've got your time organised, the next step is to make sure you've got your tasks organised as well. How many times have you decided that it's fine, you'll remember to do something but you always forget when the time comes? Don't feel like you're the only one, the number of times I've said I'll send something when I'm next at my computer, and I never ever remember while I'm at my computer.
 
 I used to keep my list in physical form, written in a notebook (it matched my diary) but I found that the first thing I had to do each day (and usually a few times again throughout the day) was re-write the entire list because everything had changed and as I crossed things off it was difficult to see what I had left to do. So again I switched to a digital version.
 
-I tried a few different products, including [Wunderlist ](https://www.wunderlist.com/)but ended up settling on [ToDoist](https://todoist.com/). While there are a lot of different products out there, these are two of the big ones and have apps for pretty much every device out there (including Windows phones). Again, the right app for you depends on what functionality you're after (plus I really liked the way ToDoist looked, it was nice and clean).
+I tried a few different products, including [Wunderlist](https://www.wunderlist.com/)but ended up settling on [ToDoist](https://todoist.com/). While there are a lot of different products out there, these are two of the big ones and have apps for pretty much every device out there (including Windows phones). Again, the right app for you depends on what functionality you're after (plus I really liked the way ToDoist looked, it was nice and clean).
 
 ![](/img/tools/routine/37e0b6a84fde4f59cdcae3b07f0f1d766c1ee439_0_szhkyuvq_ssg9f_c.jpg)
 
@@ -71,4 +72,3 @@ While this is great to track actual tasks, I've also found it's good to keep tra
 At times it can be difficult to differentiate between whether something should be a calendar event or a task, but the best way to do it is however you think it should be done so it's really up to you on where you want to draw the line. I've found that as long as you have it recorded somewhere and make sure it gets done, that's the important thing.
 
 I know it can be hard to adjust to changing things, and there are times when you may forget to book something into your calendar or add something to your list (there are still times when I forget, or I manage to convince myself that I can remember by myself which I never do). But trust me when I say it helps. This takes away the stress of having to keep track of everything yourself (and leaves more room for useless trivia). Plus acting organises helps to eventually make you feel organised, fake it until you make it.
-

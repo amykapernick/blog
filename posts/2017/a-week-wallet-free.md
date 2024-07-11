@@ -40,4 +40,3 @@ I also went to a friends birthday last weekend and in lieu of presents she'd ask
 ## Conclusion
 
 When I originally started this experiment, the plan had been to continue it for a week and see how I went without carrying a wallet. Although there are a couple of occasions that I've found myself wishing I had my wallet, it's been nice not having to worry about carrying it around and have definitely enjoyed having less issues fitting everything into my bag. All-in-all, I think this has been a success and I'm planning on continuing this on a more permanent basis.
-

@@ -16,9 +16,9 @@ Have you ever picked up a project you haven't touched in a while and watched all
 
 ## What's an environment/env variable?
 
-[Environment variables](https://www.dotenv.org/docs/security/env?ref=blog.makerx.com.au) (or env variables for short) are a set of variables often used in projects to avoid adding secret values (like API keys and passwords) to a codebase. These are generally saved in a `.env` file (referred to as a _dot E-N-V_ file), which then lives just on each person's computer and isn't included with the rest of the code base. The format for each file is a list of key-value pairs, and ignores any blank lines or comments.
+[Environment variables](https://www.dotenv.org/docs/security/env?ref=blog.makerx.com.au) (or env variables for short) are a set of variables often used in projects to avoid adding secret values (like API keys and passwords) to a codebase. These are generally saved in a `.env` file (referred to as a *dot E-N-V* file), which then lives just on each person's computer and isn't included with the rest of the code base. The format for each file is a list of key-value pairs, and ignores any blank lines or comments.
 
-```
+```env
   AZURE_API_KEY=TWZjYWFxRkg3V0BEcGlXSkJ6Mw
   STRIPE_API_KEY=VFdaallXRnhSa2czVjBCRWNHbFhTa0o2TXc9PQ
 
@@ -29,7 +29,7 @@ Have you ever picked up a project you haven't touched in a while and watched all
 
 Because these `.env` files are specific to a certain environment (eg. a developer's computer), sometimes projects will end up with multiple `.env` files for different environments, eg. `.env.development` or `.env.production` (any `.env.{environment}` is valid), or you may see a `.env.sample` being checked into the code repository. A sample file will typically include a list of all variables, but with blank values, although sometimes less secret values will still be included when there's no concern of people finding and getting access to these values.
 
-```
+```env
   # .env.sample
   AZURE_API_KEY=
   STRIPE_API_KEY=
@@ -61,7 +61,9 @@ This will generate a `vars.json` file, listing all the variables and their value
 
 Once you've got your starting point, you can then compare it to the `.env.sample` file from the repo using the `check` function, by default this will output the changes to the console, but you can choose to output to a json file instead if you want to keep a record of it (make sure to add that to your `.gitignore` file as well).
 
-    envolver check .env.sample --output=json
+```shell
+envolver check .env.sample --output=json
+```
 
 This summary can then let you know which values have changed (this may not be entirely accurate if your `.env.sample` file doesn't have values but your `.env` file does), and which variables are completely new.
 
@@ -86,7 +88,7 @@ If you pass in the `-u, --update` flag when checking as well, it will update the
 
 Some teams or developers will have preferred conventions for how they organise a `.env` file, for example you may find that most people will split their variables into different categories and add comments about different sections or variables. This works exactly the same way, but makes things much easier for people to read and work with, especially on large codebases with LOTS of environment variables.
 
-```
+```env
   STRIPE_API_KEY=
 
   ## Azure
@@ -151,11 +153,11 @@ If you're saving your `vars.json` file in the code repo, you can automate updati
         - name: Update Variables
           run: npx envolver update .env.sample
         - name: Commit to repo
-          uses: actions/github-script@v6
+          uses: actions/GitHub-script@v6
           with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
+            GitHub-token: ${{ secrets.GITHUB_TOKEN }}
             script: |
-              github.rest.git.createCommit({
+              GitHub.rest.git.createCommit({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 message: "Updated environment variables",
@@ -164,6 +166,6 @@ If you're saving your `vars.json` file in the code repo, you can automate updati
               });
 ```
 
-* * *
+---
 
 Whether you're working on projects with large teams, switching between multiple projects, working part time or just enjoy taking a holiday every now and then, Envolver is a powerful CLI tool to make it easier for you to get back up and running.

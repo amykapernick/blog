@@ -32,7 +32,7 @@ With AI and Machine Learning being discussed more, we're also starting to hear m
    We've seen this one go wrong in a few very public examples already including from Google and Amazon, the latter of which attempted to use machine learning to shortlist resumes for jobs. If you haven't heard what happened, it was demonstrated to prefer male candidates, due to the fact that most of the sample resumes it was given were from male candidates. Thankfully it was never actually used, but it demonstrates that while we give our technologies biased data, they will continue to show the same biases as we do.
    This is a really big issue with most of the uses of machine learning, and over and over we showcase that our computers are displaying biases based on gender, race, post codes and more depending on the data we feed it.
 3. **Shade of Overly-Simplistic Maximisation**
-4. 
+4.
 5. **The Simulation Surprise**
 6. **Apparition of Fairness**
 7. **The Feedback Devil**
@@ -54,9 +54,8 @@ Lemon reminded us that even though we have these amazing new shiny frameworks po
 
 ## Networking at conferences for autistic people and introverts - [Dennie Declercq](https://twitter.com/DennieDeclercq)
 
-Now I'm not autistic and I've recently discovered that I'm also not an introvert (turns out it's a completely different story when you find people you actually like), but Dennie had a lot of great advice in his talk for everyone (especially for a conference addict like myself). 
+Now I'm not autistic and I've recently discovered that I'm also not an introvert (turns out it's a completely different story when you find people you actually like), but Dennie had a lot of great advice in his talk for everyone (especially for a conference addict like myself).
 
-Conferences are amazing and lots of fun, but they can also be exhausting and draining both physically, mentally and emotionally (not to mention scary if you're not comfortable or familiar with talking to a lot of people you don't know. So Dennie discussed the steps he takes to prepare for and survive a conference, whether that be finding a common point of interest or making sure you have time out for yourself. 
+Conferences are amazing and lots of fun, but they can also be exhausting and draining both physically, mentally and emotionally (not to mention scary if you're not comfortable or familiar with talking to a lot of people you don't know. So Dennie discussed the steps he takes to prepare for and survive a conference, whether that be finding a common point of interest or making sure you have time out for yourself.
 
 Even us extroverts got a lot out of this talk and it was really great to hear about Dennie's experiences at conferences.
-

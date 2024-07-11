@@ -14,6 +14,7 @@ But is it really all it's cracked up to be? The last couple of weeks, I've switc
 A couple of weeks ago, I switched to being a full-time freelancer, working from home. And while I'm not sitting at home all day without pants on (my seat is itchy 😂), there are a lot of things to adjust to.
 
 ![](/img/feature/2fc48517af3c9a93276771885613784efab785fb_1_ykdft_cg4deshrti2jljoq.jpg)
+
 ## People
 
 Coming from a very active, friendly office it was a huge shock to not be around people for the most part of the day. I think my dog's already sick of me (he keeps going and hiding outside) and I'm taking advantage of being able to talk out-loud to (and argue with) my Google Home (I swear I'm not crazy). I don't have any housemates either so have been making a conscious and ongoing effort to still spend time around people.
@@ -38,7 +39,7 @@ My will-power is still something I'm working on (and it's hard when you don't ha
 
 Although it's tempting to just keep working through, I'm also making sure to separate weekdays from weekends. While I'm not locked in to which days I work, keeping some days off is important to switch off. In the same way, I also make sure to separate areas of the house. Work is done at the desk, time off is on the couch.
 
-## Go Outside!
+## Go Outside
 
 Ok, so this is a little easier to do right now, but I can't stress how important it is to make sure you get a change of scenery. At the moment I've still got my rock climbing membership, so several days a week I take a break in the late morning and smash out a couple of climbing walls. It's great to have the break, and I can come back to my desk feeling refreshed (although a little sore).
 
@@ -49,4 +50,3 @@ It's also nice to just go out and work somewhere else. There are plenty of cafes
 It definitely takes some adjustment, and it's not for everyone. It can be nice to have a change of pace and be in charge of your own work schedule, however there are many other factors you need to consider (money being a very big one) before you make the switch.
 
 I spent a long time being exhausted from my 9–5 (or in my case, 8.30–5.30), and despite the fact that I now have more stress, I'm more relaxed and happier than before.
-

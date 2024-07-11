@@ -29,17 +29,17 @@ In terms of the tasks, you can add a name (obviously), description, project tags
 
 I love using software that integrates together (the more the better), and this is often one of my requirements. Although all-in-one solutions are good, you're then limited to sticking with that, so I much prefer picking and choosing options that can link together. Wrike has some pretty good options (particularly for web development), and includes the following:
 
-* Salesforce and Hubspot
-* Adobe Creative Cloud
-* Google Drive and OneDrive
-* Various Google and Microsoft tools (Sheets, Excel, Teams, Projects, etc)
-* Outlook, Gmail and other Email Integration
-* Github (will definitely be checking this one out)
-* Slack (I love it when things integrate with Slack)
-* Wordpress
-* Quickbooks (I use this so will look into how useful this is)
-* Harvest
-* Zapier (which then gives you hundreds more integration options)
+  - Salesforce and Hubspot
+  - Adobe Creative Cloud
+  - Google Drive and OneDrive
+  - Various Google and Microsoft tools (Sheets, Excel, Teams, Projects, etc)
+  - Outlook, Gmail and other Email Integration
+  - GitHub (will definitely be checking this one out)
+  - Slack (I love it when things integrate with Slack)
+  - Wordpress
+  - Quickbooks (I use this so will look into how useful this is)
+  - Harvest
+  - Zapier (which then gives you hundreds more integration options)
 
 They also have an API available so if you're feeling confident (or just want to have a play around with it), you can also look at doing something else yourself.
 
@@ -52,7 +52,6 @@ Workstack has a really good free option, so far it seems as though you're just p
 So far I'm really liking Workstack. It also helps you to manage the difference between tasks and meetings and keep on top of scheduling all of them. They have a similar horizontal sprint calendar, but then split your tasks into scheduled (happen at a particular time) or unscheduled (just needs to be done). It also takes into account task durations, and moves tasks into the next day if needed (taking into account any meetings already scheduled).
 
 It also has good time management options, allowing you to specify time off (or team holidays when no one will be working), working days, working hours and time zones. You can also add your own Custom CSS so I'm interested to see what I can do with that.
-
 
 ![](/img/tools/project-management/a54ae01a7e5a0e4d83db0aae4ca0048138f48dc7_1_abwfp1nss2qyfjm8tm38mq.png)
 
@@ -85,4 +84,3 @@ You've got the usual integrations again, connecting to Google, Office365, emails
 ## Conclusion
 
 I've set up a couple of templates and will be using these over the next week or so. Once I've had a chance to give them a proper go, I can provide a better recommendation (and update my reviews). I've changed my mind several times as I've written this post so hopefully I'll get a better idea soon.
-

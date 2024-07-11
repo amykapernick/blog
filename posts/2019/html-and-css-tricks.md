@@ -11,7 +11,7 @@ So recently I shared a HTML and CSS only testimonial carousel, and was accused o
 
 ![](/img/dev/html-css-tricks/https://media.giphy.com/media/enzPQyHVWMfx6/giphy.gif)
 
-Despite the fact that this absolutely made my day (and resulted in me having to go home that night and re-watch _The Holy Grail_), I decided to compile a few of my little JS-free tricks.
+Despite the fact that this absolutely made my day (and resulted in me having to go home that night and re-watch *The Holy Grail*), I decided to compile a few of my little JS-free tricks.
 
 ---
 
@@ -61,17 +61,17 @@ Flexbox then allowed me to re-order it visually to keep the radio buttons at the
 
 ```css
 body {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
 }
 
 blockquote {
-	width: 100%;
+    width: 100%;
 }
 
 label {
-	order: 2;
+    order: 2;
 }
 ```
 
@@ -114,4 +114,3 @@ input[type="radio"]:checked + label:after {
 You can then style the blockquote however you like.
 
 It's a little janky, and if the testimonials are different heights things will move around when switching between the testimonials, I'm still working on a solution to fix this.
-

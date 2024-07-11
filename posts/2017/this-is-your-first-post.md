@@ -23,4 +23,3 @@ Part of the most recent changes have led me to be more involved in a community g
 And so looking back on the girl who stepped off that plane 5 years ago, I still can hardly believe myself what I've done, how far I've come and how I have and am currently spending my life. But every single second of that time when it's been hard, every second that I've wanted to give up or turn back or go home, has led me to where I am today, to who I am today and to the life that I have here in Perth. And without that life, I wouldn't have the people I have in my life today (and let's face it, most of you are pretty awesome).
 
 With that note, I'm going to end my first attempt at writing a blog post and promise that if this ever happens again I'll find something more interesting to write about.
-

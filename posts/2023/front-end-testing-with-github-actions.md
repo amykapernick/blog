@@ -15,7 +15,7 @@ For those not familiar with it, [GitHub Actions](https://docs.github.com/en/acti
 
 ## Creating a GitHub Action
 
-To create a GitHub Action, first of we create a workflow file in `.github/workflows/` in the repo, and create a Yaml file for the workflow/action, eg. `.github/workflows/test.yml`. To start off we'll create a workflow file that defines the workflow, sets the platform we'll run it on and checks out the repository code to get started. 
+To create a GitHub Action, first of we create a workflow file in `.GitHub/workflows/` in the repo, and create a Yaml file for the workflow/action, eg. `.GitHub/workflows/test.yml`. To start off we'll create a workflow file that defines the workflow, sets the platform we'll run it on and checks out the repository code to get started.
 
 ```yaml
 # Name of the Workflow
@@ -34,7 +34,7 @@ jobs:
   # Each job gets a different name, eg. `build`, but the name must be unique
   build:
     # Set the platform that the job will run on, you can choose a number of different options, but running on Linux is the cheapest option
-    # https://docs.github.com/en/actions/using-jobs/choosing-the-runner-for-a-job
+    # https://docs.GitHub.com/en/actions/using-jobs/choosing-the-runner-for-a-job
     runs-on: ubuntu-22.04
     # Each job has a number of steps to complete (these will complete one after another), most of the time your first step will be to checkout the repo code, otherwise you won't have anything to work with
     steps:
@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v3
 ```
 
-Code: .github/workflows/test.yml
+Code: .GitHub/workflows/test.yml
 
 Once you have this workflow, commit and push the changes to GitHub, you can find any actions you have under the **Actions** tab in your repo, this is also where the logs will appear when the actions are triggered and run.
 
@@ -64,7 +64,7 @@ So far all we're doing now is checking out our code, so this should all pass. Th
 
 ![The GitHub Actions tab showing one "Build and Test" workflow and one current workflow run](/img/dev/front-end-testing/github-actions/5b6d7f13-0c9e-4088-9f97-36d00ea22d4e.png "The Github Actions tab showing workflow runs, and listing all the different workflows that are part of the repo")
 
-The Github Actions tab showing workflow runs, and listing all the different workflows that are part of the repo
+The GitHub Actions tab showing workflow runs, and listing all the different workflows that are part of the repo
 
 We can also view the actions being run under the **Actions** tab in the repo, here we can view the full history of all of our workflows (when we create more) and the status of the different workflow runs.
 
@@ -80,11 +80,11 @@ At the moment we've just checked the code in our repo out, next we need to go th
   # Some actions will also require values/config to be passed in, so these are set under the `with` property
   with:
     # Eg. for the setup node package, it can take a value of which node version you want to use
-    # https://github.com/actions/setup-node#supported-version-syntax
+    # https://GitHub.com/actions/setup-node#supported-version-syntax
     node-version: 16
 ```
 
-We've already checked out the repo code, so next we'll add a step to setup node to use, and install the packages in the `package.json` file of my repo. As well as using packages with the `uses` property, we can also run commands on the action runner (similar to how we would in our terminal), so using the [`run` property](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun), we can set it to run `npm install` and install all the node modules in the`package.json` file of our repo. 
+We've already checked out the repo code, so next we'll add a step to setup node to use, and install the packages in the `package.json` file of my repo. As well as using packages with the `uses` property, we can also run commands on the action runner (similar to how we would in our terminal), so using the [`run` property](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun), we can set it to run `npm install` and install all the node modules in the`package.json` file of our repo.
 
 ```yaml
 name: Build and Test
@@ -111,7 +111,7 @@ jobs:
         run: npm install
 ```
 
-Code: .github/workflows/test.yml
+Code: .GitHub/workflows/test.yml
 
 If we access the workflow run via either the **Actions** tab, or by clicking the **Details** link for the test in the PR, we can view the steps being run, and the outputs to the console (if there are any). There are a couple of extra steps as well for GitHub to setup the environment, and clean up after everything is completed.
 
@@ -139,10 +139,10 @@ As we discussed at the start of this post, Netlify does provide an easy build an
 
   # Once the site is build, we're going to use the GitHub Script package to add a comment to our PR, so that we know everything has built and so we can easily find the preview URL if we want to check something
   # https://github.com/actions/github-script
-- uses: actions/github-script@v6
+- uses: actions/GitHub-script@v6
   with:
     script: |
-      github.rest.issues.createComment({
+      GitHub.rest.issues.createComment({
         issue_number: context.issue.number,
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -150,7 +150,7 @@ As we discussed at the start of this post, Netlify does provide an easy build an
       })
 ```
 
-The secret environment variables will need to be added to GitHub for this to work, this can be done under **Settings** → **Secrets** → **Actions** and clicking **New repository secret**. 
+The secret environment variables will need to be added to GitHub for this to work, this can be done under **Settings** → **Secrets** → **Actions** and clicking **New repository secret**.
 
 ![Repo settings page for Actions Secrets that lists one secret for NETLIFY_SITE_ID](/img/dev/front-end-testing/github-actions/21124335-5654-417a-bda6-220f367f008a.png)
 
@@ -166,7 +166,7 @@ If you've already got automatic builds setup for your Netlify site, you'll also 
 
 ![Screenshot of the Netlify Build and Deploy settings page, showing the Unlink button to remove the linked repository](/img/dev/front-end-testing/github-actions/4c54b467-557b-43bd-a81a-3d37ccf0a5ee.png)
 
-Once the environment variables have been set, lets have a look at the script we're going to use to build and deploy to Netlify. Create a new file called `_actions/netlify_deploy.sh`. 
+Once the environment variables have been set, lets have a look at the script we're going to use to build and deploy to Netlify. Create a new file called `_actions/netlify_deploy.sh`.
 
 ```shell
 #!/bin/bash
@@ -208,10 +208,10 @@ Code: netlify.toml
 Quickly looking again at the GitHub script step, here we're referencing the outputted variable from the end of our deploy script, where we saved the Netlify preview URL in a variable to access later. This will then be included as part of the comment on the PR.
 
 ```yaml
-- uses: actions/github-script@v6
+- uses: actions/GitHub-script@v6
   with:
     script: |
-      github.rest.issues.createComment({
+      GitHub.rest.issues.createComment({
         issue_number: context.issue.number,
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -239,7 +239,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     # Because the testing job is different, we need to out the Netlify URL so we can access it in another job
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs
+    # https://docs.GitHub.com/en/actions/using-workflows/workflow-syntax-for-GitHub-actions#jobsjob_idoutputs
     outputs:
       deploy_url: ${{steps.build_site.outputs.NETLIFY_URL}}
     steps:
@@ -248,7 +248,7 @@ jobs:
   # Creating a new job for the tests to run in
   test:
     # Because the website has to have built first, we're defining a dependency on the `needs` property, that the test job needs to have the build job complete first
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idneeds
+    # https://docs.GitHub.com/en/actions/using-workflows/workflow-syntax-for-GitHub-actions#jobsjob_idneeds
     needs: build
     runs-on: ubuntu-22.04
     steps:
@@ -261,11 +261,11 @@ jobs:
           # To authenticate, Percy will look for the PERCY_TOKEN env variable, so we can pass the secret through as an environment variable similarly to in the Netlify script previously
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         # We'll pass the deploy URL in as an output of the build job
-        # https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context
+        # https://docs.GitHub.com/en/actions/learn-GitHub-actions/contexts#needs-context
         run: npx @percy/cli snapshot snapshots.yml --base-url ${{ needs.build.outputs.deploy_url }}
 ```
 
-Code: .github/workflows/test.yml
+Code: .GitHub/workflows/test.yml
 
 We just need to add one small change to run the visual regression tests, which is create a [`snapshots.yml](https://docs.percy.io/docs/cli-snapshot#snapshot-lists)` file for it to use. For now we're just running tests against the homepage, but more pages can be added here or if you have one [snapshots can be run against a sitemap](https://docs.percy.io/docs/cli-snapshot#sitemap-url) instead.
 
@@ -293,7 +293,7 @@ When looking at the pull request, it's also completed all the checks (and they'v
 
 Once the build and test pipeline has been setup, we'll now have this running automatically on all pull requests to the main production branch of the repo, so in theory no code can get merged in without being tested (you may want to setup some [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to make sure).
 
-We can now safely build and deploy any code merged into the main branch feeling confident in the knowledge that the code is ready to go, so lets setup a new workflow for that in `.github/workflows/publish.yml`. This will be a lot like the previous build job we completed in the testing workflow, but this time we're going to pass in a flag to the Netlify script so that we can publish a production version of the website.
+We can now safely build and deploy any code merged into the main branch feeling confident in the knowledge that the code is ready to go, so lets setup a new workflow for that in `.GitHub/workflows/publish.yml`. This will be a lot like the previous build job we completed in the testing workflow, but this time we're going to pass in a flag to the Netlify script so that we can publish a production version of the website.
 
 ```yaml
 name: Build and Publish on Netlify
@@ -323,11 +323,11 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-	
+    
         run: ./_actions/netlify_deploy.sh --p true
 ```
 
-Code: .github/workflows/publish.yml
+Code: .GitHub/workflows/publish.yml
 
 Next we'll make a small tweak to the `_actions/netlify_deploy.sh` script, to check for the production flag and run a production build if it's been set.
 

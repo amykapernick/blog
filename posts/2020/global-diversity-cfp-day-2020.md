@@ -23,9 +23,9 @@ Because writing proposals isn't hard enough, the most difficult step (particular
 
 Once ideas have started to flow, it's time to start putting together the proposal, but first is identifying the different parts of a proposal and what makes a good one. Drawing on the experiences and expertise in the room, we can identify what makes a good proposal (catchy title, humour, setting expectations...) and how it should be structured (yet another type of writing style that would have been useful to learn in high school):
 
-- **Context**: Set the scene, how do you have a connection with your audience
-- **Problem**: Something common enough that the audience can relate to
-- **Promise**: How does your talk solve their problem (don't give all the secrets away though)
+  - **Context**: Set the scene, how do you have a connection with your audience
+  - **Problem**: Something common enough that the audience can relate to
+  - **Promise**: How does your talk solve their problem (don't give all the secrets away though)
 
 ## Presentation
 

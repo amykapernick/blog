@@ -18,5 +18,3 @@ You rarely get the day either anymore. When people asked me if I had anything pl
 Birthdays are also one of those other occasions (like Christmas and Valentines Day) where we remember the people we may or may not have in our lives. Don't get me wrong, I went out for breakfast with my best friend, had lunch with my workmates, had another friend over for dinner and spent the day receiving birthday wishes from a large group of other friends. But there's something about opening your presents on the couch by yourself that puts a bit of a downer on the day. And it also reminds you of the birthday wishes that you have yet to receive.
 
 Now don't get me wrong, I don't hate my birthday and I don't want this to sound all negative. But there is a point in your life where things change, where you see it from a different perspective. At the very least, hopefully now you'll appreciate how your mother must have felt having to plan a party and then spend the afternoon dealing with 30 kids all hyped up on sugar.
-
-

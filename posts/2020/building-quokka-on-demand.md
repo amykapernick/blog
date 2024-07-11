@@ -27,20 +27,19 @@ Twilio gives you some code to start with (even though we're using the Blank temp
 
 ```js
     exports.handler = function(context, event, callback) {
-    	// Load the Twilio Markup Language (TwiML) function and message
-    	let twiml = new Twilio.twiml.MessagingResponse(),
-    	message = twiml.message();
+        // Load the Twilio Markup Language (TwiML) function and message
+        let twiml = new Twilio.twiml.MessagingResponse(),
+        message = twiml.message();
     
-    	// Set the body of the message
-    	message.body('Hi, do you want a quokka?')
+        // Set the body of the message
+        message.body('Hi, do you want a quokka?')
     
-    	// Send the message
-    	callback(null, twiml);
+        // Send the message
+        callback(null, twiml);
     };
 ```
 
-Get the full path of your function and hold onto it. 
-
+Get the full path of your function and hold onto it.
 
 ![](/img/quokkabot/function_path.png)
 
@@ -60,14 +59,14 @@ We need to know if the people sending a message are asking for a quokka, so to a
 
 ```js
     let twiml = new Twilio.twiml.MessagingResponse(),
-    	message = twiml.message(),
+        message = twiml.message(),
     
-    	// From the message event, get the Body, which is the message text
-    	request = event.Body;
+        // From the message event, get the Body, which is the message text
+        request = event.Body;
     
-    	// Log the message to view what was sent
+        // Log the message to view what was sent
     
-    	console.log(request)
+        console.log(request)
 ```
 
 On the function page, you can scroll down to the bottom and view the results that we've logged, which is the text of the messages that were sent.
@@ -78,22 +77,22 @@ Changing the body of our function and using the most advanced AI in tech (an `if
 
 ```js
     exports.handler = function(context, event, callback) {
-    	let twiml = new Twilio.twiml.MessagingResponse(),
-    	message = twiml.message(),
-    	request = event.Body;
-    	
-    	// Check if the message contains the word quokka (not case sensitive)
-    	if(RegExp('quokka', 'i').test(request)) {
-    			// Set the message body to say they want a  quokka
-    	    message.body('You want a quokka')
-    	}
-    	else {
-    			// They didn't want a quokka, but we should respond anyway.
-    	    message.body(`You didn't ask for a quokka. Are you sure?`)
-    	}
-    	
-    	
-    	callback(null, twiml);
+        let twiml = new Twilio.twiml.MessagingResponse(),
+        message = twiml.message(),
+        request = event.Body;
+        
+        // Check if the message contains the word quokka (not case sensitive)
+        if(RegExp('quokka', 'i').test(request)) {
+                // Set the message body to say they want a  quokka
+            message.body('You want a quokka')
+        }
+        else {
+                // They didn't want a quokka, but we should respond anyway.
+            message.body(`You didn't ask for a quokka. Are you sure?`)
+        }
+        
+        
+        callback(null, twiml);
     };
 ```
 
@@ -105,10 +104,10 @@ But the reason we're using WhatsApp is so we can add images. As well as being ab
 
 ```js
     if(RegExp('quokka', 'i').test(request)) {
-    	    message.body('This is a quokka')
-    		
-    			// Give the URL of an image to send with the message
-    	    message.media(`https://quokkas.amyskapers.dev/img/quokkabot/quokka_(1).jpg`)
+            message.body('This is a quokka')
+            
+                // Give the URL of an image to send with the message
+            message.media(`https://quokkas.amyskapers.dev/img/quokkabot/quokka_(1).jpg`)
     }
 ```
 
@@ -120,25 +119,25 @@ To change it up a bit, I have a bunch of different images, and generate a random
 
 ```js
     exports.handler = function(context, event, callback) {
-    	let twiml = new Twilio.twiml.MessagingResponse(),
-    	message = twiml.message(),
-    	request = event.Body,
+        let twiml = new Twilio.twiml.MessagingResponse(),
+        message = twiml.message(),
+        request = event.Body,
     
-    	// Randomly generate a number between 0 and 9 (inclusive)
-    	photo = Math.floor(Math.random() * 10);
-    	
-    	if(RegExp('quokka', 'i').test(request)) {
-    	    message.body('This is a quokka')
-    	    message.media(`https://quokkas.amyskapers.dev/img/quokkabot/quokka_(${photo}).jpg`)
-    	}
-    	else {
-    			// This text was a bit of a joke that my dad would make when my parents came to visit me in Perth
-    	    message.body(`This is not a quokka`)
-    	    message.media(`https://quokkas.amyskapers.dev/img/quokkabot/not_quokka(${photo}).jpg`)
-    	}
-    	
-    	
-    	callback(null, twiml);
+        // Randomly generate a number between 0 and 9 (inclusive)
+        photo = Math.floor(Math.random() * 10);
+        
+        if(RegExp('quokka', 'i').test(request)) {
+            message.body('This is a quokka')
+            message.media(`https://quokkas.amyskapers.dev/img/quokkabot/quokka_(${photo}).jpg`)
+        }
+        else {
+                // This text was a bit of a joke that my dad would make when my parents came to visit me in Perth
+            message.body(`This is not a quokka`)
+            message.media(`https://quokkas.amyskapers.dev/img/quokkabot/not_quokka(${photo}).jpg`)
+        }
+        
+        
+        callback(null, twiml);
     };
 ```
 

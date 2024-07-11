@@ -19,31 +19,35 @@ You may not need to use all these programs, I use the following tools on a daily
 
 The Windows Subsystem for Linux (WSL) gives the ability to run Linux bash on a Windows computer, and gives the ability to do pretty much everything you would normally do.
 
-* Run the following command in Powershell as an Administrator
+  - Run the following command in Powershell as an Administrator
+
   ```bash
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
   ```
-* Make sure you restart your computer once that's done
-* Install Ubuntu from the [Microsoft Store](https://www.microsoft.com/en-au/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab). There are a few different versions so install what you like, but the unversioned one (`Ubuntu`) will install the latest version
-* Open up the Ubuntu app and follow the instructions to set up your new user
 
-<blockquote class="callout" data-tag="Pro tip">
+  - Make sure you restart your computer once that's done
+  - Install Ubuntu from the [Microsoft Store](https://www.microsoft.com/en-au/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab). There are a few different versions so install what you like, but the unversioned one (`Ubuntu`) will install the latest version
+  - Open up the Ubuntu app and follow the instructions to set up your new user
+
+<aside class="callout" data-tag="Pro tip">
 
 Make note of the password you set, you will need to use that in future (this is a mistake that I've only made once)
 
-</blockquote>
+</aside>
 
-### WSL2 
+### WSL2
 
 In June 2020, Microsoft released WSL2, which you can use instead of or alongside WSL, for information on upgrading to WSL2, [check out the Microsoft docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#update-to-wsl-2?WT.mc_id=DOP-MVP-5003595).
 
 ## HomeBrew
 
-* Download and install HomeBrew by running the below command in WSL
+  - Download and install HomeBrew by running the below command in WSL
+
   ```bash
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
   ```
-* It will print out steps for you to take, make sure you follow all of them for it to work.
+
+  - It will print out steps for you to take, make sure you follow all of them for it to work.
 
 ![](/img/dev/windows-terminal-setup/homebrew-install.png)
 
@@ -70,17 +74,22 @@ sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
 
 Similar to NVM (Node Version Manager), [fnm](https://github.com/Schniz/fnm) is a node version manager that I had recommended to me as a better alternative
 
-* Install fnm from the github repo
+  - Install fnm from the GitHub repo
+
   ```bash
     curl https://raw.githubusercontent.com/Schniz/fnm/master/.ci/install.sh | bash
   ```
-* Add the following to your `.bashrc` (or similar) file to allow using fnm
+
+  - Add the following to your `.bashrc` (or similar) file to allow using fnm
+
   ```bash
     ## fnm
     export PATH=/home/{your_username}/.fnm:$PATH
     eval "`fnm env --multi`"
   ```
-* Install the version of node that you want and tell nvm to use that, eg:
+
+  - Install the version of node that you want and tell nvm to use that, eg:
+
   ```bash
     ## Install the latest node version
     fnm install latest
@@ -97,27 +106,30 @@ You can install yarn either with Homebrew or via `apt-get`, it's a little easier
 
 ### Installing with Homebrew
 
-* Run to install yarn
+  - Run to install yarn
+
   ```bash
     brew install yarn
   ```
 
 ### Installing with `apt-get`
 
-* Run `sudo apt remove cmdtest`
-* Run to install yarn
+  - Run `sudo apt remove cmdtest`
+  - Run to install yarn
+
   ```bash
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt-get update && sudo apt-get install --no-install-recommends yarn
   ```
-* Keep an eye on the install and make sure it's not installing `cmdtest`
 
-<blockquote class="callout" data-tag="Pro Tip">
+  - Keep an eye on the install and make sure it's not installing `cmdtest`
+
+<aside class="callout" data-tag="Pro Tip">
 
 If you receive an error when running `yarn install` about no install directory, it's using `cmdtest`, uninstall that and run the yarn install scripts again
 
-</blockquote>
+</aside>
 
 ## Windows Terminal
 
@@ -170,17 +182,22 @@ You can edit the settings to customise the terminals available, the default term
 
 [Tunnelto](https://tunnelto.dev/) is a tool similar to [ngrok](https://ngrok.com/) that allows you to expose local servers to the internet. I had this pop on Twitter a while back and liked that the had the same functionality, but much more affordable to have custom subdomains and multiple servers running.
 
-* Run the following commands to download and install Tunnelto (you may want to get the [most recent version](https://github.com/agrinman/tunnelto/releases/) from their repository though) and make it accessible from the command line
+  - Run the following commands to download and install Tunnelto (you may want to get the [most recent version](https://github.com/agrinman/tunnelto/releases/) from their repository though) and make it accessible from the command line
+
   ```bash
     sudo wget https://github.com/agrinman/tunnelto/releases/download/0.1.9/tunnelto-linux.tar.gz
     tar xvzf tunnelto-linux-tar.gz
     mv tunnelto /usr/local/bin/tunnelto
   ```
-* Run the below command to set your auth token
+
+  - Run the below command to set your auth token
+
   ```bash
     tunnelto set-auth --key {insertyourkey}
   ```
-* You can now start a tunnel specifying the localhost port and a subdomain (if you don't have one, it'll auto generate one for you)
+
+  - You can now start a tunnel specifying the localhost port and a subdomain (if you don't have one, it'll auto generate one for you)
+
   ```bash
     tunnelto --subdomain amyskapers --port 8080
   ```

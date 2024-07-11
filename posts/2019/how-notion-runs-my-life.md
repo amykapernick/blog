@@ -47,7 +47,7 @@ The flexibility of content in Notion has also meant that it's perfect for my ran
 
 ![](/img/tools/notion/notion-6-.png)
 
-This year, I even used Notion to write my reviews for Fringe World Festival. The no-nonsense writing editor is easy for me to use and write with. 
+This year, I even used Notion to write my reviews for Fringe World Festival. The no-nonsense writing editor is easy for me to use and write with.
 
 ## Drafts and Templates
 
@@ -69,9 +69,12 @@ I found that it was also useful to create client documentation, with the ability
 
 Although I tried using CRMs, what I really wanted was somewhere to keep track of my clients, their websites, the type of website and any additional services they had. Not only that, but each client was then it's own page where I could include more information, notes about custom functionality or hacks as well as client specific documentation.
 
-- - -
+---
 
 Anyone who knows me knows that I like playing with shiny new tools, but I've been using Notion for over a year now and it's still literally running my life. It's managed to combine several tools and information sources together so that I can keep track of things with even less effort.
 
-_Note: this is not a promoted post, nor is Notion paying me (although I will admit, I have included my referral link above), I just think that Notion is that amazing. Trust me, everytime I tell someone about Notion or they see me using it, they've installed it within the next half hour_
+<aside class="callout" data-tag="Note">
 
+This is not a promoted post, nor is Notion paying me (although I will admit, I have included my referral link above), I just think that Notion is that amazing. Trust me, everytime I tell someone about Notion or they see me using it, they've installed it within the next half hour*
+
+</aside>

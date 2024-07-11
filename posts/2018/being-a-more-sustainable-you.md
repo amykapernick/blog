@@ -17,17 +17,17 @@ So last year I was able to recognise that I was burning out again. I was working
 
 When I met the psychologist, he'd been given the referral from my doctor so asked me about my work stresses and I laughed. After I finished explaining everything, he asked me:
 
-**Psychologist**: _So this was just yesterday?_
+**Psychologist**: *So this was just yesterday?*
 
-**Me**: _Yes_
+**Me**: *Yes*
 
-**Psychologist**: _You're surprisingly ok with this_
+**Psychologist**: *You're surprisingly ok with this*
 
 And this was when it dawned on me, less than 24 hours after being made redundant, I was relieved, this was probably a good thing.
 
 ## Good Worry v Bad Worry
 
-I have a tendency to overthink and worry about things a lot and here I was with no job and money to cover me for the next fortnight (maybe month if I was lucky), but to my surprise I wasn't worried. It was then that I learnt the difference between _useful_ worry and _useless_ worry. While worry has a lot of negative connotations, it can lead to something useful - worrying about money was useful because I planned and prioritised and then I looked for more work. But worrying after that isn't useful, after you've done everything you can, any further worry just leads to stress.
+I have a tendency to overthink and worry about things a lot and here I was with no job and money to cover me for the next fortnight (maybe month if I was lucky), but to my surprise I wasn't worried. It was then that I learnt the difference between *useful* worry and *useless* worry. While worry has a lot of negative connotations, it can lead to something useful - worrying about money was useful because I planned and prioritised and then I looked for more work. But worrying after that isn't useful, after you've done everything you can, any further worry just leads to stress.
 
 During the past year, I keep coming back to that difference, is this worry useful or useless? When I was trying to find a job, the worry led me to apply for every one I could find, and after that the worry wasn't being useful anymore, so I stopped. And don't worry (😂), I can't just turn my worry on and off. When I say I stop worrying, I mean I make a conscious decision and continually remind myself that the worry isn't useful. It's really hard to do, but gets much easier with practice.
 
@@ -53,15 +53,18 @@ I drew the line, and I stuck to it (unfortunately this client didn't but that's 
 
 ## Reallocating my f*cks
 
-_Disclaimer: Apologies to my mum who definitely won't appreciate the language used in this section, but this is how the book talks about it_
+<aside class="callout" data-tag="Disclaimer">
 
-This year I read _The Subtle Art of Not Giving a F*ck_ and while it did seem to be one of those trending books, it covered a lot of really great points that I took away. You have a limited number of f\*cks to give each lifetime, so make sure you're giving them in the right places. How many times have you seen an old person who seems to care so much about everything, even the little things? Maybe they didn't give enough f\*cks at the start of their life and want to use them all up?
+Apologies to my mum who definitely won't appreciate the language used in this section, but this is how the book talks about it
+
+</aside>
+
+This year I read *The Subtle Art of Not Giving a F*ck* and while it did seem to be one of those trending books, it covered a lot of really great points that I took away. You have a limited number of f\*cks to give each lifetime, so make sure you're giving them in the right places. How many times have you seen an old person who seems to care so much about everything, even the little things? Maybe they didn't give enough f\*cks at the start of their life and want to use them all up?
 
 I thought about how I choose to allocate my f\*cks (and I phrase it this way because it makes it almost sound like an official thing to do), am I giving enough f\*cks where it counts? Am I giving too many f\*cks on something that isn't important or to someone who doesn't deserve them? While we don't get to make every choice in our life, we always get to choose where we're giving our f\*cks.
 
 When I was contracting for the agency, I felt the stress coming back and I felt myself doing what I did last year and working insane hours and not looking after myself. So I thought about my f*cks, was this client worth them? Or was there something better I could spend them on?
 
-- - -
+---
 
 A couple of months ago, I was talking to a friend at a conference after party, and I talked about how I was then to a year ago. A year ago I had a fulltime job and I didn't have to worry about money, but I was constantly physically, mentally and emotionally exhausted. I was stressed, I was struggling and I wasn't happy. Now I'm working for myself which has so many different unknowns, I'm responsible for every new piece of work I bring in, the money is sporadic and I've just had to lodge my first court claim over a client who's refusing to pay me for several weeks of work that I've already done. But despite the fact that I'm still physically exhausted and sometimes mentally exhausted, I'm no longer emotionally exhausted. Even after a long week at work I have the energy left to spend time with my friends, I don't have trouble sleeping (except when my dog tosses and turns or steals all the blankets) and I'm happy. And at the end of this conversation, my friend gave me the idea for this blog post, because everything I'd been doing along the way had been leading towards a more sustainable me (I'm kinda like the Earth, there's only one of me).
-

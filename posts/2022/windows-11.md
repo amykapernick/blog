@@ -14,7 +14,7 @@ There's a lot of things that have definitely been thought of for this latest ver
 
 ### Sounds
 
-Now sounds may not necessarily be the first thing most people notice, but when I'm doing dev work, I encounter the Windows admin prompt many times a day. And that sound has always been quite abrupt, I get where that decision has come from as it is warning you that you're about to do something potentially dangerous. But for those of us who are well and truly familiar with what we're doing, and just want to get on with work, this is a sound that gets to you, and can start to be grating as it suggests there's something wrong. 
+Now sounds may not necessarily be the first thing most people notice, but when I'm doing dev work, I encounter the Windows admin prompt many times a day. And that sound has always been quite abrupt, I get where that decision has come from as it is warning you that you're about to do something potentially dangerous. But for those of us who are well and truly familiar with what we're doing, and just want to get on with work, this is a sound that gets to you, and can start to be grating as it suggests there's something wrong.
 
 So when I noticed that the sounds in Windows 11 had changed, it was a pleasant surprise. Whilst still clearly resembling the sound we're used to, they're softer and more thoughtful, so the admin prompt still notifies me, without feeling quite so abrupt. Again this is a relatively simple change, but one that definitely makes my experience better.
 

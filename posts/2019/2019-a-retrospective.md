@@ -26,17 +26,18 @@ This year I've had the chance to tick several items off my speaking bucketlist, 
 It's not all sunshine and roses though, it's taken a while to get to where I am (and a lot of rejections).
 
 ### Conferences
-- __Submitted__: 19
-- __Accepted__: 9
-- __Rejected__: 9
-- __Declined__: 1
+
+  - **Submitted**: 19
+  - **Accepted**: 9
+  - **Rejected**: 9
+  - **Declined**: 1
 
 ### Talks
-- __Submitted__: 50
-- __Accepted__: 8
+
+  - **Submitted**: 50
+  - **Accepted**: 8
 
 But it's all been so work it, and I've loved every minute of it (although the rejections still cut a little).
-
 
 ## Travel
 
@@ -44,34 +45,32 @@ While travel has sometimes peaked my interest, I love Australia and the idea of 
 
 <div class="gallery">
 
-![Screenshot of the Tripit travel stats for this year](/img/2019/nse-4350571241641513084-tripit_stats.png.png) 
+![Screenshot of the Tripit travel stats for this year](/img/2019/nse-4350571241641513084-tripit_stats.png.png)
 
 ![Map of the flights I've taken this year](/img/2019/travel-map.png "2019 has been a fairly busy year for travel!")
 
 </div>
 
 Several times throughout the year I've had people ask me if I travel a lot, and my response would always be "Not really", but around the middle of the year I realised that I couldn't really say that anymore 😂. This year I've been travelling for 115 days, which comes to about 31.5% of the year, which is almost 4 whole months 😱. I've had the chance to visit 3 countries I'd never been to, see 5 cities I'd never been to and explore places I wouldn't normally have considered going to.
-  
+
 <div class="gallery">
 
-![](/img/2019/MVIMG_20191124_112840_1.jpg) 
+![](/img/2019/MVIMG_20191124_112840_1.jpg)
 
-![](/img/2019/IMG_20190618_220939_082.jpg) 
+![](/img/2019/IMG_20190618_220939_082.jpg)
 
-![](/img/2019/IMG_20190129_155438_061.jpg) 
+![](/img/2019/IMG_20190129_155438_061.jpg)
 
-![](/img/2019/MVIMG_20191107_220826.jpg) 
+![](/img/2019/MVIMG_20191107_220826.jpg)
 
-![](/img/2019/MVIMG_20190505_124447.jpg) 
+![](/img/2019/MVIMG_20190505_124447.jpg)
 
-![](/img/2019/IMG_20191016_231707_699.jpg) 
+![](/img/2019/IMG_20191016_231707_699.jpg)
 
 ![](/img/2019/MVIMG_20190510_170250.jpg)
 
 </div>
 
-
-  
 ## Community
 
 This year I've become more involved in the community, starting by accidentally joining the committee for [DDD Perth](https://dddperth.com/) (my one job for the AGM was **not** to join the committee 😂). While I've watched people organising conferences from afar, and have done some event organising myself, this was completely different. DDD Perth first started in Perth 5 years ago with around 100 attendees and in 2019 we had a little over 800 attendees on the day, it was so much fun to be involved with the event and to see all our hard work pay off when the event was even more successful than the previous year.
@@ -92,57 +91,56 @@ During the past 12 months, I've had the chance to meet so many amazing people, a
 
 <div class="gallery">
 
-![](/img/2019/MVIMG_20191209_202352.jpg) 
+![](/img/2019/MVIMG_20191209_202352.jpg)
 
 ![](/img/2019/MVIMG_20191024_171521.jpg)
 
-![](/img/2019/IMG_20190921_091543_1.jpg) 
+![](/img/2019/IMG_20190921_091543_1.jpg)
 
-![](/img/2019/IMG_20191003_181036.jpg) 
+![](/img/2019/IMG_20191003_181036.jpg)
 
-![](/img/2019/IMG_20191011_172204.jpg) 
+![](/img/2019/IMG_20191011_172204.jpg)
 
-![](/img/2019/IMG_20191016_084335.jpg) 
+![](/img/2019/IMG_20191016_084335.jpg)
 
-![](/img/2019/MVIMG_20191031_140319.jpg) 
+![](/img/2019/MVIMG_20191031_140319.jpg)
 
-![](/img/2019/MVIMG_20191122_230757.jpg) 
+![](/img/2019/MVIMG_20191122_230757.jpg)
 
-![](/img/2019/MVIMG_20191130_190219.jpg) 
+![](/img/2019/MVIMG_20191130_190219.jpg)
 
-![](/img/2019/MVIMG_20191115_105654.jpg) 
+![](/img/2019/MVIMG_20191115_105654.jpg)
 
-![](/img/2019/MVIMG_20190403_180230.jpg) 
+![](/img/2019/MVIMG_20190403_180230.jpg)
 
-![](/img/2019/MVIMG_20190131_130914.jpg) 
+![](/img/2019/MVIMG_20190131_130914.jpg)
 
-![](/img/2019/MVIMG_20190522_195039.jpg) 
+![](/img/2019/MVIMG_20190522_195039.jpg)
 
-![](/img/2019/IMG_20190628_125548.jpg) 
+![](/img/2019/IMG_20190628_125548.jpg)
 
-![](/img/2019/MVIMG_20190830_150824_1.jpg) 
+![](/img/2019/MVIMG_20190830_150824_1.jpg)
 
-![](/img/2019/MVIMG_20190621_000215.jpg) 
+![](/img/2019/MVIMG_20190621_000215.jpg)
 
-![](/img/2019/MVIMG_20190619_161820.jpg) 
+![](/img/2019/MVIMG_20190619_161820.jpg)
 
 ![](/img/2019/MVIMG_20190621_101546_1.jpg)
 
-![](/img/2019/MVIMG_20190507_191335.jpg) 
+![](/img/2019/MVIMG_20190507_191335.jpg)
 
-![](/img/2019/IMG_20190808_185902_230.jpg) 
+![](/img/2019/IMG_20190808_185902_230.jpg)
 
-![](/img/2019/IMG_20190924_111452_628.jpg) 
+![](/img/2019/IMG_20190924_111452_628.jpg)
 
-![](/img/2019/MVIMG_20191209_095959.jpg) 
+![](/img/2019/MVIMG_20191209_095959.jpg)
 
-![](/img/2019/IMG_20190805_165610_391.jpg) 
+![](/img/2019/IMG_20190805_165610_391.jpg)
 
 ![](/img/2019/74153851_10157597523393468_9054970097210228736_n.jpg)
 
 </div>
 
-  
 ## Work
 
 By the time 2019 finished, I'd officially been working for myself fulltime for 2 years, and somehow I'm still able to pay my rent (mostly) on time! This has been an incredible achievement to me, especially considering the fact that I've lost a third of the year to travel (and a bit more to plague after the travel). But this year hasn't only been about the boring work projects, this year I've also got to work on some cool side projects, including tinkering around with machine learning and image recognition and building my Quokkabot
@@ -157,6 +155,6 @@ A few months back, I had the chance to do a quick live demo at Twilio Superclass
 
 2019 has been amazing, stressful, exciting and terrifying, and I can't believe it's over. This year I've continued to learn to prioritise myself (sometimes being forced to do so when I'm so exhausted I end up bedridden with the plague for a week), and have pushed myself beyond what I ever thought I could do. As we've come to the end of the year and the decade, I've been thinking about what I've done during the last 10 years as well. At the start of the decade, I lived in QLD, had barely been out of the state, had never been outside the country, wanted to be an engineer, was stuck in a bunch of toxic friendships and did everything I could to avoid having to present in front of people. Things are definitely different now.
 
-This year has been trying, as I push myself to the limits on multiple occasions and by the end of the year I was barely holding on. But I would do it all over again (ok maybe I would start preparing for some things a little earlier 😂). Because despite all that, this year has also given me some of the best moments I've ever had, it's showed me the person that I can be and what I can do when I put my mind to it. 
+This year has been trying, as I push myself to the limits on multiple occasions and by the end of the year I was barely holding on. But I would do it all over again (ok maybe I would start preparing for some things a little earlier 😂). Because despite all that, this year has also given me some of the best moments I've ever had, it's showed me the person that I can be and what I can do when I put my mind to it.
 
 So bring on 2020, because I'm ready to do this all over again! (but can I have a nap first? 🥱)

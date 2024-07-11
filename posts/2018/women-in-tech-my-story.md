@@ -50,4 +50,3 @@ When I see women like this and look at how far I've come in so short a time, I f
 While I've already taken on a few things this year, I'm also planning on doing more to help encourage women in tech. And if nothing else, I'm going to make sure that I never, ever buy the “girl” LEGO.
 
 A huge shout out to the wonderful women who inspired me to write this post and to those who proofread it for me at the last minute 🤗
-

@@ -17,20 +17,20 @@ But along my journey of mechanical keyboard discovery, I've managed to pick up a
 
 When it comes to putting together a mechanical keyboard, typically you're looking at having 3 key components:
 
-- The keyboard - you can build this all yourself and delve into the circuitry, but starting out it's probably also easier to just buy one someone else has done
-- The switches - This is the little bit that goes up and down, and sometimes makes the clicky noise or contribute to the “nice” typing feeling
-- The keycaps - This is the bit that we press on, with the characters on the top (or if you're being fancy, [have fancy bits on it](https://pokemon-keycap.com/) and no letters whatsoever, although I envy your touch typing if you can do that)
+  - The keyboard - you can build this all yourself and delve into the circuitry, but starting out it's probably also easier to just buy one someone else has done
+  - The switches - This is the little bit that goes up and down, and sometimes makes the clicky noise or contribute to the “nice” typing feeling
+  - The keycaps - This is the bit that we press on, with the characters on the top (or if you're being fancy, [have fancy bits on it](https://pokemon-keycap.com/) and no letters whatsoever, although I envy your touch typing if you can do that)
 
 ## The Keyboard
 
 Most of the time, especially when starting, it's easiest to buy a keyboard that already has switches and keycaps included, that way you know you've got something you can use as you delve further down the rabbit hole. This is also where you have to work out the other things you want out of your keyboard:
 
-- Is it bluetooth, wireless or wired?
-- Does it take batteries or is it rechargeable?
-- Do you want lights and are they plain white or coloured?
-- What size keyboard, is it compact, full size or a split ergonomic keyboard? You can even buy separate number pads if you're missing one of them
-- Do you want additional keys for media controls, or a volume slider/dial?
-- Does it only allow use on one device or can it be connected to multiple devices at once or at the flick of a switch?
+  - Is it bluetooth, wireless or wired?
+  - Does it take batteries or is it rechargeable?
+  - Do you want lights and are they plain white or coloured?
+  - What size keyboard, is it compact, full size or a split ergonomic keyboard? You can even buy separate number pads if you're missing one of them
+  - Do you want additional keys for media controls, or a volume slider/dial?
+  - Does it only allow use on one device or can it be connected to multiple devices at once or at the flick of a switch?
 
 ![PXL_20230307_003324745.MP.jpg](/img/2023/keyboards/PXL_20230307_003324745.MP.jpg)
 
@@ -58,7 +58,7 @@ Most of the time you're looking at three different kinds of switches - linear, t
 
 ### Styles of Switches
 
-While there are a lot of similarities, you need to make a decision about the style of switch you're getting as they're not always compatible with each other and can require different keycaps. ~~The two most common styles of switches are [Cherry and Gateron](https://www.keychron.com/blogs/news/gateron-switches-vs-cherry-switches)~~. 
+While there are a lot of similarities, you need to make a decision about the style of switch you're getting as they're not always compatible with each other and can require different keycaps. ~~The two most common styles of switches are [Cherry and Gateron](https://www.keychron.com/blogs/news/gateron-switches-vs-cherry-switches)~~.
 
 !> Correction: Cherry and Gateron are the same style of switch, and can most of the time be used interchangeably. Thanks for the correction Eumir!
 
@@ -74,7 +74,7 @@ Most of the time you'll be dealing with normal profile switches, but you can als
 
 ### Switch Connectivity
 
-While technically all switches can be swapped out, the introduction of hot swappable keyboards and switches has made it much easier. This means rather than soldering switches to the keyboard, they are plugged into place with pins connecting to the board without solder, and are then easier to swap out and change. 
+While technically all switches can be swapped out, the introduction of hot swappable keyboards and switches has made it much easier. This means rather than soldering switches to the keyboard, they are plugged into place with pins connecting to the board without solder, and are then easier to swap out and change.
 
 <a target="_blank" href="https://twitter.com/drpoindexter/status/1634059291761037312"><img class="static_tweet" alt="Static image of tweet linked here" src="/img/tweets/1634059291761037312.png" /></a>
 
