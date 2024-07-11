@@ -16,15 +16,23 @@ export async function getStaticPaths({ paginate }) {
 		},
 	})
 
-	return allTags.map((tag) => {
-		const filteredPosts = allPosts.filter(({ post }) =>
-			post?.frontmatter?.categories?.includes(tag)
-		);
-		return paginate(filteredPosts, {
-			params: { tag: slugify(tag) },
-			pageSize: 12,
-		});
-	});
+	const allPages: any = []
+
+	allTags.forEach((tag) => {
+		allPages.push(
+			...paginate(
+				allPosts.filter(({ post }) =>
+					post?.frontmatter?.categories?.includes(tag)
+				), 
+				{
+					params: { tag: slugify(tag) },
+					pageSize: 12,
+				}
+			)
+		) 
+	});	
+
+	return allPages
 }
 
 const { tag } = Astro.params;
@@ -38,6 +46,7 @@ const data = {
 	...generatePageData({page: Astro.props.page}),
 	content,
 };
+
 ---
 
 <Layout data={data}>

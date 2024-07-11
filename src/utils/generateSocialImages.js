@@ -1,4 +1,4 @@
-import { getImage } from "@astrojs/image";
+import { getImage } from "astro:assets";
 
 const generateSocialImages = async (image) => {
 	const { src: facebook } = await getImage({

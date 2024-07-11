@@ -1,17 +1,17 @@
 ---
 title: Setting up Local Dev and Deployment Pipelines
 date: 2017-09-04
-description: Since I discovered git, everything I do gets recorded on GitHub (it’s one of the most amazing things I’ve learnt in web). I’ve also started using XAMPP so that I can develop on my local machine. But while copying files from my local development onto my server I thought surely there must be an easier way to do this.
+description: Since I discovered git, everything I do gets recorded on GitHub (it's one of the most amazing things I've learnt in web). I've also started using XAMPP so that I can develop on my local machine. But while copying files from my local development onto my server I thought surely there must be an easier way to do this.
 categories: [WordPress, Automation, Process, 'Continuous Deployment']
 featured:
   src: feature/2e2caf5740aabb6fe6334d2aef4cab7acd28b408_rawpixel-com-579231-unsplash.jpg
 ---
 
-Since I discovered git, everything I do gets recorded on GitHub (it’s one of the most amazing things I’ve learnt in web). I’ve also started using XAMPP so that I can develop on my local machine. But while copying files from my local development onto my server I thought surely there must be an easier way to do this. Unfortunately there didn’t seem to be a lot of information about setting this up with FTP so I’m documenting it to make it easier for the next person.
+Since I discovered git, everything I do gets recorded on GitHub (it's one of the most amazing things I've learnt in web). I've also started using XAMPP so that I can develop on my local machine. But while copying files from my local development onto my server I thought surely there must be an easier way to do this. Unfortunately there didn't seem to be a lot of information about setting this up with FTP so I'm documenting it to make it easier for the next person.
 
 These instructions are specific to a WordPress build and using cPanel but can be adjusted to different situations.
 
-To set this up you’ll need a few things:
+To set this up you'll need a few things:
 
 - Install [XAMPP](https://www.apachefriends.org/index.html) (or [MAMP](https://www.mamp.info/en/) on a Mac) for local development
 - [Github](https://github.com/) Account (can also use GitLab or Bitbucket)
@@ -29,7 +29,7 @@ Technically you could use the whole WordPress folder as your repository but I on
 
 ## Install Gulp and Sass
 
-I use Gulp to not only compile my Sass (definitely one of the most amazing things I’ve learnt) but also to create source maps and change the file paths when changing from local to online. If you’re starting from scratch, you’ll have to install the following:
+I use Gulp to not only compile my Sass (definitely one of the most amazing things I've learnt) but also to create source maps and change the file paths when changing from local to online. If you're starting from scratch, you'll have to install the following:
 
 - [Node.js](https://nodejs.org/en/)
 - [Gulp](https://www.npmjs.com/package/gulp-install) (via Git Bash, Terminal or similar)
@@ -93,9 +93,9 @@ Make sure that you add the node_modules folder to your gitignore file otherwise 
 
 Codeship allows users with free accounts to have unlimited projects setup, run 1 build at a time and have 100 builds each month. For most freelancers or small businesses this should be fine otherwise plans start at \$49/month and include unlimited builds.
 
-Once you’ve created your account, setup a project linked to your GitHub account and follow the instructions to link it to your desired repository.
+Once you've created your account, setup a project linked to your GitHub account and follow the instructions to link it to your desired repository.
 
-When prompted, select to run node.js commands and add to those to install any gulp modules you’re using. It should end up looking similar to this:
+When prompted, select to run node.js commands and add to those to install any gulp modules you're using. It should end up looking similar to this:
 
 ```shell
 # By default we use the Node.js version set in your package.json or the latest
@@ -111,9 +111,9 @@ npm install --save-dev gulp-replace
 npm install gulp-string-replace --save-dev
 ```
 
-Navigate to **Project Settings** -> **Deployment** and select to setup a new deployment pipeline. You can choose whether to trigger the build to happen when you push to the master branch or another one, for example I’ve set it to build when I push the the dev branch (which means I can specifically target when I want to build).
+Navigate to **Project Settings** -> **Deployment** and select to setup a new deployment pipeline. You can choose whether to trigger the build to happen when you push to the master branch or another one, for example I've set it to build when I push the the dev branch (which means I can specifically target when I want to build).
 
-For this setup, you will need to select **Custom Script** but if your deployment is different, you can choose another option. You can also choose to run the build in multiple locations if you like. Again, add anything you’d like to run to the scripts but I use the following:
+For this setup, you will need to select **Custom Script** but if your deployment is different, you can choose another option. You can also choose to run the build in multiple locations if you like. Again, add anything you'd like to run to the scripts but I use the following:
 
 ```shell
 gulp replaceLocalDev
@@ -122,19 +122,19 @@ rm -rf node_modules
 lftp -c "open -u $FTP_USER,$FTP_PASSWORD {insertFTPhosthere}; set ssl:verify-certificate no; mirror -R ~/clone/ /wp-content/themes/wordpresstheme"
 ```
 
-This script runs the gulp functions to change file paths, removes the node_modules folder that was created (this isn’t needed for the website and both takes up a lot of room and has a tendency to break when moved to your hosting) and then moves the cloned files via FTP (you can also set this up to use SFTP or SSH). Make sure you update your version to include your FTP address and make sure that the target folder path is correct.
+This script runs the gulp functions to change file paths, removes the node_modules folder that was created (this isn't needed for the website and both takes up a lot of room and has a tendency to break when moved to your hosting) and then moves the cloned files via FTP (you can also set this up to use SFTP or SSH). Make sure you update your version to include your FTP address and make sure that the target folder path is correct.
 
 Navigate to **Project Settings** -> **Environment** and assign the variables for FTP_USER and FTP_PASSWORD for your login details. This way any logs for your build will include the variable name rather than your actual username and password.
 
-If needed, edit the **Projects Settings** -> **Notification** to specify how you’d like to be notified of build successes or failures, for example you can get notified via [Slack](https://slack.com/).
+If needed, edit the **Projects Settings** -> **Notification** to specify how you'd like to be notified of build successes or failures, for example you can get notified via [Slack](https://slack.com/).
 
 ## Databases
 
-Unfortunately the process for migrating database information is still a manual process (although I’ll definitely let you know once I work out how to automate that as well). Open the database for your local installation and perform a full export, then import that into the database for your hosting (you may need to delete existing tables before you import). Once you’ve imported the database, you will need to adjust the wp_options table to update the siteurl and home values for the live URL rather than the localhost one.
+Unfortunately the process for migrating database information is still a manual process (although I'll definitely let you know once I work out how to automate that as well). Open the database for your local installation and perform a full export, then import that into the database for your hosting (you may need to delete existing tables before you import). Once you've imported the database, you will need to adjust the wp_options table to update the siteurl and home values for the live URL rather than the localhost one.
 
-This doesn’t have to be done every time, but includes any updates in content (such as posts and pages), plugins and other config. The build process only brings through theme files which includes any templates, styles and scripts being used.
+This doesn't have to be done every time, but includes any updates in content (such as posts and pages), plugins and other config. The build process only brings through theme files which includes any templates, styles and scripts being used.
 
 ## Plugins
 
-Again, unfortunately this method doesn’t result in the plugins being brought across. My method to approach this, is to install the plugins on both local and live and when the database gets imported, it will bring through any config that you’ve set.
+Again, unfortunately this method doesn't result in the plugins being brought across. My method to approach this, is to install the plugins on both local and live and when the database gets imported, it will bring through any config that you've set.
 

@@ -12,7 +12,7 @@ Envolver is a CLI tool that addresses the common challenge of managing changing 
 
 ---
 
-Have you ever picked up a project you haven’t touched in a while and watched all the errors from missing or changed environment variables? Maybe you’re only working part time and a lot has changed on your days off, or maybe you’ve been on a well deserved break and others have continued working on the project while you were gone. When multiple people are working on a project, on their own timeframes and schedules, this sort of thing is bound to happen. Changes happen to keys and variables that are being used, new ones are added and people don’t always know what they need to update so they can get back up and running.
+Have you ever picked up a project you haven't touched in a while and watched all the errors from missing or changed environment variables? Maybe you're only working part time and a lot has changed on your days off, or maybe you've been on a well deserved break and others have continued working on the project while you were gone. When multiple people are working on a project, on their own timeframes and schedules, this sort of thing is bound to happen. Changes happen to keys and variables that are being used, new ones are added and people don't always know what they need to update so they can get back up and running.
 
 ## What's an environment/env variable?
 
@@ -45,7 +45,7 @@ Throughout the life cycle of a project, the values of will likely be changed for
 
 Keeping up to date with these changes can be hard enough when you're working on a project full time, but perhaps you're only working on the project a couple of days a week (a lot can happen in the remaining 3 days), or you might go on holidays for a week or two, or perhaps you've been pulled into another project for a bit and you've come back after a few weeks. These time frames might not seem like much, but a lot of the time there's been several changes to the environment variables and things won't work the first time you try and spin up your developer environment when you get back into it (even if you've pulled the most recent code changes).
 
-At MakerX we encounter this issue for a number of different reasons, with team members jumping between projects, working part time or on contracts, working on their own schedules or in different timezones it’s not an uncommon occurrence to see team members asking for the new or updated variables to update on their computer.
+At MakerX we encounter this issue for a number of different reasons, with team members jumping between projects, working part time or on contracts, working on their own schedules or in different timezones it's not an uncommon occurrence to see team members asking for the new or updated variables to update on their computer.
 
 While it's not a massive deal to get the most updated variable details, sometimes it can be a bit of a pain to work out what's changed and what you're now missing (especially when working with large applications that could have 50 or more different environment variables to go through). This is all getting a lot easier now though, as we've built [Envolver](https://www.npmjs.com/package/@makerx/envolver), a CLI tool that can check for changes in the environment variables, comparing your local `.env` file to the most recent changes in the code repo.
 
@@ -166,4 +166,4 @@ If you're saving your `vars.json` file in the code repo, you can automate updati
 
 * * *
 
-Whether you’re working on projects with large teams, switching between multiple projects, working part time or just enjoy taking a holiday every now and then, Envolver is a powerful CLI tool to make it easier for you to get back up and running.
+Whether you're working on projects with large teams, switching between multiple projects, working part time or just enjoy taking a holiday every now and then, Envolver is a powerful CLI tool to make it easier for you to get back up and running.

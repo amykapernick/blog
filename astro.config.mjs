@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import image from "@astrojs/image";
 import rehypeFigure from './src/utils/rehypeFigure';
 import externalLinks from "rehype-external-links";
 import captions from 'remark-captions'
@@ -26,7 +25,5 @@ export default defineConfig({
 		],
 		extendDefaultPlugins: true,
 	},
-	integrations: [sitemap(), image({
-		serviceEntryPoint: '@astrojs/image/sharp'
-	})]
+	integrations: [sitemap()]
 });

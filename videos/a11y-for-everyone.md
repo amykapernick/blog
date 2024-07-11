@@ -4,7 +4,7 @@ date: 2022-11-24
 video: levelup.video/tutorials/accessibility-for-everyone
 author: ./img/leveluptuts.png
 categories:
-  - A11y
+  - a11y
   - Course
   - Testing
 featured:
