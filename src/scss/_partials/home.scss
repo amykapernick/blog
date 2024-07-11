@@ -102,7 +102,7 @@ h1.tag-page {
 			margin: 20px;
 
 			.post {
-				picture {
+				.image {
 					position: relative;
 					z-index: 0;
 					top: -20px;
@@ -114,7 +114,7 @@ h1.tag-page {
 					overflow: hidden;
 				}
 
-				img {
+				.image {
 					width: 100%;
 					height: 100%;
 					margin: 0;
@@ -126,6 +126,7 @@ h1.tag-page {
 
 		&.even {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(8) {
 					width: 100%;
@@ -163,7 +164,7 @@ h1.tag-page {
 							-webkit-line-clamp: 5;
 						}
 
-						picture {
+						.image {
 							position: absolute;
 							z-index: -2;
 							top: -30px;
@@ -175,7 +176,7 @@ h1.tag-page {
 							max-height: unset;
 						}
 
-						img {
+						.image {
 							max-width: 800px;
 						}
 					}
@@ -185,7 +186,7 @@ h1.tag-page {
 							@include mixins.shadow_bottom_right;
 							margin-left: auto;
 
-							picture {
+							.image {
 								right: calc(100% - 20px);
 								left: auto;
 							}
@@ -199,7 +200,7 @@ h1.tag-page {
 						margin-right: -50px;
 						margin-left: auto;
 
-						picture {
+						.image {
 							right: calc(100% - 20px);
 							left: auto;
 						}
@@ -215,7 +216,7 @@ h1.tag-page {
 						max-width: unset;
 						padding-left: calc(30vw + 20px);
 
-						picture {
+						.image {
 							position: absolute;
 							top: 0;
 							bottom: 0;
@@ -224,7 +225,7 @@ h1.tag-page {
 							height: auto;
 							max-height: unset;
 
-							img {
+							.image {
 								border-bottom: 0;
 							}
 						}
@@ -242,7 +243,7 @@ h1.tag-page {
 							padding-right: calc(30vw + 20px);
 							padding-left: 20px;
 
-							picture {
+							.image {
 								right: 0;
 								left: auto;
 							}
@@ -254,6 +255,7 @@ h1.tag-page {
 
 		&.odd {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(4),
 				&:nth-child(10) {
@@ -292,7 +294,7 @@ h1.tag-page {
 							-webkit-line-clamp: 5;
 						}
 
-						picture {
+						.image {
 							position: absolute;
 							z-index: -2;
 							top: -30px;
@@ -304,7 +306,7 @@ h1.tag-page {
 							max-height: unset;
 						}
 
-						img {
+						.image {
 							max-width: 800px;
 						}
 					}
@@ -314,7 +316,7 @@ h1.tag-page {
 							@include mixins.shadow_bottom_right;
 							margin-left: auto;
 
-							picture {
+							.image {
 								right: calc(100% - 20px);
 								left: auto;
 							}
@@ -329,7 +331,7 @@ h1.tag-page {
 					.post {
 						margin-bottom: 40vw;
 
-						picture {
+						.image {
 							position: absolute;
 							z-index: -2;
 							top: auto;
@@ -345,7 +347,7 @@ h1.tag-page {
 							margin-top: 40vw;
 							margin-bottom: 0;
 
-							picture {
+							.image {
 								top: calc(-1 * (40vw - 20px));
 							}
 						}
@@ -364,7 +366,7 @@ h1.tag-page {
 						margin-right: -50px;
 						margin-left: auto;
 
-						picture {
+						.image {
 							right: calc(100% - 20px);
 							left: auto;
 						}
@@ -380,7 +382,7 @@ h1.tag-page {
 						max-width: unset;
 						padding-left: calc(30vw + 20px);
 
-						picture {
+						.image {
 							position: absolute;
 							top: 0;
 							bottom: 0;
@@ -389,7 +391,7 @@ h1.tag-page {
 							height: auto;
 							max-height: unset;
 
-							img {
+							.image {
 								border-bottom: 0;
 							}
 						}
@@ -407,7 +409,7 @@ h1.tag-page {
 							padding-right: calc(30vw + 20px);
 							padding-left: 20px;
 
-							picture {
+							.image {
 								right: 0;
 								left: auto;
 							}
@@ -487,7 +489,7 @@ h1.tag-page {
 					.post {
 						padding-left: calc(300px + 20px);
 
-						picture {
+						.image {
 							width: 300px;
 						}
 					}
@@ -507,7 +509,7 @@ h1.tag-page {
 					.post {
 						padding-left: calc(300px + 20px);
 
-						picture {
+						.image {
 							width: 300px;
 						}
 					}
@@ -524,7 +526,7 @@ h1.tag-page {
 				&:nth-child(11),
 				&:nth-child(12) {
 					.post {
-						picture {
+						.image {
 							bottom: -250px;
 							height: 45vw;
 						}
@@ -532,7 +534,7 @@ h1.tag-page {
 
 					&:nth-child(2n) {
 						.post {
-							picture {
+							.image {
 								top: -250px;
 							}
 						}
@@ -590,7 +592,7 @@ h1.tag-page {
 			margin: 40px 25px;
 
 			.post {
-				picture {
+				.image {
 					height: 25vw;
 					max-height: 350px;
 				}
@@ -599,6 +601,7 @@ h1.tag-page {
 
 		&.even {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(8) {
 					padding: 150px 5vw;
@@ -617,7 +620,7 @@ h1.tag-page {
 						margin-left: 0;
 						padding: 50px;
 
-						picture {
+						.image {
 							top: -50px;
 							bottom: -50px;
 							left: calc(100% - 80px);
@@ -639,7 +642,7 @@ h1.tag-page {
 					margin-left: auto;
 
 					.post {
-						picture {
+						.image {
 							right: calc(100% - 20px);
 						}
 					}
@@ -651,7 +654,7 @@ h1.tag-page {
 						margin-right: auto;
 						padding-left: calc(400px + 20px);
 
-						picture {
+						.image {
 							width: 400px;
 						}
 					}
@@ -669,6 +672,7 @@ h1.tag-page {
 
 		&.odd {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(4),
 				&:nth-child(10) {
@@ -688,7 +692,7 @@ h1.tag-page {
 						margin-left: 0;
 						padding: 50px;
 
-						picture {
+						.image {
 							top: -50px;
 							bottom: -50px;
 							left: calc(100% - 80px);
@@ -701,7 +705,7 @@ h1.tag-page {
 						margin-right: 0;
 						margin-left: auto;
 
-						picture {
+						.image {
 							right: calc(100% - 20px);
 						}
 					}
@@ -713,7 +717,7 @@ h1.tag-page {
 						margin-right: auto;
 						padding-left: calc(400px + 20px);
 
-						picture {
+						.image {
 							width: 400px;
 						}
 					}
@@ -735,7 +739,7 @@ h1.tag-page {
 						margin-top: 200px;
 
 						.post {
-							picture {
+							.image {
 								bottom: -320px;
 							}
 
@@ -750,7 +754,7 @@ h1.tag-page {
 						margin-bottom: 200px;
 
 						.post {
-							picture {
+							.image {
 								top: -320px;
 							}
 
@@ -783,6 +787,7 @@ h1.tag-page {
 
 		&.even {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(8) {
 					padding: 150px 0;
@@ -799,7 +804,7 @@ h1.tag-page {
 							margin-top: 0;
 						}
 
-						picture {
+						.image {
 							top: -50px;
 							bottom: -50px;
 							left: 40vw;
@@ -809,7 +814,7 @@ h1.tag-page {
 
 				&:nth-child(8) {
 					.post {
-						picture {
+						.image {
 							right: 40vw;
 						}
 					}
@@ -819,6 +824,7 @@ h1.tag-page {
 
 		&.odd {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(4),
 				&:nth-child(10) {
@@ -836,7 +842,7 @@ h1.tag-page {
 							margin-top: 0;
 						}
 
-						picture {
+						.image {
 							top: -50px;
 							bottom: -50px;
 							left: 40vw;
@@ -846,7 +852,7 @@ h1.tag-page {
 
 				&:nth-child(4) {
 					.post {
-						picture {
+						.image {
 							right: 40vw;
 						}
 					}
@@ -860,12 +866,13 @@ h1.tag-page {
 	.feed {
 		&.even {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(8) {
 					padding: 200px 0;
 
 					.post {
-						picture {
+						.image {
 							top: -100px;
 							bottom: -100px;
 						}
@@ -876,13 +883,14 @@ h1.tag-page {
 
 		&.odd {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(4),
 				&:nth-child(10) {
 					padding: 200px 0;
 
 					.post {
-						picture {
+						.image {
 							top: -100px;
 							bottom: -100px;
 						}
@@ -917,6 +925,7 @@ h1.tag-page {
 	.feed {
 		&.even {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(8) {
 					&:before {
@@ -927,7 +936,7 @@ h1.tag-page {
 						width: 560px;
 						padding: 90px;
 
-						picture {
+						.image {
 							left: 500px;
 							width: 700px;
 						}
@@ -936,7 +945,7 @@ h1.tag-page {
 
 				&:nth-child(8) {
 					.post {
-						picture {
+						.image {
 							right: 500px;
 						}
 					}
@@ -946,6 +955,7 @@ h1.tag-page {
 
 		&.odd {
 			>li {
+
 				&:nth-child(1),
 				&:nth-child(4),
 				&:nth-child(10) {
@@ -957,7 +967,7 @@ h1.tag-page {
 						width: 560px;
 						padding: 90px;
 
-						picture {
+						.image {
 							left: 500px;
 							width: 700px;
 						}
@@ -966,7 +976,7 @@ h1.tag-page {
 
 				&:nth-child(4) {
 					.post {
-						picture {
+						.image {
 							right: 500px;
 						}
 					}

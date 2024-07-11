@@ -1,7 +1,7 @@
 ---
-import { Picture } from 'astro:assets';
 import PostExcerpt from "@igor.dvlpr/astro-post-excerpt";
 import SVG from "./svg.astro";
+import Image from "./image.astro";
 import { parseISO, format } from "date-fns";
 import socialShare from "../utils/socialShare";
 import slugify from "../utils/slugify";
@@ -17,21 +17,11 @@ const {
 
 const date = Astro.props.data.updated ? Astro.props.data.updated : Astro.props.data.date || new Date().toISOString();
 
-const image = featured?.src
-	? `/img/${featured.src}`
-	: "/img/feature/placeholder.png";
+
 ---
 
 <article class="post">
-	<Picture
-		src={image}
-		alt=""
-		formats={["avif", "webp", "jpg", "png"]}
-		widths={[300, 600, 800]}
-		aspectRatio="3:4"
-		width={800}
-		height={600}
-	/>
+	<Image {featured} />
 	<h2>
 		<a
 			href={external ? external : `/${slug}`}
