@@ -17,6 +17,16 @@ const {
 
 const date = Astro.props.data.updated ? Astro.props.data.updated : Astro.props.data.date || new Date().toISOString();
 
+// console.log({
+// 	data: Astro.props.data,
+// 	body: Astro.props.data.rawContent().slice(0, 1000),
+// })
+
+const postData = {
+	compiledContent: Astro.props.data.compiledContent,
+	rawContent: () => Astro.props.data.rawContent().split("\n").slice(0, 5).join("\n"),
+}
+
 ---
 
 <article class="post">
@@ -42,7 +52,7 @@ const date = Astro.props.data.updated ? Astro.props.data.updated : Astro.props.d
 		{format(parseISO(date), "dd MMM yyyy")}
 	</time>
 	<p class="excerpt">
-		<PostExcerpt post={Astro.props.data} words={50} addEllipsis={true} />
+		<PostExcerpt post={postData} words={50} addEllipsis={true} />
 	</p>
 	{
 		categories && (
