@@ -1,15 +1,13 @@
 ---
-import { getImage } from "@astrojs/image";
-import Header from "./header.astro";
-import Footer from "./footer.astro";
-import DevStyles from "./devStyles.astro";
-import Favicon from "../img/amy_small.png";
-import Logo from "../img/logo.png";
-import generateSocialImages from "../utils/generateSocialImages";
 
-import "../scss/main.scss";
+import DevStyles from "@partials/devStyles";
+import Favicon from "@img/amy_small.png";
+import Logo from "@img/logo.png";
+import generateSocialImages from "@utils/generateSocialImages";
 
-import generateColours from "../utils/generateColours.js";
+import "@styles/main.scss";
+
+import generateColours from "@utils/generateColours.js";
 import { format, parseISO } from "date-fns";
 
 const env = import.meta.env.MODE;
@@ -97,14 +95,7 @@ const styles = `
 	</head>
 
 	<body style={styles} class={Astro.props.class}>
-		<!-- <img src={facebook} /> -->
 		{env === "development" && <DevStyles />}
-		<Header />
-
-		<main>
-			<slot />
-		</main>
-
-		<Footer />
+		<slot />
 	</body>
 </html>

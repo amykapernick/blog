@@ -1,0 +1,18 @@
+---
+import Layout from "@partials/layout";
+import Header from "@partials/header";
+import Footer from "@partials/footer";
+
+const { content } = Astro.props;
+
+---
+
+<Layout content={content}>
+	<Header />
+
+	<main>
+		<slot />
+	</main>
+
+	<Footer />
+</Layout>

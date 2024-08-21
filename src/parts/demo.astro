@@ -1,0 +1,131 @@
+---
+const html = await Astro.slots.render('default')
+
+const code = html
+	.replace(/data-astro-[^=]+="[^"]+"/g, '')
+	.replace(/class="[^"]*astro[^"]*"/g, '')
+	.replace(/\s{2,}(\\*>)/g, '$1')
+
+const toggles = Astro.props?.toggles || ['HTML', 'CSS', 'JS']
+---
+<style lang="scss">
+	@use '../scss/mixins.scss';
+	@use '../scss/variables.scss' as var;
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(1fr, auto));
+		grid-template-rows: auto auto;
+		grid-template-areas: 'demo html css js' 'toggles toggles toggles toggles';
+		gap: 10px;
+
+		&:not(:has(.toggles input[name="mode"])) {
+			.html, .css, .js {
+				display: none;
+			}
+		}
+
+		&:has(.toggles input[name="mode"]) {
+			&:not(:has(.toggles input[name="mode"][value="html"]:checked)) {
+				& .html {
+					display: none;
+				}
+			}
+
+			&:not(:has(.toggles input[name="mode"][value="css"]:checked)) {
+				& .css {
+					display: none;
+				}
+			}
+
+			&:not(:has(.toggles input[name="mode"][value="demo"]:checked)) {
+				& .demo {
+					display: none;
+				}
+			}
+
+			&:not(:has(.toggles input[name="mode"][value="js"]:checked)) {
+				& .js {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.html {
+		grid-area: html;
+	}
+
+	.demo {
+		grid-area: demo;
+		border: 2px solid var.$grey;
+		border-radius: 5px;
+		padding: 20px;
+	}
+
+	.css {
+		grid-area: css;
+	}
+
+	.js {
+		grid-area: js;
+	}
+
+	.toggles {
+		display: flex;
+		justify-content: center;
+		gap: 5px;
+		grid-area: toggles;
+	}
+
+	.control {
+		@include mixins.sr_only;
+
+		&:checked + .toggle {
+			background: var.$purple_bright;
+			color: #fff;
+		}
+	}
+
+	.toggle {
+		padding: 0.1em 0.2em;
+		cursor: pointer;
+	}
+
+</style>
+
+<div class="container">
+	<div class="demo">
+		<slot />
+	</div>
+	<div class="html">
+		<pre>{code}</pre>
+	</div>
+	{toggles.length > 0 &&
+		<fieldset class="toggles">
+			<input 
+				id={`toggle_controls_demo`}
+				class="control"
+				type="checkbox" 
+				name="mode"
+				value="demo"
+				checked
+			/>
+			<label class="toggle" for={`toggle_controls_demo`}>
+				Demo
+			</label>
+			{toggles.map(toggle => (
+				<input 
+					id={`toggle_controls_${toggle.toLowerCase()}`}
+					class="control"
+					type="checkbox" 
+					name="mode"
+					value={toggle.toLowerCase()} 
+				/>
+				<label class="toggle" for={`toggle_controls_${toggle.toLowerCase()}`}>
+					{toggle}
+				</label>
+			))}
+		</fieldset>
+	}
+</div>

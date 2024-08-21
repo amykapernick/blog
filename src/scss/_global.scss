@@ -1,4 +1,5 @@
 @use './variables.scss' as var;
+@use './mixins.scss';
 
 *,
 *:before,
@@ -32,9 +33,9 @@ body {
 	background: var.$background;
 }
 
-.sr-only {
-	position: absolute;
-	right: -200vw;
+.sr-only,
+.sr_only {
+	@include mixins.sr_only;
 }
 
 @keyframes animate_underline {

@@ -1,10 +1,10 @@
 ---
 import { parseISO, format } from "date-fns";
-import Layout from "../partials/layout.astro";
-import SVG from "../parts/svg.astro";
-import Video from "../parts/video.astro";
-import slugify from "../utils/slugify";
-import generateSocialImages from '../utils/generateSocialImages'
+import Layout from "@layouts/base";
+import SVG from "@parts/svg";
+import Video from "@parts/video";
+import slugify from "@utils/slugify";
+import generateSocialImages from '@utils/generateSocialImages'
 
 
 const { title, categories, video, featured, date = new Date().toISOString(), updated } = Astro.props.content;

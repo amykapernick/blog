@@ -130,6 +130,37 @@
 			}
 		}
 	}
+
+	& .demo {
+		border: 2px solid var.$neutral;
+		border-top-width: 2em;
+		border-radius: 5px;
+		position: relative;
+		width: 100%;
+		background: none;
+
+		&:not([height]) {
+			height: 400px;
+		}
+
+		&::before {
+			content: 'Demo';
+			position: absolute;
+			top: -1.8em;
+			right: 2ch;
+			left: auto;
+			bottom: auto;
+			z-index: 10;
+			color: var.$white;
+			background: none;
+			opacity: 1;
+		}
+	}
+
+	& iframe {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 @media(min-width: 40em) {

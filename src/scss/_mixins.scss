@@ -70,7 +70,7 @@
 }
 
 @mixin post_header_background {
-	& + *:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote):not(hr) {
+	&+*:not(h2):not(h3):not(section):not(img):not(figure):not(blockquote):not(hr) {
 		position: relative;
 		margin-bottom: 2em;
 		color: var.$white;
@@ -95,4 +95,15 @@
 
 		@content;
 	}
+}
+
+@mixin sr_only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
 }

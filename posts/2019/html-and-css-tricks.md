@@ -19,7 +19,9 @@ Now some of these can be a little janky, and not quite as smooth as when using J
 
 ## Testimonial Carousel
 
-<https://codepen.io/amys_kapers/pen/vqowbj?editors=0100>
+<figure class="demo">
+  <iframe src="/demos/no-js/toggle#title"></iframe>
+</figure>
 
 I had to put together a testimonial carousel for a project, normally I would only have a single testimonial but for this one I thought I'd see how to do this in HTML and CSS only.
 

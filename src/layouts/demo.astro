@@ -1,0 +1,41 @@
+---
+import Layout from "../partials/layout.astro";
+import '@styles/_partials/demo.scss';
+ 
+const { title } = Astro.props.content;
+
+const content = {
+	...Astro.props.content,
+	title: `${title} | Code Demo | Amy's Blog`,
+};
+
+---
+
+<style lang="scss">
+	@use '../scss/mixins.scss';
+	
+	main {
+		height: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container {
+		& :global(#title) {
+			&:target {
+				@include mixins.sr_only;
+			}
+		}
+	}
+</style>
+
+<Layout content={content}>
+	<main>
+		<div class="container">
+			<slot />
+		</div>
+	</main>
+</Layout>
