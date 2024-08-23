@@ -48,11 +48,13 @@
 	}
 
 	.excerpt {
-		display: -webkit-box;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		-webkit-line-clamp: 8;
-		-webkit-box-orient: vertical;
+		@include mixins.clamp_lines(8);
+
+		// display: -webkit-box;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
+		// -webkit-line-clamp: 8;
+		// -webkit-box-orient: vertical;
 	}
 
 	.share {

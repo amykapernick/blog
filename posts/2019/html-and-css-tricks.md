@@ -21,6 +21,7 @@ Now some of these can be a little janky, and not quite as smooth as when using J
 
 <figure class="demo">
   <iframe src="/demos/no-js/toggle#title"></iframe>
+  <figcaption><a href="/demos/no-js/toggle#title" target="_blank">Live Demo - Toggle Switch</a></figcaption>
 </figure>
 
 I had to put together a testimonial carousel for a project, normally I would only have a single testimonial but for this one I thought I'd see how to do this in HTML and CSS only.

@@ -107,3 +107,12 @@
 	clip: rect(0, 0, 0, 0);
 	border: 0;
 }
+
+@mixin clamp_lines($clamp: 3) {
+	display: block;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: $clamp;
+	-webkit-box-orient: vertical;
+}

@@ -143,17 +143,29 @@
 			height: 400px;
 		}
 
-		&::before {
-			content: 'Demo';
+		& figcaption {
+			@include mixins.clamp_lines(1);
+
 			position: absolute;
-			top: -1.8em;
+			top: -1.5em;
 			right: 2ch;
-			left: auto;
-			bottom: auto;
 			z-index: 10;
+			margin: 0;
 			color: var.$white;
-			background: none;
-			opacity: 1;
+			padding: 0;
+			line-height: 1;
+			max-width: calc(100% - 4ch);
+			left: auto;
+
+			& a {
+				color: inherit;
+				font-size: inherit;
+				font-weight: inherit;
+			}
+		}
+
+		&:before {
+			content: normal;
 		}
 	}
 
