@@ -7,6 +7,7 @@ const code = html
 	.replace(/\s{2,}(\\*>)/g, '$1')
 
 const toggles = Astro.props?.toggles || ['HTML', 'CSS', 'JS']
+
 ---
 <style lang="scss">
 	@use '../scss/mixins.scss';
