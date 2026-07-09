@@ -227,6 +227,8 @@ If we push the code changes again and wait for the site to build, this time a co
 
 Now that the site is built and has a live URL, we can start running tests on it. To add tests, I could keep adding more steps to the `build` job, but instead I'm going to add another `test` job to use. For now we're just going to run a [visual regression test using Percy](https://docs.percy.io/docs/cli-snapshot#percy-snapshot), and will look deeper at front end testing in a future blog post (for now you can look at the [other testing posts](https://www.notion.so/1e110ee3047246eab0e27482f095681d))
 
+<!-- TODO: Fix this because it's breaking all the code samples and making them figures of text -->
+
 ```yaml
 name: Build and Test
 
