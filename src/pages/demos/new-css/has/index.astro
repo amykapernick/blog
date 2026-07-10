@@ -1,0 +1,109 @@
+---
+import Layout from "@layouts/demo";
+import Demo from "@parts/demo";
+
+const content = {
+	title: "Toggle Switch | No JS",
+	description:
+		"Demo of a toggle switch without javascript"
+};
+---
+
+<style is:inline>
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	label {
+		position: relative;
+		flex: 0 0 auto;
+		width: auto;
+		margin: 0;
+		padding: 10px 5px;
+		font-size: 1em;
+		white-space: nowrap;
+	}
+
+	.switch {
+		display: block;
+		position: relative;
+		flex: 0 0 auto;
+		width: 2.7em;
+		height: 1.7em;
+		border: 3px solid currentColor;
+		border-radius: 2em;
+		background: #fff;
+	}
+
+	.switch::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -3px;
+		left: -3px;
+		width: 1.7em;
+		height: 1.7em;
+		border: 3px solid currentcolor;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	input[type="radio"][value="on"] + label {
+		order: 2;
+	}
+
+	input[type="radio"]:checked + label {
+		text-shadow: 1px 0 0 currentcolor;
+	}
+
+	input[type="radio"][value="on"]:checked ~ .switch {
+		background: currentcolor;
+	}
+
+	input[type="radio"][value="on"]:checked ~ .switch::before {
+		right: -3px;
+		left: auto;
+		transition: right 0.5s ease-in-out;
+	}
+
+	input[type="radio"] + label::before {
+		position: absolute;
+		inset: 0;
+		z-index: 4;
+	}
+
+	input[type="radio"][value="off"] + label::before {
+		right: calc(-1 * (1ch + 2.7em));
+		left: 0;
+	}
+
+	input[type="radio"][value="on"] + label::before {
+		right: 0;
+		left: calc(-1 * (1ch + 2.7em));
+	}
+
+	input[type="radio"]:not(:checked) + label::before {
+		content: '';
+	}
+</style>
+
+<Layout content={content}>
+	<h1 id="title">{content.title}</h1>
+	<Demo toggles={[]}>
+		<fieldset>
+			<div class="container">
+				<input id="off" type="radio" class="sr-only" name="switch" value="off" />
+				<label for="off">
+					Off
+				</label>
+				<input id="on" type="radio" class="sr-only" name="switch" value="on" />
+				<label for="on">
+					On
+				</label>
+				<span class="switch" aria-hidden="true"></span>
+			</div>
+		</fieldset>
+	</Demo>
+</Layout>

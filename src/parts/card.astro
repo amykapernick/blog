@@ -17,14 +17,14 @@ const {
 
 const date = Astro.props.data.updated ? Astro.props.data.updated : Astro.props.data.date || new Date().toISOString();
 
-// console.log({
-// 	data: Astro.props.data,
-// 	body: Astro.props.data.rawContent().slice(0, 1000),
-// })
-
+// astro-post-excerpt reparses the raw body as MDX to build the excerpt, which chokes
+// on code fences and inline HTML (e.g. `<img>`, `<!doctype>`) found across several posts.
+// Stripping both before handing it off avoids those crashes.
 const postData = {
-	compiledContent: Astro.props.data.compiledContent,
-	rawContent: () => Astro.props.data.rawContent().split("\n").slice(0, 5).join("\n"),
+	body: Astro.props.data
+		.rawContent()
+		.replace(/```[\s\S]*?```/g, "")
+		.replace(/<[^>]*>/g, ""),
 }
 
 ---

@@ -1,0 +1,20 @@
+diff --git a/node_modules/remark-oembed/index.js b/node_modules/remark-oembed/index.js
+index f7e2a61..6c29dab 100644
+--- a/node_modules/remark-oembed/index.js
++++ b/node_modules/remark-oembed/index.js
+@@ -243,8 +243,13 @@ const getProviderEndpoint = (linkUrl, providers = []) => {
+   for (const provider of providers || []) {
+     for (const endpoint of provider.endpoints || []) {
+       for (let schema of endpoint.schemes || []) {
+-        schema = schema.replace('*', '.*');
+-        const regExp = new RegExp(schema);
++        schema = schema.replace(/\*/g, '.*');
++        let regExp;
++        try {
++          regExp = new RegExp(schema);
++        } catch (e) {
++          continue;
++        }
+         if (regExp.test(linkUrl)) {
+           return {
+             url: endpoint.url,

@@ -11,8 +11,8 @@ const content = {
 };
 
 export async function getStaticPaths({ paginate }) {
-	const postFiles = await Astro.glob("../../posts/**/*.md");
-	const videoFiles = await Astro.glob("../../videos/**/*.md");
+	const postFiles = Object.values(import.meta.glob("../../posts/**/*.md", { eager: true }));
+	const videoFiles = Object.values(import.meta.glob("../../videos/**/*.md", { eager: true }));
 
 	const { allPosts } = await getAllPosts({
 		files: {

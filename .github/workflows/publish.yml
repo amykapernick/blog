@@ -10,15 +10,15 @@ jobs:
 
     steps:
       - name: Checkout Repo Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20.x
+          node-version: 24
 
       - name: Add Issues from Comments
-        uses: "alstr/todo-to-issue-action@v4"
+        uses: "alstr/todo-to-issue-action@v5"
         with:
           AUTO_ASSIGN: true
           CLOSE_ISSUES: true
@@ -28,12 +28,10 @@ jobs:
 
       - name: Deploy to Netlify
         id: build_site
-        uses: South-Paw/action-netlify-cli@v2
+        uses: netlify/actions/cli@master
         with:
-          args: "deploy --build --json --prod --message \"Probably a new post\""
+          args: deploy --build --prod --message "Probably a new post"
         env:
-          DEBUG: "*"
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        
 

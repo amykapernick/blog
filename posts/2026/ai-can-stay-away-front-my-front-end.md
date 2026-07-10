@@ -4,7 +4,7 @@ date: 2026-07-09
 description: Everyone else is talking about AI, why can't I do it too?
 categories: [Dev, Tools, AI]
 featured:
-  src: dev/link-shortener/katja-ano-_7ceGXTAtyQ-unsplash.jpg
+  src: feature/katja-ano-_7ceGXTAtyQ-unsplash.jpg
 ---
 We’ve heard far too much about AI in the past few years, and everyone has written their AI blogs (written by AI) and their “super duper unique” AI points of view, so I know that my viewpoint is no different from the one you saw last week and the month before that and the one you’ll see next Tuesday. But my blog has never just been about other people reading it, it’s been for me to experiment and play (and document for future self) and sometimes other people might read it too. I’ve also been WAY out of shape when it comes to writing, so this seemed as good a thing as any to brush up with, as I’m working through something a little bit fun.
 

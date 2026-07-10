@@ -4,8 +4,8 @@ import TableOfContents from '../parts/toc.astro'
 import getAllPosts from "../utils/getAllPosts";
 
 export async function getStaticPaths() {
-	const postFiles = await Astro.glob("../../posts/**/*.md");
-	const videoFiles = await Astro.glob("../../videos/**/*.md");
+	const postFiles = Object.values(import.meta.glob("../../posts/**/*.md", { eager: true }));
+	const videoFiles = Object.values(import.meta.glob("../../videos/**/*.md", { eager: true }));
 
 	const { allPosts } = await getAllPosts({
 		files: {
