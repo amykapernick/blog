@@ -24,11 +24,16 @@ jobs:
       - name: Install Node Modules
         run: npm install
 
+      - name: Build Site
+        run: npm run build
+        env:
+          SITE_URL: ${{ secrets.SITE_URL }}
+
       - name: Deploy to Netlify
         id: build_site
         uses: netlify/actions/cli@master
         with:
-          args: deploy --build
+          args: deploy --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
